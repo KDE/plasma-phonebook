@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=plasma-phonebook
+Comment=My first Plasma Mobile App
+Version=1.0
+Exec=plasma-phonebook
+MimeType=application/x-plasma-phonebook;
+Icon=applications-development
+Type=Application
+Terminal=false
+Categories=Qt;KDE;
