@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=plasma-phonebook
-Comment=My first Plasma Mobile App
+Name=Phone Book
+Comment=Edit and view Contacts
 Version=1.0
 Exec=plasma-phonebook
 MimeType=application/x-plasma-phonebook;
