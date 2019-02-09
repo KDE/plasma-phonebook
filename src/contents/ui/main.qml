@@ -30,4 +30,5 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: contactsPage
 
     Component { id: contactsPage; ContactsPage {}}
+    Component { id: detailPage; DetailPage {}}
 }
