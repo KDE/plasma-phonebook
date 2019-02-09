@@ -18,16 +18,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.1
-import org.kde.kirigami 2.4 as Kirigami
-import QtQuick.Controls 2.0 as Controls
+#ifndef PHONEBOOK_H
+#define PHONEBOOK_H
 
-Kirigami.ApplicationWindow {
-    id: root
+#include <QObject>
 
-    title: "Hello"
+class PhoneBook : public QObject
+{
+    Q_OBJECT
+public:
+    explicit PhoneBook(QObject *parent = nullptr);
 
-    pageStack.initialPage: contactsPage
+signals:
 
-    Component { id: contactsPage; ContactsPage {}}
-}
+public slots:
+    void addContact(QString name, QString tel);
+};
+
+#endif // PHONEBOOK_H

@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>
+        <file alias="ContactsPage.qml">contents/ui/ContactsPage.qml</file>
+        <file alias="CustomSectionScroller.qml">contents/ui/CustomSectionScroller.qml</file>
     </qresource>
 </RCC>
