@@ -20,13 +20,18 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
+
 import org.kde.kirigami 2.4 as Kirigami
 
 Kirigami.ScrollablePage {
     property var model;
+    property string personUri;
     visible: false
     id: page
-    title: model.firstname
+
+    Component.onCompleted: console.log("Name: " + personData.name)
+
+    title: personData.name
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
     background: Rectangle {
@@ -34,7 +39,7 @@ Kirigami.ScrollablePage {
     }
 
     Detail {
-        model: page.model
+        personUri: page.personUri
         onEditClicked: form.open();
     }
 

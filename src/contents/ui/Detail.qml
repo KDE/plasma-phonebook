@@ -21,14 +21,20 @@ import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 import QtGraphicalEffects 1.0
+import org.kde.people 1.0 as KPeople
 
 import "lib" as HIG
 
 
 Flickable  {
     id: root
-    property var model;
+    property string personUri;
     signal editClicked()
+
+    KPeople.PersonData {
+        id: personData
+        personUri: root.personUri
+    }
 
     HIG.Header {
         id: header

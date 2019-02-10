@@ -2,7 +2,6 @@
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>
         <file alias="ContactsPage.qml">contents/ui/ContactsPage.qml</file>
-        <file alias="CustomSectionScroller.qml">contents/ui/CustomSectionScroller.qml</file>
         <file alias="ContactListItem.qml">contents/ui/ContactListItem.qml</file>
         <file alias="RoundImage.qml">contents/ui/RoundImage.qml</file>
         <file alias="Detail.qml">contents/ui/Detail.qml</file>

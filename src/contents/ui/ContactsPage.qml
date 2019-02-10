@@ -1,6 +1,9 @@
+
+
 /*
  * Copyright 2015  Martin Klapetek <mklapetek@kde.org>
  * Copyright 2019  Linus Jahn <lnj@kaidan.im>
+ * Copyright 2019  Jonah Brüchert <jbb@kaidan.im>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -18,15 +21,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 import QtQuick 2.7
 import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
 
-import org.kde.people 1.0 as KPeople
 import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.private.kpeoplehelper 1.0
 import org.kde.kirigami 2.6 as Kirigami
+import org.kde.people 1.0 as KPeople
 
 Kirigami.ScrollablePage {
     title: i18n("Address book")
@@ -39,7 +40,6 @@ Kirigami.ScrollablePage {
 
     FormPage {
         id: form
-        model: page.model // TODO
     }
 
     actions {
@@ -83,7 +83,7 @@ Kirigami.ScrollablePage {
         clip: true
         model: PlasmaCore.SortFilterModel {
             sourceModel: KPeople.PersonsSortFilterProxyModel {
-                sourceModel: KPeopleHelper {
+                sourceModel: KPeople.PersonsModel {
                     id: contactsModel
                 }
                 requiredProperties: "phoneNumber"
@@ -100,7 +100,12 @@ Kirigami.ScrollablePage {
             name: model.display
             icon: model.decoration
 
-            onClicked: pageStack.push(detailPage)
+            onClicked: {
+                pageStack.push(detailPage, {
+                                   "personUri": model.personUri,
+                                   "title": model.display
+                               })
+            }
         }
 
         function toggleOverlayButtons(show) {
@@ -114,10 +119,6 @@ Kirigami.ScrollablePage {
                 settingsRect.visible = false
                 callRect.visible = false
             }
-        }
-
-        CustomSectionScroller {
-            listView: contactsList
         }
     }
 }
