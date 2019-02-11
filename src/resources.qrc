@@ -9,5 +9,6 @@
         <file alias="FormPage.qml">contents/ui/FormPage.qml</file>
         <file alias="lib/Header.qml">contents/ui/lib/Header.qml</file>
         <file alias="Form.qml">contents/ui/Form.qml</file>
+        <file alias="DetailListItem.qml">contents/ui/DetailListItem.qml</file>
     </qresource>
 </RCC>

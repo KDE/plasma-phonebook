@@ -86,7 +86,6 @@ Kirigami.ScrollablePage {
                 sourceModel: KPeople.PersonsModel {
                     id: contactsModel
                 }
-                requiredProperties: "phoneNumber"
             }
             sortRole: "display"
             filterRole: "display"
@@ -99,11 +98,11 @@ Kirigami.ScrollablePage {
             height: Kirigami.Units.gridUnit * 3
             name: model.display
             icon: model.decoration
+            personUri: model.personUri
 
             onClicked: {
                 pageStack.push(detailPage, {
-                                   "personUri": model.personUri,
-                                   "title": model.display
+                                    personUri: model.personUri
                                })
             }
         }

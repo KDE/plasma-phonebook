@@ -31,6 +31,7 @@ Flickable  {
     property string personUri;
     signal editClicked()
 
+
     KPeople.PersonData {
         id: personData
         personUri: root.personUri
@@ -42,14 +43,12 @@ Flickable  {
         content.anchors.topMargin: Kirigami.Units.largeSpacing
         content.anchors.bottomMargin: Kirigami.Units.largeSpacing
         //status: root.contentY == 0 ? 1 : Math.min(1, Math.max(2 / 11, 1 - root.contentY / Kirigami.Units.gridUnit))
-        source: "../../img/" + model.image
-
+        source: personData.person.photo
 
         stripContent: Row {
             anchors.fill: parent
             spacing: (header.width - 3 * Kirigami.Units.iconSizes.medium) / 4
             anchors.leftMargin: spacing
-
 
             Kirigami.Icon {
                 source: "favorite"
@@ -76,7 +75,7 @@ Flickable  {
         }
 
         Kirigami.Heading {
-            text: model.firstname + " " + model.lastname
+            text: personData.person.name
             color: "#fcfcfc"
             level: 1
         }
@@ -88,106 +87,15 @@ Flickable  {
         anchors.topMargin: 2 * Kirigami.Units.largeSpacing
         width: parent.width
 
-        Repeater {
-            model: root.model.communication
 
-            delegate: Kirigami.BasicListItem {
-            //height: Kirigami.Units.gridUnit * 2
-            id: delegate
-            contentItem: RowLayout {
-                spacing: Kirigami.Units.largeSpacing * 2
-                anchors.verticalCenter: parent.verticalCenter
-
-                Kirigami.Icon {
-                    id: icon
-                    width: Kirigami.Units.iconSizes.smallMedium
-                    height: width
-                    source: model.icon
-                    color: "#232627"
-                    Layout.alignment: Qt.AlignVCenter
-                }
-                Column {
-                    Layout.alignment: Qt.AlignVCenter
-                    Label {
-                        text: model.text
-                        color: model.default ? "#2980b9" : "#232627"
-                    }
-                    Label {
-                        text: model.description
-                        font.pointSize: 8
-                        color: "#7f8c8d"
-                    }
-                }
-                Rectangle {
-                    Layout.fillWidth: true
-                    Layout.alignment: Qt.AlignVCenter
-
-                    Kirigami.Icon {
-                        visible: typeof model.actions !== "undefined"
-                        source: "kmouth-phrase-new"
-                        width: Kirigami.Units.iconSizes.smallMedium
-                        height: width
-                        anchors.right: parent.right
-                        anchors.rightMargin: Kirigami.Units.largeSpacing
-                        anchors.verticalCenter: parent.verticalCenter
-                        id: call
-                    }
-                }
-            }
-
-            Component.onCompleted: {
-                if (typeof model.actions !== "undefined") {
-                    delegate.actions = model.actions
-                }
-            }
+        DetailListItem {
+            icon: "call-start"
+            communication: personData.person.contactCustomProperty("phoneNumber")
+            description: "Mobile private"
         }
-    }
-    }
-
-    Kirigami.Heading {
-        level: 4
-        visible: typeof root.model.history !== "undefined" && root.model.history.count
-        text: "History"
-        id: history
-        anchors.top: comm.bottom
-        anchors.left: parent.left
-        anchors.topMargin: 2 * Kirigami.Units.largeSpacing
-        anchors.leftMargin: Kirigami.Units.largeSpacing
-    }
-
-    Column {
-        anchors.top: history.bottom
-        anchors.topMargin: Kirigami.Units.largeSpacing
-        width: root.width
-        Repeater {
-            model: root.model.history
-
-            delegate: Kirigami.SwipeListItem {
-                Row {
-                    spacing: Kirigami.Units.largeSpacing * 2
-                    anchors.verticalCenter: parent.verticalCenter
-
-                    Kirigami.Icon {
-                        width: Kirigami.Units.iconSizes.smallMedium
-                        height: width
-                        source: model.icon
-                        color: "#232627"
-                        anchors.verticalCenter: parent.verticalCenter
-                    }
-                    Column {
-                        anchors.verticalCenter: parent.verticalCenter
-                        Label {
-                            text: model.text
-                            color: "#232627"
-                        }
-                        Label {
-                            text: model.date
-                            font.pointSize: 8
-                            color: "#7f8c8d"
-                        }
-                    }
-                }
-            }
+        DetailListItem {
+            icon: "mail-message-new"
+            communication: personData.person.contactCustomProperty("phoneNumber")
         }
     }
 }

@@ -26,7 +26,7 @@ import QtQuick.Controls 2.0 as Controls
 Kirigami.ApplicationWindow {
     id: root
 
-    title: "Hello"
+    title: "Phone book"
 
     pageStack.initialPage: contactsPage
 

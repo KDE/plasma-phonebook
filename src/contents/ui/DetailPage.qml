@@ -21,17 +21,20 @@ import QtQuick 2.6
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 
+import org.kde.people 1.0 as KPeople
 import org.kde.kirigami 2.4 as Kirigami
 
 Kirigami.ScrollablePage {
-    property var model;
     property string personUri;
     visible: false
     id: page
 
-    Component.onCompleted: console.log("Name: " + personData.name)
+    KPeople.PersonData {
+        id: personData
+        personUri: page.personUri
+    }
 
-    title: personData.name
+    title: personData.person.name
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
     background: Rectangle {
@@ -52,15 +55,17 @@ Kirigami.ScrollablePage {
         left: Kirigami.Action {
             iconName: "mail-message"
             text: "Write mail"
+            onTriggered: Qt.openUrlExternally("mailto:" + personData.email)
         }
         main: Kirigami.Action {
             iconName: "call-start"
             text: "Make call"
-            onTriggered: sheet.open()
+            onTriggered: Qt.openUrlExternally("call://" + personData.person.contactCustomProperty("phoneNumber"))
         }
         right: Kirigami.Action {
             iconName: "kmouth-phrase-new"
             text: "Write SMS"
+            onTriggered: Qt.openUrlExternally("sms://" + personData.person.contactCustomProperty("phoneNumber"))
         }
     }
 
@@ -82,16 +87,8 @@ Kirigami.ScrollablePage {
             text: "Choose photo"
         },
         Kirigami.Action {
-            iconName: "im-kick-user"
-            text: "Block number"
-        },
-        Kirigami.Action {
             iconName: "delete"
             text: "Delete contact"
-        },
-        Kirigami.Action {
-            iconName: "edit-clear-history"
-            text: "Delete history"
         }
     ]
 }

@@ -17,19 +17,17 @@ Rectangle {
     property alias content: contentContainer
     property alias stripContent: strip.data
 
-    property string source;
+    property var source;
     property string title;
     property string subtitle;
     property string overview;
     property real status : 1;
 
     // Background image
-    Image {
+    Kirigami.Icon {
         anchors.fill: parent
         id: bg
         source: root.source
-        fillMode: Image.PreserveAspectCrop
-
     }
 
     FastBlur {
@@ -63,12 +61,11 @@ Rectangle {
             anchors.margins: Kirigami.Units.gridUnit
             anchors.leftMargin: 200
 
-            Image {
+            Kirigami.Icon {
                 id: img
                 source: root.source
                 height: contentContainer.height
                 width: contentContainer.height
-                fillMode: Image.PreserveAspectCrop
                 //visible: false
             }
             /*OpacityMask {

@@ -23,44 +23,58 @@ import QtQuick 2.3
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.0 as Controls
 import QtGraphicalEffects 1.0
+
 import org.kde.kirigami 2.0 as Kirigami
+import org.kde.people 1.0 as KPeople
 
 Kirigami.SwipeListItem {
-	id: listItem
+    id: listItem
 
-	property string name
+    property string name
     property var icon
+    property string personUri
 
     actions: [
         Kirigami.Action {
             iconName: "mail-message"
+            onTriggered: {
+                Qt.openUrlExternally(
+                    "sms://" + personData.person.contactCustomProperty(
+                        "phoneNumber"))
+            }
         },
         Kirigami.Action {
             iconName: "call-start"
             onTriggered: {
-                console.log("Calling " + model.phoneNumber)
-                Qt.openUrlExternally("call://" + model.phoneNumber)
+                Qt.openUrlExternally(
+                    "call://" + personData.person.contactCustomProperty(
+                        "phoneNumber"))
             }
         }
     ]
 
-	RowLayout {
+    RowLayout {
+        KPeople.PersonData {
+            id: personData
+            personUri: listItem.personUri
+        }
+
         height: Kirigami.Units.gridUnit * 5
         spacing: Kirigami.Units.gridUnit * 0.5
 
-		// left side: Avatar
-		Item {
-			id: avatarSpace
-			Layout.preferredHeight: parent.height
-			Layout.preferredWidth: parent.height
+        // left side: Avatar
+        Item {
+            id: avatarSpace
+            Layout.preferredHeight: parent.height
+            Layout.preferredWidth: parent.height
 
-			RoundImage {
-				id: avatar
-				anchors.fill: parent
+            RoundImage {
+                id: avatar
+                anchors.fill: parent
                 source: icon
                 isRound: true
-			}
-		}
+            }
+        }
 
         // contact name
         Kirigami.Heading {
@@ -71,5 +85,5 @@ Kirigami.SwipeListItem {
             level: 3
             Layout.fillWidth: true
         }
-	}
+    }
 }
