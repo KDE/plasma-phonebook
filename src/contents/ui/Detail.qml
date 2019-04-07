@@ -50,7 +50,7 @@ Flickable  {
             spacing: (header.width - 3 * Kirigami.Units.iconSizes.medium) / 4
             anchors.leftMargin: spacing
 
-            Kirigami.Icon {
+            /*Kirigami.Icon {
                 source: "favorite"
                 width: Kirigami.Units.iconSizes.smallMedium
                 height: width
@@ -71,7 +71,7 @@ Flickable  {
                     onClicked: root.editClicked()
                     anchors.fill: parent
                 }
-            }
+            }*/
         }
 
         Kirigami.Heading {
@@ -81,21 +81,20 @@ Flickable  {
         }
     }
 
-    Column {
-        id: comm
+    KPeople.PersonActions {
+        id: personActions
+        personUri: root.personUri
+    }
+
+    ListView {
         anchors.top: header.bottom
-        anchors.topMargin: 2 * Kirigami.Units.largeSpacing
         width: parent.width
-
-
-        DetailListItem {
-            icon: "call-start"
-            communication: personData.person.contactCustomProperty("phoneNumber")
-            description: "Mobile private"
-        }
-        DetailListItem {
-            icon: "mail-message-new"
-            communication: personData.person.contactCustomProperty("phoneNumber")
+        model: personActions
+        delegate: Kirigami.BasicListItem {
+            text: model.display
+            icon: model.iconName
+            onClicked: personActions.triggerAction(model.action)
+            Component.onCompleted: console.log(model.actionType)
         }
     }
 }

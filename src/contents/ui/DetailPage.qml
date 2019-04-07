@@ -34,6 +34,11 @@ Kirigami.ScrollablePage {
         personUri: page.personUri
     }
 
+    KPeople.PersonActions {
+        id: personActions
+        personUri: page.personUri
+    }
+
     title: personData.person.name
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
@@ -55,21 +60,21 @@ Kirigami.ScrollablePage {
         left: Kirigami.Action {
             iconName: "mail-message"
             text: "Write mail"
-            onTriggered: Qt.openUrlExternally("mailto:" + personData.email)
+            onTriggered: personActions.triggerAction(KPeople.SendEmailAction)
         }
         main: Kirigami.Action {
             iconName: "call-start"
             text: "Make call"
-            onTriggered: Qt.openUrlExternally("call://" + personData.person.contactCustomProperty("phoneNumber"))
+            onTriggered: personActions.triggerAction(KPeople.AudioCallAction)
         }
         right: Kirigami.Action {
             iconName: "kmouth-phrase-new"
             text: "Write SMS"
-            onTriggered: Qt.openUrlExternally("sms://" + personData.person.contactCustomProperty("phoneNumber"))
+            onTriggered: personActions.triggerAction(KPeople.TextChatAction)
         }
     }
 
-    contextualActions: [
+    /* contextualActions: [
         Kirigami.Action {
             iconName: "favorite"
             text: "Select as favorite"
@@ -90,5 +95,5 @@ Kirigami.ScrollablePage {
             iconName: "delete"
             text: "Delete contact"
         }
-    ]
+    ]*/
 }

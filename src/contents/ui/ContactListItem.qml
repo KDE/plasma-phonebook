@@ -38,17 +38,13 @@ Kirigami.SwipeListItem {
         Kirigami.Action {
             iconName: "mail-message"
             onTriggered: {
-                Qt.openUrlExternally(
-                    "sms://" + personData.person.contactCustomProperty(
-                        "phoneNumber"))
+                personActions.triggerAction(KPeople.TextChatAction)
             }
         },
         Kirigami.Action {
             iconName: "call-start"
             onTriggered: {
-                Qt.openUrlExternally(
-                    "call://" + personData.person.contactCustomProperty(
-                        "phoneNumber"))
+                personActions.triggerAction(KPeople.AudioCallAction)
             }
         }
     ]
@@ -56,6 +52,11 @@ Kirigami.SwipeListItem {
     RowLayout {
         KPeople.PersonData {
             id: personData
+            personUri: listItem.personUri
+        }
+
+        KPeople.PersonActions {
+            id: personActions
             personUri: listItem.personUri
         }
 
