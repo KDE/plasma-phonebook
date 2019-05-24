@@ -33,11 +33,12 @@ PhoneBook::PhoneBook(QObject *parent) : QObject(parent)
 
 }
 
-void PhoneBook::addContact(QString name, QString tel)
+void PhoneBook::addContact(QString name, QString tel, QString email)
 {
     // addresses
     Addressee adr;
     adr.setName(name);
+    adr.setEmails(QStringList(email));
     PhoneNumber::List phoneNums;
     PhoneNumber phoneNum;
     phoneNum.setNumber(tel);

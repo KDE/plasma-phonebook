@@ -32,7 +32,7 @@ public:
 signals:
 
 public slots:
-    void addContact(QString name, QString tel);
+    void addContact(QString name, QString tel, QString email);
 };
 
 #endif // PHONEBOOK_H

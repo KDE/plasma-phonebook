@@ -68,49 +68,38 @@ ColumnLayout  {
 
         TextField {
             Kirigami.FormData.label: "Firstname:"
-            text: model.firstname
+            id: firstname
         }
         TextField {
             Kirigami.FormData.label: "Lastname:"
-            text: model.lastname
+            id: lastname
         }
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
             Kirigami.FormData.label: "Phone"
         }
-        Repeater {
-            model: root.model.communication
-            delegate: TextField {
-                visible: model.type === "phone"
-                Kirigami.FormData.label: model.description + ":"
-                text: model.text
-            }
+        TextField {
+            id: phoneNumber
         }
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
             Kirigami.FormData.label: "Email"
         }
-        Repeater {
-            model: root.model.communication
-            delegate: TextField {
-                visible: model.type === "email"
-                Kirigami.FormData.label: model.description + ":"
-                text: model.text
-            }
+        TextField {
+            id: email
         }
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
         }
-
-        Switch {
-            Kirigami.FormData.label: "Additional fields"
-        }
-
     }
     Button {
         text: "Save"
         Layout.alignment: Qt.AlignRight
         anchors.rightMargin: Kirigami.Units.largeSpacing
+        onClicked: {
+            phonebook.addContact(firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+            formSheet.close()
+        }
     }
 
 }

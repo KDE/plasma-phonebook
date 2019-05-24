@@ -53,7 +53,6 @@ Kirigami.ScrollablePage {
 
     FormPage {
         id: form
-        model: page.model
     }
 
     actions {

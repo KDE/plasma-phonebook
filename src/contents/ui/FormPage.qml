@@ -23,9 +23,8 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 
 Kirigami.OverlaySheet {
-    property var model;
     Kirigami.Theme.colorSet: Kirigami.Theme.View
-    id: page
+    id: formSheet
     Layout.fillWidth: true
 
     background: Rectangle {
@@ -33,7 +32,6 @@ Kirigami.OverlaySheet {
     }
 
     Form {
-        model: page.model
     }
 
     /*actions {
