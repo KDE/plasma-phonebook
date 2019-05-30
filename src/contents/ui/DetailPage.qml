@@ -51,10 +51,6 @@ Kirigami.ScrollablePage {
         onEditClicked: form.open();
     }
 
-    FormPage {
-        id: form
-    }
-
     actions {
         left: Kirigami.Action {
             iconName: "mail-message"

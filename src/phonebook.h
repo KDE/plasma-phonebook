@@ -33,6 +33,7 @@ signals:
 
 public slots:
     void addContact(QString name, QString tel, QString email);
+    void deleteContact(QString personUri);
 };
 
 #endif // PHONEBOOK_H

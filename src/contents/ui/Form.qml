@@ -74,19 +74,13 @@ ColumnLayout  {
             Kirigami.FormData.label: "Lastname:"
             id: lastname
         }
-        Kirigami.Separator {
-            Kirigami.FormData.isSection: true
+        TextField {
+            id: phoneNumber
             Kirigami.FormData.label: "Phone"
         }
         TextField {
-            id: phoneNumber
-        }
-        Kirigami.Separator {
-            Kirigami.FormData.isSection: true
-            Kirigami.FormData.label: "Email"
-        }
-        TextField {
             id: email
+            Kirigami.FormData.label: "Email"
         }
         Kirigami.Separator {
             Kirigami.FormData.isSection: true

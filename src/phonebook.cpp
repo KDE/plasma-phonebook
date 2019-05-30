@@ -64,3 +64,8 @@ void PhoneBook::addContact(QString name, QString tel, QString email)
     file.write(vcard.data(), vcard.length());
     file.close();
 }
+
+void PhoneBook::deleteContact(QString personUri)
+{
+	QFile::remove(personUri.replace("vcard:/", ""));
+}
