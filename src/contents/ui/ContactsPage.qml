@@ -46,6 +46,7 @@ Kirigami.ScrollablePage {
         main: Kirigami.Action {
             icon.name: "contact-new-symbolic"
             onTriggered: {
+                form.state = "create"
                 form.open()
             }
         }
@@ -100,7 +101,37 @@ Kirigami.ScrollablePage {
             icon: model.decoration
             personUri: model.personUri
 
+            actions: [
+                Kirigami.Action {
+                    icon.name: "mail-message"
+                    onTriggered: {
+                        personActions.triggerAction(KPeople.TextChatAction)
+                    }
+                },
+                Kirigami.Action {
+                    icon.name: "call-start"
+                    onTriggered: {
+                        personActions.triggerAction(KPeople.AudioCallAction)
+                    }
+                },
+                Kirigami.Action {
+                    icon.name: "list-remove"
+                    onTriggered: {
+                        phonebook.deleteContact(personUri)
+                    }
+                },
+                Kirigami.Action {
+                    icon.name: "document-edit"
+                    onTriggered: {
+                        form.state = "update"
+                        form.personUri = personUri
+                        form.open()
+                    }
+                }
+            ]
+
             onClicked: {
+                console.log(phonebook.getContact(personUri))
                 pageStack.push(detailPage, {
                                     personUri: model.personUri
                                })

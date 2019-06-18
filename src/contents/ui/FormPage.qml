@@ -27,11 +27,15 @@ Kirigami.OverlaySheet {
     id: formSheet
     Layout.fillWidth: true
 
+    property alias state: form.state
+    property alias personUri: form.personUri
+
     background: Rectangle {
         color: Kirigami.Theme.backgroundColor
     }
 
     Form {
+        id: form
     }
 
     /*actions {

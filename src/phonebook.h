@@ -34,6 +34,7 @@ signals:
 public slots:
     void addContact(QString name, QString tel, QString email);
     void deleteContact(QString personUri);
+    void updateContact(QString personUri, QString name, QString tel, QString email);
 };
 
 #endif // PHONEBOOK_H

@@ -34,28 +34,6 @@ Kirigami.SwipeListItem {
     property var icon
     property string personUri
 
-    actions: [
-        Kirigami.Action {
-            icon.name: "mail-message"
-            onTriggered: {
-                personActions.triggerAction(KPeople.TextChatAction)
-            }
-        },
-        Kirigami.Action {
-            icon.name: "call-start"
-            onTriggered: {
-                personActions.triggerAction(KPeople.AudioCallAction)
-            }
-        },
-        Kirigami.Action {
-            icon.name: "list-remove"
-            onTriggered: {
-                phonebook.deleteContact(personUri)
-            }
-        }
-
-    ]
-
     RowLayout {
         KPeople.PersonData {
             id: personData

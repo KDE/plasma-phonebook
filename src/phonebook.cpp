@@ -38,13 +38,19 @@ void PhoneBook::addContact(QString name, QString tel, QString email)
     // addresses
     Addressee adr;
     adr.setName(name);
-    adr.setEmails(QStringList(email));
-    PhoneNumber::List phoneNums;
-    PhoneNumber phoneNum;
-    phoneNum.setNumber(tel);
-    phoneNum.setType(PhoneNumber::Cell);
-    phoneNums.append(phoneNum);
-    adr.setPhoneNumbers(phoneNums);
+
+    if (!email.isEmpty()) {
+	adr.setEmails(QStringList(email));
+    }
+
+    if (!tel.isEmpty()) {
+	    PhoneNumber::List phoneNums;
+	    PhoneNumber phoneNum;
+	    phoneNum.setNumber(tel);
+	    phoneNum.setType(PhoneNumber::Cell);
+	    phoneNums.append(phoneNum);
+	    adr.setPhoneNumbers(phoneNums);
+    }
 
     // create vcard
     VCardConverter converter;
@@ -67,5 +73,54 @@ void PhoneBook::addContact(QString name, QString tel, QString email)
 
 void PhoneBook::deleteContact(QString personUri)
 {
-	QFile::remove(personUri.replace("vcard:/", ""));
+	if (!(QUrl(personUri).scheme() == "vcard")) {
+		qWarning() << "uri of contact to remove is not a vcard, cannot remove.";
+		return;
+	}
+
+	QFile::remove(personUri.remove("vcard:/"));
+}
+
+void PhoneBook::updateContact(QString personUri, QString name, QString tel, QString email)
+{
+	if (!(QUrl(personUri).scheme() == "vcard")) {
+		qWarning() << "uri of contact to update is not a vcard, cannot update.";
+		return;
+	}
+
+	QFile file(personUri.remove("vcard:/"));
+	if (!(file.exists())) {
+		qWarning() << "Can't read vcard, file doesn't exist";
+		return;
+	}
+	if (!file.open(QIODevice::ReadWrite | QIODevice::Truncate)) {
+		qWarning() << "Couldn't update vCard: Couldn't open file for reading / writing.";
+		return;
+	}
+
+	VCardConverter converter;
+	Addressee adr = converter.parseVCard(file.readAll());
+
+	if (!name.isEmpty()) {
+		adr.setName(name);
+	}
+
+	if (!tel.isEmpty()) {
+		PhoneNumber::List phoneNums;
+		PhoneNumber phoneNum;
+		phoneNum.setNumber(tel);
+		phoneNum.setType(PhoneNumber::Cell);
+		phoneNums.append(phoneNum);
+		adr.setPhoneNumbers(phoneNums);
+	}
+
+	if (!email.isEmpty()) {
+		adr.setEmails(QStringList(email));
+	}
+
+	QByteArray vcard = converter.createVCard(adr);
+	qDebug() << vcard;
+
+	file.write(vcard);
+	file.close();
 }

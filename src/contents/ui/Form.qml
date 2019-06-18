@@ -24,8 +24,18 @@ import QtGraphicalEffects 1.0
 
 ColumnLayout  {
     id: root
-    property var model;
     spacing: 2 * Kirigami.Units.largeSpacing
+
+    property string personUri
+
+    states: [
+        State {
+            name: "create"
+        },
+        State {
+            name: "update"
+        }
+    ]
 
     /*HIG.Header {
         id: header
@@ -86,12 +96,24 @@ ColumnLayout  {
             Kirigami.FormData.isSection: true
         }
     }
+
     Button {
         text: "Save"
         Layout.alignment: Qt.AlignRight
         anchors.rightMargin: Kirigami.Units.largeSpacing
         onClicked: {
-            phonebook.addContact(firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+            if (root.state === "create") {
+                phonebook.addContact(firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+            }
+            else if (root.state === "update") {
+                phonebook.updateContact(root.personUri, firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+            }
+
+            firstname.text = ""
+            lastname.text = ""
+            phoneNumber.text = ""
+            email.text = ""
+
             formSheet.close()
         }
     }

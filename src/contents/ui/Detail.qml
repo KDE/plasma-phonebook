@@ -87,6 +87,7 @@ Flickable  {
     }
 
     ListView {
+        id: actionsListView
         anchors.top: header.bottom
         width: parent.width
         model: personActions
