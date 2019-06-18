@@ -1,5 +1,3 @@
-
-
 /*
  * Copyright 2015  Martin Klapetek <mklapetek@kde.org>
  * Copyright 2019  Linus Jahn <lnj@kaidan.im>
@@ -21,6 +19,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 import QtQuick 2.7
 import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
@@ -131,7 +130,6 @@ Kirigami.ScrollablePage {
             ]
 
             onClicked: {
-                console.log(phonebook.getContact(personUri))
                 pageStack.push(detailPage, {
                                     personUri: model.personUri
                                })
