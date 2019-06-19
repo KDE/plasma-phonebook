@@ -114,7 +114,7 @@ Kirigami.ScrollablePage {
                     }
                 },
                 Kirigami.Action {
-                    icon.name: "list-remove"
+                    icon.name: "list-remove-user"
                     onTriggered: {
                         phonebook.deleteContact(personUri)
                     }
