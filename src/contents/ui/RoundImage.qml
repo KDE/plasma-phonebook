@@ -27,8 +27,8 @@ Kirigami.Icon {
 	id: img
 	property bool isRound: true
 
-    layer.enabled: isRound
-    layer.effect: OpacityMask {
+        layer.enabled: isRound
+        layer.effect: OpacityMask {
         maskSource: Item {
             width: img.width
             height: img.height

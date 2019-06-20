@@ -37,35 +37,6 @@ ColumnLayout  {
         }
     ]
 
-    /*HIG.Header {
-        id: header
-        content.anchors.leftMargin: Kirigami.Units.largeSpacing
-        content.anchors.topMargin: Kirigami.Units.largeSpacing
-        content.anchors.bottomMargin: Kirigami.Units.largeSpacing
-        source: "../../img/" + model.image
-
-
-        stripContent: Row {
-            anchors.fill: parent
-            spacing: (header.width - 3 * Kirigami.Units.iconSizes.medium) / 4
-            anchors.leftMargin: spacing
-
-
-            Kirigami.Icon {
-                source: "view-preview"
-                width: Kirigami.Units.iconSizes.smallMedium
-                height: width
-                anchors.verticalCenter: parent.verticalCenter
-            }
-        }
-
-        Label {
-            text: model.firstname + " " + model.lastname
-            color: "#fcfcfc"
-            font.pointSize: 12
-        }
-    }*/
-
     Label {
         id: header
         text: "Edit details"

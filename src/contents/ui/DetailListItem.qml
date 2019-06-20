@@ -8,7 +8,7 @@ Kirigami.BasicListItem {
     property string icon
     property string communication
     property string description
-    //height: Kirigami.Units.gridUnit * 2
+
     id: delegate
     contentItem: RowLayout {
         spacing: Kirigami.Units.largeSpacing * 2

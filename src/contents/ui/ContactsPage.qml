@@ -135,18 +135,5 @@ Kirigami.ScrollablePage {
                                })
             }
         }
-
-        function toggleOverlayButtons(show) {
-            if (show) {
-                settingsRect.parent = contactsList.currentItem
-                settingsRect.visible = true
-
-                callRect.parent = contactsList.currentItem
-                callRect.visible = true
-            } else {
-                settingsRect.visible = false
-                callRect.visible = false
-            }
-        }
     }
 }
