@@ -54,17 +54,17 @@ Kirigami.ScrollablePage {
     actions {
         left: Kirigami.Action {
             iconName: "mail-message"
-            text: "Write mail"
+            text: i18n("Write mail")
             onTriggered: personActions.triggerAction(KPeople.SendEmailAction)
         }
         main: Kirigami.Action {
             iconName: "call-start"
-            text: "Make call"
+            text: i18n("Make call")
             onTriggered: personActions.triggerAction(KPeople.AudioCallAction)
         }
         right: Kirigami.Action {
             iconName: "kmouth-phrase-new"
-            text: "Write SMS"
+            text: i18n("Write SMS")
             onTriggered: personActions.triggerAction(KPeople.TextChatAction)
         }
     }

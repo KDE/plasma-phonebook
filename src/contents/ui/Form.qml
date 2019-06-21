@@ -39,7 +39,7 @@ ColumnLayout  {
 
     Label {
         id: header
-        text: "Edit details"
+        text: i18n("Edit details")
         font.pointSize: 16
     }
 
@@ -48,20 +48,20 @@ ColumnLayout  {
         Layout.fillWidth: true
 
         TextField {
-            Kirigami.FormData.label: "Firstname:"
+            Kirigami.FormData.label: i18n("Firstname:")
             id: firstname
         }
         TextField {
-            Kirigami.FormData.label: "Lastname:"
+            Kirigami.FormData.label: i18n("Lastname:")
             id: lastname
         }
         TextField {
             id: phoneNumber
-            Kirigami.FormData.label: "Phone"
+            Kirigami.FormData.label: i18n("Phone")
         }
         TextField {
             id: email
-            Kirigami.FormData.label: "Email"
+            Kirigami.FormData.label: i18n("Email")
         }
         Kirigami.Separator {
             Kirigami.FormData.isSection: true
