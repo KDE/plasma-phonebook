@@ -1,7 +1,10 @@
-# Kirigami application template
+# Plasma Mobile phonebook
 
-This repository can be used as a template to develop Plasma Mobile applications.
-It already includes templates for the qml ui, a c++ part, app metadata and flatpak packaging.
+Contacts application which allows adding, modifying and removing contacts.
 
-# Usage
-See [docs.plasma-mobile.org](https://docs.plasma-mobile.org/AppDevelopment.html).
+# Backend
+
+The application uses kpeople and kpeoplevcard to read contacts from the local storage.
+KContacts is used for writing and modifying.
+
+
