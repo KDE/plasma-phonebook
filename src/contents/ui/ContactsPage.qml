@@ -60,6 +60,7 @@ Kirigami.ScrollablePage {
     header: Rectangle {
         clip: true
         id: header
+        color: Kirigami.Theme.backgroundColor
         height: searchField.implicitHeight + 2 * Kirigami.Units.largeSpacing
         width: root.width
 
