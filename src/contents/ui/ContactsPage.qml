@@ -44,6 +44,7 @@ Kirigami.ScrollablePage {
     actions {
         main: Kirigami.Action {
             icon.name: "contact-new-symbolic"
+            text: i18n("Create new")
             onTriggered: {
                 form.state = "create"
                 form.open()
