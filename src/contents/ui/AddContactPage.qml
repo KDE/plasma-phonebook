@@ -1,5 +1,5 @@
 /*
- *   Copyright 2018 Fabian Riethmayer
+ *   Copyright 2019 Nicolas Fella <nicolas.fella@gmx.de>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU Library General Public License as
@@ -16,15 +16,15 @@
  *   Free Software Foundation, Inc.,
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
-import QtQuick 2.2
+
+import QtQuick 2.6
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
-import QtGraphicalEffects 1.0
 
-ColumnLayout  {
-    id: root
-    spacing: 2 * Kirigami.Units.largeSpacing
+Kirigami.Page {
+
+    title: state === "create" ? i18n("Add contact") : i18n("Edit contact")
 
     property string personUri
 
@@ -37,56 +37,41 @@ ColumnLayout  {
         }
     ]
 
-    Label {
-        id: header
-        text: i18n("Edit details")
-        font.pointSize: 16
+    actions {
+        main: Kirigami.Action {
+            icon.name: "dialog-ok-apply"
+            text: i18n("Save")
+            onTriggered: {
+                if (root.state === "create") {
+                    phonebook.addContact(firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+                }
+                else if (root.state === "update") {
+                    phonebook.updateContact(root.personUri, firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+                }
+                pageStack.pop()
+            }
+        }
     }
 
     Kirigami.FormLayout {
         id: form
-        Layout.fillWidth: true
+        anchors.fill: parent
 
         TextField {
-            Kirigami.FormData.label: i18n("Firstname:")
+            Kirigami.FormData.label: i18n("First name:")
             id: firstname
         }
         TextField {
-            Kirigami.FormData.label: i18n("Lastname:")
+            Kirigami.FormData.label: i18n("Last name:")
             id: lastname
         }
         TextField {
             id: phoneNumber
-            Kirigami.FormData.label: i18n("Phone")
+            Kirigami.FormData.label: i18n("Phone:")
         }
         TextField {
             id: email
-            Kirigami.FormData.label: i18n("Email")
-        }
-        Kirigami.Separator {
-            Kirigami.FormData.isSection: true
+            Kirigami.FormData.label: i18n("Email:")
         }
     }
-
-    Button {
-        text: "Save"
-        Layout.alignment: Qt.AlignRight
-        anchors.rightMargin: Kirigami.Units.largeSpacing
-        onClicked: {
-            if (root.state === "create") {
-                phonebook.addContact(firstname.text + " " + lastname.text, phoneNumber.text, email.text)
-            }
-            else if (root.state === "update") {
-                phonebook.updateContact(root.personUri, firstname.text + " " + lastname.text, phoneNumber.text, email.text)
-            }
-
-            firstname.text = ""
-            lastname.text = ""
-            phoneNumber.text = ""
-            email.text = ""
-
-            formSheet.close()
-        }
-    }
-
 }

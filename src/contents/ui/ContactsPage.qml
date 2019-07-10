@@ -37,17 +37,12 @@ Kirigami.ScrollablePage {
         color: Kirigami.Theme.backgroundColor
     }
 
-    FormPage {
-        id: form
-    }
-
     actions {
         main: Kirigami.Action {
             icon.name: "contact-new-symbolic"
             text: i18n("Create new")
             onTriggered: {
-                form.state = "create"
-                form.open()
+                pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
             }
         }
     }
