@@ -21,12 +21,15 @@ import QtQuick 2.6
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
+import org.kde.people 1.0 as KPeople
 
 Kirigami.Page {
 
+    id: root
+
     title: state === "create" ? i18n("Add contact") : i18n("Edit contact")
 
-    property string personUri
+    property url personUri
 
     states: [
         State {
@@ -36,6 +39,11 @@ Kirigami.Page {
             name: "update"
         }
     ]
+
+    KPeople.PersonData {
+        id: personData
+        personUri: root.personUri
+    }
 
     actions {
         main: Kirigami.Action {
@@ -59,19 +67,25 @@ Kirigami.Page {
 
         TextField {
             Kirigami.FormData.label: i18n("First name:")
+            // FIXME PersonData doesn't have separate first/last name
+            text: personUri ? personData.person.name.split(" ")[0] : ""
             id: firstname
         }
         TextField {
             Kirigami.FormData.label: i18n("Last name:")
+            // FIXME KPeople doesn't have separate first/last name
+            text: personUri ? personData.person.name.split(" ")[1] : ""
             id: lastname
         }
         TextField {
             id: phoneNumber
             Kirigami.FormData.label: i18n("Phone:")
+            // FIXME PersonData doesn't have phonenumber property
         }
         TextField {
             id: email
             Kirigami.FormData.label: i18n("Email:")
+            // FIXME PersonData doesn't have email property
         }
     }
 }

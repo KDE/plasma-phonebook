@@ -67,28 +67,20 @@ Kirigami.ScrollablePage {
             text: i18n("Write SMS")
             onTriggered: personActions.triggerAction(KPeople.TextChatAction)
         }
+        contextualActions: [
+            Kirigami.Action {
+                iconName: "document-edit"
+                text: "Edit"
+                onTriggered: {
+                    console.log(page.personUri)
+                    pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", personUri: page.personUri})
+                }
+            },
+            Kirigami.Action {
+                iconName: "delete"
+                text: "Delete contact"
+                onTriggered: phonebook.deleteContact(page.personUri)
+            }
+        ]
     }
-
-    /* contextualActions: [
-        Kirigami.Action {
-            iconName: "favorite"
-            text: "Select as favorite"
-        },
-        Kirigami.Action {
-            iconName: "document-share"
-            text: "Share"
-        },
-        Kirigami.Action {
-            iconName: "document-edit"
-            text: "Edit"
-        },
-        Kirigami.Action {
-            iconName: "edit-image-face-add"
-            text: "Choose photo"
-        },
-        Kirigami.Action {
-            iconName: "delete"
-            text: "Delete contact"
-        }
-    ]*/
 }

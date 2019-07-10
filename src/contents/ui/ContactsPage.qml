@@ -109,20 +109,6 @@ Kirigami.ScrollablePage {
                     onTriggered: {
                         personActions.triggerAction(KPeople.AudioCallAction)
                     }
-                },
-                Kirigami.Action {
-                    icon.name: "list-remove-user"
-                    onTriggered: {
-                        phonebook.deleteContact(personUri)
-                    }
-                },
-                Kirigami.Action {
-                    icon.name: "document-edit"
-                    onTriggered: {
-                        form.state = "update"
-                        form.personUri = personUri
-                        form.open()
-                    }
                 }
             ]
 
