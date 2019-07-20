@@ -75,7 +75,13 @@ Kirigami.Page {
     Component {
         id: textFieldComponent
 
-        Controls.TextField {
+        Row {
+            Controls.TextField {
+            }
+            Controls.Button {
+                icon.name: "list-remove"
+                onClicked: parent.destroy()
+            }
         }
     }
 
@@ -104,7 +110,7 @@ Kirigami.Page {
             }
         }
         Controls.Button {
-            text: "Add more"
+            icon.name: "list-add"
             onClicked: textFieldComponent.createObject(phoneNumber)
         }
 
@@ -118,7 +124,7 @@ Kirigami.Page {
             }
         }
         Controls.Button {
-            text: "Add more"
+            icon.name: "list-add"
             onClicked: textFieldComponent.createObject(email, { placeholderText: i18n("user@example.org") })
         }
     }
