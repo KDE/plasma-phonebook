@@ -33,23 +33,26 @@ PhoneBook::PhoneBook(QObject *parent) : QObject(parent)
 
 }
 
-void PhoneBook::addContact(QString name, QString tel, QString email)
+void PhoneBook::addContact(const QString name, const QStringList tels, const QStringList emails)
 {
     // addresses
     Addressee adr;
     adr.setName(name);
 
-    if (!email.isEmpty()) {
-	adr.setEmails(QStringList(email));
+    if (!emails.isEmpty()) {
+	adr.setEmails(emails);
     }
 
-    if (!tel.isEmpty()) {
+    if (!tels.isEmpty()) {
 	    PhoneNumber::List phoneNums;
-	    PhoneNumber phoneNum;
-	    phoneNum.setNumber(tel);
-	    phoneNum.setType(PhoneNumber::Cell);
-	    phoneNums.append(phoneNum);
-	    adr.setPhoneNumbers(phoneNums);
+
+	    for (const QString &tel : tels) {
+		PhoneNumber phoneNum;
+		phoneNum.setNumber(tel);
+		phoneNum.setType(PhoneNumber::Cell);
+		phoneNums.append(phoneNum);
+	    }
+	   adr.setPhoneNumbers(phoneNums);
     }
 
     // create vcard
@@ -81,7 +84,7 @@ void PhoneBook::deleteContact(QString personUri)
 	QFile::remove(personUri.remove("vcard:/"));
 }
 
-void PhoneBook::updateContact(QString personUri, QString name, QString tel, QString email)
+void PhoneBook::updateContact(QString personUri, const QString name, const QStringList tels, const QStringList emails)
 {
 	if (!(QUrl(personUri).scheme() == "vcard")) {
 		qWarning() << "uri of contact to update is not a vcard, cannot update.";
@@ -105,17 +108,20 @@ void PhoneBook::updateContact(QString personUri, QString name, QString tel, QStr
 		adr.setName(name);
 	}
 
-	if (!tel.isEmpty()) {
+	if (!tels.isEmpty()) {
 		PhoneNumber::List phoneNums;
-		PhoneNumber phoneNum;
-		phoneNum.setNumber(tel);
-		phoneNum.setType(PhoneNumber::Cell);
-		phoneNums.append(phoneNum);
-		adr.setPhoneNumbers(phoneNums);
+
+		for (const QString &tel : tels) {
+		    PhoneNumber phoneNum;
+		    phoneNum.setNumber(tel);
+		    phoneNum.setType(PhoneNumber::Cell);
+		    phoneNums.append(phoneNum);
+		}
+	       adr.setPhoneNumbers(phoneNums);
 	}
 
-	if (!email.isEmpty()) {
-		adr.setEmails(QStringList(email));
+	if (!emails.isEmpty()) {
+		adr.setEmails(emails);
 	}
 
 	QByteArray vcard = converter.createVCard(adr);

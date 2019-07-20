@@ -32,9 +32,9 @@ public:
 signals:
 
 public slots:
-    void addContact(QString name, QString tel, QString email);
+    void addContact(QString const name, const QStringList tels, const QStringList emails);
     void deleteContact(QString personUri);
-    void updateContact(QString personUri, QString name, QString tel, QString email);
+    void updateContact(QString personUri, const QString name, const QStringList tels, const QStringList emails);
 };
 
 #endif // PHONEBOOK_H

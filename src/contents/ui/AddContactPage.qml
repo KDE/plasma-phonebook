@@ -18,7 +18,7 @@
  */
 
 import QtQuick 2.6
-import QtQuick.Controls 2.2
+import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
@@ -49,15 +49,33 @@ Kirigami.Page {
         main: Kirigami.Action {
             icon.name: "dialog-ok-apply"
             text: i18n("Save")
+            enabled: firstname.text !== ""
+
             onTriggered: {
+                var emailList = []
+                for (var index in email.children)
+                    emailList.push(email.children[index].text)
+
+                var phoneNumberList = []
+                for (var index in phoneNumber.children)
+                    phoneNumberList.push(phoneNumber.children[index].text)
+
                 if (root.state === "create") {
-                    phonebook.addContact(firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+                    phonebook.addContact(firstname.text + " " + lastname.text, phoneNumberList, emailList)
                 }
                 else if (root.state === "update") {
-                    phonebook.updateContact(root.personUri, firstname.text + " " + lastname.text, phoneNumber.text, email.text)
+                    phonebook.updateContact(root.personUri, firstname.text + " " + lastname.text, phoneNumberList, emailList)
                 }
                 pageStack.pop()
             }
+        }
+    }
+
+    // TextField for dynamic creation
+    Component {
+        id: textFieldComponent
+
+        Controls.TextField {
         }
     }
 
@@ -65,27 +83,43 @@ Kirigami.Page {
         id: form
         anchors.fill: parent
 
-        TextField {
+        Controls.TextField {
             Kirigami.FormData.label: i18n("First name:")
             // FIXME PersonData doesn't have separate first/last name
             text: personUri ? personData.person.name.split(" ")[0] : ""
             id: firstname
         }
-        TextField {
+        Controls.TextField {
             Kirigami.FormData.label: i18n("Last name:")
             // FIXME KPeople doesn't have separate first/last name
             text: personUri ? personData.person.name.split(" ")[1] : ""
             id: lastname
         }
-        TextField {
+
+        ColumnLayout {
             id: phoneNumber
             Kirigami.FormData.label: i18n("Phone:")
-            // FIXME PersonData doesn't have phonenumber property
+            Controls.TextField {
+                // FIXME PersonData doesn't have phonenumber property
+            }
         }
-        TextField {
+        Controls.Button {
+            text: "Add more"
+            onClicked: textFieldComponent.createObject(phoneNumber)
+        }
+
+        ColumnLayout {
             id: email
             Kirigami.FormData.label: i18n("Email:")
-            // FIXME PersonData doesn't have email property
+
+            Controls.TextField {
+                placeholderText: i18n("user@example.org")
+                // FIXME PersonData doesn't have email property
+            }
+        }
+        Controls.Button {
+            text: "Add more"
+            onClicked: textFieldComponent.createObject(email, { placeholderText: i18n("user@example.org") })
         }
     }
 }
