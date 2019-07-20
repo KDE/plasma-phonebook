@@ -40,19 +40,19 @@ void PhoneBook::addContact(const QString name, const QStringList tels, const QSt
     adr.setName(name);
 
     if (!emails.isEmpty()) {
-	adr.setEmails(emails);
+    adr.setEmails(emails);
     }
 
     if (!tels.isEmpty()) {
-	    PhoneNumber::List phoneNums;
+        PhoneNumber::List phoneNums;
 
-	    for (const QString &tel : tels) {
-		PhoneNumber phoneNum;
-		phoneNum.setNumber(tel);
-		phoneNum.setType(PhoneNumber::Cell);
-		phoneNums.append(phoneNum);
-	    }
-	   adr.setPhoneNumbers(phoneNums);
+        for (const QString &tel : tels) {
+        PhoneNumber phoneNum;
+        phoneNum.setNumber(tel);
+        phoneNum.setType(PhoneNumber::Cell);
+        phoneNums.append(phoneNum);
+        }
+    adr.setPhoneNumbers(phoneNums);
     }
 
     // create vcard
@@ -62,7 +62,7 @@ void PhoneBook::addContact(const QString name, const QStringList tels, const QSt
 
     // save vcard
     QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
-                   + ("/kpeoplevcard");
+                + ("/kpeoplevcard");
     QCryptographicHash hash(QCryptographicHash::Sha1);
     hash.addData(name.toUtf8());
     QFile file(path + "/" + hash.result().toHex() + ".vcf");
@@ -76,57 +76,57 @@ void PhoneBook::addContact(const QString name, const QStringList tels, const QSt
 
 void PhoneBook::deleteContact(QString personUri)
 {
-	if (!(QUrl(personUri).scheme() == "vcard")) {
-		qWarning() << "uri of contact to remove is not a vcard, cannot remove.";
-		return;
-	}
+    if (!(QUrl(personUri).scheme() == "vcard")) {
+        qWarning() << "uri of contact to remove is not a vcard, cannot remove.";
+        return;
+    }
 
-	QFile::remove(personUri.remove("vcard:/"));
+    QFile::remove(personUri.remove("vcard:/"));
 }
 
 void PhoneBook::updateContact(QString personUri, const QString name, const QStringList tels, const QStringList emails)
 {
-	if (!(QUrl(personUri).scheme() == "vcard")) {
-		qWarning() << "uri of contact to update is not a vcard, cannot update.";
-		return;
-	}
+    if (!(QUrl(personUri).scheme() == "vcard")) {
+        qWarning() << "uri of contact to update is not a vcard, cannot update.";
+        return;
+    }
 
-	QFile file(personUri.remove("vcard:/"));
-	if (!(file.exists())) {
-		qWarning() << "Can't read vcard, file doesn't exist";
-		return;
-	}
-	if (!file.open(QIODevice::ReadWrite | QIODevice::Truncate)) {
-		qWarning() << "Couldn't update vCard: Couldn't open file for reading / writing.";
-		return;
-	}
+    QFile file(personUri.remove("vcard:/"));
+    if (!(file.exists())) {
+        qWarning() << "Can't read vcard, file doesn't exist";
+        return;
+    }
+    if (!file.open(QIODevice::ReadWrite | QIODevice::Truncate)) {
+        qWarning() << "Couldn't update vCard: Couldn't open file for reading / writing.";
+        return;
+    }
 
-	VCardConverter converter;
-	Addressee adr = converter.parseVCard(file.readAll());
+    VCardConverter converter;
+    Addressee adr = converter.parseVCard(file.readAll());
 
-	if (!name.isEmpty()) {
-		adr.setName(name);
-	}
+    if (!name.isEmpty()) {
+        adr.setName(name);
+    }
 
-	if (!tels.isEmpty()) {
-		PhoneNumber::List phoneNums;
+    if (!tels.isEmpty()) {
+        PhoneNumber::List phoneNums;
 
-		for (const QString &tel : tels) {
-		    PhoneNumber phoneNum;
-		    phoneNum.setNumber(tel);
-		    phoneNum.setType(PhoneNumber::Cell);
-		    phoneNums.append(phoneNum);
-		}
-	       adr.setPhoneNumbers(phoneNums);
-	}
+        for (const QString &tel : tels) {
+            PhoneNumber phoneNum;
+            phoneNum.setNumber(tel);
+            phoneNum.setType(PhoneNumber::Cell);
+            phoneNums.append(phoneNum);
+        }
+        adr.setPhoneNumbers(phoneNums);
+    }
 
-	if (!emails.isEmpty()) {
-		adr.setEmails(emails);
-	}
+    if (!emails.isEmpty()) {
+        adr.setEmails(emails);
+    }
 
-	QByteArray vcard = converter.createVCard(adr);
-	qDebug() << vcard;
+    QByteArray vcard = converter.createVCard(adr);
+    qDebug() << vcard;
 
-	file.write(vcard);
-	file.close();
+    file.write(vcard);
+    file.close();
 }
