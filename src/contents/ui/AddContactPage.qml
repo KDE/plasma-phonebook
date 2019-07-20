@@ -23,8 +23,7 @@ import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
 
-Kirigami.Page {
-
+Kirigami.ScrollablePage {
     id: root
 
     title: state === "create" ? i18n("Add contact") : i18n("Edit contact")
@@ -87,7 +86,6 @@ Kirigami.Page {
 
     Kirigami.FormLayout {
         id: form
-        anchors.fill: parent
 
         Controls.TextField {
             Kirigami.FormData.label: i18n("First name:")
