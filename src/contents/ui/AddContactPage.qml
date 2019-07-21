@@ -75,7 +75,10 @@ Kirigami.ScrollablePage {
         id: textFieldComponent
 
         Row {
+            property alias text: textField.text
+
             Controls.TextField {
+                id: textField
             }
             Controls.Button {
                 icon.name: "list-remove"
@@ -86,6 +89,15 @@ Kirigami.ScrollablePage {
 
     Kirigami.FormLayout {
         id: form
+
+        Component.onCompleted: {
+            // Dynamically add all known email addresses and phone numbers
+            for (var index in personData.person.allEmails)
+                textFieldComponent.createObject(email, { text: personData.person.allEmails[index] })
+
+            for (var index in personData.person.contactCustomProperty("all-phoneNumber"))
+                textFieldComponent.createObject(phoneNumber, { text: personData.person.contactCustomProperty("all-phoneNumber")[index] })
+        }
 
         Controls.TextField {
             Kirigami.FormData.label: i18n("First name:")
@@ -104,7 +116,7 @@ Kirigami.ScrollablePage {
             id: phoneNumber
             Kirigami.FormData.label: i18n("Phone:")
             Controls.TextField {
-                // FIXME PersonData doesn't have phonenumber property
+                visible: personData.person.contactCustomProperty("all-phoneNumber") === 0
             }
         }
         Controls.Button {
@@ -118,7 +130,7 @@ Kirigami.ScrollablePage {
 
             Controls.TextField {
                 placeholderText: i18n("user@example.org")
-                // FIXME PersonData doesn't have email property
+                visible: personData.person.allEmails === 0
             }
         }
         Controls.Button {
