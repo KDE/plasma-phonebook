@@ -40,19 +40,19 @@ void PhoneBook::addContact(const QString name, const QStringList tels, const QSt
     adr.setName(name);
 
     if (!emails.isEmpty()) {
-    adr.setEmails(emails);
+        adr.setEmails(emails);
     }
 
     if (!tels.isEmpty()) {
         PhoneNumber::List phoneNums;
 
         for (const QString &tel : tels) {
-        PhoneNumber phoneNum;
-        phoneNum.setNumber(tel);
-        phoneNum.setType(PhoneNumber::Cell);
-        phoneNums.append(phoneNum);
+            PhoneNumber phoneNum;
+            phoneNum.setNumber(tel);
+            phoneNum.setType(PhoneNumber::Cell);
+            phoneNums.append(phoneNum);
         }
-    adr.setPhoneNumbers(phoneNums);
+        adr.setPhoneNumbers(phoneNums);
     }
 
     // create vcard
