@@ -116,7 +116,7 @@ Kirigami.ScrollablePage {
             id: phoneNumber
             Kirigami.FormData.label: i18n("Phone:")
             Controls.TextField {
-                visible: personData.person.contactCustomProperty("all-phoneNumber") === 0
+                visible: personData.person.contactCustomProperty("all-phoneNumber").length === 0
             }
         }
         Controls.Button {
@@ -130,7 +130,7 @@ Kirigami.ScrollablePage {
 
             Controls.TextField {
                 placeholderText: i18n("user@example.org")
-                visible: personData.person.allEmails === 0
+                visible: !personData.person.allEmails
             }
         }
         Controls.Button {
