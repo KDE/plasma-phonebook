@@ -45,12 +45,12 @@ Flickable  {
         //status: root.contentY == 0 ? 1 : Math.min(1, Math.max(2 / 11, 1 - root.contentY / Kirigami.Units.gridUnit))
         source: personData.person.photo
 
-        stripContent: Row {
+        /*stripContent: Row {
             anchors.fill: parent
             spacing: (header.width - 3 * Kirigami.Units.iconSizes.medium) / 4
             anchors.leftMargin: spacing
 
-            /*Kirigami.Icon {
+            Kirigami.Icon {
                 source: "favorite"
                 width: Kirigami.Units.iconSizes.smallMedium
                 height: width
@@ -71,8 +71,8 @@ Flickable  {
                     onClicked: root.editClicked()
                     anchors.fill: parent
                 }
-            }*/
-        }
+            }
+        }*/
 
         Kirigami.Heading {
             text: personData.person.name

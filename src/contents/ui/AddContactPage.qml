@@ -68,6 +68,14 @@ Kirigami.ScrollablePage {
                 pageStack.pop()
             }
         }
+        left: Kirigami.Action {
+            text: i18n("Cancel")
+            icon.name : "dialog-cancel"
+
+            onTriggered: {
+                pageStack.pop()
+            }
+        }
     }
 
     // TextField for dynamic creation
