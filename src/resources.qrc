@@ -9,5 +9,6 @@
         <file alias="lib/Header.qml">contents/ui/lib/Header.qml</file>
         <file alias="AddContactPage.qml">contents/ui/AddContactPage.qml</file>
         <file alias="DetailListItem.qml">contents/ui/DetailListItem.qml</file>
+        <file alias="fallbackBackground.png">contents/resources/fallbackBackground.png</file>
     </qresource>
 </RCC>

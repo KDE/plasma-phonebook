@@ -17,17 +17,18 @@ Rectangle {
     property alias content: contentContainer
     property alias stripContent: strip.data
 
-    property var source;
-    property string title;
-    property string subtitle;
-    property string overview;
-    property real status : 1;
+    property var source
+    property var backgroundSource
+    property string title
+    property string subtitle
+    property string overview
+    property real status : 1
 
     // Background image
-    Kirigami.Icon {
+    Image {
         anchors.fill: parent
         id: bg
-        source: root.source
+        source: root.backgroundSource
     }
 
     FastBlur {
@@ -39,13 +40,6 @@ Rectangle {
             anchors.fill: parent
             source: parent
             color: "#66808080"
-
-            BrightnessContrast {
-                anchors.fill: parent
-                source: parent
-                brightness: 0
-                contrast: 0
-            }
         }
     }
 

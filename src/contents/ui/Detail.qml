@@ -43,7 +43,12 @@ Flickable  {
         content.anchors.topMargin: Kirigami.Units.largeSpacing
         content.anchors.bottomMargin: Kirigami.Units.largeSpacing
         //status: root.contentY == 0 ? 1 : Math.min(1, Math.max(2 / 11, 1 - root.contentY / Kirigami.Units.gridUnit))
+
         source: personData.person.photo
+
+        // There might be edge-cases when photo but not pictureUrl is set.
+        // For the background image it's more important to provide something else than the default pixmap though.
+        backgroundSource: personData.person.pictureUrl ? personData.person.pictureUrl : "qrc:/fallbackBackground.png"
 
         /*stripContent: Row {
             anchors.fill: parent
