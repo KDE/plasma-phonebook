@@ -79,10 +79,17 @@ Flickable  {
             }
         }*/
 
-        Kirigami.Heading {
-            text: personData.person.name
-            color: "#fcfcfc"
-            level: 1
+        ColumnLayout {
+            Kirigami.Heading {
+                text: personData.person.name
+                color: "#fcfcfc"
+                level: 1
+            }
+            Kirigami.Heading {
+                text: personData.person.contactCustomProperty("phoneNumber") ? personData.person.contactCustomProperty("phoneNumber") : ""
+                color: "#fcfcfc"
+                level: 3
+            }
         }
     }
 
