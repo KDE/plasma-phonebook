@@ -57,7 +57,7 @@ void PhoneBook::addContact(const QString name, const QStringList tels, const QSt
 
     // create vcard
     VCardConverter converter;
-    QByteArray vcard = converter.createVCard(adr, KContacts::VCardConverter::Version::v4_0);
+    QByteArray vcard = converter.createVCard(adr);
     qDebug() << vcard;
 
     // save vcard
@@ -124,7 +124,7 @@ void PhoneBook::updateContact(QString personUri, const QString name, const QStri
         adr.setEmails(emails);
     }
 
-    QByteArray vcard = converter.createVCard(adr, KContacts::VCardConverter::Version::v4_0);
+    QByteArray vcard = converter.createVCard(adr);
     qDebug() << vcard;
 
     file.write(vcard);
