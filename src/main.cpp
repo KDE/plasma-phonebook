@@ -22,8 +22,9 @@
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
+#include "declarativeaddressee.h"
 
-#include "phonebook.h"
+#include "phonesmodel.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -34,11 +35,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("plasma-phonebook");
 
     // back-end
-    PhoneBook phonebook;
-
     QQmlApplicationEngine engine;
 
-    engine.rootContext()->setContextProperty("phonebook", &phonebook);
+    qmlRegisterType<Addressee>("org.kde.kcontacts", 1, 0, "Addressee");
+    qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", "Get it from the Addressee");
+
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {

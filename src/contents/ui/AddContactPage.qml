@@ -22,49 +22,45 @@ import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
+import org.kde.kcontacts 1.0 as KContacts
 
 Kirigami.ScrollablePage {
     id: root
 
-    title: state === "create" ? i18n("Add contact") : i18n("Edit contact")
-
-    property url personUri
+    property alias personUri: personData.personUri
 
     states: [
         State {
             name: "create"
+            PropertyChanges { target: root; title: i18n("Adding contact") }
         },
         State {
             name: "update"
+            PropertyChanges { target: root; title: i18n("Editing contact") }
         }
     ]
 
     KPeople.PersonData {
         id: personData
-        personUri: root.personUri
+    }
+
+    //we can only edit vcards
+    enabled: personUri.indexOf("vcard:") === 0
+
+    KContacts.Addressee {
+        id: addressee
+        url: personData.person.contactCustomProperty("VCardLocation")
     }
 
     actions {
         main: Kirigami.Action {
             icon.name: "dialog-ok-apply"
             text: i18n("Save")
-            enabled: firstname.text !== ""
+            enabled: name.text.length > 0
 
             onTriggered: {
-                var emailList = []
-                for (var index in email.children)
-                    emailList.push(email.children[index].text)
-
-                var phoneNumberList = []
-                for (var index in phoneNumber.children)
-                    phoneNumberList.push(phoneNumber.children[index].text)
-
-                if (root.state === "create") {
-                    phonebook.addContact(firstname.text + " " + lastname.text, phoneNumberList, emailList)
-                }
-                else if (root.state === "update") {
-                    phonebook.updateContact(root.personUri, firstname.text + " " + lastname.text, phoneNumberList, emailList)
-                }
+                if (!addressee.write())
+                    console.warn("Could not save", addressee.url)
                 pageStack.pop()
             }
         }
@@ -78,72 +74,80 @@ Kirigami.ScrollablePage {
         }
     }
 
-    // TextField for dynamic creation
-    Component {
-        id: textFieldComponent
-
-        Row {
-            property alias text: textField.text
-
-            Controls.TextField {
-                id: textField
-            }
-            Controls.Button {
-                icon.name: "list-remove"
-                onClicked: parent.destroy()
-            }
-        }
-    }
-
     Kirigami.FormLayout {
         id: form
 
-        Component.onCompleted: {
-            // Dynamically add all known email addresses and phone numbers
-            for (var index in personData.person.allEmails)
-                textFieldComponent.createObject(email, { text: personData.person.allEmails[index] })
-
-            for (var index in personData.person.contactCustomProperty("all-phoneNumber"))
-                textFieldComponent.createObject(phoneNumber, { text: personData.person.contactCustomProperty("all-phoneNumber")[index] })
+        Controls.TextField {
+            id: name
+            Kirigami.FormData.label: i18n("Name:")
+            text: addressee.realName
+            onAccepted: {
+                addressee.name = text
+            }
         }
 
-        Controls.TextField {
-            Kirigami.FormData.label: i18n("First name:")
-            // FIXME PersonData doesn't have separate first/last name
-            text: personUri ? personData.person.name.split(" ")[0] : ""
-            id: firstname
-        }
-        Controls.TextField {
-            Kirigami.FormData.label: i18n("Last name:")
-            // FIXME KPeople doesn't have separate first/last name
-            text: personUri ? personData.person.name.split(" ")[1] : ""
-            id: lastname
+        Kirigami.Separator {
+            Layout.fillWidth: true
         }
 
         ColumnLayout {
             id: phoneNumber
             Kirigami.FormData.label: i18n("Phone:")
-            Controls.TextField {
-                visible: personData.person.contactCustomProperty("all-phoneNumber").length === 0
+            Repeater {
+                id: rep
+                model: addressee.phoneNumbers
+                delegate: Controls.TextField {
+                    text: display
+                }
+            }
+            RowLayout {
+                Controls.TextField {
+                    id: toAddPhone
+                    placeholderText: i18n("+1 555 2368")
+                }
+                Controls.Button {
+                    icon.name: "list-add"
+                    enabled: toAddPhone.text.length > 0
+                    onClicked: addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
+                }
             }
         }
-        Controls.Button {
-            icon.name: "list-add"
-            onClicked: textFieldComponent.createObject(phoneNumber)
+
+        Kirigami.Separator {
+            Layout.fillWidth: true
         }
 
         ColumnLayout {
             id: email
-            Kirigami.FormData.label: i18n("Email:")
+            Kirigami.FormData.label: i18n("E-mail:")
+
+            Repeater {
+                Binding {
+                    target: parent
+                    property: "model"
+                    value: addressee.emails
+                    when: addressee.dataChanged
+                }
+                delegate: Row {
+                    Controls.TextField {
+                        id: textField
+                        text: modelData
+                    }
+                    Controls.Button {
+                        icon.name: "list-remove"
+                        onClicked: parent.destroy()
+                    }
+                }
+            }
 
             Controls.TextField {
+                id: toAdd
                 placeholderText: i18n("user@example.org")
-                visible: !personData.person.allEmails
             }
         }
         Controls.Button {
             icon.name: "list-add"
-            onClicked: textFieldComponent.createObject(email, { placeholderText: i18n("user@example.org") })
+            onClicked: addressee.insertEmail(toAdd.text)
         }
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019  Linus Jahn <lnj@kaidan.im>
+ * Copyright 2019  Aleix Pol Gonzalez <aleixpol@kde.org>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -18,23 +18,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PHONEBOOK_H
-#define PHONEBOOK_H
+#ifndef PHONESMODEL_H
+#define PHONESMODEL_H
 
-#include <QObject>
+#include <QAbstractListModel>
 
-class PhoneBook : public QObject
+class Addressee;
+
+class PhonesModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    explicit PhoneBook(QObject *parent = nullptr);
+    PhonesModel(Addressee* a);
 
-signals:
+    QVariant data(const QModelIndex & index, int role) const override;
+    int rowCount(const QModelIndex & parent = {}) const override;
 
-public slots:
-    void addContact(QString const name, const QStringList tels, const QStringList emails);
-    void deleteContact(QString personUri);
-    void updateContact(QString personUri, const QString name, const QStringList tels, const QStringList emails);
+    Q_SCRIPTABLE void addPhoneNumber(const QString &number);
+
+private:
+    Addressee* m_addressee;
 };
 
-#endif // PHONEBOOK_H
+
+#endif
