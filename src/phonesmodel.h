@@ -31,6 +31,7 @@ class PhonesModel : public QAbstractListModel
 public:
     PhonesModel(Addressee* a);
 
+    bool setData(const QModelIndex & index, const QVariant & value, int role) override;
     QVariant data(const QModelIndex & index, int role) const override;
     int rowCount(const QModelIndex & parent = {}) const override;
 

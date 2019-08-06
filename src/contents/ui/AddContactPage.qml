@@ -49,7 +49,7 @@ Kirigami.ScrollablePage {
 
     KContacts.Addressee {
         id: addressee
-        url: personData.person.contactCustomProperty("VCardLocation")
+        raw: personData.person.contactCustomProperty("vcard")
     }
 
     actions {
@@ -59,7 +59,7 @@ Kirigami.ScrollablePage {
             enabled: name.text.length > 0
 
             onTriggered: {
-                if (!addressee.write())
+                if (!personData.person.setContactCustomProperty("vcard", addressee.raw))
                     console.warn("Could not save", addressee.url)
                 pageStack.pop()
             }
@@ -96,8 +96,17 @@ Kirigami.ScrollablePage {
             Repeater {
                 id: rep
                 model: addressee.phoneNumbers
-                delegate: Controls.TextField {
-                    text: display
+                delegate: RowLayout {
+                    Controls.TextField {
+                        id: numberField
+                        text: display
+                        onAccepted: display = numberField.text
+                    }
+                    Controls.Button {
+                        icon.name: "dialog-ok"
+                        visible: numberField.text != model.display
+                        onClicked: numberField.accepted()
+                    }
                 }
             }
             RowLayout {

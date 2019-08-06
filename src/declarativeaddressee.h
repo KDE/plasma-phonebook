@@ -34,7 +34,7 @@ class PhonesModel;
 class Addressee : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QUrl url READ url WRITE setUrl NOTIFY urlChanged)
+    Q_PROPERTY(QByteArray raw READ raw WRITE setRaw)
 public:
     Addressee(QObject* parent = nullptr);
 
@@ -58,10 +58,8 @@ public:
         Q_EMIT emailsChanged(emails());
     }
 
-    QUrl url() const { return m_url; }
-    void setUrl(const QUrl &url);
-
-    Q_SCRIPTABLE bool write();
+    QByteArray raw() const;
+    void setRaw(const QByteArray &raw);
 
 Q_SIGNALS:
     void urlChanged(const QUrl &url);
@@ -70,7 +68,6 @@ Q_SIGNALS:
 
 private:
     friend class PhonesModel;
-    QUrl m_url;
     KContacts::Addressee m_addressee;
     PhonesModel* m_phonesModel = nullptr;
 };

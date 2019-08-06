@@ -25,56 +25,21 @@
 #include <QFile>
 #include "phonesmodel.h"
 
-void Addressee::setUrl(const QUrl& url)
+void Addressee::setRaw(const QByteArray& raw)
 {
-    if (m_url != url) {
-        if (!url.isLocalFile()) {
-            qWarning() << "uri of contact to update is not local, cannot update.";
-            return;
-        }
+    KContacts::VCardConverter converter;
+    m_addressee = converter.parseVCard(raw);
 
-        QFile file(url.path());
-        if (!file.open(QIODevice::ReadOnly)) {
-            qWarning() << "Couldn't read vCard: Couldn't open file" << url;
-            return;
-        }
-
-        m_url = url;
-
-        KContacts::VCardConverter converter;
-        const auto contents = file.readAll();
-        m_addressee = converter.parseVCard(contents);
-
-        Q_EMIT urlChanged(url);
-        Q_EMIT nameChanged(name());
-        Q_EMIT anyNameChanged();
-        Q_EMIT phoneNumbersChanged();
-        Q_EMIT emailsChanged(emails());
-    }
+    Q_EMIT nameChanged(name());
+    Q_EMIT anyNameChanged();
+    Q_EMIT phoneNumbersChanged();
+    Q_EMIT emailsChanged(emails());
 }
 
-bool Addressee::write()
+QByteArray Addressee::raw() const
 {
-    // create vcard
     KContacts::VCardConverter converter;
-    QByteArray vcard = converter.createVCard(m_addressee);
-
-    // save vcard
-    if (m_url.isEmpty()) {
-        QCryptographicHash hash(QCryptographicHash::Sha1);
-        hash.addData(m_addressee.name().toUtf8());
-        QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/kpeoplevcard/") + hash.result().toHex() + ".vcf";
-
-        m_url = QUrl::fromLocalFile(path);
-    }
-    QFile file(m_url.toLocalFile());
-    if (!file.open(QFile::WriteOnly)) {
-        qWarning() << "Couldn't save vCard: Couldn't open file for writing.";
-        return false;
-    }
-    file.write(vcard.data(), vcard.length());
-    file.close();
-    return true;
+    return converter.createVCard(m_addressee);
 }
 
 PhonesModel* Addressee::phoneNumbers() const
