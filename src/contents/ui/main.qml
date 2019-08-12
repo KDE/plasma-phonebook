@@ -32,4 +32,7 @@ Kirigami.ApplicationWindow {
 
     Component { id: contactsPage; ContactsPage {}}
     Component { id: detailPage; DetailPage {}}
+    contextDrawer: Kirigami.ContextDrawer {
+        id: contextDrawer
+    }
 }
