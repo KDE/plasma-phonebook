@@ -83,7 +83,7 @@ Flickable  {
             Kirigami.Heading {
                 text: personData.person.name
                 color: "#fcfcfc"
-                level: 1
+                level: 2
             }
             Kirigami.Heading {
                 text: personData.person.contactCustomProperty("phoneNumber") ? personData.person.contactCustomProperty("phoneNumber") : ""
