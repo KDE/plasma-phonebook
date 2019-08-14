@@ -1,0 +1,18 @@
+{
+    "Encoding": "UTF-8",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "bshah@kde.org",
+                "Name": "Bhushan Shah"
+            }
+        ],
+        "EnabledByDefault": true,
+        "Id": "phonebook",
+        "License": "GPL",
+        "ServiceTypes": [
+            "KPeople/Plugin"
+        ],
+        "Version": "0.1"
+    }
+}

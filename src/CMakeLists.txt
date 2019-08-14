@@ -5,3 +5,5 @@ target_link_libraries(plasma-phonebook
 	KF5::Contacts
 )
 install(TARGETS plasma-phonebook ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+
+add_subdirectory(kpeopleactionplugin)
