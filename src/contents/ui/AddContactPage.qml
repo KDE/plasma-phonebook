@@ -27,7 +27,7 @@ import org.kde.kcontacts 1.0 as KContacts
 Kirigami.ScrollablePage {
     id: root
 
-    property alias personUri: personData.personUri
+    property QtObject person
 
     states: [
         State {
@@ -40,16 +40,11 @@ Kirigami.ScrollablePage {
         }
     ]
 
-    KPeople.PersonData {
-        id: personData
-    }
-
-    //we can only edit vcards
-    enabled: personUri.indexOf("vcard:") === 0
+    enabled: !person || person.isEditable
 
     KContacts.Addressee {
         id: addressee
-        raw: personData.person.contactCustomProperty("vcard")
+        raw: root.person ? root.person.contactCustomProperty("vcard") : ""
     }
 
     actions {
@@ -59,8 +54,16 @@ Kirigami.ScrollablePage {
             enabled: name.text.length > 0
 
             onTriggered: {
-                if (!personData.person.setContactCustomProperty("vcard", addressee.raw))
-                    console.warn("Could not save", addressee.url)
+                switch(root.state) {
+                    case "create":
+                        if (!KPeople.Manager.addContact({ "vcard": addressee.raw }))
+                            console.warn("could not create contact")
+                        break;
+                    case "update":
+                        if (!root.person.setContactCustomProperty("vcard", addressee.raw))
+                            console.warn("Could not save", addressee.url)
+                        break;
+                }
                 pageStack.pop()
             }
         }

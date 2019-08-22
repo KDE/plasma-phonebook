@@ -63,17 +63,20 @@ Kirigami.ScrollablePage {
             onTriggered: personActions.triggerAction(KPeople.AudioCallAction)
         }
         right: Kirigami.Action {
-            iconName: "kmouth-phrase-new"
-            text: i18n("Write SMS")
-            onTriggered: personActions.triggerAction(KPeople.TextChatAction)
-        }
+                iconName: "document-edit"
+                text: "Edit"
+                onTriggered: {
+                    console.log(page.personUri)
+                    pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
+                }
+            }
         contextualActions: [
             Kirigami.Action {
                 iconName: "document-edit"
                 text: "Edit"
                 onTriggered: {
                     console.log(page.personUri)
-                    pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", personUri: page.personUri})
+                    pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
                 }
             },
             Kirigami.Action {
