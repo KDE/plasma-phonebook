@@ -28,6 +28,7 @@ Kirigami.ScrollablePage {
     id: root
 
     property QtObject person
+    signal save()
 
     states: [
         State {
@@ -54,6 +55,7 @@ Kirigami.ScrollablePage {
             enabled: name.text.length > 0
 
             onTriggered: {
+                root.save();
                 switch(root.state) {
                     case "create":
                         if (!KPeople.Manager.addContact({ "vcard": addressee.raw }))
@@ -69,7 +71,7 @@ Kirigami.ScrollablePage {
         }
         left: Kirigami.Action {
             text: i18n("Cancel")
-            icon.name : "dialog-cancel"
+            icon.name: "dialog-cancel"
 
             onTriggered: {
                 pageStack.pop()
@@ -87,6 +89,12 @@ Kirigami.ScrollablePage {
             onAccepted: {
                 addressee.name = text
             }
+
+            Connections {
+                target: root;
+                onSave: name.accepted()
+            }
+
         }
 
         Kirigami.Separator {
@@ -99,16 +107,17 @@ Kirigami.ScrollablePage {
             Repeater {
                 id: rep
                 model: addressee.phoneNumbers
-                delegate: RowLayout {
-                    Controls.TextField {
-                        id: numberField
-                        text: display
-                        onAccepted: display = numberField.text
+                delegate: Controls.TextField {
+                    id: phoneField
+                    text: display
+                    onAccepted: {
+                        display = text
+                        console.log("accepted", text)
                     }
-                    Controls.Button {
-                        icon.name: "dialog-ok"
-                        visible: numberField.text != model.display
-                        onClicked: numberField.accepted()
+
+                    Connections {
+                        target: root;
+                        onSave: phoneField.accepted()
                     }
                 }
             }
