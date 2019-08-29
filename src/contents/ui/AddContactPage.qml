@@ -58,7 +58,7 @@ Kirigami.ScrollablePage {
                 root.save();
                 switch(root.state) {
                     case "create":
-                        if (!KPeople.Manager.addContact({ "vcard": addressee.raw }))
+                        if (!KPeople.PersonPluginManager.addContact({ "vcard": addressee.raw }))
                             console.warn("could not create contact")
                         break;
                     case "update":
