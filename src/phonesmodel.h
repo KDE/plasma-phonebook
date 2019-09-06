@@ -36,6 +36,7 @@ public:
     int rowCount(const QModelIndex & parent = {}) const override;
 
     Q_SCRIPTABLE void addPhoneNumber(const QString &number);
+    Q_SCRIPTABLE void removePhoneNumber(const QString &number);
 
 private:
     Addressee* m_addressee;

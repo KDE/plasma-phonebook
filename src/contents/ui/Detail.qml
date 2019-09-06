@@ -107,7 +107,6 @@ Flickable  {
             text: model.display
             icon: model.iconName
             onClicked: personActions.triggerAction(model.action)
-            Component.onCompleted: console.log(model.actionType)
         }
     }
 }

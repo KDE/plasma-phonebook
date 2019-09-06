@@ -105,8 +105,8 @@ Kirigami.ScrollablePage {
             id: phoneNumber
             Kirigami.FormData.label: i18n("Phone:")
             Repeater {
-                id: rep
                 model: addressee.phoneNumbers
+
                 delegate: RowLayout {
                     Controls.TextField {
                         id: phoneField
@@ -123,7 +123,7 @@ Kirigami.ScrollablePage {
                     Controls.Button {
                         icon.name: "list-remove"
                         onClicked: {
-                            addressee.phoneNumbers.removePhoneNumber(edit)
+                            addressee.phoneNumbers.removePhoneNumber(phoneField.text)
                         }
                     }
                 }
@@ -133,6 +133,17 @@ Kirigami.ScrollablePage {
                     id: toAddPhone
                     placeholderText: i18n("+1 555 2368")
                 }
+
+                // add last text field on save()
+                Connections {
+                    target: root;
+                    onSave: {
+                        if (toAddPhone.text !== "")
+                            addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
+                    }
+                }
+
+                // button to add additional text field
                 Controls.Button {
                     icon.name: "list-add"
                     enabled: toAddPhone.text.length > 0
@@ -177,6 +188,17 @@ Kirigami.ScrollablePage {
                     id: toAddEmail
                     placeholderText: i18n("user@example.org")
                 }
+
+                // add last text field on save()
+                Connections {
+                    target: root;
+                    onSave: {
+                        if (toAddEmail.text !== "")
+                            addressee.insertEmail(toAddEmail.text)
+                    }
+                }
+
+                // button to add additional text field
                 Controls.Button {
                     icon.name: "list-add"
                     enabled: toAddEmail.text.length > 0
