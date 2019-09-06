@@ -57,7 +57,7 @@ bool PhonesModel::setData(const QModelIndex& index, const QVariant& value, int r
             numbers[index.row()].setNumber(value.toString());
             m_addressee->m_addressee.setPhoneNumbers(numbers);
             dataChanged(index, index, {Qt::DisplayRole});
-        }   return true;
+        } return true;
     }
     return false;
 }
@@ -73,4 +73,23 @@ void PhonesModel::addPhoneNumber(const QString& number)
     beginInsertRows({}, c, c);
     m_addressee->m_addressee.insertPhoneNumber(number);
     endInsertRows();
+}
+
+void PhonesModel::removePhoneNumber(const QString &number)
+{
+    for (int i = 0; 0 < m_addressee->m_addressee.phoneNumbers().count(); i++) {
+        if (m_addressee->m_addressee.phoneNumbers()[i].number() == number) {
+            beginRemoveRows({}, i, i);
+            break;
+        }
+    }
+
+    for (const auto &phoneNumber : m_addressee->m_addressee.phoneNumbers()) {
+        if (phoneNumber.number() == number) {
+            m_addressee->m_addressee.removePhoneNumber(phoneNumber);
+            break;
+        }
+    }
+
+    endRemoveRows();
 }

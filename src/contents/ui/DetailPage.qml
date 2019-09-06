@@ -66,7 +66,6 @@ Kirigami.ScrollablePage {
                 iconName: "document-edit"
                 text: "Edit"
                 onTriggered: {
-                    console.log(page.personUri)
                     pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
                 }
             }
@@ -75,7 +74,6 @@ Kirigami.ScrollablePage {
                 iconName: "document-edit"
                 text: "Edit"
                 onTriggered: {
-                    console.log(page.personUri)
                     pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
                 }
             },
