@@ -107,17 +107,24 @@ Kirigami.ScrollablePage {
             Repeater {
                 id: rep
                 model: addressee.phoneNumbers
-                delegate: Controls.TextField {
-                    id: phoneField
-                    text: display
-                    onAccepted: {
-                        display = text
-                        console.log("accepted", text)
-                    }
+                delegate: RowLayout {
+                    Controls.TextField {
+                        id: phoneField
+                        text: display
+                        onAccepted: {
+                            display = text
+                        }
 
-                    Connections {
-                        target: root;
-                        onSave: phoneField.accepted()
+                        Connections {
+                            target: root;
+                            onSave: phoneField.accepted()
+                        }
+                    }
+                    Controls.Button {
+                        icon.name: "list-remove"
+                        onClicked: {
+                            addressee.phoneNumbers.removePhoneNumber(edit)
+                        }
                     }
                 }
             }
@@ -129,7 +136,10 @@ Kirigami.ScrollablePage {
                 Controls.Button {
                     icon.name: "list-add"
                     enabled: toAddPhone.text.length > 0
-                    onClicked: addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
+                    onClicked: {
+                        addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
+                        toAddPhone.text = ""
+                    }
                 }
             }
         }
@@ -143,32 +153,39 @@ Kirigami.ScrollablePage {
             Kirigami.FormData.label: i18n("E-mail:")
 
             Repeater {
+                model: addressee.emails
+
                 Binding {
                     target: parent
                     property: "model"
                     value: addressee.emails
                     when: addressee.dataChanged
                 }
-                delegate: Row {
+                delegate: RowLayout {
                     Controls.TextField {
                         id: textField
                         text: modelData
                     }
                     Controls.Button {
                         icon.name: "list-remove"
-                        onClicked: parent.destroy()
+                        onClicked: addressee.removeEmail(textField.text)
                     }
                 }
             }
-
-            Controls.TextField {
-                id: toAdd
-                placeholderText: i18n("user@example.org")
+            RowLayout {
+                Controls.TextField {
+                    id: toAddEmail
+                    placeholderText: i18n("user@example.org")
+                }
+                Controls.Button {
+                    icon.name: "list-add"
+                    enabled: toAddEmail.text.length > 0
+                    onClicked: {
+                        addressee.insertEmail(toAddEmail.text)
+                        toAddEmail.text = ""
+                    }
+                }
             }
-        }
-        Controls.Button {
-            icon.name: "list-add"
-            onClicked: addressee.insertEmail(toAdd.text)
         }
     }
 }
