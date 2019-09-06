@@ -58,6 +58,11 @@ public:
         Q_EMIT emailsChanged(emails());
     }
 
+    Q_SCRIPTABLE void removeEmail(const QString &email) {
+        m_addressee.removeEmail(email);
+        Q_EMIT emailsChanged(emails());
+    }
+
     QByteArray raw() const;
     void setRaw(const QByteArray &raw);
 
