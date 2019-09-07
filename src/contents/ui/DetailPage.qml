@@ -80,7 +80,7 @@ Kirigami.ScrollablePage {
             Kirigami.Action {
                 iconName: "delete"
                 text: "Delete contact"
-                onTriggered: phonebook.deleteContact(page.personUri)
+                onTriggered: KPeople.PersonPluginManager.deleteContact(page.personUri)
             }
         ]
     }
