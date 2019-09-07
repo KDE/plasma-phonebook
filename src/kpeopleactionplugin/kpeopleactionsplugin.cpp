@@ -23,6 +23,8 @@
 #include <KPluginFactory>
 
 #include <KPeopleBackend/AbstractContact>
+#include <KPeople/Widgets/Actions>
+#include <KContacts/VCardConverter>
 
 KPeopleActionsPlugin::KPeopleActionsPlugin(QObject* parent, const QVariantList& args)
     : AbstractPersonAction(parent)
@@ -34,12 +36,52 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
 {
     Q_UNUSED(parent)
     QList<QAction *> actions;
-    QVariant number = data.contactCustomProperty(KPeople::AbstractContact::PhoneNumberProperty);
-    if(!number.toString().isEmpty()) {
-        QAction *action = new QAction(QIcon::fromTheme("call-start"),
-                                      i18nc("Action to tell user to call person using phone number", "Call %1 on %2", data.name(), number.toString()));
+
+    // Fetch contact vcard
+    QByteArray vcard = data.contactCustomProperty(KPeople::AbstractContact::VCardProperty).toByteArray();
+    KContacts::VCardConverter converter;
+    auto addressee = converter.parseVCard(vcard);
+
+    // Phone Number actions
+    // TODO: Avoid looping through numbers multiple times by using a SortFilterProxyModel in phonebook.
+    for (auto &number : addressee.phoneNumbers()) {
+        if (!number.number().isEmpty()) {
+            QAction *callAction = new QAction(QIcon::fromTheme("call-start"),
+                                          i18nc("Action to tell user to call person using phone number", "Call on %1", number.number()));
+            callAction->setProperty("actionType", KPeople::AudioCallAction);
+
+            actions << callAction;
+        }
+    }
+
+    for (auto &number : addressee.phoneNumbers()) {
+        if (!number.number().isEmpty()) {
+
+            QAction *textAction = new QAction(QIcon::fromTheme("mail-message"),
+                                          i18nc("Action to tell user to write a message to phone number", "Write SMS on %1", number.number()));
+            textAction->setProperty("actionType", KPeople::TextChatAction);
+
+            actions << textAction;
+        }
+    }
+
+    // Instant messenger actions
+    for (auto &impp : addressee.imppList()) {
+        QAction *action = new QAction(QIcon::fromTheme(impp.serviceIcon()),
+                                      i18nc("Action to write xmpp message", "%1 %2", impp.serviceType(), impp.address().toString()));
+        action->setProperty("actionType", KPeople::TextChatAction);
+
         actions << action;
     }
+
+    // email actions
+    for (auto &email : addressee.emails()) {
+        QAction *action = new QAction(QIcon::fromTheme("mail-message"), i18nc("Action to send an email", "email %1", email));
+        action->setProperty("actionType", KPeople::SendEmailAction);
+
+        actions << action;
+    }
+
     return actions;
 }
 

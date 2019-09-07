@@ -19,65 +19,40 @@
 import QtQuick 2.2
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
-import org.kde.kirigami 2.4 as Kirigami
+import org.kde.kirigami 2.10 as Kirigami
 import QtGraphicalEffects 1.0
 import org.kde.people 1.0 as KPeople
 
 import "lib" as HIG
 
-
-Flickable  {
-    id: root
+ListView {
     property string personUri;
-    signal editClicked()
 
+    anchors.fill: parent
+    id: actionsListView
+    model: personActions
 
     KPeople.PersonData {
         id: personData
-        personUri: root.personUri
+        personUri: actionsListView.personUri
     }
 
-    HIG.Header {
+    KPeople.PersonActions {
+        id: personActions
+        personUri: actionsListView.personUri
+    }
+
+    header: HIG.Header {
         id: header
-        content.anchors.leftMargin: root.width > 400 ? 100 : Kirigami.Units.largeSpacing
+        content.anchors.leftMargin: actionsListView.width > 400 ? 100 : Kirigami.Units.largeSpacing
         content.anchors.topMargin: Kirigami.Units.largeSpacing
         content.anchors.bottomMargin: Kirigami.Units.largeSpacing
-        //status: root.contentY == 0 ? 1 : Math.min(1, Math.max(2 / 11, 1 - root.contentY / Kirigami.Units.gridUnit))
 
         source: personData.person.photo
 
         // There might be edge-cases when photo but not pictureUrl is set.
         // For the background image it's more important to provide something else than the default pixmap though.
         backgroundSource: personData.person.pictureUrl ? personData.person.pictureUrl : "qrc:/fallbackBackground.png"
-
-        /*stripContent: Row {
-            anchors.fill: parent
-            spacing: (header.width - 3 * Kirigami.Units.iconSizes.medium) / 4
-            anchors.leftMargin: spacing
-
-            Kirigami.Icon {
-                source: "favorite"
-                width: Kirigami.Units.iconSizes.smallMedium
-                height: width
-                anchors.verticalCenter: parent.verticalCenter
-            }
-            Kirigami.Icon {
-                source: "document-share"
-                width: Kirigami.Units.iconSizes.smallMedium
-                height: width
-                anchors.verticalCenter: parent.verticalCenter
-            }
-            Kirigami.Icon {
-                source: "document-edit"
-                width: Kirigami.Units.iconSizes.smallMedium
-                height: width
-                anchors.verticalCenter: parent.verticalCenter
-                MouseArea {
-                    onClicked: root.editClicked()
-                    anchors.fill: parent
-                }
-            }
-        }*/
 
         ColumnLayout {
             Kirigami.Heading {
@@ -93,20 +68,23 @@ Flickable  {
         }
     }
 
-    KPeople.PersonActions {
-        id: personActions
-        personUri: root.personUri
+    section.property: "actionType"
+    section.delegate: Kirigami.ListSectionHeader {
+        text: {
+            if (section === "3")
+                return i18n("Email")
+            else if (section === "1")
+                return i18n("Call")
+            else if (section === "0")
+                return i18n("Chat")
+            else
+                return i18n("Other")
+        }
     }
 
-    ListView {
-        id: actionsListView
-        anchors.top: header.bottom
-        width: parent.width
-        model: personActions
-        delegate: Kirigami.BasicListItem {
-            text: model.display
-            icon: model.iconName
-            onClicked: personActions.triggerAction(model.action)
-        }
+    delegate: Kirigami.BasicListItem {
+        text: model.display
+        icon: model.iconName
+        onClicked: personActions.triggerAction(model.action)
     }
 }

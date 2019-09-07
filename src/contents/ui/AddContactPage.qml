@@ -81,6 +81,7 @@ Kirigami.ScrollablePage {
 
     Kirigami.FormLayout {
         id: form
+        wideMode: true
 
         Controls.TextField {
             id: name

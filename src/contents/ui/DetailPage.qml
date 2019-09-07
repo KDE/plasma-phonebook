@@ -47,8 +47,8 @@ Kirigami.ScrollablePage {
     }
 
     Detail {
+        anchors.fill: parent
         personUri: page.personUri
-        onEditClicked: form.open();
     }
 
     actions {

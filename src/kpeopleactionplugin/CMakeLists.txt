@@ -5,4 +5,5 @@ target_link_libraries(phonebook_kpeople_plugin
     KF5::I18n
     KF5::People
     KF5::PeopleBackend
+    KF5::Contacts
 )
