@@ -85,6 +85,6 @@ ListView {
     delegate: Kirigami.BasicListItem {
         text: model.display
         icon: model.iconName
-        onClicked: personActions.triggerAction(model.action)
+        onClicked: model.action.trigger()
     }
 }
