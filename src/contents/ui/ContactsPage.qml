@@ -89,33 +89,40 @@ Kirigami.ScrollablePage {
             sortOrder: Qt.AscendingOrder
         }
 
-        // model.display, model.decoration, model.phoneNumber
-        delegate: ContactListItem {
-            height: Kirigami.Units.gridUnit * 3
-            name: model.display
-            icon: model.decoration
-            personUri: model.personUri
+        Component {
+            id: contactListDelegate
+            ContactListItem {
+                height: Kirigami.Units.gridUnit * 3
+                name: model.display
+                icon: model.decoration
+                personUri: model.personUri
 
-            actions: [
-                Kirigami.Action {
-                    icon.name: "mail-message"
-                    onTriggered: {
-                        personActions.triggerAction(KPeople.TextChatAction)
+                actions: [
+                    Kirigami.Action {
+                        icon.name: "mail-message"
+                        onTriggered: {
+                            personActions.triggerAction(KPeople.TextChatAction)
+                        }
+                    },
+                    Kirigami.Action {
+                        icon.name: "call-start"
+                        onTriggered: {
+                            personActions.triggerAction(KPeople.AudioCallAction)
+                        }
                     }
-                },
-                Kirigami.Action {
-                    icon.name: "call-start"
-                    onTriggered: {
-                        personActions.triggerAction(KPeople.AudioCallAction)
-                    }
+                ]
+
+                onClicked: {
+                    pageStack.push(detailPage, {
+                                        personUri: model.personUri
+                                   })
                 }
-            ]
-
-            onClicked: {
-                pageStack.push(detailPage, {
-                                    personUri: model.personUri
-                               })
             }
+        }
+
+        delegate: Kirigami.DelegateRecycler {
+            width: parent.width
+            sourceComponent: contactListDelegate
         }
     }
 }
