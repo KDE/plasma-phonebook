@@ -1,7 +1,7 @@
 project(plasma-phonebook)
 
 cmake_minimum_required(VERSION 2.8.12)
-set(KF5_MIN_VERSION "5.18.0")
+set(KF5_MIN_VERSION "5.62.0")
 set(QT_MIN_VERSION "5.5.0")
 
 ################# Disallow in-source build #################
@@ -29,13 +29,12 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 ################# Find dependencies #################
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
-find_package(KF5 REQUIRED COMPONENTS Kirigami2 Contacts People)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 People)
+find_package(KF5Contacts "5.12.40" REQUIRED)
 
 ################# Enable C++11 features for clang and gcc #################
 
-if(UNIX)
-   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=c++0x")
-endif()
+set(CMAKE_CXX_STANDARD 11)
 
 ################# build and install #################
 add_subdirectory(src)
