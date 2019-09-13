@@ -6,7 +6,7 @@ target_link_libraries(plasma-phonebook
 )
 
 if(ANDROID)
-    target_link_libraries(ktrip PRIVATE
+    target_link_libraries(plasma-phonebook PRIVATE
         KF5::Kirigami2
         Qt5::Svg
     )
