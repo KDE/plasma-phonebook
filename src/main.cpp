@@ -23,6 +23,8 @@
 #include <QtQml>
 #include <QUrl>
 
+#include <KLocalizedContext>
+
 #include "declarativeaddressee.h"
 #include "phonesmodel.h"
 #include "contactimporter.h"
@@ -38,6 +40,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     // back-end
     QQmlApplicationEngine engine;
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     qmlRegisterType<Addressee>("org.kde.kcontacts", 1, 0, "Addressee");
     qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", "Get it from the Addressee");
