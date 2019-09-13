@@ -6,10 +6,7 @@ target_link_libraries(plasma-phonebook
 )
 
 if(ANDROID)
-    target_link_libraries(plasma-phonebook PRIVATE
-        KF5::Kirigami2
-        Qt5::Svg
-    )
+    target_link_libraries(plasma-phonebook KF5::Kirigami2 Qt5::Svg)
 endif()
 
 install(TARGETS plasma-phonebook ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
