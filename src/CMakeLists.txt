@@ -7,6 +7,26 @@ target_link_libraries(plasma-phonebook
 
 if(ANDROID)
     target_link_libraries(plasma-phonebook KF5::Kirigami2 Qt5::Svg)
+
+    kirigami_package_breeze_icons(ICONS
+        go-down-symbolic
+        go-next-symbolic
+        go-up-symbolic
+        view-refresh
+        search
+        view-pim-contacts
+        dialog-ok-apply
+        dialog-cancel
+        list-remove
+        list-add_executable
+        contact-new-symbolic
+        document-import
+        mail-message
+        call-start
+        document-edit
+        delete
+    )
+
 endif()
 
 install(TARGETS plasma-phonebook ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
