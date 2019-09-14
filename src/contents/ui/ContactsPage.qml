@@ -25,7 +25,6 @@ import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
 import QtQuick.Dialogs 1.0
 
-import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.kirigami 2.9 as Kirigami
 import org.kde.people 1.0 as KPeople
 
