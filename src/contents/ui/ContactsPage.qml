@@ -90,6 +90,7 @@ Kirigami.ScrollablePage {
             anchors.centerIn: parent
             anchors.margins: Kirigami.Units.largeSpacing
             width: parent.width - 2 * Kirigami.Units.largeSpacing
+            onTextChanged: filterModel.setFilterFixedString(text)
         }
     }
 
@@ -102,16 +103,13 @@ Kirigami.ScrollablePage {
         section.property: "display"
         section.criteria: ViewSection.FirstCharacter
         clip: true
-        model: PlasmaCore.SortFilterModel {
-            sourceModel: KPeople.PersonsSortFilterProxyModel {
-                sourceModel: KPeople.PersonsModel {
-                    id: contactsModel
-                }
+        model: KPeople.PersonsSortFilterProxyModel {
+            id: filterModel
+            filterRole: Qt.DisplayRole
+
+            sourceModel: KPeople.PersonsModel {
+                id: contactsModel
             }
-            sortRole: "display"
-            filterRole: "display"
-            filterRegExp: ".*" + searchField.text + ".*"
-            sortOrder: Qt.AscendingOrder
         }
 
         Component {
