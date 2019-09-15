@@ -24,6 +24,7 @@
 #include <QCryptographicHash>
 #include <QFile>
 #include "phonesmodel.h"
+#include "imppmodel.h"
 
 void Addressee::setRaw(const QByteArray& raw)
 {
@@ -47,9 +48,15 @@ PhonesModel* Addressee::phoneNumbers() const
     return m_phonesModel;
 }
 
+ImppModel* Addressee::impps() const
+{
+    return m_imppModel;
+}
+
 Addressee::Addressee(QObject* parent)
     : QObject(parent)
     , m_phonesModel(new PhonesModel(this))
+    , m_imppModel(new ImppModel(this))
 {
     connect(this, &Addressee::nameChanged, this, &Addressee::anyNameChanged);
 }

@@ -124,7 +124,7 @@ Kirigami.ScrollablePage {
                     Controls.Button {
                         icon.name: "list-remove"
                         onClicked: {
-                            addressee.phoneNumbers.removePhoneNumber(phoneField.text)
+                            addressee.phoneNumbers.removePhoneNumber(display)
                         }
                     }
                 }
@@ -180,7 +180,7 @@ Kirigami.ScrollablePage {
                     }
                     Controls.Button {
                         icon.name: "list-remove"
-                        onClicked: addressee.removeEmail(textField.text)
+                        onClicked: addressee.removeEmail(modelData)
                     }
                 }
             }
@@ -206,6 +206,65 @@ Kirigami.ScrollablePage {
                     onClicked: {
                         addressee.insertEmail(toAddEmail.text)
                         toAddEmail.text = ""
+                    }
+                }
+            }
+        }
+
+        Kirigami.Separator {
+            Layout.fillWidth: true
+        }
+
+        ColumnLayout {
+            id: impp
+            Kirigami.FormData.label: i18n("Instant Messenger:")
+
+            Repeater {
+                model: addressee.impps
+
+                delegate: RowLayout {
+                    Controls.TextField {
+                        id: imppField
+                        text: display
+                        onAccepted: {
+                            display = text
+                        }
+
+                        Connections {
+                            target: root;
+                            onSave: imppField.accepted()
+                        }
+                    }
+                    Controls.Button {
+                        icon.name: "list-remove"
+                        onClicked: {
+                            addressee.impps.removeImpp(display)
+                        }
+                    }
+                }
+            }
+            RowLayout {
+                Controls.TextField {
+                    id: toAddImpp
+                    placeholderText: i18n("xmpp:person@example.com")
+                }
+
+                // add last text field on save()
+                Connections {
+                    target: root;
+                    onSave: {
+                        if (toAddImpp.text !== "")
+                            addressee.impps.addImpp(toAddImpp.text)
+                    }
+                }
+
+                // button to add additional text field
+                Controls.Button {
+                    icon.name: "list-add"
+                    enabled: toAddImpp.text.length > 0
+                    onClicked: {
+                        addressee.impps.addImpp(toAddImpp.text)
+                        toAddImpp.text = ""
                     }
                 }
             }

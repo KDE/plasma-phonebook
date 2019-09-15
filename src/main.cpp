@@ -27,6 +27,7 @@
 
 #include "declarativeaddressee.h"
 #include "phonesmodel.h"
+#include "imppmodel.h"
 #include "contactimporter.h"
 
 
@@ -44,6 +45,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterType<Addressee>("org.kde.kcontacts", 1, 0, "Addressee");
     qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", "Get it from the Addressee");
+    qmlRegisterUncreatableType<ImppModel>("org.kde.kcontacts", 1, 0, "ImppModel", "Get it from the Addressee");
     qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
 
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));

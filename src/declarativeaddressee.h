@@ -30,6 +30,7 @@
     Q_SIGNAL void name##Changed(const type& name);
 
 class PhonesModel;
+class ImppModel;
 
 class Addressee : public QObject
 {
@@ -49,6 +50,9 @@ public:
 
     Q_PROPERTY(PhonesModel* phoneNumbers READ phoneNumbers CONSTANT)
     PhonesModel* phoneNumbers() const;
+
+    Q_PROPERTY(ImppModel* impps READ impps CONSTANT)
+    ImppModel* impps() const;
 
     Q_PROPERTY(QStringList emails READ emails WRITE setEmails NOTIFY emailsChanged)
     PROPERTY(QStringList, emails, setEmails)
@@ -73,8 +77,10 @@ Q_SIGNALS:
 
 private:
     friend class PhonesModel;
+    friend class ImppModel;
     KContacts::Addressee m_addressee;
     PhonesModel* m_phonesModel = nullptr;
+    ImppModel* m_imppModel = nullptr;
 };
 
 #endif
