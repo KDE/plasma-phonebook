@@ -64,7 +64,7 @@ Kirigami.ScrollablePage {
         }
         right: Kirigami.Action {
                 iconName: "document-edit"
-                text: "Edit"
+                text: i18n("Edit")
                 onTriggered: {
                     pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
                 }
@@ -72,14 +72,14 @@ Kirigami.ScrollablePage {
         contextualActions: [
             Kirigami.Action {
                 iconName: "document-edit"
-                text: "Edit"
+                text: i18n("Edit")
                 onTriggered: {
                     pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
                 }
             },
             Kirigami.Action {
                 iconName: "delete"
-                text: "Delete contact"
+                text: i18n("Delete contact")
                 onTriggered: {
                     KPeople.PersonPluginManager.deleteContact(page.personUri)
                     pageStack.pop()
