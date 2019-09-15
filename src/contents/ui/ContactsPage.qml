@@ -74,7 +74,7 @@ Kirigami.ScrollablePage {
     Controls.Label {
         anchors.centerIn: parent
         text: i18n("No contacts")
-        visible: contactsModel.count === 0
+        visible: contactsList.count === 0
     }
 
     header: Rectangle {
