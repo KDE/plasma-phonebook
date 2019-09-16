@@ -123,6 +123,7 @@ Kirigami.ScrollablePage {
                     }
                     Controls.Button {
                         icon.name: "list-remove"
+                        implicitWidth: implicitHeight
                         onClicked: {
                             addressee.phoneNumbers.removePhoneNumber(display)
                         }
@@ -147,6 +148,7 @@ Kirigami.ScrollablePage {
                 // button to add additional text field
                 Controls.Button {
                     icon.name: "list-add"
+                    implicitWidth: implicitHeight
                     enabled: toAddPhone.text.length > 0
                     onClicked: {
                         addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
@@ -180,6 +182,7 @@ Kirigami.ScrollablePage {
                     }
                     Controls.Button {
                         icon.name: "list-remove"
+                        implicitWidth: implicitHeight
                         onClicked: addressee.removeEmail(modelData)
                     }
                 }
@@ -202,6 +205,7 @@ Kirigami.ScrollablePage {
                 // button to add additional text field
                 Controls.Button {
                     icon.name: "list-add"
+                    implicitWidth: implicitHeight
                     enabled: toAddEmail.text.length > 0
                     onClicked: {
                         addressee.insertEmail(toAddEmail.text)
@@ -237,6 +241,7 @@ Kirigami.ScrollablePage {
                     }
                     Controls.Button {
                         icon.name: "list-remove"
+                        implicitWidth: implicitHeight
                         onClicked: {
                             addressee.impps.removeImpp(display)
                         }
@@ -261,6 +266,7 @@ Kirigami.ScrollablePage {
                 // button to add additional text field
                 Controls.Button {
                     icon.name: "list-add"
+                    implicitWidth: implicitHeight
                     enabled: toAddImpp.text.length > 0
                     onClicked: {
                         addressee.impps.addImpp(toAddImpp.text)
