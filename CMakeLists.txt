@@ -30,7 +30,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 People)
-find_package(KF5Contacts "5.12.40" REQUIRED)
+find_package(KF5Contacts "5.12.2" REQUIRED)
 
 ################# Enable C++11 features for clang and gcc #################
 
