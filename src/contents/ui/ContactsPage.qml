@@ -105,6 +105,7 @@ Kirigami.ScrollablePage {
         model: KPeople.PersonsSortFilterProxyModel {
             id: filterModel
             filterRole: Qt.DisplayRole
+            filterCaseSensitivity: Qt.CaseInsensitive
 
             sourceModel: KPeople.PersonsModel {
                 id: contactsModel
