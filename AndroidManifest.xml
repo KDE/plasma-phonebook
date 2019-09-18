@@ -4,6 +4,9 @@
           android:versionName="0.0.1"
           android:versionCode="1"
           android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Plasma Phonebook" android:icon="@drawable/phonebook">
         <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation"
                   android:name="org.qtproject.qt5.android.bindings.QtActivity"

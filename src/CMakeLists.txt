@@ -12,7 +12,7 @@ target_link_libraries(plasma-phonebook
 )
 
 if(ANDROID)
-    target_link_libraries(plasma-phonebook KF5::Kirigami2 Qt5::Svg)
+    target_link_libraries(plasma-phonebook KF5::Kirigami2 Qt5::Svg Qt5::AndroidExtras)
 
     kirigami_package_breeze_icons(ICONS
         go-down-symbolic

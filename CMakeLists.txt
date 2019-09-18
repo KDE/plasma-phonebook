@@ -32,6 +32,10 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 People)
 find_package(KF5Contacts "5.12.2" REQUIRED)
 
+if(ANDROID)
+    find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras)
+endif()
+
 ################# Enable C++11 features for clang and gcc #################
 
 set(CMAKE_CXX_STANDARD 11)

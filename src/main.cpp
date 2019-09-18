@@ -30,6 +30,9 @@
 #include "imppmodel.h"
 #include "contactimporter.h"
 
+#ifdef Q_OS_ANDROID
+#include <QtAndroid>
+#endif
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -47,6 +50,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", "Get it from the Addressee");
     qmlRegisterUncreatableType<ImppModel>("org.kde.kcontacts", 1, 0, "ImppModel", "Get it from the Addressee");
     qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
+
+#ifdef Q_OS_ANDROID
+    QtAndroid::requestPermissionsSync({"android.permission.WRITE_EXTERNAL_STORAGE"});
+#endif
 
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
