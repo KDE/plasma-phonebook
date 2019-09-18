@@ -10,5 +10,6 @@
         <file alias="AddContactPage.qml">contents/ui/AddContactPage.qml</file>
         <file alias="DetailListItem.qml">contents/ui/DetailListItem.qml</file>
         <file alias="fallbackBackground.png">contents/resources/fallbackBackground.png</file>
+        <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>
