@@ -20,6 +20,7 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
+import QtQuick.Dialogs 1.1
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
 import org.kde.kcontacts 1.0 as KContacts
@@ -82,6 +83,33 @@ Kirigami.ScrollablePage {
     Kirigami.FormLayout {
         id: form
         wideMode: true
+
+        Controls.Button {
+            Kirigami.FormData.label: i18n("Photo")
+
+            // Square button
+            implicitWidth: Kirigami.Units.gridUnit * 5
+            implicitHeight: implicitWidth
+
+            contentItem: Item {
+                // Doesn't like to be scaled when being the direct contentItem
+                Kirigami.Icon {
+                    anchors.fill: parent
+                    anchors.margins: Kirigami.Units.smallSpacing
+                    source: fileDialog.fileUrl != "" ? fileDialog.fileUrl : root.person.photo
+                }
+            }
+            FileDialog {
+                id: fileDialog
+                selectExisting: true
+                selectMultiple: false
+                onAccepted: addressee.addPhotoFromFile(fileUrl)
+            }
+
+            onClicked: {
+                fileDialog.open()
+            }
+        }
 
         Controls.TextField {
             id: name

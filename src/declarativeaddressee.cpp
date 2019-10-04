@@ -23,6 +23,9 @@
 #include <QStandardPaths>
 #include <QCryptographicHash>
 #include <QFile>
+#include <QWindow>
+#include <KContacts/Picture>
+
 #include "phonesmodel.h"
 #include "imppmodel.h"
 
@@ -51,6 +54,25 @@ PhonesModel* Addressee::phoneNumbers() const
 ImppModel* Addressee::impps() const
 {
     return m_imppModel;
+}
+
+void Addressee::setPhoto(QImage &data) {
+    auto photo = m_addressee.photo();
+
+    // Scale the photo down to make sure contacts are not taking too
+    // long time to load their photos
+    QSize size(200, 200);
+    photo.setData(data.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    m_addressee.setPhoto(photo);
+}
+
+QImage Addressee::photo() {
+    return m_addressee.photo().data();
+}
+
+Q_SCRIPTABLE void Addressee::addPhotoFromFile(const QString &path) {
+    QImage image(QUrl(path).toLocalFile());
+    setPhoto(image);
 }
 
 Addressee::Addressee(QObject* parent)

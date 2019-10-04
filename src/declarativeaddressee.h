@@ -23,6 +23,7 @@
 
 #include <KContacts/VCardConverter>
 #include <QObject>
+#include <QImage>
 
 #define PROPERTY(type, name, setName) \
     type name() const { return m_addressee.name(); }\
@@ -54,6 +55,10 @@ public:
     Q_PROPERTY(ImppModel* impps READ impps CONSTANT)
     ImppModel* impps() const;
 
+    Q_PROPERTY(QImage photo READ photo WRITE setPhoto NOTIFY photoChanged)
+    void setPhoto(QImage &data);
+    QImage photo();
+
     Q_PROPERTY(QStringList emails READ emails WRITE setEmails NOTIFY emailsChanged)
     PROPERTY(QStringList, emails, setEmails)
 
@@ -67,6 +72,8 @@ public:
         Q_EMIT emailsChanged(emails());
     }
 
+    Q_SCRIPTABLE void addPhotoFromFile(const QString &path);
+
     QByteArray raw() const;
     void setRaw(const QByteArray &raw);
 
@@ -74,6 +81,7 @@ Q_SIGNALS:
     void urlChanged(const QUrl &url);
     void anyNameChanged();
     void phoneNumbersChanged();
+    void photoChanged();
 
 private:
     friend class PhonesModel;
