@@ -34,35 +34,21 @@ Kirigami.SwipeListItem {
     property var icon
     property string personUri
 
-    RowLayout {
-        KPeople.PersonData {
-            id: personData
-            personUri: listItem.personUri
-        }
+    contentItem: RowLayout {
 
         KPeople.PersonActions {
             id: personActions
             personUri: listItem.personUri
         }
 
-        height: Kirigami.Units.gridUnit * 5
-        spacing: Kirigami.Units.gridUnit * 0.5
-
-        // left side: Avatar
-        Item {
-            id: avatarSpace
-            Layout.preferredHeight: parent.height
-            Layout.preferredWidth: parent.height
-
-            RoundImage {
-                id: avatar
-                anchors.fill: parent
-                source: icon
-                isRound: true
-            }
+        RoundImage {
+            id: avatar
+            height: parent.height
+            width: height
+            source: icon
+            isRound: true
         }
 
-        // contact name
         Kirigami.Heading {
             text: name
             textFormat: Text.PlainText
