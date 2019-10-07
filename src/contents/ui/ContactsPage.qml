@@ -23,7 +23,6 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
-import QtQuick.Dialogs 1.0
 
 import org.kde.kirigami 2.9 as Kirigami
 import org.kde.people 1.0 as KPeople
@@ -34,41 +33,18 @@ import org.kde.phonebook 1.0
 Kirigami.ScrollablePage {
     title: i18n("Address book")
 
-    FileDialog {
-        id: importFileDialog
-        selectMultiple: false
-        selectExisting: true
-        onAccepted: importer.importVCards(fileUrl)
-    }
-
-    ContactImporter {
-        id: importer
-    }
-
     // Brighter background color
     Kirigami.Theme.colorSet: Kirigami.Theme.View
     background: Rectangle {
         color: Kirigami.Theme.backgroundColor
     }
 
-    actions {
-        main: Kirigami.Action {
-            icon.name: "contact-new-symbolic"
-            text: i18n("Create new")
-            onTriggered: {
-                pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
-            }
+    actions.main: Kirigami.Action {
+        icon.name: "contact-new-symbolic"
+        text: i18n("Create new")
+        onTriggered: {
+            pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
         }
-
-        contextualActions: [
-            Kirigami.Action {
-                icon.name: "document-import"
-                text: i18n("Import contacts")
-                onTriggered: {
-                    importFileDialog.open()
-                }
-            }
-        ]
     }
 
     Controls.Label {
