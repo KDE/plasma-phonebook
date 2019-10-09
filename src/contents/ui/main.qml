@@ -34,6 +34,7 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: contactsPage
 
     globalDrawer: Kirigami.GlobalDrawer {
+        isMenu: true
         actions: [
             Kirigami.Action {
                 icon.name: "document-import"
