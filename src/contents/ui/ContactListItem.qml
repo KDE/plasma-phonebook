@@ -36,11 +36,6 @@ Kirigami.SwipeListItem {
 
     contentItem: RowLayout {
 
-        KPeople.PersonActions {
-            id: personActions
-            personUri: listItem.personUri
-        }
-
         RoundImage {
             id: avatar
             height: parent.height

@@ -98,16 +98,8 @@ Kirigami.ScrollablePage {
 
                 actions: [
                     Kirigami.Action {
-                        icon.name: "mail-message"
-                        onTriggered: {
-                            personActions.triggerAction(KPeople.TextChatAction)
-                        }
-                    },
-                    Kirigami.Action {
                         icon.name: "call-start"
-                        onTriggered: {
-                            personActions.triggerAction(KPeople.AudioCallAction)
-                        }
+                        onTriggered: Qt.openUrlExternally("tel:" + model.phoneNumber);
                     }
                 ]
 

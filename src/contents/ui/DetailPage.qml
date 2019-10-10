@@ -52,17 +52,7 @@ Kirigami.ScrollablePage {
     }
 
     actions {
-        left: Kirigami.Action {
-            iconName: "mail-message"
-            text: i18n("Write mail")
-            onTriggered: personActions.triggerAction(KPeople.SendEmailAction)
-        }
         main: Kirigami.Action {
-            iconName: "call-start"
-            text: i18n("Make call")
-            onTriggered: personActions.triggerAction(KPeople.AudioCallAction)
-        }
-        right: Kirigami.Action {
                 iconName: "document-edit"
                 text: i18n("Edit")
                 onTriggered: {
@@ -70,13 +60,6 @@ Kirigami.ScrollablePage {
                 }
             }
         contextualActions: [
-            Kirigami.Action {
-                iconName: "document-edit"
-                text: i18n("Edit")
-                onTriggered: {
-                    pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
-                }
-            },
             Kirigami.Action {
                 iconName: "delete"
                 text: i18n("Delete contact")
