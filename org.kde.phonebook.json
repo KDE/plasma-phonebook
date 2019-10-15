@@ -1,20 +1,17 @@
 {
     "id": "org.kde.phonebook",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.12",
+    "runtime-version": "5.13",
     "sdk": "org.kde.Sdk",
     "command": "plasma-phonebook",
     "tags": ["nightly"],
     "desktop-file-name-suffix": " (Nightly)",
-    "rename-icon": "view-pim-contacts",
     "finish-args": [
         "--share=ipc",
         "--share=network",
         "--socket=x11",
         "--socket=wayland",
-        "--device=dri",
-        "--filesystem=home",
-        "--talk-name=org.freedesktop.Notifications"
+        "--device=dri"
     ],
     "separate-locales": false,
 
@@ -22,28 +19,23 @@
         {
             "name": "kcontacts",
             "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "tag": "v19.04.3" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "tag": "v19.08.1" } ]
         },
         {
             "name": "kpeople",
             "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.59.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.62.0" } ]
+        },
+        {
+            "name": "kpeoplevcard",
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeoplevcard.git" } ]
         },
         {
             "name": "plasma-phonebook",
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
-        },
-        {
-            "name": "icon",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mkdir -p /app/share/icons/hicolor/24x24/apps/",
-                "install -D /usr/share/icons/breeze/actions/24/view-pim-contacts.svg /app/share/icons/hicolor/24x24/apps/"
-            ]
         }
     ]
 }

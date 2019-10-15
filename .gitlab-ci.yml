@@ -1,0 +1,13 @@
+include:
+  - https://invent.kde.org/sysadmin/ci-tooling/raw/master/invent/binary-flatpak.yml
+
+variables:
+  BUNDLE: org.kde.phonebook.flatpak
+
+flatpak:
+  extends: .flatpak
+  variables:
+    MANIFEST_PATH: org.kde.phonebook.json
+    APP_ID: org.kde.phonebook
+    FLATPAK_MODULE: plasma-phonebook
+
