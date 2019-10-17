@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48mm" height="48mm" viewBox="0 0 48 48">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <defs>
+    <path d="m 39.67796,275.08804 q -0.112131,0.35508 -0.377166,0.53857 -0.263337,0.18178 -0.667686,0.18178 -0.248046,0 -0.460414,-0.0849 -0.212369,-0.0849 -0.377166,-0.24975 -0.190282,-0.19028 -0.283724,-0.43153 -0.09174,-0.24295 -0.09174,-0.54876 0,-0.59123 0.341488,-0.95311 0.341488,-0.36357 0.900441,-0.36357 0.207272,0 0.441726,0.0544 0.234455,0.0544 0.504587,0.1648 v 0.58444 h -0.191981 q -0.06286,-0.3194 -0.253143,-0.47061 -0.188583,-0.15121 -0.530071,-0.15121 -0.406048,0 -0.615018,0.28882 -0.208971,0.28713 -0.208971,0.84608 0,0.55725 0.208971,0.84608 0.20897,0.28712 0.615018,0.28712 0.283724,0 0.46721,-0.13422 0.183486,-0.13592 0.265036,-0.40435 z" style="-inkscape-font-specification:'Bitstream Vera Serif'" id="reuse-0"/>
+  </defs>
   <defs>
     <linearGradient id="g">
       <stop offset="0" stop-opacity=".68085106"/>
@@ -72,18 +75,18 @@
     <rect width="30.999998" height="42.000038" x="9" y="251.99995" ry="0" fill="url(#l)" paint-order="markers fill stroke"/>
     <rect ry="1.3775033" y="264" x="27.143366" height="6.4283328" width="17.999289" fill="url(#m)" paint-order="markers fill stroke"/>
     <rect width="17.999289" height="6.4283328" x="25.857702" y="255.99998" ry="1.3775033" fill="url(#n)" paint-order="markers fill stroke"/>
-    <text style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" x="37.224682" y="263.75912" transform="matrix(1.28566 0 0 1.28566 -7.5695421 -78.272466)" font-weight="400" font-size="3.4794414" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
-      <tspan x="37.224682" y="263.75912" style="-inkscape-font-specification:'Bitstream Vera Serif'">A</tspan>
-    </text>
+    <g aria-label="A" transform="matrix(1.28566 0 0 1.28566 -7.5695421 -78.272466)" style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" font-weight="400" font-size="3.4794414px" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
+      <path d="m 37.92125,262.83999 h 0.931022 l -0.465511,-1.20625 z m -0.716955,0.91913 v -0.18008 h 0.222561 l 0.90384,-2.35644 h 0.285423 l 0.905538,2.35644 h 0.249745 v 0.18008 h -0.922528 v -0.18008 h 0.282025 l -0.212368,-0.55726 h -1.066938 l -0.212368,0.55726 h 0.278627 v 0.18008 z" style="-inkscape-font-specification:'Bitstream Vera Serif'"/>
+    </g>
     <path d="M39.999999 261c1.666665 1.66667 3.333333 3.33333 5 5h-5" transform="matrix(1.28566 0 0 1.28566 -11.426532 -79.55812)" fill="url(#p)"/>
-    <text y="269.75912" x="38.224682" style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" transform="matrix(1.28566 0 0 1.28566 -7.569542 -77.986446)" font-weight="400" font-size="3.4794414" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
-      <tspan style="-inkscape-font-specification:'Bitstream Vera Serif'" y="269.75912" x="38.224682">B</tspan>
-    </text>
+    <g aria-label="B" transform="matrix(1.28566 0 0 1.28566 -7.569542 -77.986446)" style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" font-weight="400" font-size="3.4794414px" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
+      <path d="m 39.084349,269.57904 h 0.507984 q 0.305811,0 0.446823,-0.13252 0.141013,-0.13252 0.141013,-0.42134 0,-0.28712 -0.141013,-0.41794 -0.139313,-0.13252 -0.446823,-0.13252 h -0.507984 z m 0,-1.28441 h 0.431532 q 0.278627,0 0.406048,-0.10703 0.12912,-0.10703 0.12912,-0.33809 0,-0.23276 -0.12912,-0.33809 -0.127421,-0.10703 -0.406048,-0.10703 h -0.431532 z m -0.667686,1.46449 v -0.18008 h 0.322799 v -2.17465 h -0.322799 v -0.18179 h 1.252123 q 0.383962,0 0.577642,0.158 0.195378,0.1563 0.195378,0.46891 0,0.22596 -0.135915,0.36018 -0.134217,0.13421 -0.394156,0.16479 0.3228,0.0408 0.489297,0.20728 0.168195,0.16479 0.168195,0.44342 0,0.37717 -0.237852,0.55556 -0.237853,0.17838 -0.74244,0.17838 z" style="-inkscape-font-specification:'Bitstream Vera Serif'"/>
+    </g>
     <path transform="matrix(1.28566 0 0 1.28566 -11.426532 -71.55812)" d="M39.999999 261c1.666665 1.66667 3.333333 3.33333 5 5h-5" fill="url(#q)"/>
     <rect ry="1.3775033" y="271.85629" x="26.28602" height="6.4283328" width="17.999289" fill="url(#r)" paint-order="markers fill stroke"/>
-    <text y="275.75912" x="37.224682" style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" transform="matrix(1.28566 0 0 1.28566 -7.141225 -77.84415)" font-weight="400" font-size="3.4794414" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
-      <tspan style="-inkscape-font-specification:'Bitstream Vera Serif'" y="275.75912" x="37.224682">C</tspan>
-    </text>
+    <g aria-label="C" transform="matrix(1.28566,0,0,1.28566,-7.57268,-77.84415)" style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" font-weight="400" font-size="3.4794414px" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
+      <use style="-inkscape-font-specification:'Bitstream Vera Serif'" xlink:href="#reuse-0"/>
+    </g>
     <path transform="matrix(1.28566 0 0 1.28566 -11.426532 -63.558121)" d="M39.999999 261c1.666665 1.66667 3.333333 3.33333 5 5h-5" fill="url(#s)"/>
     <path fill="url(#t)" paint-order="markers fill stroke" d="M9 252h30.999996v40.999989H9z"/>
     <path transform="matrix(1.28566 0 0 1.28566 -11.570611 -71.536295)" d="M17.991666 260.45443l5.09323 5.09323 1.223698-1.25677-5.076693-5.0767-1.240235 1.24024z" opacity=".606" fill="url(#u)"/>
@@ -113,6 +116,9 @@
     <path d="M17.991666 260.45443l5.09323 5.09323 1.223698-1.25677-5.076693-5.0767-1.240235 1.24024z" transform="matrix(1.28566 0 0 1.28566 -11.570611 -58.005559)" opacity=".606" fill="url(#z)"/>
     <path transform="matrix(1.28566 0 0 1.28566 -11.570611 -51.202257)" d="M17.991666 260.45443l5.09323 5.09323 1.223698-1.25677-5.076693-5.0767-1.240235 1.24024z" opacity=".606" fill="url(#A)"/>
     <path d="M17.991666 260.45443l5.09323 5.09323 1.223698-1.25677-5.076693-5.0767-1.240235 1.24024z" transform="matrix(1.28566 0 0 1.28566 -11.570611 -44.398955)" opacity=".606" fill="url(#B)"/>
+    <g style="line-height:1.25;-inkscape-font-specification:'Bitstream Vera Serif'" transform="matrix(1.28566,0,0,1.28566,-7.57268,-77.84415)" aria-label="C" font-weight="400" font-size="3.4794414px" font-family="Bitstream Vera Serif" letter-spacing="0" word-spacing="0" fill="#fff7f7" stroke-width=".08698603" filter="url(#o)">
+      <use style="-inkscape-font-specification:'Bitstream Vera Serif'" xlink:href="#reuse-0"/>
+    </g>
   </g>
 </svg>
 
