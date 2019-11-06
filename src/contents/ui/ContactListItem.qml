@@ -31,7 +31,7 @@ Kirigami.SwipeListItem {
     id: listItem
 
     property string name
-    property var icon
+    property var avatarIcon
     property string personUri
 
     contentItem: RowLayout {
@@ -40,7 +40,7 @@ Kirigami.SwipeListItem {
             id: avatar
             height: parent.height
             width: height
-            source: icon
+            source: avatarIcon
             isRound: true
         }
 

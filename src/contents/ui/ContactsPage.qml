@@ -93,7 +93,7 @@ Kirigami.ScrollablePage {
             ContactListItem {
                 height: Kirigami.Units.gridUnit * 3
                 name: model.display
-                icon: model.decoration
+                avatarIcon: model.decoration
                 personUri: model.personUri
 
                 actions: [
