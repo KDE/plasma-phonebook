@@ -71,7 +71,11 @@ QImage Addressee::photo() {
 }
 
 Q_SCRIPTABLE void Addressee::addPhotoFromFile(const QString &path) {
+#ifdef Q_OS_ANDROID
+	QImage image(path);
+#else
     QImage image(QUrl(path).toLocalFile());
+#endif
     setPhoto(image);
 }
 

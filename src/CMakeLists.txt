@@ -23,6 +23,7 @@ if(ANDROID)
         view-pim-contacts
         dialog-ok-apply
         dialog-cancel
+        list-add
         list-remove
         list-add_executable
         contact-new-symbolic
@@ -31,6 +32,21 @@ if(ANDROID)
         call-start
         document-edit
         delete
+        # im-* icons used by KContacts::Impp::serviceIcon
+        im-google
+        im-gadugadu
+        im-twitter
+        im-irc
+        im-google-talk
+        im-yahoo
+        im-jabber
+        im skype
+        im-icq
+        im-qq
+        im-facebook
+        im-aim
+        im-identi.ca
+        im-youtube
     )
 
 endif()

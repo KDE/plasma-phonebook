@@ -12,7 +12,11 @@ ContactImporter::ContactImporter(QObject *parent) : QObject(parent)
 
 void ContactImporter::importVCards(const QUrl &path)
 {
+#ifdef Q_OS_ANDROID
+	QFile inputFile(path.toString());
+#else
     QFile inputFile(path.toLocalFile());
+#endif
 
     if (!inputFile.open(QIODevice::ReadOnly)) {
         qWarning() << "Couldn't read vCard to import: Couldn't open file for reading";

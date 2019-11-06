@@ -82,7 +82,6 @@ Kirigami.ScrollablePage {
 
     Kirigami.FormLayout {
         id: form
-        wideMode: true
 
         Controls.Button {
             Kirigami.FormData.label: i18n("Photo")
