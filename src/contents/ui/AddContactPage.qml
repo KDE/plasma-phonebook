@@ -278,7 +278,7 @@ Kirigami.ScrollablePage {
             RowLayout {
                 Controls.TextField {
                     id: toAddImpp
-                    placeholderText: i18n("xmpp:person@example.com")
+                    placeholderText: i18n("protocol:person@example.com")
                 }
 
                 // add last text field on save()
