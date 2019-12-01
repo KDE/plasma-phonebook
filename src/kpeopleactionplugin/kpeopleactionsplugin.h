@@ -18,8 +18,8 @@
 #ifndef KPEOPLEACTIONSPLUGIN_H
 #define KPEOPLEACTIONSPLUGIN_H
 
-#include <QObject>
 #include <KPeopleBackend/AbstractPersonAction>
+#include <QObject>
 
 class KPeopleActionsPlugin : public KPeople::AbstractPersonAction
 {
@@ -27,7 +27,7 @@ class KPeopleActionsPlugin : public KPeople::AbstractPersonAction
 
 public:
     KPeopleActionsPlugin(QObject *parent, const QVariantList &args);
-    QList<QAction *> actionsForPerson(const KPeople::PersonData & data, QObject * parent) const override;
+    QList<QAction *> actionsForPerson(const KPeople::PersonData &data, QObject *parent) const override;
 };
 
 #endif // KPEOPLEACTIONSPLUGIN_H

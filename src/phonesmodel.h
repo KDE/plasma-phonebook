@@ -29,18 +29,17 @@ class PhonesModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    PhonesModel(Addressee* a);
+    PhonesModel(Addressee *a);
 
-    bool setData(const QModelIndex & index, const QVariant & value, int role) override;
-    QVariant data(const QModelIndex & index, int role) const override;
-    int rowCount(const QModelIndex & parent = {}) const override;
+    bool setData(const QModelIndex &index, const QVariant &value, int role) override;
+    QVariant data(const QModelIndex &index, int role) const override;
+    int rowCount(const QModelIndex &parent = {}) const override;
 
     Q_SCRIPTABLE void addPhoneNumber(const QString &number);
     Q_SCRIPTABLE void removePhoneNumber(const QString &number);
 
 private:
-    Addressee* m_addressee;
+    Addressee *m_addressee;
 };
-
 
 #endif

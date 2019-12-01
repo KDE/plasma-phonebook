@@ -23,7 +23,7 @@
 #include "declarativeaddressee.h"
 #include <QDebug>
 
-ImppModel::ImppModel(Addressee* a)
+ImppModel::ImppModel(Addressee *a)
     : QAbstractListModel(a)
     , m_addressee(a)
 {
@@ -33,42 +33,43 @@ ImppModel::ImppModel(Addressee* a)
     });
 }
 
-QVariant ImppModel::data(const QModelIndex& index, int role) const
+QVariant ImppModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid() || index.row() < 0 || index.row() >= m_addressee->m_addressee.imppList().count()) {
         return {};
     }
 
-    switch(role) {
-        case Qt::DisplayRole:
-            return m_addressee->m_addressee.imppList()[index.row()].address();
+    switch (role) {
+    case Qt::DisplayRole:
+        return m_addressee->m_addressee.imppList()[index.row()].address();
     }
     return {};
 }
 
-bool ImppModel::setData(const QModelIndex& index, const QVariant& value, int role)
+bool ImppModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
     if (!index.isValid() || index.row() < 0 || index.row() >= m_addressee->m_addressee.imppList().count()) {
         return false;
     }
 
-    switch(role) {
-        case Qt::DisplayRole: {
-            auto impps = m_addressee->m_addressee.imppList();
-            impps[index.row()].setAddress(value.toString());
-            m_addressee->m_addressee.setImppList(impps);
-            dataChanged(index, index, {Qt::DisplayRole});
-        } return true;
+    switch (role) {
+    case Qt::DisplayRole: {
+        auto impps = m_addressee->m_addressee.imppList();
+        impps[index.row()].setAddress(value.toString());
+        m_addressee->m_addressee.setImppList(impps);
+        dataChanged(index, index, {Qt::DisplayRole});
+    }
+        return true;
     }
     return false;
 }
 
-int ImppModel::rowCount(const QModelIndex& parent) const
+int ImppModel::rowCount(const QModelIndex &parent) const
 {
     return parent.isValid() ? 0 : m_addressee->m_addressee.imppList().count();
 }
 
-void ImppModel::addImpp(const QString& address)
+void ImppModel::addImpp(const QString &address)
 {
     const int c = rowCount();
 

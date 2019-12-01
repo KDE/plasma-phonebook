@@ -22,7 +22,7 @@
 #include "declarativeaddressee.h"
 #include <QDebug>
 
-PhonesModel::PhonesModel(Addressee* a)
+PhonesModel::PhonesModel(Addressee *a)
     : QAbstractListModel(a)
     , m_addressee(a)
 {
@@ -32,42 +32,43 @@ PhonesModel::PhonesModel(Addressee* a)
     });
 }
 
-QVariant PhonesModel::data(const QModelIndex& index, int role) const
+QVariant PhonesModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid() || index.row() < 0 || index.row() >= m_addressee->m_addressee.phoneNumbers().count()) {
         return {};
     }
 
-    switch(role) {
-        case Qt::DisplayRole:
-            return m_addressee->m_addressee.phoneNumbers()[index.row()].number();
+    switch (role) {
+    case Qt::DisplayRole:
+        return m_addressee->m_addressee.phoneNumbers()[index.row()].number();
     }
     return {};
 }
 
-bool PhonesModel::setData(const QModelIndex& index, const QVariant& value, int role)
+bool PhonesModel::setData(const QModelIndex &index, const QVariant &value, int role)
 {
     if (!index.isValid() || index.row() < 0 || index.row() >= m_addressee->m_addressee.phoneNumbers().count()) {
         return false;
     }
 
-    switch(role) {
-        case Qt::DisplayRole: {
-            auto numbers = m_addressee->m_addressee.phoneNumbers();
-            numbers[index.row()].setNumber(value.toString());
-            m_addressee->m_addressee.setPhoneNumbers(numbers);
-            dataChanged(index, index, {Qt::DisplayRole});
-        } return true;
+    switch (role) {
+    case Qt::DisplayRole: {
+        auto numbers = m_addressee->m_addressee.phoneNumbers();
+        numbers[index.row()].setNumber(value.toString());
+        m_addressee->m_addressee.setPhoneNumbers(numbers);
+        dataChanged(index, index, {Qt::DisplayRole});
+    }
+        return true;
     }
     return false;
 }
 
-int PhonesModel::rowCount(const QModelIndex& parent) const
+int PhonesModel::rowCount(const QModelIndex &parent) const
 {
     return parent.isValid() ? 0 : m_addressee->m_addressee.phoneNumbers().count();
 }
 
-void PhonesModel::addPhoneNumber(const QString& number)
+void PhonesModel::addPhoneNumber(const QString &number)
 {
     const int c = rowCount();
     beginInsertRows({}, c, c);

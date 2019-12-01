@@ -19,17 +19,17 @@
  */
 
 #include "declarativeaddressee.h"
-#include <QDebug>
-#include <QStandardPaths>
-#include <QCryptographicHash>
-#include <QFile>
-#include <QWindow>
 #include <KContacts/Picture>
+#include <QCryptographicHash>
+#include <QDebug>
+#include <QFile>
+#include <QStandardPaths>
+#include <QWindow>
 
-#include "phonesmodel.h"
 #include "imppmodel.h"
+#include "phonesmodel.h"
 
-void Addressee::setRaw(const QByteArray& raw)
+void Addressee::setRaw(const QByteArray &raw)
 {
     KContacts::VCardConverter converter;
     m_addressee = converter.parseVCard(raw);
@@ -46,17 +46,18 @@ QByteArray Addressee::raw() const
     return converter.createVCard(m_addressee);
 }
 
-PhonesModel* Addressee::phoneNumbers() const
+PhonesModel *Addressee::phoneNumbers() const
 {
     return m_phonesModel;
 }
 
-ImppModel* Addressee::impps() const
+ImppModel *Addressee::impps() const
 {
     return m_imppModel;
 }
 
-void Addressee::setPhoto(QImage &data) {
+void Addressee::setPhoto(QImage &data)
+{
     auto photo = m_addressee.photo();
 
     // Scale the photo down to make sure contacts are not taking too
@@ -66,20 +67,22 @@ void Addressee::setPhoto(QImage &data) {
     m_addressee.setPhoto(photo);
 }
 
-QImage Addressee::photo() {
+QImage Addressee::photo()
+{
     return m_addressee.photo().data();
 }
 
-Q_SCRIPTABLE void Addressee::addPhotoFromFile(const QString &path) {
+Q_SCRIPTABLE void Addressee::addPhotoFromFile(const QString &path)
+{
 #ifdef Q_OS_ANDROID
-	QImage image(path);
+    QImage image(path);
 #else
     QImage image(QUrl(path).toLocalFile());
 #endif
     setPhoto(image);
 }
 
-Addressee::Addressee(QObject* parent)
+Addressee::Addressee(QObject *parent)
     : QObject(parent)
     , m_phonesModel(new PhonesModel(this))
     , m_imppModel(new ImppModel(this))

@@ -20,15 +20,15 @@
 
 #include <QApplication>
 #include <QQmlApplicationEngine>
-#include <QtQml>
 #include <QUrl>
+#include <QtQml>
 
 #include <KLocalizedContext>
 
-#include "declarativeaddressee.h"
-#include "phonesmodel.h"
-#include "imppmodel.h"
 #include "contactimporter.h"
+#include "declarativeaddressee.h"
+#include "imppmodel.h"
+#include "phonesmodel.h"
 
 #ifdef Q_OS_ANDROID
 #include <QtAndroid>

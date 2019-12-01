@@ -17,23 +17,23 @@
 
 #include "kpeopleactionsplugin.h"
 
+#include <KLocalizedString>
 #include <QDebug>
 #include <QDesktopServices>
-#include <KLocalizedString>
 
 #include <KPluginFactory>
 
-#include <KPeopleBackend/AbstractContact>
-#include <KPeople/Widgets/Actions>
 #include <KContacts/VCardConverter>
+#include <KPeople/Widgets/Actions>
+#include <KPeopleBackend/AbstractContact>
 
-KPeopleActionsPlugin::KPeopleActionsPlugin(QObject* parent, const QVariantList& args)
+KPeopleActionsPlugin::KPeopleActionsPlugin(QObject *parent, const QVariantList &args)
     : AbstractPersonAction(parent)
 {
     Q_UNUSED(args)
 }
 
-QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonData& data, QObject* parent) const
+QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonData &data, QObject *parent) const
 {
     Q_UNUSED(parent)
     QList<QAction *> actions;
@@ -47,13 +47,10 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
     // TODO: Avoid looping through numbers multiple times by using a SortFilterProxyModel in phonebook.
     for (auto &number : addressee.phoneNumbers()) {
         if (!number.number().isEmpty()) {
-            QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("call-start")),
-                                          i18nc("Action to tell user to call person using phone number", "Call on %1", number.number()));
+            QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("call-start")), i18nc("Action to tell user to call person using phone number", "Call on %1", number.number()));
             action->setProperty("actionType", KPeople::AudioCallAction);
 
-            connect(action, &QAction::triggered, [=]() {
-                QDesktopServices::openUrl(QStringLiteral("tel:") + number.number());
-            });
+            connect(action, &QAction::triggered, [=]() { QDesktopServices::openUrl(QStringLiteral("tel:") + number.number()); });
 
             actions << action;
         }
@@ -61,14 +58,10 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
 
     for (auto &number : addressee.phoneNumbers()) {
         if (!number.number().isEmpty()) {
-
-            QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("mail-message")),
-                                          i18nc("Action to tell user to write a message to phone number", "Write SMS on %1", number.number()));
+            QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("mail-message")), i18nc("Action to tell user to write a message to phone number", "Write SMS on %1", number.number()));
             action->setProperty("actionType", KPeople::TextChatAction);
 
-            connect(action, &QAction::triggered, [=]() {
-                QDesktopServices::openUrl(QStringLiteral("sms:") + number.number());
-            });
+            connect(action, &QAction::triggered, [=]() { QDesktopServices::openUrl(QStringLiteral("sms:") + number.number()); });
 
             actions << action;
         }
@@ -76,15 +69,10 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
 
     // Instant messenger actions
     for (auto &impp : addressee.imppList()) {
-        QAction *action = new QAction(QIcon::fromTheme(impp.serviceIcon()),
-                                      i18nc("Action to write to instant messanger contact", "%1 %2",
-                                            KContacts::Impp::serviceLabel(impp.serviceType()),
-                                            impp.address().toString()));
+        QAction *action = new QAction(QIcon::fromTheme(impp.serviceIcon()), i18nc("Action to write to instant messanger contact", "%1 %2", KContacts::Impp::serviceLabel(impp.serviceType()), impp.address().toString()));
         action->setProperty("actionType", KPeople::TextChatAction);
 
-        connect(action, &QAction::triggered, [=]() {
-            QDesktopServices::openUrl(impp.address().toString());
-        });
+        connect(action, &QAction::triggered, [=]() { QDesktopServices::openUrl(impp.address().toString()); });
 
         actions << action;
     }
@@ -94,9 +82,7 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
         QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("mail-message")), i18nc("Action to send an email", "email %1", email));
         action->setProperty("actionType", KPeople::SendEmailAction);
 
-        connect(action, &QAction::triggered, [=]() {
-            QDesktopServices::openUrl(QStringLiteral("mailto:") + email);
-        });
+        connect(action, &QAction::triggered, [=]() { QDesktopServices::openUrl(QStringLiteral("mailto:") + email); });
 
         actions << action;
     }
@@ -104,6 +90,6 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
     return actions;
 }
 
-K_PLUGIN_FACTORY_WITH_JSON( KPeopleActionsPluginFactory, "phonebook_kpeople_plugin.json", registerPlugin<KPeopleActionsPlugin>(); )
+K_PLUGIN_FACTORY_WITH_JSON(KPeopleActionsPluginFactory, "phonebook_kpeople_plugin.json", registerPlugin<KPeopleActionsPlugin>();)
 
 #include "kpeopleactionsplugin.moc"

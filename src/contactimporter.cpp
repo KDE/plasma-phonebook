@@ -6,14 +6,15 @@
 #include <KContacts/VCardConverter>
 #include <KPeople/PersonPluginManager>
 
-ContactImporter::ContactImporter(QObject *parent) : QObject(parent)
+ContactImporter::ContactImporter(QObject *parent)
+    : QObject(parent)
 {
 }
 
 void ContactImporter::importVCards(const QUrl &path)
 {
 #ifdef Q_OS_ANDROID
-	QFile inputFile(path.toString());
+    QFile inputFile(path.toString());
 #else
     QFile inputFile(path.toLocalFile());
 #endif

@@ -1,8 +1,8 @@
 #ifndef CONTACTIMPORTER_H
 #define CONTACTIMPORTER_H
 
-#include <QObject>
 #include <KContacts/VCardConverter>
+#include <QObject>
 
 class ContactImporter : public QObject
 {

@@ -22,13 +22,23 @@
 #define DECLARATIVE_ADDRESSEE_H
 
 #include <KContacts/VCardConverter>
-#include <QObject>
 #include <QImage>
+#include <QObject>
 
-#define PROPERTY(type, name, setName) \
-    type name() const { return m_addressee.name(); }\
-    void setName(const type& name) { if (m_addressee.name() == name) return; m_addressee.setName(name); name##Changed(name); m_addressee.setChanged(true); }\
-    Q_SIGNAL void name##Changed(const type& name);
+#define PROPERTY(type, name, setName)                                                                                                                                                                                                          \
+    type name() const                                                                                                                                                                                                                          \
+    {                                                                                                                                                                                                                                          \
+        return m_addressee.name();                                                                                                                                                                                                             \
+    }                                                                                                                                                                                                                                          \
+    void setName(const type &name)                                                                                                                                                                                                             \
+    {                                                                                                                                                                                                                                          \
+        if (m_addressee.name() == name)                                                                                                                                                                                                        \
+            return;                                                                                                                                                                                                                            \
+        m_addressee.setName(name);                                                                                                                                                                                                             \
+        name##Changed(name);                                                                                                                                                                                                                   \
+        m_addressee.setChanged(true);                                                                                                                                                                                                          \
+    }                                                                                                                                                                                                                                          \
+    Q_SIGNAL void name##Changed(const type &name);
 
 class PhonesModel;
 class ImppModel;
@@ -38,10 +48,13 @@ class Addressee : public QObject
     Q_OBJECT
     Q_PROPERTY(QByteArray raw READ raw WRITE setRaw)
 public:
-    Addressee(QObject* parent = nullptr);
+    Addressee(QObject *parent = nullptr);
 
     Q_PROPERTY(QString realName READ realName NOTIFY anyNameChanged)
-    QString realName() const { return m_addressee.realName(); }
+    QString realName() const
+    {
+        return m_addressee.realName();
+    }
 
     Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
     PROPERTY(QString, name, setName)
@@ -49,11 +62,11 @@ public:
     Q_PROPERTY(QString office READ office WRITE setOffice NOTIFY officeChanged)
     PROPERTY(QString, office, setOffice)
 
-    Q_PROPERTY(PhonesModel* phoneNumbers READ phoneNumbers CONSTANT)
-    PhonesModel* phoneNumbers() const;
+    Q_PROPERTY(PhonesModel *phoneNumbers READ phoneNumbers CONSTANT)
+    PhonesModel *phoneNumbers() const;
 
-    Q_PROPERTY(ImppModel* impps READ impps CONSTANT)
-    ImppModel* impps() const;
+    Q_PROPERTY(ImppModel *impps READ impps CONSTANT)
+    ImppModel *impps() const;
 
     Q_PROPERTY(QImage photo READ photo WRITE setPhoto NOTIFY photoChanged)
     void setPhoto(QImage &data);
@@ -62,12 +75,14 @@ public:
     Q_PROPERTY(QStringList emails READ emails WRITE setEmails NOTIFY emailsChanged)
     PROPERTY(QStringList, emails, setEmails)
 
-    Q_SCRIPTABLE void insertEmail(const QString &email) {
+    Q_SCRIPTABLE void insertEmail(const QString &email)
+    {
         m_addressee.insertEmail(email);
         Q_EMIT emailsChanged(emails());
     }
 
-    Q_SCRIPTABLE void removeEmail(const QString &email) {
+    Q_SCRIPTABLE void removeEmail(const QString &email)
+    {
         m_addressee.removeEmail(email);
         Q_EMIT emailsChanged(emails());
     }
@@ -87,8 +102,8 @@ private:
     friend class PhonesModel;
     friend class ImppModel;
     KContacts::Addressee m_addressee;
-    PhonesModel* m_phonesModel = nullptr;
-    ImppModel* m_imppModel = nullptr;
+    PhonesModel *m_phonesModel = nullptr;
+    ImppModel *m_imppModel = nullptr;
 };
 
 #endif
