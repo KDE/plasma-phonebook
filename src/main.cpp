@@ -50,7 +50,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", "Get it from the Addressee");
     qmlRegisterUncreatableType<ImppModel>("org.kde.kcontacts", 1, 0, "ImppModel", "Get it from the Addressee");
     qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
+    qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);
+#else
     qmlRegisterType<QAbstractItemModel>();
+#endif
 
 #ifdef Q_OS_ANDROID
     QtAndroid::requestPermissionsSync({"android.permission.WRITE_EXTERNAL_STORAGE"});
