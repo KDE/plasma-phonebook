@@ -53,12 +53,12 @@ Kirigami.ScrollablePage {
 
     actions {
         main: Kirigami.Action {
-                iconName: "document-edit"
-                text: i18n("Edit")
-                onTriggered: {
-                    pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
-                }
+            iconName: "document-edit"
+            text: i18n("Edit")
+            onTriggered: {
+                pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
             }
+        }
         contextualActions: [
             Kirigami.Action {
                 iconName: "delete"

@@ -105,8 +105,8 @@ Kirigami.ScrollablePage {
 
                 onClicked: {
                     pageStack.push(detailPage, {
-                                        personUri: model.personUri
-                                   })
+                        personUri: model.personUri
+                    })
                 }
             }
         }

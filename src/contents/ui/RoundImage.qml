@@ -18,17 +18,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
 import org.kde.kirigami 2.6 as Kirigami
 
 Kirigami.Icon {
-	id: img
-	property bool isRound: true
+    id: img
+    property bool isRound: true
 
-        layer.enabled: isRound
-        layer.effect: OpacityMask {
+    layer.enabled: isRound
+    layer.effect: OpacityMask {
         maskSource: Item {
             width: img.width
             height: img.height
