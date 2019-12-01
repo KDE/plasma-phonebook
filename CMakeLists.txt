@@ -25,6 +25,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEClangFormat)
 
 ################# Find dependencies #################
 
@@ -48,3 +49,7 @@ install(FILES org.kde.phonebook.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODI
 install(FILES org.kde.phonebook.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+# add clang-format target for all our real source files
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
