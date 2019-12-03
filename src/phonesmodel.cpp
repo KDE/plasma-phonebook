@@ -78,7 +78,7 @@ void PhonesModel::addPhoneNumber(const QString &number)
 
 void PhonesModel::removePhoneNumber(const QString &number)
 {
-    for (int i = 0; 0 < m_addressee->m_addressee.phoneNumbers().count(); i++) {
+    for (int i = 0; i < m_addressee->m_addressee.phoneNumbers().count(); i++) {
         if (m_addressee->m_addressee.phoneNumbers()[i].number() == number) {
             beginRemoveRows({}, i, i);
             break;
