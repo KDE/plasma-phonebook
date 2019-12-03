@@ -24,7 +24,7 @@ import QtQuick 2.7
 import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
 
-import org.kde.kirigami 2.9 as Kirigami
+import org.kde.kirigami 2.10 as Kirigami
 import org.kde.people 1.0 as KPeople
 
 import org.kde.phonebook 1.0
@@ -77,15 +77,18 @@ Kirigami.ScrollablePage {
 
         section.property: "display"
         section.criteria: ViewSection.FirstCharacter
+        section.delegate: Kirigami.ListSectionHeader {text: section}
         clip: true
         model: KPeople.PersonsSortFilterProxyModel {
             id: filterModel
             filterRole: Qt.DisplayRole
+            sortRole: Qt.DisplayRole
             filterCaseSensitivity: Qt.CaseInsensitive
 
             sourceModel: KPeople.PersonsModel {
                 id: contactsModel
             }
+            Component.onCompleted: sort(0)
         }
 
         Component {
