@@ -20,11 +20,7 @@
 
 #include "declarativeaddressee.h"
 #include <KContacts/Picture>
-#include <QCryptographicHash>
-#include <QDebug>
 #include <QFile>
-#include <QStandardPaths>
-#include <QWindow>
 
 #include "imppmodel.h"
 #include "phonesmodel.h"

@@ -35,8 +35,8 @@ public:
     QVariant data(const QModelIndex &index, int role) const override;
     int rowCount(const QModelIndex &parent = {}) const override;
 
-    Q_SCRIPTABLE void addImpp(const QString &number);
-    Q_SCRIPTABLE void removeImpp(const QString &number);
+    Q_SCRIPTABLE void addImpp(const QString &address);
+    Q_SCRIPTABLE void removeImpp(const QString &address);
 
 private:
     Addressee *m_addressee;

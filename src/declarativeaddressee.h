@@ -30,15 +30,15 @@
     {                                                                                                                                                                                                                                          \
         return m_addressee.name();                                                                                                                                                                                                             \
     }                                                                                                                                                                                                                                          \
-    void setName(const type &name)                                                                                                                                                                                                             \
+    void setName(const type &(name))                                                                                                                                                                                                           \
     {                                                                                                                                                                                                                                          \
-        if (m_addressee.name() == name)                                                                                                                                                                                                        \
+        if (m_addressee.name() == (name))                                                                                                                                                                                                      \
             return;                                                                                                                                                                                                                            \
         m_addressee.setName(name);                                                                                                                                                                                                             \
         name##Changed(name);                                                                                                                                                                                                                   \
         m_addressee.setChanged(true);                                                                                                                                                                                                          \
     }                                                                                                                                                                                                                                          \
-    Q_SIGNAL void name##Changed(const type &name);
+    Q_SIGNAL void name##Changed(const type &(name));
 
 class PhonesModel;
 class ImppModel;

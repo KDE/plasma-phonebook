@@ -87,7 +87,9 @@ void ImppModel::removeImpp(const QString &address)
     for (int i = 0; 0 < m_addressee->m_addressee.imppList().count(); i++) {
         if (m_addressee->m_addressee.imppList()[i].address() == address) {
             beginRemoveRows({}, i, i);
-            m_addressee->m_addressee.imppList().remove(i);
+            auto imppList = m_addressee->m_addressee.imppList();
+            imppList.remove(i);
+            m_addressee->m_addressee.setImppList(imppList);
             break;
         }
     }
