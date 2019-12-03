@@ -95,7 +95,7 @@ Kirigami.ScrollablePage {
                 Kirigami.Icon {
                     anchors.fill: parent
                     anchors.margins: Kirigami.Units.smallSpacing
-                    source: fileDialog.fileUrl != "" ? fileDialog.fileUrl : root.person.photo
+                    source: fileDialog.fileUrl != "" ? fileDialog.fileUrl : root.person ? root.person.photo : "user-identity"
                 }
             }
             FileDialog {
