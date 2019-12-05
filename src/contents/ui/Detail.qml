@@ -71,14 +71,20 @@ ListView {
     section.property: "actionType"
     section.delegate: Kirigami.ListSectionHeader {
         text: {
-            if (section === "3")
-                return i18n("Email")
-            else if (section === "1")
-                return i18n("Call")
-            else if (section === "0")
+            switch(parseInt(section)) {
+            case KPeople.ActionType.TextChatAction:
                 return i18n("Chat")
-            else
+            case KPeople.ActionType.AudioCallAction:
+                return i18n("Call")
+            case KPeople.ActionType.VideoCallAction:
+                return i18n("Video Call")
+            case KPeople.ActionType.SendEmailAction:
+                return i18n("Email")
+            case KPeople.ActionType.SendFileAction:
+                return i18n("Send file")
+            default:
                 return i18n("Other")
+            }
         }
     }
 
