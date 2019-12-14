@@ -30,8 +30,8 @@ include(KDEClangFormat)
 ################# Find dependencies #################
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 People)
-find_package(KF5Contacts "5.12.1" REQUIRED)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts)
+find_package(KF5PeopleVCard REQUIRED)
 
 if(ANDROID)
     find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras)
