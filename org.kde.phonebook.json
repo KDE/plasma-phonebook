@@ -19,12 +19,12 @@
         {
             "name": "kcontacts",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "tag": "v19.08.1" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "tag": "v5.65.0" } ]
         },
         {
             "name": "kpeople",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.62.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.65.0" } ]
         },
         {
             "name": "kpeoplevcard",
