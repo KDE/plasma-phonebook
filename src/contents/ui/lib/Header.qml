@@ -13,8 +13,6 @@ import QtGraphicalEffects 1.0
 
 Rectangle {
     id: root
-    width: parent.width
-    height: Kirigami.Units.gridUnit * 8
     clip: true
     default property alias contents: content.data
     property alias content: contentContainer
