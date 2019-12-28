@@ -1,6 +1,22 @@
 [Desktop Entry]
 Name=Phone Book
+Name[ca]=Llibreta de telèfons
+Name[es]=Guía telefónica
+Name[nl]=Telefoonboek
+Name[pt]=Lista Telefónica
+Name[sk]=Telefónny zoznam
+Name[uk]=Телефонна книга
+Name[x-test]=xxPhone Bookxx
+Name[zh_TW]=電話簿
 Comment=Edit and view Contacts
+Comment[ca]=Visualitza i edita els contactes
+Comment[es]=Edite y vea contactos
+Comment[nl]=Contactpersonen bewerken en bekijken
+Comment[pt]=Editar e ver contactos
+Comment[sk]=Upraviť a zobraziť kontakty
+Comment[uk]=Перегляд і редагування контактів
+Comment[x-test]=xxEdit and view Contactsxx
+Comment[zh_TW]=編輯並檢視通訊錄
 Version=1.0
 Exec=plasma-phonebook
 MimeType=application/x-plasma-phonebook;
