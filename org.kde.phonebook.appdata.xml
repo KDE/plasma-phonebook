@@ -4,6 +4,7 @@
   <name>Phone Book for Plasma Mobile</name>
   <name xml:lang="ca">Llibreta de telèfons per al Plasma Mòbil</name>
   <name xml:lang="es">Guía telefónica para Plasma Mobile</name>
+  <name xml:lang="id">Buku Telepon untuk Plasma Mobile</name>
   <name xml:lang="nl">Telefoonboek voor Plasma Mobile</name>
   <name xml:lang="pt">Lista Telefónica do Plasma Mobile</name>
   <name xml:lang="sk">Zoznam kontaktov pre Plasma Mobile</name>
@@ -13,6 +14,7 @@
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="es">Vea y edite sus contactos</summary>
+  <summary xml:lang="id">Tilik dan edit kontak</summary>
   <summary xml:lang="nl">Contactpersonen bekijken en bewerken</summary>
   <summary xml:lang="pt">Ver e editar os contactos</summary>
   <summary xml:lang="sk">Zobrazovať a upraviť kontakty</summary>
@@ -24,6 +26,7 @@
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
+  <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
