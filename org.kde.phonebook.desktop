@@ -2,6 +2,7 @@
 Name=Phone Book
 Name[ca]=Llibreta de telèfons
 Name[es]=Guía telefónica
+Name[id]=Buku Telepon
 Name[nl]=Telefoonboek
 Name[pt]=Lista Telefónica
 Name[sk]=Telefónny zoznam
@@ -11,6 +12,7 @@ Name[zh_TW]=電話簿
 Comment=Edit and view Contacts
 Comment[ca]=Visualitza i edita els contactes
 Comment[es]=Edite y vea contactos
+Comment[id]=Edit dan tilik Kontak
 Comment[nl]=Contactpersonen bewerken en bekijken
 Comment[pt]=Editar e ver contactos
 Comment[sk]=Upraviť a zobraziť kontakty
