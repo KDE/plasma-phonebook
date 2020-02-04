@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Phone Book
 Name[ca]=Llibreta de telèfons
+Name[ca@valencia]=Llibreta de telèfons
 Name[es]=Guía telefónica
 Name[et]=Telefoniraamat
 Name[id]=Buku Telepon
@@ -15,6 +16,7 @@ Name[x-test]=xxPhone Bookxx
 Name[zh_TW]=電話簿
 Comment=Edit and view Contacts
 Comment[ca]=Visualitza i edita els contactes
+Comment[ca@valencia]=Visualitza i edita els contactes
 Comment[es]=Edite y vea contactos
 Comment[et]=Kontaktide näitamine ja muutmine
 Comment[id]=Edit dan tilik Kontak
