@@ -8,6 +8,7 @@
   <name xml:lang="et">Plasma Mobile telefoniraamat</name>
   <name xml:lang="id">Buku Telepon untuk Plasma Mobile</name>
   <name xml:lang="it">Phone Book per Plasma Mobile</name>
+  <name xml:lang="ko">Plasma 모바일 전화번호부</name>
   <name xml:lang="nl">Telefoonboek voor Plasma Mobile</name>
   <name xml:lang="pt">Lista Telefónica do Plasma Mobile</name>
   <name xml:lang="pt-BR">Lista Telefônica para Plasma Mobile</name>
@@ -22,6 +23,7 @@
   <summary xml:lang="et">Kontaktide näitamine ja muutmine</summary>
   <summary xml:lang="id">Tilik dan edit kontak</summary>
   <summary xml:lang="it">Visualizza e modifica i contatti</summary>
+  <summary xml:lang="ko">연락처 보기 및 편집</summary>
   <summary xml:lang="nl">Contactpersonen bekijken en bewerken</summary>
   <summary xml:lang="pt">Ver e editar os contactos</summary>
   <summary xml:lang="pt-BR">Visualizar e editar contatos</summary>
@@ -38,6 +40,7 @@
   <developer_name xml:lang="et">KDE kogukond</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">La comunità KDE</developer_name>
+  <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">KDE Community</developer_name>
