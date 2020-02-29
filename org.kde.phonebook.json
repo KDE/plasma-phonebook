@@ -1,7 +1,7 @@
 {
     "id": "org.kde.phonebook",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.13",
+    "runtime-version": "5.14",
     "sdk": "org.kde.Sdk",
     "command": "plasma-phonebook",
     "tags": ["nightly"],
@@ -14,17 +14,15 @@
         "--device=dri"
     ],
     "separate-locales": false,
-
+    "cleanup": [
+        "/include",
+        "/lib/cmake"
+    ],
     "modules": [
-        {
-            "name": "kcontacts",
-            "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kcontacts.git", "tag": "v5.65.0" } ]
-        },
         {
             "name": "kpeople",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.65.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.66.0" } ]
         },
         {
             "name": "kpeoplevcard",
