@@ -82,6 +82,7 @@ Kirigami.ScrollablePage {
 
     Kirigami.FormLayout {
         id: form
+        Layout.fillWidth: true
 
         Controls.Button {
             Kirigami.FormData.label: i18n("Photo")
@@ -113,6 +114,7 @@ Kirigami.ScrollablePage {
         Controls.TextField {
             id: name
             Kirigami.FormData.label: i18n("Name:")
+            Layout.fillWidth: true
             text: addressee.realName
             onAccepted: {
                 addressee.name = text
@@ -122,7 +124,6 @@ Kirigami.ScrollablePage {
                 target: root;
                 onSave: name.accepted()
             }
-
         }
 
         Kirigami.Separator {
@@ -131,6 +132,7 @@ Kirigami.ScrollablePage {
 
         ColumnLayout {
             id: phoneNumber
+            Layout.fillWidth: true
             Kirigami.FormData.label: i18n("Phone:")
             Repeater {
                 model: addressee.phoneNumbers
@@ -139,6 +141,7 @@ Kirigami.ScrollablePage {
                     Controls.TextField {
                         id: phoneField
                         text: display
+                        Layout.fillWidth: true
                         onAccepted: {
                             display = text
                         }
@@ -160,6 +163,7 @@ Kirigami.ScrollablePage {
             RowLayout {
                 Controls.TextField {
                     id: toAddPhone
+                    Layout.fillWidth: true
                     placeholderText: i18n("+1 555 2368")
                 }
 
@@ -191,6 +195,7 @@ Kirigami.ScrollablePage {
 
         ColumnLayout {
             id: email
+            Layout.fillWidth: true
             Kirigami.FormData.label: i18n("E-mail:")
 
             Repeater {
@@ -205,6 +210,7 @@ Kirigami.ScrollablePage {
                 delegate: RowLayout {
                     Controls.TextField {
                         id: textField
+                        Layout.fillWidth: true
                         text: modelData
                     }
                     Controls.Button {
@@ -217,6 +223,7 @@ Kirigami.ScrollablePage {
             RowLayout {
                 Controls.TextField {
                     id: toAddEmail
+                    Layout.fillWidth: true
                     placeholderText: i18n("user@example.org")
                 }
 
@@ -248,6 +255,7 @@ Kirigami.ScrollablePage {
 
         ColumnLayout {
             id: impp
+            Layout.fillWidth: true
             Kirigami.FormData.label: i18n("Instant Messenger:")
 
             Repeater {
@@ -257,6 +265,7 @@ Kirigami.ScrollablePage {
                     Controls.TextField {
                         id: imppField
                         text: display
+                        Layout.fillWidth: true
                         onAccepted: {
                             display = text
                         }
@@ -278,6 +287,7 @@ Kirigami.ScrollablePage {
             RowLayout {
                 Controls.TextField {
                     id: toAddImpp
+                    Layout.fillWidth: true
                     placeholderText: i18n("protocol:person@example.com")
                 }
 
