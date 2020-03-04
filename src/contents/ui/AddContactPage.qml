@@ -109,7 +109,9 @@ Kirigami.ScrollablePage {
 
             Connections {
                 target: root;
-                onSave: name.accepted()
+                function onSave() {
+                    name.accepted()
+                }
             }
         }
 
@@ -134,8 +136,10 @@ Kirigami.ScrollablePage {
                         }
 
                         Connections {
-                            target: root;
-                            onSave: phoneField.accepted()
+                            target: root
+                            function onSave() {
+                                phoneField.accepted()
+                            }
                         }
                     }
                     Controls.Button {
@@ -157,7 +161,7 @@ Kirigami.ScrollablePage {
                 // add last text field on save()
                 Connections {
                     target: root;
-                    onSave: {
+                    function onSave() {
                         if (toAddPhone.text !== "")
                             addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
                     }
@@ -217,7 +221,7 @@ Kirigami.ScrollablePage {
                 // add last text field on save()
                 Connections {
                     target: root;
-                    onSave: {
+                    function onSave() {
                         if (toAddEmail.text !== "")
                             addressee.insertEmail(toAddEmail.text)
                     }
@@ -282,7 +286,7 @@ Kirigami.ScrollablePage {
                 // add last text field on save()
                 Connections {
                     target: root;
-                    onSave: {
+                    function onSave() {
                         if (toAddImpp.text !== "")
                             addressee.impps.addImpp(toAddImpp.text)
                     }
