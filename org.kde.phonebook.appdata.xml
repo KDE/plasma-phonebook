@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
-  <name>Phone Book for Plasma Mobile</name>
-  <name xml:lang="ca">Llibreta de telèfons per al Plasma Mòbil</name>
-  <name xml:lang="ca-valencia">Llibreta de telèfons per al Plasma Mòbil</name>
-  <name xml:lang="es">Guía telefónica para Plasma Mobile</name>
-  <name xml:lang="et">Plasma Mobile telefoniraamat</name>
-  <name xml:lang="fr">Agenda téléphonique pour Plasma Mobile</name>
-  <name xml:lang="id">Buku Telepon untuk Plasma Mobile</name>
-  <name xml:lang="it">Phone Book per Plasma Mobile</name>
-  <name xml:lang="ko">Plasma 모바일 전화번호부</name>
-  <name xml:lang="nl">Telefoonboek voor Plasma Mobile</name>
-  <name xml:lang="pt">Lista Telefónica do Plasma Mobile</name>
-  <name xml:lang="pt-BR">Lista Telefônica para Plasma Mobile</name>
-  <name xml:lang="sk">Zoznam kontaktov pre Plasma Mobile</name>
-  <name xml:lang="sv">Telefonkatalog för Plasma mobil</name>
-  <name xml:lang="uk">Телефонна книга для мобільної Плазми</name>
-  <name xml:lang="x-test">xxPhone Book for Plasma Mobilexx</name>
-  <name xml:lang="zh-TW">適用於 Plasma 行動版的電話簿</name>
+  <name>Plasma Phonebook</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
@@ -36,7 +20,7 @@
   <summary xml:lang="x-test">xxView and edit contactsxx</summary>
   <summary xml:lang="zh-TW">檢視並編輯聯絡人</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2+3+KDEev</project_license>
+  <project_license>LicenseRef-KDE-Accepted-GPL</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
@@ -56,6 +40,24 @@
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
-    <p/>
+    <p>Convergent contact management application for both desktop and mobile devices.</p>
+    <p>It provides a central place for starting conversations. Depending on the information available about a contact,
+      respective actions are displayed.</p>
+    <p>Features</p>
+    <ul>
+      <li>Add contacts</li>
+      <li>Remove contacts</li>
+      <li>Import VCard files</li>
+    </ul>
   </description>
+  <launchable type="desktop-id">org.kde.phonebook</launchable>
+  <provides>
+    <binary>plasma-phonebook</binary>
+  </provides>
+  <screenshots>
+    <screenshot>
+      <caption>Contact overview</caption>
+      <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
+    </screenshot>
+  </screenshots>
 </component>
