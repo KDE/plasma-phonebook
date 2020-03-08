@@ -21,6 +21,7 @@
 #include "declarativeaddressee.h"
 #include <KContacts/Picture>
 #include <QFile>
+#include <QGuiApplication>
 
 #include "imppmodel.h"
 #include "phonesmodel.h"
@@ -58,7 +59,11 @@ void Addressee::setPhoto(QImage &data)
 
     // Scale the photo down to make sure contacts are not taking too
     // long time to load their photos
-    QSize size(200, 200);
+    constexpr int unscaledWidth = 200;
+    qreal scaleFactor = dynamic_cast<QGuiApplication *>(QCoreApplication::instance())->devicePixelRatio();
+    auto avatarSize = int(unscaledWidth * scaleFactor);
+    QSize size(avatarSize, avatarSize);
+
     photo.setData(data.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation));
     m_addressee.setPhoto(photo);
 }
