@@ -41,11 +41,12 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
     // Fetch contact vcard
     QByteArray vcard = data.contactCustomProperty(KPeople::AbstractContact::VCardProperty).toByteArray();
     KContacts::VCardConverter converter;
-    auto addressee = converter.parseVCard(vcard);
+    const auto addressee = converter.parseVCard(vcard);
 
     // Phone Number actions
     // TODO: Avoid looping through numbers multiple times by using a SortFilterProxyModel in phonebook.
-    for (auto &number : addressee.phoneNumbers()) {
+    const auto phoneNumbers = addressee.phoneNumbers();
+    for (const auto &number : phoneNumbers) {
         if (!number.number().isEmpty()) {
             QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("call-start")), i18nc("Action to tell user to call person using phone number", "Call on %1", number.number()));
             action->setProperty("actionType", KPeople::AudioCallAction);
@@ -56,7 +57,7 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
         }
     }
 
-    for (auto &number : addressee.phoneNumbers()) {
+    for (const auto &number : phoneNumbers) {
         if (!number.number().isEmpty()) {
             QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("mail-message")), i18nc("Action to tell user to write a message to phone number", "Write SMS on %1", number.number()));
             action->setProperty("actionType", KPeople::TextChatAction);
@@ -68,7 +69,8 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
     }
 
     // Instant messenger actions
-    for (auto &impp : addressee.imppList()) {
+    const auto imppList = addressee.imppList();
+    for (const auto &impp : imppList) {
         QAction *action = new QAction(QIcon::fromTheme(impp.serviceIcon()), i18nc("Action to write to instant messanger contact", "%1 %2", KContacts::Impp::serviceLabel(impp.serviceType()), impp.address().toString()));
         action->setProperty("actionType", KPeople::TextChatAction);
 
@@ -78,7 +80,8 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
     }
 
     // email actions
-    for (auto &email : addressee.emails()) {
+    const auto emails = addressee.emails();
+    for (const auto &email : emails) {
         QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("mail-message")), i18nc("Action to send an email", "email %1", email));
         action->setProperty("actionType", KPeople::SendEmailAction);
 

@@ -46,7 +46,7 @@ class ImppModel;
 class Addressee : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QByteArray raw READ raw WRITE setRaw)
+    Q_PROPERTY(QByteArray raw READ raw WRITE setRaw NOTIFY rawChanged)
 public:
     Addressee(QObject *parent = nullptr);
 
@@ -93,6 +93,7 @@ public:
     void setRaw(const QByteArray &raw);
 
 Q_SIGNALS:
+    void rawChanged();
     void urlChanged(const QUrl &url);
     void anyNameChanged();
     void phoneNumbersChanged();
