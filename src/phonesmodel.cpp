@@ -78,19 +78,16 @@ void PhonesModel::addPhoneNumber(const QString &number)
 
 void PhonesModel::removePhoneNumber(const QString &number)
 {
-    for (int i = 0; i < m_addressee->m_addressee.phoneNumbers().count(); i++) {
-        if (m_addressee->m_addressee.phoneNumbers()[i].number() == number) {
-            beginRemoveRows({}, i, i);
-            break;
-        }
-    }
+    const auto phoneNumbers = m_addressee->m_addressee.phoneNumbers();
 
-    for (const auto &phoneNumber : m_addressee->m_addressee.phoneNumbers()) {
+    // Find PhoneNumber object that belongs to the number and remove it
+    for (const auto &phoneNumber : phoneNumbers) {
         if (phoneNumber.number() == number) {
+            int index = phoneNumbers.indexOf(phoneNumber);
+            beginRemoveRows({}, index, index);
             m_addressee->m_addressee.removePhoneNumber(phoneNumber);
+            endRemoveRows();
             break;
         }
     }
-
-    endRemoveRows();
 }

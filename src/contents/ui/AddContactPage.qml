@@ -140,10 +140,10 @@ Kirigami.ScrollablePage {
                 delegate: RowLayout {
                     Controls.TextField {
                         id: phoneField
-                        text: display
+                        text: model.display
                         Layout.fillWidth: true
                         onAccepted: {
-                            display = text
+                            model.display = text
                         }
 
                         Connections {
@@ -155,7 +155,7 @@ Kirigami.ScrollablePage {
                         icon.name: "list-remove"
                         implicitWidth: implicitHeight
                         onClicked: {
-                            addressee.phoneNumbers.removePhoneNumber(display)
+                            addressee.phoneNumbers.removePhoneNumber(model.display)
                         }
                     }
                 }
@@ -264,10 +264,10 @@ Kirigami.ScrollablePage {
                 delegate: RowLayout {
                     Controls.TextField {
                         id: imppField
-                        text: display
+                        text: model.display
                         Layout.fillWidth: true
                         onAccepted: {
-                            display = text
+                            model.display = text
                         }
 
                         Connections {
@@ -279,7 +279,8 @@ Kirigami.ScrollablePage {
                         icon.name: "list-remove"
                         implicitWidth: implicitHeight
                         onClicked: {
-                            addressee.impps.removeImpp(display)
+                            print("remove", model.display)
+                            addressee.impps.removeImpp(model.display)
                         }
                     }
                 }
