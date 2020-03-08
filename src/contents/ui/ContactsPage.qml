@@ -95,9 +95,9 @@ Kirigami.ScrollablePage {
             id: contactListDelegate
             ContactListItem {
                 height: Kirigami.Units.gridUnit * 3
-                name: model.display
-                avatarIcon: model.decoration
-                personUri: model.personUri
+                name: model && model.display
+                avatarIcon: model && model.decoration
+                personUri: model && model.personUri
 
                 actions: [
                     Kirigami.Action {
@@ -115,7 +115,7 @@ Kirigami.ScrollablePage {
         }
 
         delegate: Kirigami.DelegateRecycler {
-            width: parent.width
+            width: parent ? parent.width : 0
             sourceComponent: contactListDelegate
         }
     }
