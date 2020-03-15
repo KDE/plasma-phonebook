@@ -53,20 +53,9 @@ Kirigami.ScrollablePage {
         visible: contactsList.count === 0
     }
 
-    header: Rectangle {
-        clip: true
-        id: header
-        color: Kirigami.Theme.backgroundColor
-        height: searchField.implicitHeight + 2 * Kirigami.Units.largeSpacing
-        width: root.width
-
-        Kirigami.SearchField {
-            id: searchField
-            anchors.centerIn: parent
-            anchors.margins: Kirigami.Units.largeSpacing
-            width: parent.width - 2 * Kirigami.Units.largeSpacing
-            onTextChanged: filterModel.setFilterFixedString(text)
-        }
+    header: Kirigami.SearchField {
+        id: searchField
+        onTextChanged: filterModel.setFilterFixedString(text)
     }
 
     ListView {
