@@ -42,10 +42,6 @@ Kirigami.ScrollablePage {
     title: personData.person.name
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
-    background: Rectangle {
-        color: Kirigami.Theme.backgroundColor
-    }
-
     Detail {
         anchors.fill: parent
         personUri: page.personUri

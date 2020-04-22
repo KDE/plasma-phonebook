@@ -33,12 +33,6 @@ import org.kde.phonebook 1.0
 Kirigami.ScrollablePage {
     title: i18n("Address book")
 
-    // Brighter background color
-    Kirigami.Theme.colorSet: Kirigami.Theme.View
-    background: Rectangle {
-        color: Kirigami.Theme.backgroundColor
-    }
-
     actions.main: Kirigami.Action {
         icon.name: "contact-new-symbolic"
         text: i18n("Create new")
