@@ -24,7 +24,7 @@ import QtQuick 2.7
 import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
 
-import org.kde.kirigami 2.10 as Kirigami
+import org.kde.kirigami 2.12 as Kirigami
 import org.kde.people 1.0 as KPeople
 
 import org.kde.phonebook 1.0
@@ -39,12 +39,6 @@ Kirigami.ScrollablePage {
         onTriggered: {
             pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
         }
-    }
-
-    Controls.Label {
-        anchors.centerIn: parent
-        text: i18n("No contacts")
-        visible: contactsList.count === 0
     }
 
     header: Kirigami.SearchField {
@@ -72,6 +66,12 @@ Kirigami.ScrollablePage {
                 id: contactsModel
             }
             Component.onCompleted: sort(0)
+        }
+
+        Kirigami.PlaceholderMessage {
+            anchors.centerIn: parent
+            text: i18n("No contacts")
+            visible: contactsList.count === 0
         }
 
         Component {
