@@ -38,17 +38,17 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
-    QCoreApplication::setOrganizationName("KDE");
-    QCoreApplication::setOrganizationDomain("kde.org");
-    QCoreApplication::setApplicationName("plasma-phonebook");
+    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
+    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
+    QCoreApplication::setApplicationName(QStringLiteral("plasma-phonebook"));
 
     // back-end
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     qmlRegisterType<Addressee>("org.kde.kcontacts", 1, 0, "Addressee");
-    qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", "Get it from the Addressee");
-    qmlRegisterUncreatableType<ImppModel>("org.kde.kcontacts", 1, 0, "ImppModel", "Get it from the Addressee");
+    qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", QStringLiteral("Get it from the Addressee"));
+    qmlRegisterUncreatableType<ImppModel>("org.kde.kcontacts", 1, 0, "ImppModel", QStringLiteral("Get it from the Addressee"));
     qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);

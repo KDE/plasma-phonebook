@@ -41,7 +41,7 @@ QVariant ImppModel::data(const QModelIndex &index, int role) const
 
     switch (role) {
     case Qt::DisplayRole:
-        return m_addressee->m_addressee.imppList()[index.row()].address();
+        return m_addressee->m_addressee.imppList().at(index.row()).address();
     }
     return {};
 }
@@ -57,7 +57,7 @@ bool ImppModel::setData(const QModelIndex &index, const QVariant &value, int rol
         auto impps = m_addressee->m_addressee.imppList();
         impps[index.row()].setAddress(value.toString());
         m_addressee->m_addressee.setImppList(impps);
-        dataChanged(index, index, {Qt::DisplayRole});
+        emit dataChanged(index, index, {Qt::DisplayRole});
     }
         return true;
     }
