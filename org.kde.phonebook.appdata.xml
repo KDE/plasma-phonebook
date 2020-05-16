@@ -50,7 +50,7 @@
       <li>Import VCard files</li>
     </ul>
   </description>
-  <launchable type="desktop-id">org.kde.phonebook</launchable>
+  <launchable type="desktop-id">org.kde.phonebook.desktop</launchable>
   <provides>
     <binary>plasma-phonebook</binary>
   </provides>
