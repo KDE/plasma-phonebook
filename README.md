@@ -24,7 +24,7 @@ To build plasma-phonebook do:
   - cd plasma-phonebook
   - mkdir build
   - cd build
-  - cmake -DCMAKE_INSTALL_PREFIX=~/kde
+  - cmake -DCMAKE_INSTALL_PREFIX=~/kde ..
   - make
   - make install
 
