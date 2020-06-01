@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Plasma Phonebook</name>
+  <name xml:lang="x-test">xxPlasma Phonebookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
@@ -41,13 +42,19 @@
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
+    <p xml:lang="x-test">xxConvergent contact management application for both desktop and mobile devices.xx</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
+    <p xml:lang="x-test">xxIt provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.xx</p>
     <p>Features</p>
+    <p xml:lang="x-test">xxFeaturesxx</p>
     <ul>
       <li>Add contacts</li>
+      <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
+      <li xml:lang="x-test">xxRemove contactsxx</li>
       <li>Import VCard files</li>
+      <li xml:lang="x-test">xxImport VCard filesxx</li>
     </ul>
   </description>
   <launchable type="desktop-id">org.kde.phonebook.desktop</launchable>
@@ -57,6 +64,7 @@
   <screenshots>
     <screenshot>
       <caption>Contact overview</caption>
+      <caption xml:lang="x-test">xxContact overviewxx</caption>
       <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
     </screenshot>
   </screenshots>
