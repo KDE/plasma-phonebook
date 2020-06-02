@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Plasma Phonebook</name>
+  <name xml:lang="uk">Телефонна книга Плазми</name>
   <name xml:lang="x-test">xxPlasma Phonebookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
@@ -42,18 +43,25 @@
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
+    <p xml:lang="uk">Універсальна програма для керування контактами для робочих станцій та мобільних пристроїв.</p>
     <p xml:lang="x-test">xxConvergent contact management application for both desktop and mobile devices.xx</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
+    <p xml:lang="uk">Надає вам спільну платформу для започаткування спілкувань. Залежно від даних, які доступні щодо контакту, буде показано відповідний список можливих дій зі встановлення зв'язку.</p>
     <p xml:lang="x-test">xxIt provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.xx</p>
     <p>Features</p>
+    <p xml:lang="cs">Vlastnosti</p>
+    <p xml:lang="uk">Можливості</p>
     <p xml:lang="x-test">xxFeaturesxx</p>
     <ul>
       <li>Add contacts</li>
+      <li xml:lang="uk">Додавання контактів</li>
       <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
+      <li xml:lang="uk">Вилучення контактів</li>
       <li xml:lang="x-test">xxRemove contactsxx</li>
       <li>Import VCard files</li>
+      <li xml:lang="uk">Імпортування файлів VCard</li>
       <li xml:lang="x-test">xxImport VCard filesxx</li>
     </ul>
   </description>
@@ -64,6 +72,7 @@
   <screenshots>
     <screenshot>
       <caption>Contact overview</caption>
+      <caption xml:lang="uk">Огляд контактів</caption>
       <caption xml:lang="x-test">xxContact overviewxx</caption>
       <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
     </screenshot>
