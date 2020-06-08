@@ -3,9 +3,10 @@
   <id>org.kde.phonebook</id>
   <name>Plasma Phonebook</name>
   <name xml:lang="ca">Agenda telefònica del Plasma</name>
+  <name xml:lang="es">Agenda telefónica de Plasma</name>
   <name xml:lang="et">Plasma telefoniraamat</name>
   <name xml:lang="fr">Agenda téléphonique de Plasma</name>
-  <name xml:lang="nl">Plasma telefoneboek</name>
+  <name xml:lang="nl">Plasma telefoonboek</name>
   <name xml:lang="pt">Lista Telefónica do Plasma</name>
   <name xml:lang="sl">Plasma Phonebook</name>
   <name xml:lang="sv">Plasma telefonbok</name>
@@ -53,6 +54,7 @@
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
     <p xml:lang="ca">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
+    <p xml:lang="es">Aplicación convergente para la administración de contactos en el escritorio y en dispositivos móviles.</p>
     <p xml:lang="et">Konvergentne kontaktide haldamise rakendus nii töölauale kui ka mobiilseadmetele.</p>
     <p xml:lang="fr">Une application de gestion convergente de contacts à la fois pour les périphériques de bureau et sur mobile.</p>
     <p xml:lang="nl">Convergente beheertoepassing voor contactpersonen voor zowel bureaublad- en mobiele apparaten.</p>
@@ -64,6 +66,7 @@
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
     <p xml:lang="ca">Proporciona un punt central per iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
+    <p xml:lang="es">Proporciona un lugar central para iniciar conversaciones. Dependiendo de la información disponible de un contacto, se mostrarán las acciones correspondientes.</p>
     <p xml:lang="et">See kujutab endast keskset vestluste alustamise kohta. Sõltuvalt kontakti kohta leiduvast teabest näidatakse võimalikke toiminguid.</p>
     <p xml:lang="fr">Il fournit une place centrale pour démarrer des conversions. Selon les informations disponibles concernant un contact, les actions respectives sont affichés.</p>
     <p xml:lang="nl">Het biedt een centrale plaats voor het starten van conversaties. Afhankelijk van de beschikbare informatie over een contactpersoon, worden mogelijke acties getoond.</p>
@@ -75,6 +78,7 @@
     <p>Features</p>
     <p xml:lang="ca">Característiques</p>
     <p xml:lang="cs">Vlastnosti</p>
+    <p xml:lang="es">Características</p>
     <p xml:lang="et">Omadused</p>
     <p xml:lang="fr">Fonctionnalités</p>
     <p xml:lang="nl">Mogelijkheden</p>
@@ -87,6 +91,7 @@
       <li>Add contacts</li>
       <li xml:lang="ca">Afegeix contactes</li>
       <li xml:lang="cs">Přidat kontakty</li>
+      <li xml:lang="es">Añadir contactos</li>
       <li xml:lang="et">Kontaktide lisamine</li>
       <li xml:lang="fr">Ajouter des contacts</li>
       <li xml:lang="nl">Contactpersonen toevoegen</li>
@@ -97,6 +102,7 @@
       <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
       <li xml:lang="ca">Elimina contactes</li>
+      <li xml:lang="es">Eliminar contactos</li>
       <li xml:lang="et">Kontaktide eemaldamine</li>
       <li xml:lang="fr">Supprimer des contacts</li>
       <li xml:lang="nl">Contactpersonen verwijderen</li>
@@ -106,6 +112,13 @@
       <li xml:lang="uk">Вилучення контактів</li>
       <li xml:lang="x-test">xxRemove contactsxx</li>
       <li>Import vCard files</li>
+      <li xml:lang="ca">Importa fitxers vCard</li>
+      <li xml:lang="es">Importar archivos vCard</li>
+      <li xml:lang="nl">vCard-bestanden importeren</li>
+      <li xml:lang="pt">Importar os ficheiros vCard</li>
+      <li xml:lang="sv">Importerar vCard-filer</li>
+      <li xml:lang="uk">Імпортування файлів vCard</li>
+      <li xml:lang="x-test">xxImport vCard filesxx</li>
     </ul>
   </description>
   <launchable type="desktop-id">org.kde.phonebook.desktop</launchable>
@@ -116,6 +129,7 @@
     <screenshot>
       <caption>Contact overview</caption>
       <caption xml:lang="ca">Resum dels contactes</caption>
+      <caption xml:lang="es">Resumen del contacto</caption>
       <caption xml:lang="et">Kontaktide ülevaade</caption>
       <caption xml:lang="fr">Aperçu des contacts</caption>
       <caption xml:lang="nl">Overzicht van contactpersonen</caption>
