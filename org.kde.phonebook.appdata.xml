@@ -6,6 +6,7 @@
   <name xml:lang="es">Agenda telefónica de Plasma</name>
   <name xml:lang="et">Plasma telefoniraamat</name>
   <name xml:lang="fr">Agenda téléphonique de Plasma</name>
+  <name xml:lang="it">Rubrica telefonica di Plasma</name>
   <name xml:lang="nl">Plasma telefoonboek</name>
   <name xml:lang="pt">Lista Telefónica do Plasma</name>
   <name xml:lang="sl">Plasma Phonebook</name>
@@ -57,6 +58,7 @@
     <p xml:lang="es">Aplicación convergente para la administración de contactos en el escritorio y en dispositivos móviles.</p>
     <p xml:lang="et">Konvergentne kontaktide haldamise rakendus nii töölauale kui ka mobiilseadmetele.</p>
     <p xml:lang="fr">Une application de gestion convergente de contacts à la fois pour les périphériques de bureau et sur mobile.</p>
+    <p xml:lang="it">Applicazione convergente di gestione dei contatti sia per dispositivi desktop che mobili.</p>
     <p xml:lang="nl">Convergente beheertoepassing voor contactpersonen voor zowel bureaublad- en mobiele apparaten.</p>
     <p xml:lang="pt">Aplicação de gestão de contactos convergente tanto para computadores como para dispositivos móveis.</p>
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
@@ -69,6 +71,7 @@
     <p xml:lang="es">Proporciona un lugar central para iniciar conversaciones. Dependiendo de la información disponible de un contacto, se mostrarán las acciones correspondientes.</p>
     <p xml:lang="et">See kujutab endast keskset vestluste alustamise kohta. Sõltuvalt kontakti kohta leiduvast teabest näidatakse võimalikke toiminguid.</p>
     <p xml:lang="fr">Il fournit une place centrale pour démarrer des conversions. Selon les informations disponibles concernant un contact, les actions respectives sont affichés.</p>
+    <p xml:lang="it">Fornisce un posto centralizzato per iniziare le conversazioni. A seconda delle informazioni disponibili sul contatto vengono mostrate le rispettive azioni.</p>
     <p xml:lang="nl">Het biedt een centrale plaats voor het starten van conversaties. Afhankelijk van de beschikbare informatie over een contactpersoon, worden mogelijke acties getoond.</p>
     <p xml:lang="pt">Oferece um local central para iniciar as conversas. Dependendo da informação disponível sobre um contacto, são apresentadas as acções respectivas.</p>
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
@@ -81,6 +84,7 @@
     <p xml:lang="es">Características</p>
     <p xml:lang="et">Omadused</p>
     <p xml:lang="fr">Fonctionnalités</p>
+    <p xml:lang="it">Funzionalità</p>
     <p xml:lang="nl">Mogelijkheden</p>
     <p xml:lang="pt">Características</p>
     <p xml:lang="sl">Možnosti</p>
@@ -94,6 +98,7 @@
       <li xml:lang="es">Añadir contactos</li>
       <li xml:lang="et">Kontaktide lisamine</li>
       <li xml:lang="fr">Ajouter des contacts</li>
+      <li xml:lang="it">Aggiungi contatti</li>
       <li xml:lang="nl">Contactpersonen toevoegen</li>
       <li xml:lang="pt">Adicionar contactos</li>
       <li xml:lang="sl">Dodaj stike</li>
@@ -105,6 +110,7 @@
       <li xml:lang="es">Eliminar contactos</li>
       <li xml:lang="et">Kontaktide eemaldamine</li>
       <li xml:lang="fr">Supprimer des contacts</li>
+      <li xml:lang="it">Rimuovi contatti</li>
       <li xml:lang="nl">Contactpersonen verwijderen</li>
       <li xml:lang="pt">Remover os contactos</li>
       <li xml:lang="sl">Odstrani stike</li>
@@ -132,6 +138,7 @@
       <caption xml:lang="es">Resumen del contacto</caption>
       <caption xml:lang="et">Kontaktide ülevaade</caption>
       <caption xml:lang="fr">Aperçu des contacts</caption>
+      <caption xml:lang="it">Panoramica dei contatti</caption>
       <caption xml:lang="nl">Overzicht van contactpersonen</caption>
       <caption xml:lang="pt">Visão geral do contacto</caption>
       <caption xml:lang="sl">Pregled stikov</caption>
