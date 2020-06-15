@@ -8,6 +8,7 @@
   <name xml:lang="fr">Agenda téléphonique de Plasma</name>
   <name xml:lang="it">Rubrica telefonica di Plasma</name>
   <name xml:lang="nl">Plasma telefoonboek</name>
+  <name xml:lang="nn">Telefonkatalog for Plasma</name>
   <name xml:lang="pt">Lista Telefónica do Plasma</name>
   <name xml:lang="sl">Plasma Phonebook</name>
   <name xml:lang="sv">Plasma telefonbok</name>
@@ -23,6 +24,7 @@
   <summary xml:lang="it">Visualizza e modifica i contatti</summary>
   <summary xml:lang="ko">연락처 보기 및 편집</summary>
   <summary xml:lang="nl">Contactpersonen bekijken en bewerken</summary>
+  <summary xml:lang="nn">Vis og rediger kontaktar</summary>
   <summary xml:lang="pt">Ver e editar os contactos</summary>
   <summary xml:lang="pt-BR">Visualizar e editar contatos</summary>
   <summary xml:lang="sk">Zobrazovať a upraviť kontakty</summary>
@@ -44,6 +46,7 @@
   <developer_name xml:lang="it">La comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
+  <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">KDE Community</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
@@ -60,6 +63,7 @@
     <p xml:lang="fr">Une application de gestion convergente de contacts à la fois pour les périphériques de bureau et sur mobile.</p>
     <p xml:lang="it">Applicazione convergente di gestione dei contatti sia per dispositivi desktop che mobili.</p>
     <p xml:lang="nl">Convergente beheertoepassing voor contactpersonen voor zowel bureaublad- en mobiele apparaten.</p>
+    <p xml:lang="nn">Kontakthandsamingsprogram for både PC-ar og mobiltelefonar.</p>
     <p xml:lang="pt">Aplicação de gestão de contactos convergente tanto para computadores como para dispositivos móveis.</p>
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
     <p xml:lang="sv">Konvergerade kontakthanteringsprogram för både skrivbord och mobilenheter</p>
@@ -73,6 +77,7 @@
     <p xml:lang="fr">Il fournit une place centrale pour démarrer des conversions. Selon les informations disponibles concernant un contact, les actions respectives sont affichés.</p>
     <p xml:lang="it">Fornisce un posto centralizzato per iniziare le conversazioni. A seconda delle informazioni disponibili sul contatto vengono mostrate le rispettive azioni.</p>
     <p xml:lang="nl">Het biedt een centrale plaats voor het starten van conversaties. Afhankelijk van de beschikbare informatie over een contactpersoon, worden mogelijke acties getoond.</p>
+    <p xml:lang="nn">Sentralt område for å starta samtalar. Ulike handlingar vert gjort tilgjengelege avhengig av informasjonen lagra om kvar kontakt.</p>
     <p xml:lang="pt">Oferece um local central para iniciar as conversas. Dependendo da informação disponível sobre um contacto, são apresentadas as acções respectivas.</p>
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
     <p xml:lang="sv">Det tillhandahåller en central plats för att inleda konversationer. Beroende på tillgänglig information om en kontakt, visas respektive åtgärder.</p>
@@ -86,6 +91,7 @@
     <p xml:lang="fr">Fonctionnalités</p>
     <p xml:lang="it">Funzionalità</p>
     <p xml:lang="nl">Mogelijkheden</p>
+    <p xml:lang="nn">Funksjonar</p>
     <p xml:lang="pt">Características</p>
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
@@ -100,6 +106,7 @@
       <li xml:lang="fr">Ajouter des contacts</li>
       <li xml:lang="it">Aggiungi contatti</li>
       <li xml:lang="nl">Contactpersonen toevoegen</li>
+      <li xml:lang="nn">Leggja til kontaktar</li>
       <li xml:lang="pt">Adicionar contactos</li>
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
@@ -112,6 +119,7 @@
       <li xml:lang="fr">Supprimer des contacts</li>
       <li xml:lang="it">Rimuovi contatti</li>
       <li xml:lang="nl">Contactpersonen verwijderen</li>
+      <li xml:lang="nn">Fjerna kontaktar</li>
       <li xml:lang="pt">Remover os contactos</li>
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
@@ -124,6 +132,7 @@
       <li xml:lang="fr">Importer des fichiers « VCard »</li>
       <li xml:lang="it">Importa file vCard</li>
       <li xml:lang="nl">vCard-bestanden importeren</li>
+      <li xml:lang="nn">Importert vCard-filer (visittkort)</li>
       <li xml:lang="pt">Importar os ficheiros vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
@@ -143,6 +152,7 @@
       <caption xml:lang="fr">Aperçu des contacts</caption>
       <caption xml:lang="it">Panoramica dei contatti</caption>
       <caption xml:lang="nl">Overzicht van contactpersonen</caption>
+      <caption xml:lang="nn">Kontaktoversikt</caption>
       <caption xml:lang="pt">Visão geral do contacto</caption>
       <caption xml:lang="sl">Pregled stikov</caption>
       <caption xml:lang="sv">Översikt av kontakter</caption>
