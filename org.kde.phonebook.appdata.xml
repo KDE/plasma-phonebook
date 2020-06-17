@@ -97,6 +97,7 @@
     <p xml:lang="nl">Mogelijkheden</p>
     <p xml:lang="nn">Funksjonar</p>
     <p xml:lang="pt">Características</p>
+    <p xml:lang="pt-BR">Recursos</p>
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
     <p xml:lang="uk">Можливості</p>
@@ -113,6 +114,7 @@
       <li xml:lang="nl">Contactpersonen toevoegen</li>
       <li xml:lang="nn">Leggja til kontaktar</li>
       <li xml:lang="pt">Adicionar contactos</li>
+      <li xml:lang="pt-BR">Adicionar contatos</li>
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
       <li xml:lang="uk">Додавання контактів</li>
@@ -127,6 +129,7 @@
       <li xml:lang="nl">Contactpersonen verwijderen</li>
       <li xml:lang="nn">Fjerna kontaktar</li>
       <li xml:lang="pt">Remover os contactos</li>
+      <li xml:lang="pt-BR">Excluir contatos</li>
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
       <li xml:lang="uk">Вилучення контактів</li>
@@ -141,6 +144,7 @@
       <li xml:lang="nl">vCard-bestanden importeren</li>
       <li xml:lang="nn">Importert vCard-filer (visittkort)</li>
       <li xml:lang="pt">Importar os ficheiros vCard</li>
+      <li xml:lang="pt-BR">Importar arquivos vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
       <li xml:lang="x-test">xxImport vCard filesxx</li>
