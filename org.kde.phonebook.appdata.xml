@@ -14,7 +14,6 @@
   <name xml:lang="sl">Plasma Phonebook</name>
   <name xml:lang="sv">Plasma telefonbok</name>
   <name xml:lang="uk">Телефонна книга Плазми</name>
-  <name xml:lang="x-test">xxPlasma Phonebookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
@@ -32,7 +31,6 @@
   <summary xml:lang="sl">Poglej in urejaj stike</summary>
   <summary xml:lang="sv">Visa och redigera kontakter</summary>
   <summary xml:lang="uk">Перегляд і редагування контактів</summary>
-  <summary xml:lang="x-test">xxView and edit contactsxx</summary>
   <summary xml:lang="zh-TW">檢視並編輯聯絡人</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-KDE-Accepted-GPL</project_license>
@@ -54,7 +52,6 @@
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
@@ -70,7 +67,6 @@
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
     <p xml:lang="sv">Konvergerade kontakthanteringsprogram för både skrivbord och mobilenheter</p>
     <p xml:lang="uk">Універсальна програма для керування контактами для робочих станцій та мобільних пристроїв.</p>
-    <p xml:lang="x-test">xxConvergent contact management application for both desktop and mobile devices.xx</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
     <p xml:lang="ca">Proporciona un punt central per iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
@@ -85,7 +81,6 @@
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
     <p xml:lang="sv">Det tillhandahåller en central plats för att inleda konversationer. Beroende på tillgänglig information om en kontakt, visas respektive åtgärder.</p>
     <p xml:lang="uk">Надає вам спільну платформу для започаткування спілкувань. Залежно від даних, які доступні щодо контакту, буде показано відповідний список можливих дій зі встановлення зв'язку.</p>
-    <p xml:lang="x-test">xxIt provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.xx</p>
     <p>Features</p>
     <p xml:lang="ca">Característiques</p>
     <p xml:lang="cs">Vlastnosti</p>
@@ -101,7 +96,6 @@
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
     <p xml:lang="uk">Можливості</p>
-    <p xml:lang="x-test">xxFeaturesxx</p>
     <ul>
       <li>Add contacts</li>
       <li xml:lang="ca">Afegeix contactes</li>
@@ -118,7 +112,6 @@
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
       <li xml:lang="uk">Додавання контактів</li>
-      <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
       <li xml:lang="ca">Elimina contactes</li>
       <li xml:lang="es">Eliminar contactos</li>
@@ -133,7 +126,6 @@
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
       <li xml:lang="uk">Вилучення контактів</li>
-      <li xml:lang="x-test">xxRemove contactsxx</li>
       <li>Import vCard files</li>
       <li xml:lang="ca">Importa fitxers vCard</li>
       <li xml:lang="cs">Importovat soubory vizitek</li>
@@ -147,7 +139,6 @@
       <li xml:lang="pt-BR">Importar arquivos vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
-      <li xml:lang="x-test">xxImport vCard filesxx</li>
     </ul>
   </description>
   <launchable type="desktop-id">org.kde.phonebook.desktop</launchable>
@@ -169,7 +160,6 @@
       <caption xml:lang="sl">Pregled stikov</caption>
       <caption xml:lang="sv">Översikt av kontakter</caption>
       <caption xml:lang="uk">Огляд контактів</caption>
-      <caption xml:lang="x-test">xxContact overviewxx</caption>
       <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
     </screenshot>
   </screenshots>
