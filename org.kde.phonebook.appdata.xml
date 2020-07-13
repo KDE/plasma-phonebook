@@ -3,6 +3,7 @@
   <id>org.kde.phonebook</id>
   <name>Plasma Phonebook</name>
   <name xml:lang="ca">Agenda telefònica del Plasma</name>
+  <name xml:lang="ca-valencia">Agenda telefònica del Plasma</name>
   <name xml:lang="es">Agenda telefónica de Plasma</name>
   <name xml:lang="et">Plasma telefoniraamat</name>
   <name xml:lang="eu">Plasma telefono-liburua</name>
@@ -65,6 +66,7 @@
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
     <p xml:lang="ca">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
+    <p xml:lang="ca-valencia">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
     <p xml:lang="es">Aplicación convergente para la administración de contactos en el escritorio y en dispositivos móviles.</p>
     <p xml:lang="et">Konvergentne kontaktide haldamise rakendus nii töölauale kui ka mobiilseadmetele.</p>
     <p xml:lang="eu">Kontaktuak kudeatzeko aplikazio konbergentea, mahaigainerako eta gailu mugikorretarako.</p>
@@ -83,6 +85,7 @@
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
     <p xml:lang="ca">Proporciona un punt central per iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
+    <p xml:lang="ca-valencia">Proporciona un punt central per iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
     <p xml:lang="es">Proporciona un lugar central para iniciar conversaciones. Dependiendo de la información disponible de un contacto, se mostrarán las acciones correspondientes.</p>
     <p xml:lang="et">See kujutab endast keskset vestluste alustamise kohta. Sõltuvalt kontakti kohta leiduvast teabest näidatakse võimalikke toiminguid.</p>
     <p xml:lang="eu">Elkarrizketak abiatzeko leku nagusi bat eskaintzen du. Kontaktu bati buruz erabilgarri dagoen informazioaren arabera, dagokien ekintzak azaltzen dira.</p>
@@ -100,6 +103,7 @@
     <p xml:lang="x-test">xxIt provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.xx</p>
     <p>Features</p>
     <p xml:lang="ca">Característiques</p>
+    <p xml:lang="ca-valencia">Característiques</p>
     <p xml:lang="cs">Vlastnosti</p>
     <p xml:lang="es">Características</p>
     <p xml:lang="et">Omadused</p>
@@ -119,6 +123,7 @@
     <ul>
       <li>Add contacts</li>
       <li xml:lang="ca">Afegeix contactes</li>
+      <li xml:lang="ca-valencia">Afig contactes</li>
       <li xml:lang="cs">Přidat kontakty</li>
       <li xml:lang="es">Añadir contactos</li>
       <li xml:lang="et">Kontaktide lisamine</li>
@@ -137,6 +142,7 @@
       <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
       <li xml:lang="ca">Elimina contactes</li>
+      <li xml:lang="ca-valencia">Elimina contactes</li>
       <li xml:lang="es">Eliminar contactos</li>
       <li xml:lang="et">Kontaktide eemaldamine</li>
       <li xml:lang="eu">Kendu kontaktuak</li>
@@ -154,6 +160,7 @@
       <li xml:lang="x-test">xxRemove contactsxx</li>
       <li>Import vCard files</li>
       <li xml:lang="ca">Importa fitxers vCard</li>
+      <li xml:lang="ca-valencia">Importa fitxers vCard</li>
       <li xml:lang="cs">Importovat soubory vizitek</li>
       <li xml:lang="es">Importar archivos vCard</li>
       <li xml:lang="eu">Inportatu vCard fitxategiak</li>
@@ -179,6 +186,7 @@
     <screenshot>
       <caption>Contact overview</caption>
       <caption xml:lang="ca">Resum dels contactes</caption>
+      <caption xml:lang="ca-valencia">Resum dels contactes</caption>
       <caption xml:lang="es">Resumen del contacto</caption>
       <caption xml:lang="et">Kontaktide ülevaade</caption>
       <caption xml:lang="eu">Kontaktuen ikuspegi orokorra</caption>
