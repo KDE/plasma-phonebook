@@ -85,8 +85,8 @@
     <p xml:lang="x-test">xxConvergent contact management application for both desktop and mobile devices.xx</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
-    <p xml:lang="ca">Proporciona un punt central per iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
-    <p xml:lang="ca-valencia">Proporciona un punt central per iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
+    <p xml:lang="ca">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
+    <p xml:lang="ca-valencia">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
     <p xml:lang="es">Proporciona un lugar central para iniciar conversaciones. Dependiendo de la información disponible de un contacto, se mostrarán las acciones correspondientes.</p>
     <p xml:lang="et">See kujutab endast keskset vestluste alustamise kohta. Sõltuvalt kontakti kohta leiduvast teabest näidatakse võimalikke toiminguid.</p>
     <p xml:lang="eu">Elkarrizketak abiatzeko leku nagusi bat eskaintzen du. Kontaktu bati buruz erabilgarri dagoen informazioaren arabera, dagokien ekintzak azaltzen dira.</p>
@@ -142,8 +142,8 @@
       <li xml:lang="uk">Додавання контактів</li>
       <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
-      <li xml:lang="ca">Elimina contactes</li>
-      <li xml:lang="ca-valencia">Elimina contactes</li>
+      <li xml:lang="ca">Elimina els contactes</li>
+      <li xml:lang="ca-valencia">Elimina els contactes</li>
       <li xml:lang="es">Eliminar contactos</li>
       <li xml:lang="et">Kontaktide eemaldamine</li>
       <li xml:lang="eu">Kendu kontaktuak</li>
