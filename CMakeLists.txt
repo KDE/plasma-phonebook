@@ -4,6 +4,9 @@ cmake_minimum_required(VERSION 2.8.12)
 set(KF5_MIN_VERSION "5.65.0")
 set(QT_MIN_VERSION "5.11.0")
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 ################# Disallow in-source build #################
 
 if("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
