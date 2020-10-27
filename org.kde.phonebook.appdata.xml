@@ -4,6 +4,7 @@
   <name>Plasma Phonebook</name>
   <name xml:lang="ca">Agenda telefònica del Plasma</name>
   <name xml:lang="ca-valencia">Agenda telefònica del Plasma</name>
+  <name xml:lang="da">Plasma Telefonbog</name>
   <name xml:lang="en-GB">Plasma Phonebook</name>
   <name xml:lang="es">Agenda telefónica de Plasma</name>
   <name xml:lang="et">Plasma telefoniraamat</name>
@@ -24,6 +25,7 @@
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
+  <summary xml:lang="da">Vis og rediger kontakter</summary>
   <summary xml:lang="en-GB">View and edit contacts</summary>
   <summary xml:lang="es">Vea y edite sus contactos</summary>
   <summary xml:lang="et">Kontaktide näitamine ja muutmine</summary>
@@ -95,6 +97,7 @@
       respective actions are displayed.</p>
     <p xml:lang="ca">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
     <p xml:lang="ca-valencia">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
+    <p xml:lang="da">Det giver et centralt sted til at starte samtaler. Afhængig af den information som er tilgængelig om en kontakt vises de pågældende handlinger.</p>
     <p xml:lang="en-GB">It provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.</p>
     <p xml:lang="es">Proporciona un lugar central para iniciar conversaciones. Dependiendo de la información disponible de un contacto, se mostrarán las acciones correspondientes.</p>
     <p xml:lang="et">See kujutab endast keskset vestluste alustamise kohta. Sõltuvalt kontakti kohta leiduvast teabest näidatakse võimalikke toiminguid.</p>
@@ -138,6 +141,7 @@
       <li xml:lang="ca">Afegeix contactes</li>
       <li xml:lang="ca-valencia">Afig contactes</li>
       <li xml:lang="cs">Přidat kontakty</li>
+      <li xml:lang="da">Tilføj kontakter</li>
       <li xml:lang="en-GB">Add contacts</li>
       <li xml:lang="es">Añadir contactos</li>
       <li xml:lang="et">Kontaktide lisamine</li>
@@ -158,6 +162,7 @@
       <li>Remove contacts</li>
       <li xml:lang="ca">Elimina els contactes</li>
       <li xml:lang="ca-valencia">Elimina els contactes</li>
+      <li xml:lang="da">Fjern kontakter</li>
       <li xml:lang="en-GB">Remove contacts</li>
       <li xml:lang="es">Eliminar contactos</li>
       <li xml:lang="et">Kontaktide eemaldamine</li>
@@ -179,6 +184,7 @@
       <li xml:lang="ca">Importa fitxers vCard</li>
       <li xml:lang="ca-valencia">Importa fitxers vCard</li>
       <li xml:lang="cs">Importovat soubory vizitek</li>
+      <li xml:lang="da">Importér vCard-filer</li>
       <li xml:lang="en-GB">Import vCard files</li>
       <li xml:lang="es">Importar archivos vCard</li>
       <li xml:lang="et">vCard-failide import</li>
