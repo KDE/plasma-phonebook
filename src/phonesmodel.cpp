@@ -66,14 +66,13 @@ void PhonesModel::removePhoneNumber(const QString &number)
 {
     const auto phoneNumbers = m_addressee->m_addressee.phoneNumbers();
 
-    // Find PhoneNumber object that belongs to the number and remove it
-    for (const auto &phoneNumber : phoneNumbers) {
-        if (phoneNumber.number() == number) {
-            int index = phoneNumbers.indexOf(phoneNumber);
-            beginRemoveRows({}, index, index);
-            m_addressee->m_addressee.removePhoneNumber(phoneNumber);
-            endRemoveRows();
-            break;
-        }
-    }
+    const auto phoneNumber = std::find_if(phoneNumbers.begin(), phoneNumbers.end(), [&](const KContacts::PhoneNumber &entry) {
+        return entry.number() == number;
+    });
+
+    const int index = std::distance(phoneNumbers.begin(), phoneNumber);
+
+    beginRemoveRows({}, index, index);
+    m_addressee->m_addressee.removePhoneNumber(*phoneNumber);
+    endRemoveRows();
 }

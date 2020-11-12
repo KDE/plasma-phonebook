@@ -14,7 +14,7 @@
 
 void Addressee::setRaw(const QByteArray &raw)
 {
-    KContacts::VCardConverter converter;
+    const KContacts::VCardConverter converter;
     m_addressee = converter.parseVCard(raw);
 
     Q_EMIT nameChanged(name());
@@ -39,19 +39,16 @@ ImppModel *Addressee::impps() const
     return m_imppModel;
 }
 
-void Addressee::setPhoto(QImage &data)
+void Addressee::setPhoto(const QImage &data)
 {
-    auto photo = m_addressee.photo();
-
     // Scale the photo down to make sure contacts are not taking too
     // long time to load their photos
     constexpr int unscaledWidth = 200;
-    qreal scaleFactor = dynamic_cast<QGuiApplication *>(QCoreApplication::instance())->devicePixelRatio();
-    auto avatarSize = int(unscaledWidth * scaleFactor);
-    QSize size(avatarSize, avatarSize);
+    const qreal scaleFactor = dynamic_cast<QGuiApplication *>(QCoreApplication::instance())->devicePixelRatio();
+    const int avatarSize = int(unscaledWidth * scaleFactor);
+    const QSize size(avatarSize, avatarSize);
 
-    photo.setData(data.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation));
-    m_addressee.setPhoto(photo);
+    m_addressee.setPhoto(data.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation));
 }
 
 QImage Addressee::photo()
@@ -62,9 +59,9 @@ QImage Addressee::photo()
 Q_SCRIPTABLE void Addressee::addPhotoFromFile(const QString &path)
 {
 #ifdef Q_OS_ANDROID
-    QImage image(path);
+    const QImage image(path);
 #else
-    QImage image(QUrl(path).toLocalFile());
+    const QImage image(QUrl(path).toLocalFile());
 #endif
     setPhoto(image);
 }

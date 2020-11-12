@@ -55,7 +55,7 @@ public:
     ImppModel *impps() const;
 
     Q_PROPERTY(QImage photo READ photo WRITE setPhoto NOTIFY photoChanged)
-    void setPhoto(QImage &data);
+    void setPhoto(const QImage &data);
     QImage photo();
 
     Q_PROPERTY(QStringList emails READ emails WRITE setEmails NOTIFY emailsChanged)

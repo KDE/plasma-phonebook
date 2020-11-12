@@ -30,7 +30,7 @@ void ContactImporter::importVCards(const QUrl &path)
         return;
     }
 
-    auto const importedVCards = m_converter.parseVCards(inputFile.readAll());
+    const auto importedVCards = m_converter.parseVCards(inputFile.readAll());
     for (const auto &adr : importedVCards) {
         QVariantMap properties;
         properties[QStringLiteral("vcard")] = m_converter.exportVCard(adr, KContacts::VCardConverter::v3_0);

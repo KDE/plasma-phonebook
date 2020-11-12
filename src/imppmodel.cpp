@@ -7,7 +7,6 @@
 
 #include "imppmodel.h"
 #include "declarativeaddressee.h"
-#include <QDebug>
 
 ImppModel::ImppModel(Addressee *a)
     : QAbstractListModel(a)
@@ -71,16 +70,15 @@ void ImppModel::addImpp(const QString &address)
 void ImppModel::removeImpp(const QString &address)
 {
     // Find Impp object belonging to the address and remove it.
-    for (int i = 0; i < m_addressee->m_addressee.imppList().count(); i++) {
-        if (m_addressee->m_addressee.imppList().at(i).address().toString() == address) {
-            beginRemoveRows({}, i, i);
+    auto imppList = m_addressee->m_addressee.imppList();
+    const auto impp = std::find_if(imppList.begin(), imppList.end(), [&](const KContacts::Impp &impp) {
+        return impp.address() == address;
+    });
 
-            auto imppList = m_addressee->m_addressee.imppList();
-            imppList.remove(i);
-            m_addressee->m_addressee.setImppList(imppList);
+    const int index = std::distance(imppList.begin(), impp);
+    imppList.remove(index);
 
-            endRemoveRows();
-            break;
-        }
-    }
+    beginRemoveRows({}, index, index);
+    m_addressee->m_addressee.setImppList(imppList);
+    endRemoveRows();
 }
