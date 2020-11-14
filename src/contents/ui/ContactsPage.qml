@@ -27,9 +27,13 @@ Kirigami.ScrollablePage {
         }
     }
 
-    header: Kirigami.SearchField {
-        id: searchField
-        onTextChanged: filterModel.setFilterFixedString(text)
+    header: Controls.Control {
+        padding: Kirigami.Units.largeSpacing
+
+        contentItem: Kirigami.SearchField {
+            id: searchField
+            onTextChanged: filterModel.setFilterFixedString(text)
+        }
     }
 
     ListView {
