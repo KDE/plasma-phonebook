@@ -18,6 +18,7 @@
   <name xml:lang="pt">Lista Telefónica do Plasma</name>
   <name xml:lang="pt-BR">Plasma Phonebook</name>
   <name xml:lang="ro">Carte de telefoane Plasma</name>
+  <name xml:lang="sk">Plasma telefónny zoznam</name>
   <name xml:lang="sl">Plasma Phonebook</name>
   <name xml:lang="sv">Plasma telefonbok</name>
   <name xml:lang="uk">Телефонна книга Плазми</name>
@@ -132,6 +133,7 @@
     <p xml:lang="pt">Características</p>
     <p xml:lang="pt-BR">Recursos</p>
     <p xml:lang="ro">Caracteristici</p>
+    <p xml:lang="sk">Funkcie</p>
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
     <p xml:lang="uk">Можливості</p>
@@ -155,6 +157,7 @@
       <li xml:lang="pt">Adicionar contactos</li>
       <li xml:lang="pt-BR">Adicionar contatos</li>
       <li xml:lang="ro">Adaugă contacte</li>
+      <li xml:lang="sk">Pridať kontakty</li>
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
       <li xml:lang="uk">Додавання контактів</li>
@@ -176,6 +179,7 @@
       <li xml:lang="pt">Remover os contactos</li>
       <li xml:lang="pt-BR">Excluir contatos</li>
       <li xml:lang="ro">Elimină contacte</li>
+      <li xml:lang="sk">Odstrániť kontakty</li>
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
       <li xml:lang="uk">Вилучення контактів</li>
@@ -198,6 +202,7 @@
       <li xml:lang="pt">Importar os ficheiros vCard</li>
       <li xml:lang="pt-BR">Importar arquivos vCard</li>
       <li xml:lang="ro">Importă fișiere vCard</li>
+      <li xml:lang="sk">Importovať súbory vCard</li>
       <li xml:lang="sl">Uvoz datotek vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
