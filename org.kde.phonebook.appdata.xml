@@ -11,6 +11,7 @@
   <name xml:lang="eu">Plasma telefono-liburua</name>
   <name xml:lang="fi">Plasma Phonebook</name>
   <name xml:lang="fr">Agenda téléphonique de Plasma</name>
+  <name xml:lang="hu">Plasma Phonebook</name>
   <name xml:lang="it">Rubrica telefonica di Plasma</name>
   <name xml:lang="ko">Plasma 연락처</name>
   <name xml:lang="nl">Plasma telefoonboek</name>
@@ -33,6 +34,7 @@
   <summary xml:lang="eu">Ikusi eta editatu kontaktuak</summary>
   <summary xml:lang="fi">Tarkastele ja muokkaa yhteystietoja</summary>
   <summary xml:lang="fr">Modifier et afficher les contacts</summary>
+  <summary xml:lang="hu">Névjegyek megjelenítése és szerkesztése</summary>
   <summary xml:lang="id">Tilik dan edit kontak</summary>
   <summary xml:lang="it">Visualizza e modifica i contatti</summary>
   <summary xml:lang="ko">연락처 보기 및 편집</summary>
@@ -59,6 +61,7 @@
   <developer_name xml:lang="eu">KDE komunitatea</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
+  <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">La comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
@@ -126,6 +129,7 @@
     <p xml:lang="eu">Ezaugarriak</p>
     <p xml:lang="fi">Ominaisuuksia</p>
     <p xml:lang="fr">Fonctionnalités</p>
+    <p xml:lang="hu">Szolgáltatások</p>
     <p xml:lang="it">Funzionalità</p>
     <p xml:lang="ko">기능</p>
     <p xml:lang="nl">Mogelijkheden</p>
