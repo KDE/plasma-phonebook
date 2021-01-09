@@ -43,6 +43,7 @@
   <summary xml:lang="pt">Ver e editar os contactos</summary>
   <summary xml:lang="pt-BR">Visualizar e editar contatos</summary>
   <summary xml:lang="ro">Vedeți și modificați contacte</summary>
+  <summary xml:lang="ru">Просмотр и редактирование контактов</summary>
   <summary xml:lang="sk">Zobrazovať a upraviť kontakty</summary>
   <summary xml:lang="sl">Poglej in urejaj stike</summary>
   <summary xml:lang="sv">Visa och redigera kontakter</summary>
@@ -139,6 +140,7 @@
     <p xml:lang="pt">Características</p>
     <p xml:lang="pt-BR">Recursos</p>
     <p xml:lang="ro">Caracteristici</p>
+    <p xml:lang="ru">Возможности</p>
     <p xml:lang="sk">Funkcie</p>
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
