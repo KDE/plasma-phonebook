@@ -17,6 +17,7 @@
   <name xml:lang="ko">Plasma 연락처</name>
   <name xml:lang="nl">Plasma telefoonboek</name>
   <name xml:lang="nn">Telefonkatalog for Plasma</name>
+  <name xml:lang="pa">ਪਲਾਜ਼ਮਾ ਫ਼ੋਨ-ਬੁੱਕ</name>
   <name xml:lang="pt">Lista Telefónica do Plasma</name>
   <name xml:lang="pt-BR">Plasma Phonebook</name>
   <name xml:lang="ro">Carte de telefoane Plasma</name>
@@ -41,6 +42,7 @@
   <summary xml:lang="ko">연락처 보기 및 편집</summary>
   <summary xml:lang="nl">Contactpersonen bekijken en bewerken</summary>
   <summary xml:lang="nn">Vis og rediger kontaktar</summary>
+  <summary xml:lang="pa">ਸੰਪਰਕ ਵੇਖੋ ਤੇ ਸੋਧੋ</summary>
   <summary xml:lang="pt">Ver e editar os contactos</summary>
   <summary xml:lang="pt-BR">Visualizar e editar contatos</summary>
   <summary xml:lang="ro">Vedeți și modificați contacte</summary>
@@ -69,6 +71,7 @@
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
+  <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">KDE Community</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
@@ -141,6 +144,7 @@
     <p xml:lang="ko">기능</p>
     <p xml:lang="nl">Mogelijkheden</p>
     <p xml:lang="nn">Funksjonar</p>
+    <p xml:lang="pa">ਫੀਚਰ</p>
     <p xml:lang="pt">Características</p>
     <p xml:lang="pt-BR">Recursos</p>
     <p xml:lang="ro">Caracteristici</p>
@@ -168,6 +172,7 @@
       <li xml:lang="ko">연락처 추가</li>
       <li xml:lang="nl">Contactpersonen toevoegen</li>
       <li xml:lang="nn">Leggja til kontaktar</li>
+      <li xml:lang="pa">ਸੰਪਰਕ ਜੋੜੋ</li>
       <li xml:lang="pt">Adicionar contactos</li>
       <li xml:lang="pt-BR">Adicionar contatos</li>
       <li xml:lang="ro">Adaugă contacte</li>
@@ -192,6 +197,7 @@
       <li xml:lang="ko">연락처 삭제</li>
       <li xml:lang="nl">Contactpersonen verwijderen</li>
       <li xml:lang="nn">Fjerna kontaktar</li>
+      <li xml:lang="pa">ਸੰਪਰਕ ਹਟਾਓ</li>
       <li xml:lang="pt">Remover os contactos</li>
       <li xml:lang="pt-BR">Excluir contatos</li>
       <li xml:lang="ro">Elimină contacte</li>
@@ -217,6 +223,7 @@
       <li xml:lang="ko">vCard 파일 가져오기</li>
       <li xml:lang="nl">vCard-bestanden importeren</li>
       <li xml:lang="nn">Importert vCard-filer (visittkort)</li>
+      <li xml:lang="pa">vCard ਫਾਇਲਾਂ ਇੰਪੋਰਟ ਕਰੋ</li>
       <li xml:lang="pt">Importar os ficheiros vCard</li>
       <li xml:lang="pt-BR">Importar arquivos vCard</li>
       <li xml:lang="ro">Importă fișiere vCard</li>
@@ -248,6 +255,7 @@
       <caption xml:lang="ko">연락처 요약 보기</caption>
       <caption xml:lang="nl">Overzicht van contactpersonen</caption>
       <caption xml:lang="nn">Kontaktoversikt</caption>
+      <caption xml:lang="pa">ਸੰਪਰਕ ਸਾਰ</caption>
       <caption xml:lang="pt">Visão geral do contacto</caption>
       <caption xml:lang="pt-BR">Visão do contato</caption>
       <caption xml:lang="ro">Sumar contacte</caption>
