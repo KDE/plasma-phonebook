@@ -15,7 +15,7 @@ class ImppModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    ImppModel(Addressee *a);
+    explicit ImppModel(Addressee *a);
 
     bool setData(const QModelIndex &index, const QVariant &value, int role) override;
     QVariant data(const QModelIndex &index, int role) const override;

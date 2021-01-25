@@ -15,7 +15,7 @@ class PhonesModel : public QAbstractListModel
 {
     Q_OBJECT
 public:
-    PhonesModel(Addressee *a);
+    explicit PhonesModel(Addressee *a);
 
     bool setData(const QModelIndex &index, const QVariant &value, int role) override;
     QVariant data(const QModelIndex &index, int role) const override;

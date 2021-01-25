@@ -34,7 +34,7 @@ class Addressee : public QObject
     Q_OBJECT
     Q_PROPERTY(QByteArray raw READ raw WRITE setRaw NOTIFY rawChanged)
 public:
-    Addressee(QObject *parent = nullptr);
+    explicit Addressee(QObject *parent = nullptr);
 
     Q_PROPERTY(QString realName READ realName NOTIFY anyNameChanged)
     QString realName() const
