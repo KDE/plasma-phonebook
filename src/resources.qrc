@@ -8,7 +8,6 @@
         <file alias="DetailPage.qml">contents/ui/DetailPage.qml</file>
         <file alias="lib/Header.qml">contents/ui/lib/Header.qml</file>
         <file alias="AddContactPage.qml">contents/ui/AddContactPage.qml</file>
-        <file alias="DetailListItem.qml">contents/ui/DetailListItem.qml</file>
         <file alias="fallbackBackground.png">contents/resources/fallbackBackground.png</file>
         <file>qtquickcontrols2.conf</file>
     </qresource>
