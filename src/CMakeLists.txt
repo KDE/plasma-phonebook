@@ -8,7 +8,7 @@ add_executable(plasma-phonebook
     ${RESOURCES})
 target_link_libraries(plasma-phonebook
         Qt5::Core Qt5::Qml Qt5::Quick Qt5::Svg
-        KF5::Contacts KF5::People KF5::I18n
+        KF5::Contacts KF5::People KF5::I18n KF5::CoreAddons
 )
 
 if(ANDROID)

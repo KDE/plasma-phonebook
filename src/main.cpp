@@ -10,6 +10,8 @@
 #include <QtQml>
 
 #include <KLocalizedContext>
+#include <KAboutData>
+#include <KLocalizedString>
 
 #include "contactimporter.h"
 #include "declarativeaddressee.h"
@@ -31,6 +33,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // back-end
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+
+    KAboutData aboutData(QStringLiteral("plasma-phonebook"), i18n("Phone Book"), {}, i18n("View and edit contacts"), KAboutLicense::GPL);
+    aboutData.setDesktopFileName(QStringLiteral("org.kde.phone.dialer"));
 
     qmlRegisterType<Addressee>("org.kde.kcontacts", 1, 0, "Addressee");
     qmlRegisterUncreatableType<PhonesModel>("org.kde.kcontacts", 1, 0, "PhonesModel", QStringLiteral("Get it from the Addressee"));
