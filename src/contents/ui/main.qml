@@ -15,7 +15,7 @@ import org.kde.phonebook 1.0
 Kirigami.ApplicationWindow {
     id: root
 
-    title: i18n("Phone book")
+    title: i18n("Phone Book")
 
     pageStack.initialPage: contactsPage
 

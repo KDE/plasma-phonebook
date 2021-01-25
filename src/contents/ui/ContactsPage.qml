@@ -17,11 +17,11 @@ import org.kde.phonebook 1.0
 
 
 Kirigami.ScrollablePage {
-    title: i18n("Address book")
+    title: i18n("Address Book")
 
     actions.main: Kirigami.Action {
         icon.name: "contact-new-symbolic"
-        text: i18n("Create new")
+        text: i18n("Create New")
         onTriggered: {
             pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
         }
