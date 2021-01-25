@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
-  <name>Plasma Phonebook</name>
+  <name>Phone Book</name>
   <name xml:lang="ca">Agenda telefònica del Plasma</name>
   <name xml:lang="ca-valencia">Agenda telefònica del Plasma</name>
   <name xml:lang="da">Plasma Telefonbog</name>
@@ -266,4 +266,5 @@
       <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
     </screenshot>
   </screenshots>
+  <project_group>KDE</project_group>
 </component>
