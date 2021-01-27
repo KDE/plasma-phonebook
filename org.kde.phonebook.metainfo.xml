@@ -2,30 +2,9 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Phone Book</name>
-  <name xml:lang="ca">Agenda telefònica del Plasma</name>
-  <name xml:lang="ca-valencia">Agenda telefònica del Plasma</name>
-  <name xml:lang="da">Plasma Telefonbog</name>
-  <name xml:lang="en-GB">Plasma Phonebook</name>
-  <name xml:lang="es">Agenda telefónica de Plasma</name>
-  <name xml:lang="et">Plasma telefoniraamat</name>
-  <name xml:lang="eu">Plasma telefono-liburua</name>
-  <name xml:lang="fi">Plasma Phonebook</name>
-  <name xml:lang="fr">Agenda téléphonique de Plasma</name>
-  <name xml:lang="hu">Plasma Phonebook</name>
-  <name xml:lang="id">Plasma Phonebook</name>
-  <name xml:lang="it">Rubrica telefonica di Plasma</name>
-  <name xml:lang="ko">Plasma 연락처</name>
-  <name xml:lang="nl">Plasma telefoonboek</name>
-  <name xml:lang="nn">Telefonkatalog for Plasma</name>
-  <name xml:lang="pa">ਪਲਾਜ਼ਮਾ ਫ਼ੋਨ-ਬੁੱਕ</name>
-  <name xml:lang="pt">Lista Telefónica do Plasma</name>
-  <name xml:lang="pt-BR">Plasma Phonebook</name>
-  <name xml:lang="ro">Carte de telefoane Plasma</name>
-  <name xml:lang="sk">Plasma telefónny zoznam</name>
-  <name xml:lang="sl">Plasma Phonebook</name>
-  <name xml:lang="sv">Plasma telefonbok</name>
-  <name xml:lang="uk">Телефонна книга Плазми</name>
-  <name xml:lang="x-test">xxPlasma Phonebookxx</name>
+  <name xml:lang="sv">Telefonkatalog</name>
+  <name xml:lang="uk">Телефонна книга</name>
+  <name xml:lang="x-test">xxPhone Bookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
@@ -51,6 +30,7 @@
   <summary xml:lang="sl">Poglej in urejaj stike</summary>
   <summary xml:lang="sv">Visa och redigera kontakter</summary>
   <summary xml:lang="uk">Перегляд і редагування контактів</summary>
+  <summary xml:lang="vi">Xem và chỉnh sửa các liên hệ</summary>
   <summary xml:lang="x-test">xxView and edit contactsxx</summary>
   <summary xml:lang="zh-TW">檢視並編輯聯絡人</summary>
   <metadata_license>CC0-1.0</metadata_license>
@@ -79,6 +59,7 @@
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
+  <developer_name xml:lang="vi">Cộng đồng KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
@@ -103,6 +84,7 @@
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
     <p xml:lang="sv">Konvergerade kontakthanteringsprogram för både skrivbord och mobilenheter</p>
     <p xml:lang="uk">Універсальна програма для керування контактами для робочих станцій та мобільних пристроїв.</p>
+    <p xml:lang="vi">Ứng dụng quản lí liên hệ tập trung cho cả máy tính và thiết bị di động.</p>
     <p xml:lang="x-test">xxConvergent contact management application for both desktop and mobile devices.xx</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
@@ -127,6 +109,7 @@
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
     <p xml:lang="sv">Det tillhandahåller en central plats för att inleda konversationer. Beroende på tillgänglig information om en kontakt, visas respektive åtgärder.</p>
     <p xml:lang="uk">Надає вам спільну платформу для започаткування спілкувань. Залежно від даних, які доступні щодо контакту, буде показано відповідний список можливих дій зі встановлення зв'язку.</p>
+    <p xml:lang="vi">Nó cung cấp một địa điểm trung tâm để bắt đầu các cuộc hội thoại. Các hành động tương ứng được hiển thị tuỳ thuộc vào thông tin có trong từng liên hệ.</p>
     <p xml:lang="x-test">xxIt provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.xx</p>
     <p>Features</p>
     <p xml:lang="ca">Característiques</p>
@@ -153,6 +136,7 @@
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
     <p xml:lang="uk">Можливості</p>
+    <p xml:lang="vi">Tính năng</p>
     <p xml:lang="x-test">xxFeaturesxx</p>
     <ul>
       <li>Add contacts</li>
@@ -180,6 +164,7 @@
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
       <li xml:lang="uk">Додавання контактів</li>
+      <li xml:lang="vi">Thêm liên hệ</li>
       <li xml:lang="x-test">xxAdd contactsxx</li>
       <li>Remove contacts</li>
       <li xml:lang="ca">Elimina els contactes</li>
@@ -205,6 +190,7 @@
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
       <li xml:lang="uk">Вилучення контактів</li>
+      <li xml:lang="vi">Xoá liên hệ</li>
       <li xml:lang="x-test">xxRemove contactsxx</li>
       <li>Import vCard files</li>
       <li xml:lang="ca">Importa fitxers vCard</li>
@@ -231,6 +217,7 @@
       <li xml:lang="sl">Uvoz datotek vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
+      <li xml:lang="vi">Nhập khẩu các tệp vCard</li>
       <li xml:lang="x-test">xxImport vCard filesxx</li>
     </ul>
   </description>
@@ -262,6 +249,7 @@
       <caption xml:lang="sl">Pregled stikov</caption>
       <caption xml:lang="sv">Översikt av kontakter</caption>
       <caption xml:lang="uk">Огляд контактів</caption>
+      <caption xml:lang="vi">Xem khái quát liên hệ</caption>
       <caption xml:lang="x-test">xxContact overviewxx</caption>
       <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
     </screenshot>
