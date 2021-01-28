@@ -2,6 +2,11 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Phone Book</name>
+  <name xml:lang="ca">Agenda telefònica</name>
+  <name xml:lang="ca-valencia">Agenda telefònica</name>
+  <name xml:lang="nl">Telefoonboek</name>
+  <name xml:lang="pt">Lista Telefónica</name>
+  <name xml:lang="sk">Telefónny zoznam</name>
   <name xml:lang="sv">Telefonkatalog</name>
   <name xml:lang="uk">Телефонна книга</name>
   <name xml:lang="x-test">xxPhone Bookxx</name>
@@ -81,6 +86,7 @@
     <p xml:lang="pt">Aplicação de gestão de contactos convergente tanto para computadores como para dispositivos móveis.</p>
     <p xml:lang="pt-BR">Aplicativo de gerenciamento de contatos convergente para área de trabalho e dispositivos móveis.</p>
     <p xml:lang="ro">Aplicație convergentă de gestiune a contactelor pentru dispozitive de birou și mobile.</p>
+    <p xml:lang="sk">Konvergentná aplikácia na správu kontaktov pre stolné aj mobilné zariadenia.</p>
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
     <p xml:lang="sv">Konvergerade kontakthanteringsprogram för både skrivbord och mobilenheter</p>
     <p xml:lang="uk">Універсальна програма для керування контактами для робочих станцій та мобільних пристроїв.</p>
@@ -106,6 +112,7 @@
     <p xml:lang="pt">Oferece um local central para iniciar as conversas. Dependendo da informação disponível sobre um contacto, são apresentadas as acções respectivas.</p>
     <p xml:lang="pt-BR">Fornece um local central para iniciar conversas. Dependendo das informações disponíveis sobre um contato, as respectivas ações são exibidas.</p>
     <p xml:lang="ro">Oferă un loc central pentru începerea conversațiilor. În dependență de informațiile disponibile pentru un contact, sunt afișate acțiunile respective.</p>
+    <p xml:lang="sk">Poskytuje centrálne miesto pre začatie konverzácie. V závislosti od dostupných informácií o kontakte sa zobrazia príslušné akcie.</p>
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
     <p xml:lang="sv">Det tillhandahåller en central plats för att inleda konversationer. Beroende på tillgänglig information om en kontakt, visas respektive åtgärder.</p>
     <p xml:lang="uk">Надає вам спільну платформу для започаткування спілкувань. Залежно від даних, які доступні щодо контакту, буде показано відповідний список можливих дій зі встановлення зв'язку.</p>
@@ -246,6 +253,7 @@
       <caption xml:lang="pt">Visão geral do contacto</caption>
       <caption xml:lang="pt-BR">Visão do contato</caption>
       <caption xml:lang="ro">Sumar contacte</caption>
+      <caption xml:lang="sk">Prehľad kontaktu</caption>
       <caption xml:lang="sl">Pregled stikov</caption>
       <caption xml:lang="sv">Översikt av kontakter</caption>
       <caption xml:lang="uk">Огляд контактів</caption>
