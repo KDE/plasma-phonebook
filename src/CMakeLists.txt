@@ -1,18 +1,19 @@
-qt5_add_resources(RESOURCES resources.qrc)
 add_executable(plasma-phonebook
     main.cpp
     phonesmodel.cpp
     declarativeaddressee.cpp
     contactimporter.cpp
     imppmodel.cpp
-    ${RESOURCES})
+    resources.qrc
+)
+
 target_link_libraries(plasma-phonebook
-        Qt5::Core Qt5::Qml Qt5::Quick Qt5::Svg
+        Qt::Core Qt::Qml Qt::Quick Qt::Svg
         KF5::Contacts KF5::People KF5::I18n KF5::CoreAddons
 )
 
 if(ANDROID)
-    target_link_libraries(plasma-phonebook KF5::Kirigami2 Qt5::Svg Qt5::AndroidExtras)
+    target_link_libraries(plasma-phonebook KF5::Kirigami2 Qt::Svg Qt::AndroidExtras)
 
     kirigami_package_breeze_icons(ICONS
         go-down-symbolic
