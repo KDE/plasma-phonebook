@@ -9,8 +9,8 @@
 #include <QUrl>
 #include <QtQml>
 
-#include <KLocalizedContext>
 #include <KAboutData>
+#include <KLocalizedContext>
 #include <KLocalizedString>
 
 #include "contactimporter.h"

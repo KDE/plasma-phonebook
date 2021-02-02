@@ -11,19 +11,19 @@
 #include <QImage>
 #include <QObject>
 
-#define PROPERTY(type, name, setName)                                                                                                                                                                                                          \
-    type name() const                                                                                                                                                                                                                          \
-    {                                                                                                                                                                                                                                          \
-        return m_addressee.name();                                                                                                                                                                                                             \
-    }                                                                                                                                                                                                                                          \
-    void setName(const type &(name))                                                                                                                                                                                                           \
-    {                                                                                                                                                                                                                                          \
-        if (m_addressee.name() == (name))                                                                                                                                                                                                      \
-            return;                                                                                                                                                                                                                            \
-        m_addressee.setName(name);                                                                                                                                                                                                             \
-        name##Changed(name);                                                                                                                                                                                                                   \
-        m_addressee.setChanged(true);                                                                                                                                                                                                          \
-    }                                                                                                                                                                                                                                          \
+#define PROPERTY(type, name, setName)                                                                                                                          \
+    type name() const                                                                                                                                          \
+    {                                                                                                                                                          \
+        return m_addressee.name();                                                                                                                             \
+    }                                                                                                                                                          \
+    void setName(const type &(name))                                                                                                                           \
+    {                                                                                                                                                          \
+        if (m_addressee.name() == (name))                                                                                                                      \
+            return;                                                                                                                                            \
+        m_addressee.setName(name);                                                                                                                             \
+        name##Changed(name);                                                                                                                                   \
+        m_addressee.setChanged(true);                                                                                                                          \
+    }                                                                                                                                                          \
     Q_SIGNAL void name##Changed(const type &(name));
 
 class PhonesModel;
