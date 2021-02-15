@@ -30,6 +30,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QCoreApplication::setApplicationName(QStringLiteral("plasma-phonebook"));
 
+    KLocalizedString::setApplicationDomain("plasma-phonebook");
+
     // back-end
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
