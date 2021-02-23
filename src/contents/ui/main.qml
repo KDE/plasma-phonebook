@@ -6,7 +6,6 @@
  */
 
 import QtQuick 2.1
-import QtQuick.Dialogs 1.0
 import org.kde.kirigami 2.4 as Kirigami
 import QtQuick.Controls 2.0 as Controls
 
@@ -26,7 +25,7 @@ Kirigami.ApplicationWindow {
                 icon.name: "document-import"
                 text: i18n("Import contacts")
                 onTriggered: {
-                    importFileDialog.open()
+                    importer.startImport()
                 }
             }
         ]
@@ -38,13 +37,6 @@ Kirigami.ApplicationWindow {
 
     Component { id: contactsPage; ContactsPage {}}
     Component { id: detailPage; DetailPage {}}
-
-    FileDialog {
-        id: importFileDialog
-        selectMultiple: false
-        selectExisting: true
-        onAccepted: importer.importVCards(fileUrl)
-    }
 
     ContactImporter {
         id: importer

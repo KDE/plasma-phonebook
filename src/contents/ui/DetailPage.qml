@@ -7,7 +7,6 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.2
-import QtQuick.Dialogs 1.1
 import org.kde.people 1.0 as KPeople
 import org.kde.kirigami 2.4 as Kirigami
 
