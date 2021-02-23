@@ -9,15 +9,19 @@
 
 #include <KContacts/VCardConverter>
 #include <QObject>
+#include <QFileDialog>
 
 class ContactImporter : public QObject
 {
     Q_OBJECT
 public:
     explicit ContactImporter(QObject *parent = nullptr);
-    Q_INVOKABLE void importVCards(const QUrl &path);
+    Q_INVOKABLE void startImport();
 
 private:
+    Q_SLOT void importVCards(const QUrl &path);
+
+    std::unique_ptr<QFileDialog> m_dialog;
     KContacts::VCardConverter m_converter;
 };
 

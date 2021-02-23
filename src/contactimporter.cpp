@@ -15,6 +15,20 @@
 ContactImporter::ContactImporter(QObject *parent)
     : QObject(parent)
 {
+
+}
+
+void ContactImporter::startImport()
+{
+    m_dialog = std::make_unique<QFileDialog>();
+    m_dialog->setFileMode(QFileDialog::ExistingFile);
+    connect(m_dialog.get(), &QFileDialog::finished, this, [=] {
+        const auto selectedFiles = m_dialog->selectedFiles();
+        if (!selectedFiles.empty()) {
+            importVCards(QUrl::fromLocalFile(m_dialog->selectedFiles().first()));
+        }
+    });
+    m_dialog->open();
 }
 
 void ContactImporter::importVCards(const QUrl &path)

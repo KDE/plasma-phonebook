@@ -9,6 +9,8 @@
 #include <QFile>
 #include <QGuiApplication>
 
+#include <QFileDialog>
+
 #include "imppmodel.h"
 #include "phonesmodel.h"
 
@@ -50,6 +52,7 @@ void Addressee::setPhoto(const QImage &data)
     const QSize size(avatarSize, avatarSize);
 
     m_addressee.setPhoto(data.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    Q_EMIT photoChanged();
 }
 
 QImage Addressee::photo()
@@ -57,14 +60,27 @@ QImage Addressee::photo()
     return m_addressee.photo().data();
 }
 
-Q_SCRIPTABLE void Addressee::addPhotoFromFile(const QString &path)
+void Addressee::addPhotoFromFile(const QUrl &path)
 {
 #ifdef Q_OS_ANDROID
-    const QImage image(path);
+    const QImage image(path.toString());
 #else
-    const QImage image(QUrl(path).toLocalFile());
+    const QImage image(path.toLocalFile());
 #endif
     setPhoto(image);
+}
+
+void Addressee::addPhoto()
+{
+    m_fileDialog = std::make_unique<QFileDialog>();
+    m_fileDialog->setFileMode(QFileDialog::ExistingFile);
+    connect(m_fileDialog.get(), &QFileDialog::finished, this, [=] {
+        const auto selectedFiles = m_fileDialog->selectedFiles();
+        if (!selectedFiles.empty()) {
+            addPhotoFromFile(QUrl::fromLocalFile(m_fileDialog->selectedFiles().first()));
+        }
+    });
+    m_fileDialog->open();
 }
 
 Addressee::Addressee(QObject *parent)

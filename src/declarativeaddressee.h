@@ -11,6 +11,10 @@
 #include <QImage>
 #include <QObject>
 
+#include <memory>
+
+class QFileDialog;
+
 #define PROPERTY(type, name, setName)                                                                                                                          \
     type name() const                                                                                                                                          \
     {                                                                                                                                                          \
@@ -76,7 +80,8 @@ public:
         Q_EMIT emailsChanged(emails());
     }
 
-    Q_SCRIPTABLE void addPhotoFromFile(const QString &path);
+    void addPhotoFromFile(const QUrl &path);
+    Q_INVOKABLE void addPhoto();
 
     QByteArray raw() const;
     void setRaw(const QByteArray &raw);
@@ -94,6 +99,8 @@ private:
     KContacts::Addressee m_addressee;
     PhonesModel *m_phonesModel = nullptr;
     ImppModel *m_imppModel = nullptr;
+
+    std::unique_ptr<QFileDialog> m_fileDialog;
 };
 
 #endif
