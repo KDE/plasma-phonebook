@@ -6,7 +6,7 @@
  */
 
 import QtQuick 2.1
-import QtQuick.Dialogs 1.0
+import Qt.labs.platform 1.1
 import org.kde.kirigami 2.4 as Kirigami
 import QtQuick.Controls 2.0 as Controls
 
@@ -41,9 +41,8 @@ Kirigami.ApplicationWindow {
 
     FileDialog {
         id: importFileDialog
-        selectMultiple: false
-        selectExisting: true
-        onAccepted: importer.importVCards(fileUrl)
+        fileMode: FileDialog.OpenFile
+        onAccepted: importer.importVCards(file)
     }
 
     ContactImporter {

@@ -7,7 +7,7 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
-import QtQuick.Dialogs 1.1
+import Qt.labs.platform 1.1
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
 import org.kde.kcontacts 1.0 as KContacts
@@ -83,14 +83,13 @@ Kirigami.ScrollablePage {
                 Kirigami.Icon {
                     anchors.fill: parent
                     anchors.margins: Kirigami.Units.smallSpacing
-                    source: fileDialog.fileUrl != "" ? fileDialog.fileUrl : root.person ? root.person.photo : "user-identity"
+                    source: fileDialog.file != "" ? fileDialog.file : root.person ? root.person.photo : "user-identity"
                 }
             }
             FileDialog {
                 id: fileDialog
-                selectExisting: true
-                selectMultiple: false
-                onAccepted: addressee.addPhotoFromFile(fileUrl)
+                fileMode: FileDialog.OpenFile
+                onAccepted: addressee.addPhotoFromFile(file)
             }
 
             onClicked: {
