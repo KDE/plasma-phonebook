@@ -4,6 +4,7 @@
   <name>Phone Book</name>
   <name xml:lang="ca">Agenda telefònica</name>
   <name xml:lang="ca-valencia">Agenda telefònica</name>
+  <name xml:lang="cs">Telefonní seznam</name>
   <name xml:lang="en-GB">Phone Book</name>
   <name xml:lang="es">Agenda telefónica</name>
   <name xml:lang="fi">Puhelinmuistio</name>
@@ -24,6 +25,7 @@
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
+  <summary xml:lang="cs">Zobrazte a upravujte kontakty</summary>
   <summary xml:lang="da">Vis og rediger kontakter</summary>
   <summary xml:lang="en-GB">View and edit contacts</summary>
   <summary xml:lang="es">Vea y edite sus contactos</summary>
@@ -195,6 +197,7 @@
       <li>Remove contacts</li>
       <li xml:lang="ca">Elimina els contactes</li>
       <li xml:lang="ca-valencia">Elimina els contactes</li>
+      <li xml:lang="cs">Odstranit kontakty</li>
       <li xml:lang="da">Fjern kontakter</li>
       <li xml:lang="en-GB">Remove contacts</li>
       <li xml:lang="es">Eliminar contactos</li>
@@ -258,6 +261,7 @@
       <caption>Contact overview</caption>
       <caption xml:lang="ca">Resum dels contactes</caption>
       <caption xml:lang="ca-valencia">Resum dels contactes</caption>
+      <caption xml:lang="cs">Přehled kontaktů</caption>
       <caption xml:lang="en-GB">Contact overview</caption>
       <caption xml:lang="es">Resumen del contacto</caption>
       <caption xml:lang="et">Kontaktide ülevaade</caption>
