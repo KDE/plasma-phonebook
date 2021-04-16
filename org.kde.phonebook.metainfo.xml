@@ -5,6 +5,7 @@
   <name xml:lang="ca">Agenda telefònica</name>
   <name xml:lang="ca-valencia">Agenda telefònica</name>
   <name xml:lang="cs">Telefonní seznam</name>
+  <name xml:lang="de">Telefonbuch</name>
   <name xml:lang="en-GB">Phone Book</name>
   <name xml:lang="es">Agenda telefónica</name>
   <name xml:lang="fi">Puhelinmuistio</name>
@@ -27,6 +28,7 @@
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
   <summary xml:lang="cs">Zobrazte a upravujte kontakty</summary>
   <summary xml:lang="da">Vis og rediger kontakter</summary>
+  <summary xml:lang="de">Kontakte anzeigen und bearbeiten</summary>
   <summary xml:lang="en-GB">View and edit contacts</summary>
   <summary xml:lang="es">Vea y edite sus contactos</summary>
   <summary xml:lang="et">Kontaktide näitamine ja muutmine</summary>
@@ -58,6 +60,7 @@
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
+  <developer_name xml:lang="de">KDE-Gemeinschaft</developer_name>
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
@@ -141,6 +144,7 @@
     <p xml:lang="ca">Característiques</p>
     <p xml:lang="ca-valencia">Característiques</p>
     <p xml:lang="cs">Vlastnosti</p>
+    <p xml:lang="de">Funktionen</p>
     <p xml:lang="en-GB">Features</p>
     <p xml:lang="es">Características</p>
     <p xml:lang="et">Omadused</p>
@@ -171,6 +175,7 @@
       <li xml:lang="ca-valencia">Afig contactes</li>
       <li xml:lang="cs">Přidat kontakty</li>
       <li xml:lang="da">Tilføj kontakter</li>
+      <li xml:lang="de">Kontakte hinzufügen</li>
       <li xml:lang="en-GB">Add contacts</li>
       <li xml:lang="es">Añadir contactos</li>
       <li xml:lang="et">Kontaktide lisamine</li>
@@ -199,6 +204,7 @@
       <li xml:lang="ca-valencia">Elimina els contactes</li>
       <li xml:lang="cs">Odstranit kontakty</li>
       <li xml:lang="da">Fjern kontakter</li>
+      <li xml:lang="de">Kontakte entfernen</li>
       <li xml:lang="en-GB">Remove contacts</li>
       <li xml:lang="es">Eliminar contactos</li>
       <li xml:lang="et">Kontaktide eemaldamine</li>
@@ -227,6 +233,7 @@
       <li xml:lang="ca-valencia">Importa fitxers vCard</li>
       <li xml:lang="cs">Importovat soubory vizitek</li>
       <li xml:lang="da">Importér vCard-filer</li>
+      <li xml:lang="de">vCard-Dateien importieren</li>
       <li xml:lang="en-GB">Import vCard files</li>
       <li xml:lang="es">Importar archivos vCard</li>
       <li xml:lang="et">vCard-failide import</li>
@@ -262,6 +269,7 @@
       <caption xml:lang="ca">Resum dels contactes</caption>
       <caption xml:lang="ca-valencia">Resum dels contactes</caption>
       <caption xml:lang="cs">Přehled kontaktů</caption>
+      <caption xml:lang="de">Kontaktübersicht</caption>
       <caption xml:lang="en-GB">Contact overview</caption>
       <caption xml:lang="es">Resumen del contacto</caption>
       <caption xml:lang="et">Kontaktide ülevaade</caption>
