@@ -115,7 +115,14 @@ Kirigami.ScrollablePage {
         Kirigami.FormLayout {
             width: parent.width
             Label {
-                text: Qt.formatDate(addressee.birthday)
+                text: {
+                    // We do not always have the year
+                    if (addressee.birthday.getFullYear() === 0) {
+                        return Qt.formatDate(addressee.birthday, "dd.MM.")
+                    } else {
+                        return Qt.formatDate(addressee.birthday)
+                    }
+                }
                 Kirigami.FormData.label: i18n("Birthday:")
             }
         }
