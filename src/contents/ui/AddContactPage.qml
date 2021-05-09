@@ -316,18 +316,14 @@ Kirigami.ScrollablePage {
             id: birthday
             Kirigami.FormData.label: i18n("Birthday:")
             
-            onLoaded: {
-              item.value = addressee.birthday              
-            }  
+            selectedDate: addressee.birthday
           
             Connections {
                 target: root
                 function onSave() {
-                    addressee.birthday = birthday.item.selectedDate
+                    addressee.birthday = birthday.selectedDate
                 }
             }
-          
-          
         }
     }
 }

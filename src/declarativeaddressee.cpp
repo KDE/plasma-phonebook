@@ -21,6 +21,7 @@ void Addressee::setRaw(const QByteArray &raw)
     Q_EMIT anyNameChanged();
     Q_EMIT phoneNumbersChanged();
     Q_EMIT emailsChanged(emails());
+    Q_EMIT birthdayChanged(birthday());
 }
 
 QByteArray Addressee::raw() const
