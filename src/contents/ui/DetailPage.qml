@@ -115,6 +115,7 @@ Kirigami.ScrollablePage {
         Kirigami.FormLayout {
             width: parent.width
             Label {
+                visible: text != ""
                 text: {
                     // We do not always have the year
                     if (addressee.birthday.getFullYear() === 0) {
