@@ -26,6 +26,14 @@ Kirigami.ScrollablePage {
     title: personData.person.name
     Kirigami.Theme.colorSet: Kirigami.Theme.View
 
+    function callNumber(number) {
+        Qt.openUrlExternally("tel:" + number)
+    }
+
+    function sendSms(number) {
+        Qt.openUrlExternally("sms:" + number)
+    }
+
     KPeople.PersonData {
         id: personData
         personUri: page.personUri
@@ -39,6 +47,12 @@ Kirigami.ScrollablePage {
     KContacts.Addressee {
         id: addressee
         raw: personData.person.contactCustomProperty("vcard")
+    }
+
+    Component {
+        id: callPopup
+
+        PhoneNumberDialog {}
     }
 
     Column {
@@ -93,14 +107,34 @@ Kirigami.ScrollablePage {
                     Kirigami.Action {
                         text: i18n("Call")
                         iconName: "call-start"
-                        visible:personData.person.contactCustomProperty("phoneNumber").length > 0
-                        onTriggered: Qt.openUrlExternally("tel:" + personData.person.contactCustomProperty("phoneNumber"))
+                        visible: personData.person.contactCustomProperty("phoneNumber").length > 0
+                        onTriggered: {
+                            var model = addressee.phoneNumbers
+
+                            if (addressee.phoneNumbers.rowCount() == 1) {
+                                page.callNumber(model.data(model.index(0, 0), Qt.DisplayRole))
+                            } else {
+                                var pop = callPopup.createObject(page, {numbers: addressee.phoneNumbers, title: i18n("Select number to call")})
+                                pop.onNumberSelected.connect(number => callNumber(number))
+                                pop.open()
+                            }
+                        }
                     },
                     Kirigami.Action {
                         text: i18n("Send SMS")
                         iconName: "mail-message"
                         visible:personData.person.contactCustomProperty("phoneNumber").length > 0
-                        onTriggered: Qt.openUrlExternally("sms:" + personData.person.contactCustomProperty("phoneNumber"))
+                        onTriggered: {
+                            var model = addressee.phoneNumbers
+
+                            if (addressee.phoneNumbers.rowCount() == 1) {
+                                page.sendSms(model.data(model.index(0, 0), Qt.DisplayRole))
+                            } else {
+                                var pop = callPopup.createObject(page, {numbers: addressee.phoneNumbers, title: i18n("Select number to send message to")})
+                                pop.onNumberSelected.connect(number => sendSms(number))
+                                pop.open()
+                            }
+                        }
                     },
                     Kirigami.Action {
                         text: i18n("Send email")

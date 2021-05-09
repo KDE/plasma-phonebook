@@ -25,8 +25,10 @@ QVariant PhonesModel::data(const QModelIndex &index, int role) const
     }
 
     switch (role) {
-    case Qt::DisplayRole:
+    case NumberRole:
         return m_addressee->m_addressee.phoneNumbers().at(index.row()).number();
+    case TypeLabelRole:
+        return m_addressee->m_addressee.phoneNumbers().at(index.row()).typeLabel();
     }
     return {};
 }
@@ -38,7 +40,7 @@ bool PhonesModel::setData(const QModelIndex &index, const QVariant &value, int r
     }
 
     switch (role) {
-    case Qt::DisplayRole: {
+    case NumberRole: {
         auto numbers = m_addressee->m_addressee.phoneNumbers();
         numbers[index.row()].setNumber(value.toString());
         m_addressee->m_addressee.setPhoneNumbers(numbers);
@@ -75,4 +77,12 @@ void PhonesModel::removePhoneNumber(const QString &number)
     beginRemoveRows({}, index, index);
     m_addressee->m_addressee.removePhoneNumber(*phoneNumber);
     endRemoveRows();
+}
+
+QHash<int, QByteArray> PhonesModel::roleNames() const
+{
+    return {
+        {NumberRole, "number"},
+        {TypeLabelRole, "typeLabel"},
+    };
 }
