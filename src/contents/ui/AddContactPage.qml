@@ -12,6 +12,8 @@ import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
 import org.kde.kcontacts 1.0 as KContacts
 
+import org.kde.kirigamiaddons.dateandtime 0.1 as KirigamiDateTime
+
 Kirigami.ScrollablePage {
     id: root
 
@@ -303,6 +305,29 @@ Kirigami.ScrollablePage {
                     }
                 }
             }
+        }
+        
+        Kirigami.Separator {
+                Layout.fillWidth: true
+        }
+        
+        KirigamiDateTime.DateInput
+        {
+            id: birthday
+            Kirigami.FormData.label: i18n("Birthday:")
+            
+            onLoaded: {
+              item.value = addressee.birthday              
+            }  
+          
+            Connections {
+                target: root
+                function onSave() {
+                    addressee.birthday = birthday.item.selectedDate
+                }
+            }
+          
+          
         }
     }
 }

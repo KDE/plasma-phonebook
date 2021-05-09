@@ -41,6 +41,9 @@ public:
     {
         return m_addressee.realName();
     }
+    
+    Q_PROPERTY(QDateTime birthday READ birthday WRITE setBirthday NOTIFY birthdayChanged)
+    PROPERTY(QDateTime, birthday, setBirthday)
 
     Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
     PROPERTY(QString, name, setName)
