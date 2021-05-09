@@ -11,6 +11,7 @@ import QtQuick.Layouts 1.2
 import QtQuick.Dialogs 1.1
 import org.kde.people 1.0 as KPeople
 import org.kde.kirigami 2.10 as Kirigami
+import org.kde.kcontacts 1.0 as KContacts
 
 import "lib" as HIG
 
@@ -33,6 +34,11 @@ Kirigami.ScrollablePage {
     KPeople.PersonActions {
         id: personActions
         personUri: page.personUri
+    }
+
+    KContacts.Addressee {
+        id: addressee
+        raw: personData.person.contactCustomProperty("vcard")
     }
 
     Column {
@@ -103,6 +109,14 @@ Kirigami.ScrollablePage {
                         onTriggered: Qt.openUrlExternally("mailto:" + personData.person.contactCustomProperty("email"))
                     }
                 ]
+            }
+        }
+
+        Kirigami.FormLayout {
+            width: parent.width
+            Label {
+                text: Qt.formatDate(addressee.birthday)
+                Kirigami.FormData.label: i18n("Birthday:")
             }
         }
     }
