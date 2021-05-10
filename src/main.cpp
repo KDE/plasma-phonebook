@@ -8,6 +8,8 @@
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QtQml>
+#include <QCommandLineParser>
+#include <QCommandLineOption>
 
 #include <KAboutData>
 #include <KLocalizedContext>
@@ -17,6 +19,7 @@
 #include "declarativeaddressee.h"
 #include "imppmodel.h"
 #include "phonesmodel.h"
+#include "version.h"
 
 #ifdef Q_OS_ANDROID
 #include <QtAndroid>
@@ -24,13 +27,17 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
+    QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QCoreApplication::setApplicationName(QStringLiteral("plasma-phonebook"));
+    QCoreApplication::setApplicationVersion(QStringLiteral(PLASMAPHONEBOOK_VERSION_STRING));
 
     KLocalizedString::setApplicationDomain("plasma-phonebook");
+    parser.addVersionOption();
+    parser.process(app);
 
     // back-end
     QQmlApplicationEngine engine;

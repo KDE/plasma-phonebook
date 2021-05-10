@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 project(plasma-phonebook)
+set(PROJECT_VERSION "21.05")
 
 set(KF5_MIN_VERSION "5.77.0")
 set(QT_MIN_VERSION "5.15.0")
@@ -21,6 +22,10 @@ include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 
+ecm_setup_version(${PROJECT_VERSION}
+    VARIABLE_PREFIX PLASMAPHONEBOOK
+    VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
+)
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts)
 find_package(KF5PeopleVCard REQUIRED)
