@@ -70,14 +70,6 @@ Kirigami.ScrollablePage {
                 height: Kirigami.Units.gridUnit * 3
                 name: model && model.display
                 avatarIcon: model && model.decoration
-                personUri: model && model.personUri
-
-                actions: [
-                    Kirigami.Action {
-                        icon.name: "call-start"
-                        onTriggered: Qt.openUrlExternally("tel:" + model.phoneNumber);
-                    }
-                ]
 
                 onClicked: {
                     pageStack.push(detailPage, {

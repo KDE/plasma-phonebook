@@ -13,12 +13,11 @@ import QtGraphicalEffects 1.0
 import org.kde.kirigami 2.0 as Kirigami
 import org.kde.people 1.0 as KPeople
 
-Kirigami.SwipeListItem {
+Kirigami.AbstractListItem {
     id: listItem
 
     property string name
     property var avatarIcon
-    property string personUri
 
     contentItem: RowLayout {
 
