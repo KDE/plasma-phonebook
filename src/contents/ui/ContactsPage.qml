@@ -6,7 +6,7 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
-import QtQuick 2.7
+import QtQuick 2.15
 import QtQuick.Controls 2.0 as Controls
 import QtQuick.Layouts 1.7
 
@@ -42,6 +42,8 @@ Kirigami.ScrollablePage {
         property bool delegateSelected: false
         property string numberToCall
 
+        reuseItems: true
+
         section.property: "display"
         section.criteria: ViewSection.FirstCharacter
         section.delegate: Kirigami.ListSectionHeader {text: section}
@@ -64,24 +66,16 @@ Kirigami.ScrollablePage {
             visible: contactsList.count === 0
         }
 
-        Component {
-            id: contactListDelegate
-            ContactListItem {
-                height: Kirigami.Units.gridUnit * 3
-                name: model && model.display
-                avatarIcon: model && model.decoration
+        delegate: ContactListItem {
+            height: Kirigami.Units.gridUnit * 3
+            name: model && model.display
+            avatarIcon: model && model.decoration
 
-                onClicked: {
-                    pageStack.push(detailPage, {
-                        personUri: model.personUri
-                    })
-                }
+            onClicked: {
+                pageStack.push(detailPage, {
+                    personUri: model.personUri
+                })
             }
-        }
-
-        delegate: Kirigami.DelegateRecycler {
-            width: parent ? parent.width : 0
-            sourceComponent: contactListDelegate
         }
     }
 }
