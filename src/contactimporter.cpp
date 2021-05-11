@@ -15,7 +15,6 @@
 ContactImporter::ContactImporter(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void ContactImporter::startImport()

@@ -5,11 +5,11 @@
  */
 
 #include <QApplication>
+#include <QCommandLineOption>
+#include <QCommandLineParser>
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QtQml>
-#include <QCommandLineParser>
-#include <QCommandLineOption>
 
 #include <KAboutData>
 #include <KLocalizedContext>

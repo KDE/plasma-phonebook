@@ -8,8 +8,8 @@
 #define CONTACTIMPORTER_H
 
 #include <KContacts/VCardConverter>
-#include <QObject>
 #include <QFileDialog>
+#include <QObject>
 
 class ContactImporter : public QObject
 {
