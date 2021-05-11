@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
-  <name>Phone Book</name>
+  <name>Phonebook</name>
   <name xml:lang="ca">Agenda telefònica</name>
   <name xml:lang="ca-valencia">Agenda telefònica</name>
   <name xml:lang="cs">Telefonní seznam</name>

@@ -43,7 +43,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
-    KAboutData aboutData(QStringLiteral("plasma-phonebook"), i18n("Phone Book"), {}, i18n("View and edit contacts"), KAboutLicense::GPL);
+    KAboutData aboutData(QStringLiteral("plasma-phonebook"), i18n("Phonebook"), {}, i18n("View and edit contacts"), KAboutLicense::GPL);
     aboutData.setDesktopFileName(QStringLiteral("org.kde.phone.dialer"));
 
     qmlRegisterType<Addressee>("org.kde.kcontacts", 1, 0, "Addressee");

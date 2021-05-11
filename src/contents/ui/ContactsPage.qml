@@ -17,7 +17,7 @@ import org.kde.phonebook 1.0
 
 
 Kirigami.ScrollablePage {
-    title: i18n("Address Book")
+    title: i18n("Phonebook")
 
     actions.main: Kirigami.Action {
         icon.name: "contact-new-symbolic"
