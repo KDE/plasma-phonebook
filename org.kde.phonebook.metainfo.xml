@@ -2,27 +2,6 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Phonebook</name>
-  <name xml:lang="ca">Agenda telefònica</name>
-  <name xml:lang="ca-valencia">Agenda telefònica</name>
-  <name xml:lang="cs">Telefonní seznam</name>
-  <name xml:lang="de">Telefonbuch</name>
-  <name xml:lang="en-GB">Phone Book</name>
-  <name xml:lang="es">Agenda telefónica</name>
-  <name xml:lang="fi">Puhelinmuistio</name>
-  <name xml:lang="fr">Agenda téléphonique</name>
-  <name xml:lang="it">Rubrica telefonica</name>
-  <name xml:lang="nl">Telefoonboek</name>
-  <name xml:lang="nn">Telefonkatalog</name>
-  <name xml:lang="pa">ਫ਼ੋਨ ਬੁੱਕ</name>
-  <name xml:lang="pl">Książka telefoniczna</name>
-  <name xml:lang="pt">Lista Telefónica</name>
-  <name xml:lang="pt-BR">Agenda telefônica</name>
-  <name xml:lang="sk">Telefónny zoznam</name>
-  <name xml:lang="sl">Phone Book</name>
-  <name xml:lang="sv">Telefonkatalog</name>
-  <name xml:lang="uk">Телефонна книга</name>
-  <name xml:lang="vi">Danh bạ</name>
-  <name xml:lang="x-test">xxPhone Bookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
