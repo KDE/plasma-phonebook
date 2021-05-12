@@ -66,10 +66,9 @@ Kirigami.ScrollablePage {
             visible: contactsList.count === 0
         }
 
-        delegate: ContactListItem {
-            height: Kirigami.Units.gridUnit * 3
-            name: model && model.display
-            avatarIcon: model && model.decoration
+        delegate: Kirigami.BasicListItem {
+            text: model && model.display
+            icon: model && model.decoration
 
             onClicked: {
                 pageStack.push(detailPage, {
