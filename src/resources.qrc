@@ -5,7 +5,7 @@
         <file alias="ContactListItem.qml">contents/ui/ContactListItem.qml</file>
         <file alias="RoundImage.qml">contents/ui/RoundImage.qml</file>
         <file alias="DetailPage.qml">contents/ui/DetailPage.qml</file>
-        <file alias="lib/Header.qml">contents/ui/lib/Header.qml</file>
+        <file alias="Header.qml">contents/ui/Header.qml</file>
         <file alias="AddContactPage.qml">contents/ui/AddContactPage.qml</file>
         <file alias="PhoneNumberDialog.qml">contents/ui/PhoneNumberDialog.qml</file>
         <file alias="fallbackBackground.png">contents/resources/fallbackBackground.png</file>

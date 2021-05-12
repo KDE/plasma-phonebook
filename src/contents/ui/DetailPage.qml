@@ -12,8 +12,6 @@ import org.kde.people 1.0 as KPeople
 import org.kde.kirigami 2.10 as Kirigami
 import org.kde.kcontacts 1.0 as KContacts
 
-import "lib" as HIG
-
 Kirigami.ScrollablePage {
     property string personUri;
     id: page
@@ -55,7 +53,7 @@ Kirigami.ScrollablePage {
     }
 
     Column {
-        HIG.Header {
+        Header {
             id: header
             width: parent.width
             height: Kirigami.Units.gridUnit * 8
