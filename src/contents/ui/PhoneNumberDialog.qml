@@ -28,11 +28,11 @@ Kirigami.OverlaySheet {
         implicitWidth: Kirigami.Units.gridUnit * 20
         model: 4
         delegate: Kirigami.BasicListItem {
-            text: typeLabel
-            subtitle: number
+            text: modelData.typeLabel
+            subtitle: modelData.number
             onClicked: {
                 close()
-                root.numberSelected(number)
+                root.numberSelected(modelData.normalizedNumber)
             }
         }
     }

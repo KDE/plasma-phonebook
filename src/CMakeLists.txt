@@ -1,9 +1,7 @@
 add_executable(plasma-phonebook
     main.cpp
-    phonesmodel.cpp
-    declarativeaddressee.cpp
+    contactcontroller.cpp
     contactimporter.cpp
-    imppmodel.cpp
     resources.qrc
 )
 

@@ -7,16 +7,25 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.2 as Controls
 import QtQuick.Layouts 1.2
+import Qt.labs.platform 1.1
 import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
-import org.kde.kcontacts 1.0 as KContacts
 
 import org.kde.kirigamiaddons.dateandtime 0.1 as KirigamiDateTime
+
+import org.kde.phonebook 1.0
 
 Kirigami.ScrollablePage {
     id: root
 
     property QtObject person
+    property var addressee: ContactController.emptyAddressee()
+
+    property var pendingPhoneNumbers: addressee.phoneNumbers
+    property var pendingEmails: addressee.emails
+    property var pendingImpps: addressee.impps
+    property var pendingPhoto: addressee.photo
+
     signal save()
 
     states: [
@@ -32,11 +41,6 @@ Kirigami.ScrollablePage {
 
     enabled: !person || person.isEditable
 
-    KContacts.Addressee {
-        id: addressee
-        raw: root.person ? root.person.contactCustomProperty("vcard") : ""
-    }
-
     actions {
         main: Kirigami.Action {
             icon.name: "dialog-ok-apply"
@@ -47,11 +51,11 @@ Kirigami.ScrollablePage {
                 root.save();
                 switch(root.state) {
                     case "create":
-                        if (!KPeople.PersonPluginManager.addContact({ "vcard": addressee.raw }))
+                        if (!KPeople.PersonPluginManager.addContact({ "vcard": ContactController.addresseeToVCard(addressee) }))
                             console.warn("could not create contact")
                         break;
                     case "update":
-                        if (!root.person.setContactCustomProperty("vcard", addressee.raw))
+                        if (!root.person.setContactCustomProperty("vcard", ContactController.addresseeToVCard(addressee)))
                             console.warn("Could not save", addressee.url)
                         break;
                 }
@@ -65,6 +69,14 @@ Kirigami.ScrollablePage {
             onTriggered: {
                 pageStack.pop()
             }
+        }
+    }
+
+    FileDialog {
+        id: fileDialog
+
+        onAccepted: {
+            root.pendingPhoto = ContactController.preparePhoto(currentFile)
         }
     }
 
@@ -84,24 +96,40 @@ Kirigami.ScrollablePage {
                 Kirigami.Icon {
                     anchors.fill: parent
                     anchors.margins: Kirigami.Units.smallSpacing
-                    source: addressee.photo ? addressee.photo : "user-identity"
+
+                    Connections {
+                        target: root
+                        function onSave() {
+                            addressee.photo = root.pendingPhoto
+                        }
+                    }
+
+                    source: {
+                        if (root.pendingPhoto.isEmpty) {
+                            return "user-identity"
+                        } else if (root.pendingPhoto.isIntern) {
+                            return root.pendingPhoto.data
+                        } else {
+                            return root.pendingPhoto.url
+                        }
+                    }
                 }
             }
 
-            onClicked: addressee.addPhoto()
+            onClicked: fileDialog.open()
         }
 
         Controls.TextField {
             id: name
             Kirigami.FormData.label: i18n("Name:")
             Layout.fillWidth: true
-            text: addressee.realName
+            text: addressee.formattedName
             onAccepted: {
-                addressee.name = text
+                addressee.formattedName = text
             }
 
             Connections {
-                target: root;
+                target: root
                 function onSave() {
                     name.accepted()
                 }
@@ -117,21 +145,22 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
             Kirigami.FormData.label: i18n("Phone:")
             Repeater {
-                model: addressee.phoneNumbers
+                model: pendingPhoneNumbers
 
                 delegate: RowLayout {
                     Controls.TextField {
                         id: phoneField
-                        text: model.display
+                        text: modelData.number
                         Layout.fillWidth: true
                         onAccepted: {
-                            model.display = text
+                            root.pendingPhoneNumbers[index].number = text
                         }
 
                         Connections {
                             target: root
                             function onSave() {
                                 phoneField.accepted()
+                                addressee.phoneNumbers = root.pendingPhoneNumbers
                             }
                         }
                     }
@@ -139,7 +168,8 @@ Kirigami.ScrollablePage {
                         icon.name: "list-remove"
                         implicitWidth: implicitHeight
                         onClicked: {
-                            addressee.phoneNumbers.removePhoneNumber(model.display)
+                            var newList = root.pendingPhoneNumbers.filter((value, index) => index != model.index)
+                            root.pendingPhoneNumbers = newList
                         }
                     }
                 }
@@ -155,8 +185,13 @@ Kirigami.ScrollablePage {
                 Connections {
                     target: root;
                     function onSave() {
-                        if (toAddPhone.text !== "")
-                            addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
+                        if (toAddPhone.text !== "") {
+                            var numbers = pendingPhoneNumbers
+                            numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
+                            pendingPhoneNumbers = numbers
+                        }
+
+                        addressee.phoneNumbers = root.pendingPhoneNumbers
                     }
                 }
 
@@ -166,7 +201,9 @@ Kirigami.ScrollablePage {
                     implicitWidth: implicitHeight
                     enabled: toAddPhone.text.length > 0
                     onClicked: {
-                        addressee.phoneNumbers.addPhoneNumber(toAddPhone.text)
+                        var numbers = pendingPhoneNumbers
+                        numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
+                        pendingPhoneNumbers = numbers
                         toAddPhone.text = ""
                     }
                 }
@@ -183,24 +220,32 @@ Kirigami.ScrollablePage {
             Kirigami.FormData.label: i18n("E-mail:")
 
             Repeater {
-                model: addressee.emails
+                model: root.pendingEmails
 
-                Binding {
-                    target: parent
-                    property: "model"
-                    value: addressee.emails
-                    when: addressee.dataChanged
-                }
                 delegate: RowLayout {
                     Controls.TextField {
                         id: textField
                         Layout.fillWidth: true
-                        text: modelData
+                        text: modelData.email
+
+                        onAccepted: {
+                            root.pendingEmails[index].email = text
+                        }
+
+                        Connections {
+                            target: root
+                            function onSave() {
+                                textField.accepted()
+                                addressee.emails = root.pendingEmails
+                            }
+                        }
                     }
                     Controls.Button {
                         icon.name: "list-remove"
                         implicitWidth: implicitHeight
-                        onClicked: addressee.removeEmail(modelData)
+                        onClicked: {
+                            root.pendingEmails = root.pendingEmails.filter((value, index) => index != model.index)
+                        }
                     }
                 }
             }
@@ -215,8 +260,13 @@ Kirigami.ScrollablePage {
                 Connections {
                     target: root;
                     function onSave() {
-                        if (toAddEmail.text !== "")
-                            addressee.insertEmail(toAddEmail.text)
+                        if (toAddEmail.text !== "") {
+                            var emails = root.pendingEmails
+                            emails.push(ContactController.createEmail(toAddEmail.text))
+                            root.pendingEmails = emails
+                        }
+
+                        addressee.emails = root.pendingEmails
                     }
                 }
 
@@ -226,7 +276,9 @@ Kirigami.ScrollablePage {
                     implicitWidth: implicitHeight
                     enabled: toAddEmail.text.length > 0
                     onClicked: {
-                        addressee.insertEmail(toAddEmail.text)
+                        var emails = root.pendingEmails
+                        emails.push(ContactController.createEmail(toAddEmail.text))
+                        root.pendingEmails = emails
                         toAddEmail.text = ""
                     }
                 }
@@ -243,28 +295,30 @@ Kirigami.ScrollablePage {
             Kirigami.FormData.label: i18n("Instant Messenger:")
 
             Repeater {
-                model: addressee.impps
+                model: root.pendingImpps
 
                 delegate: RowLayout {
                     Controls.TextField {
                         id: imppField
-                        text: model.display
+                        text: modelData.address
                         Layout.fillWidth: true
                         onAccepted: {
-                            model.display = text
+                            root.pendingImpps[index].address = text
                         }
 
                         Connections {
-                            target: root;
-                            onSave: imppField.accepted()
+                            target: root
+                            onSave: {
+                                imppField.accepted()
+                                addressee.impps = root.pendingImpps
+                            }
                         }
                     }
                     Controls.Button {
                         icon.name: "list-remove"
                         implicitWidth: implicitHeight
                         onClicked: {
-                            print("remove", model.display)
-                            addressee.impps.removeImpp(model.display)
+                            root.pendingImpps = root.pendingImpps.filter((value, index) => index != model.index)
                         }
                     }
                 }
@@ -280,8 +334,13 @@ Kirigami.ScrollablePage {
                 Connections {
                     target: root;
                     function onSave() {
-                        if (toAddImpp.text !== "")
-                            addressee.impps.addImpp(toAddImpp.text)
+                        if (toAddImpp.text !== "") {
+                            var impps = root.pendingImpps
+                            impps.push(ContactController.createImpp(toAddImpp.text))
+                            root.pendingImpps = impps
+                        }
+
+                        addressee.impps = root.pendingImpps
                     }
                 }
 
@@ -291,7 +350,9 @@ Kirigami.ScrollablePage {
                     implicitWidth: implicitHeight
                     enabled: toAddImpp.text.length > 0
                     onClicked: {
-                        addressee.impps.addImpp(toAddImpp.text)
+                        var impps = root.pendingImpps
+                        impps.push(ContactController.createImpp(toAddImpp.text))
+                        pendingImpps = impps
                         toAddImpp.text = ""
                     }
                 }
@@ -312,7 +373,7 @@ Kirigami.ScrollablePage {
             Connections {
                 target: root
                 function onSave() {
-                    addressee.birthday = birthday.selectedDate
+                    addressee.birthday = birthday.selectedDate // TODO birthday is not writable
                 }
             }
         }

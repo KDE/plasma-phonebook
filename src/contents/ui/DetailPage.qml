@@ -10,7 +10,7 @@ import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.2
 import org.kde.people 1.0 as KPeople
 import org.kde.kirigami 2.10 as Kirigami
-import org.kde.kcontacts 1.0 as KContacts
+import org.kde.phonebook 1.0
 
 Kirigami.ScrollablePage {
     property string personUri;
@@ -41,10 +41,7 @@ Kirigami.ScrollablePage {
         personUri: page.personUri
     }
 
-    KContacts.Addressee {
-        id: addressee
-        raw: personData.person.contactCustomProperty("vcard")
-    }
+    property var addressee: ContactController.addresseeFromVCard(personData.person.contactCustomProperty("vcard"))
 
     Component {
         id: callPopup
@@ -104,12 +101,12 @@ Kirigami.ScrollablePage {
                     Kirigami.Action {
                         text: i18n("Call")
                         iconName: "call-start"
-                        visible: personData.person.contactCustomProperty("phoneNumber").length > 0
+                        visible: addressee.phoneNumbers.length > 0
                         onTriggered: {
                             var model = addressee.phoneNumbers
 
-                            if (addressee.phoneNumbers.rowCount() == 1) {
-                                page.callNumber(model.data(model.index(0, 0), Qt.DisplayRole))
+                            if (addressee.phoneNumbers.length == 1) {
+                                page.callNumber(model[0].normalizedNumber)
                             } else {
                                 var pop = callPopup.createObject(page, {numbers: addressee.phoneNumbers, title: i18n("Select number to call")})
                                 pop.onNumberSelected.connect(number => callNumber(number))
@@ -120,12 +117,12 @@ Kirigami.ScrollablePage {
                     Kirigami.Action {
                         text: i18n("Send SMS")
                         iconName: "mail-message"
-                        visible:personData.person.contactCustomProperty("phoneNumber").length > 0
+                        visible: addressee.phoneNumbers.length > 0
                         onTriggered: {
                             var model = addressee.phoneNumbers
 
-                            if (addressee.phoneNumbers.rowCount() == 1) {
-                                page.sendSms(model.data(model.index(0, 0), Qt.DisplayRole))
+                            if (addressee.phoneNumbers.length == 1) {
+                                page.sendSms(model[0].normalizedNumber)
                             } else {
                                 var pop = callPopup.createObject(page, {numbers: addressee.phoneNumbers, title: i18n("Select number to send message to")})
                                 pop.onNumberSelected.connect(number => sendSms(number))
@@ -165,7 +162,7 @@ Kirigami.ScrollablePage {
             iconName: "document-edit"
             text: i18n("Edit")
             onTriggered: {
-                pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person})
+                pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person, addressee: page.addressee})
             }
         }
         contextualActions: [
