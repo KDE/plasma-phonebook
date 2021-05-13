@@ -2,6 +2,11 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Phonebook</name>
+  <name xml:lang="ca">Agenda telefònica</name>
+  <name xml:lang="nl">Telefoonboek</name>
+  <name xml:lang="pt">Lista Telefónica</name>
+  <name xml:lang="uk">Телефонна книга</name>
+  <name xml:lang="x-test">xxPhonebookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
