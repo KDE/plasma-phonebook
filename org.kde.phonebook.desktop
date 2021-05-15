@@ -1,10 +1,12 @@
 [Desktop Entry]
 Name=Phonebook
 Name[ca]=Agenda telefònica
+Name[fr]=Phonebook
 Name[nl]=Telefoonboek
 Name[pt]=Lista Telefónica
 Name[sl]=Phonebook
 Name[uk]=Телефонна книга
+Name[vi]=Danh bạ
 Name[x-test]=xxPhonebookxx
 Comment=Edit and view Contacts
 Comment[ca]=Visualitza i edita els contactes
