@@ -3,10 +3,12 @@
   <id>org.kde.phonebook</id>
   <name>Phonebook</name>
   <name xml:lang="ca">Agenda telefònica</name>
+  <name xml:lang="fr">Phonebook</name>
   <name xml:lang="nl">Telefoonboek</name>
   <name xml:lang="pt">Lista Telefónica</name>
   <name xml:lang="sl">Phonebook</name>
   <name xml:lang="uk">Телефонна книга</name>
+  <name xml:lang="vi">Danh bạ</name>
   <name xml:lang="x-test">xxPhonebookxx</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
