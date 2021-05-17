@@ -3,7 +3,10 @@
   <id>org.kde.phonebook</id>
   <name>Phonebook</name>
   <name xml:lang="ca">Agenda telefònica</name>
+  <name xml:lang="ca-valencia">Agenda telefònica</name>
+  <name xml:lang="es">Agenda telefónica</name>
   <name xml:lang="fr">Phonebook</name>
+  <name xml:lang="ko">연락처</name>
   <name xml:lang="nl">Telefoonboek</name>
   <name xml:lang="pl">Książka telefoniczna</name>
   <name xml:lang="pt">Lista Telefónica</name>
