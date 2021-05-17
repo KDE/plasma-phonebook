@@ -48,7 +48,7 @@
   <summary xml:lang="x-test">xxView and edit contactsxx</summary>
   <summary xml:lang="zh-TW">檢視並編輯聯絡人</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LicenseRef-KDE-Accepted-GPL</project_license>
+  <project_license>GPL-3.0-only</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
