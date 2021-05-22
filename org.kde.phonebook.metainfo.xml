@@ -4,6 +4,7 @@
   <name>Phonebook</name>
   <name xml:lang="ca">Agenda telefònica</name>
   <name xml:lang="ca-valencia">Agenda telefònica</name>
+  <name xml:lang="de">Phonebook</name>
   <name xml:lang="es">Agenda telefónica</name>
   <name xml:lang="fr">Phonebook</name>
   <name xml:lang="ko">연락처</name>
@@ -82,6 +83,7 @@
     <p>Convergent contact management application for both desktop and mobile devices.</p>
     <p xml:lang="ca">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
     <p xml:lang="ca-valencia">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
+    <p xml:lang="de">Konvergente Anwendung zur Kontaktverwaltung für die Arbeitsfläche und auch Mobilgeräte.</p>
     <p xml:lang="en-GB">Convergent contact management application for both desktop and mobile devices.</p>
     <p xml:lang="es">Aplicación convergente para la administración de contactos en el escritorio y en dispositivos móviles.</p>
     <p xml:lang="et">Konvergentne kontaktide haldamise rakendus nii töölauale kui ka mobiilseadmetele.</p>
@@ -110,6 +112,7 @@
     <p xml:lang="ca">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
     <p xml:lang="ca-valencia">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
     <p xml:lang="da">Det giver et centralt sted til at starte samtaler. Afhængig af den information som er tilgængelig om en kontakt vises de pågældende handlinger.</p>
+    <p xml:lang="de">Bietet einen zentralen Ort, um Gespräche zu beginnen. Abhängig von den Informationen, die über einen Kontakt verfügbar sind, werden entsprechende Aktionen angezeigt.</p>
     <p xml:lang="en-GB">It provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.</p>
     <p xml:lang="es">Proporciona un lugar central para iniciar conversaciones. Dependiendo de la información disponible de un contacto, se mostrarán las acciones correspondientes.</p>
     <p xml:lang="et">See kujutab endast keskset vestluste alustamise kohta. Sõltuvalt kontakti kohta leiduvast teabest näidatakse võimalikke toiminguid.</p>
