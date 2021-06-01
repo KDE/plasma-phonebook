@@ -2,6 +2,7 @@
 Name=Phonebook
 Name[ca]=Agenda telefònica
 Name[ca@valencia]=Agenda telefònica
+Name[cs]=Telefonní seznam
 Name[de]=Phonebook
 Name[es]=Guía telefónica
 Name[fi]=Phonebook
@@ -20,6 +21,7 @@ Name[x-test]=xxPhonebookxx
 Comment=Edit and view Contacts
 Comment[ca]=Visualitza i edita els contactes
 Comment[ca@valencia]=Visualitza i edita els contactes
+Comment[cs]=Upravujte a prohlížejte kontakty
 Comment[da]=Rediger og vis kontakter
 Comment[de]=Kontakte anzeigen und bearbeiten
 Comment[en_GB]=Edit and view Contacts
