@@ -20,6 +20,7 @@
   <name xml:lang="uk">Телефонна книга</name>
   <name xml:lang="vi">Danh bạ</name>
   <name xml:lang="x-test">xxPhonebookxx</name>
+  <name xml:lang="zh-CN">Phonebook</name>
   <summary>View and edit contacts</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
@@ -50,6 +51,7 @@
   <summary xml:lang="uk">Перегляд і редагування контактів</summary>
   <summary xml:lang="vi">Xem và chỉnh sửa các liên hệ</summary>
   <summary xml:lang="x-test">xxView and edit contactsxx</summary>
+  <summary xml:lang="zh-CN">联系人查看和编辑工具</summary>
   <summary xml:lang="zh-TW">檢視並編輯聯絡人</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-only</project_license>
@@ -81,6 +83,7 @@
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="vi">Cộng đồng KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
+  <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
