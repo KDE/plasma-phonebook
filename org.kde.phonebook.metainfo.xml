@@ -301,6 +301,15 @@
   <project_group>KDE</project_group>
   <url type="bugtracker">https://invent.kde.org/plasma-mobile/plasma-phonebook/-/issues</url>
   <releases>
-    <release version="21.06" date="2021-06-10"/>
+    <release version="21.06" date="2021-06-10">
+      <description>
+        <ul>
+          <li>Re-add support for calling/texting multiple numbers</li>
+          <li>Remove call action from contacts list</li>
+          <li>Consistently use Phonebook instead of Phone Book</li>
+          <li>Scrolling performance improvements</li>
+        </ul>
+      </description>
+    </release>
   </releases>
 </component>
