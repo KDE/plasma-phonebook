@@ -8,7 +8,7 @@ add_executable(plasma-phonebook
 target_include_directories(plasma-phonebook PRIVATE ${CMAKE_BINARY_DIR})
 
 target_link_libraries(plasma-phonebook
-        Qt::Core Qt::Qml Qt::Quick Qt::Svg
+        Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Widgets
         KF5::Contacts KF5::People KF5::I18n KF5::CoreAddons
 )
 
