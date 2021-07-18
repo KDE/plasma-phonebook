@@ -302,6 +302,14 @@
   <project_group>KDE</project_group>
   <url type="bugtracker">https://invent.kde.org/plasma-mobile/plasma-phonebook/-/issues</url>
   <releases>
+    <release version="21.07" date="2021-07-20">
+      <description>
+        <ul>
+          <li>Internal improvements</li>
+        </ul>
+      </description>
+      <url>https://www.plasma-mobile.org/2021/07/20/plasma-mobile-gear-21-07/</url>
+    </release>
     <release version="21.06" date="2021-06-10">
       <description>
         <ul>
