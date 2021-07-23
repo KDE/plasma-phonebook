@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Phonebook
+Name[az]=Telefon kitabçası
 Name[ca]=Agenda telefònica
 Name[ca@valencia]=Agenda telefònica
 Name[cs]=Telefonní seznam
@@ -22,6 +23,7 @@ Name[vi]=Danh bạ
 Name[x-test]=xxPhonebookxx
 Name[zh_CN]=Phonebook
 Comment=Edit and view Contacts
+Comment[az]=Əlaqələrə göz atın və onlara düzəliş edin
 Comment[ca]=Visualitza i edita els contactes
 Comment[ca@valencia]=Visualitza i edita els contactes
 Comment[cs]=Upravujte a prohlížejte kontakty
