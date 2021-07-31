@@ -44,6 +44,8 @@ Kirigami.ScrollablePage {
 
         reuseItems: true
 
+        currentIndex: -1
+
         section.property: "display"
         section.criteria: ViewSection.FirstCharacter
         section.delegate: Kirigami.ListSectionHeader {text: section}
