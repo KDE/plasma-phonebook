@@ -22,7 +22,7 @@
         {
             "name": "kpeople",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.77.0" } ]
+            "sources": [ { "type": "git", "url": "https://anongit.kde.org/kpeople.git", "tag": "v5.85.0" } ]
         },
         {
             "name": "kpeoplevcard",
