@@ -151,6 +151,7 @@ Kirigami.ScrollablePage {
                     Controls.TextField {
                         id: phoneField
                         text: modelData.number
+                        inputMethodHints: Qt.ImhDialableCharactersOnly
                         Layout.fillWidth: true
                         onAccepted: {
                             root.pendingPhoneNumbers[index].number = text
@@ -179,6 +180,7 @@ Kirigami.ScrollablePage {
                     id: toAddPhone
                     Layout.fillWidth: true
                     placeholderText: i18n("+1 555 2368")
+                    inputMethodHints: Qt.ImhDialableCharactersOnly
                 }
 
                 // add last text field on save()
@@ -227,6 +229,7 @@ Kirigami.ScrollablePage {
                         id: textField
                         Layout.fillWidth: true
                         text: modelData.email
+                        inputMethodHints: Qt.ImhEmailCharactersOnly
 
                         onAccepted: {
                             root.pendingEmails[index].email = text
@@ -254,6 +257,7 @@ Kirigami.ScrollablePage {
                     id: toAddEmail
                     Layout.fillWidth: true
                     placeholderText: i18n("user@example.org")
+                    inputMethodHints: Qt.ImhEmailCharactersOnly
                 }
 
                 // add last text field on save()
@@ -301,6 +305,7 @@ Kirigami.ScrollablePage {
                     Controls.TextField {
                         id: imppField
                         text: modelData.address
+                        inputMethodHints: Qt.ImhEmailCharactersOnly
                         Layout.fillWidth: true
                         onAccepted: {
                             root.pendingImpps[index].address = text
@@ -328,6 +333,7 @@ Kirigami.ScrollablePage {
                     id: toAddImpp
                     Layout.fillWidth: true
                     placeholderText: i18n("protocol:person@example.com")
+                    inputMethodHints: Qt.ImhEmailCharactersOnly
                 }
 
                 // add last text field on save()
