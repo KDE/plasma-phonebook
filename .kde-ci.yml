@@ -10,3 +10,4 @@ Dependencies:
     'frameworks/ki18n': '@stable'
     'frameworks/kcontacts': '@stable'
     'frameworks/kpeople': '@stable'
+    'pim/kpeoplevcard': '@stable'
