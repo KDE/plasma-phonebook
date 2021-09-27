@@ -17,19 +17,7 @@ Kirigami.ApplicationWindow {
     title: i18n("Phonebook")
 
     pageStack.initialPage: contactsPage
-
-    globalDrawer: Kirigami.GlobalDrawer {
-        isMenu: true
-        actions: [
-            Kirigami.Action {
-                icon.name: "document-import"
-                text: i18n("Import contacts")
-                onTriggered: {
-                    importer.startImport()
-                }
-            }
-        ]
-    }
+    pageStack.globalToolBar.canContainHandles: true
 
     contextDrawer: Kirigami.ContextDrawer {
         id: contextDrawer

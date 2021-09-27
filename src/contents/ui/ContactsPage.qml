@@ -26,6 +26,16 @@ Kirigami.ScrollablePage {
             pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
         }
     }
+    
+    actions.contextualActions: [
+        Kirigami.Action {
+            icon.name: "document-import"
+            text: i18n("Import contacts")
+            onTriggered: {
+                importer.startImport()
+            }
+        }
+    ]
 
     header: Controls.Control {
         padding: Kirigami.Units.largeSpacing
