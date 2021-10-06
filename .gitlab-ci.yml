@@ -12,3 +12,4 @@ flatpak:
     FLATPAK_MODULE: plasma-phonebook
 
   - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/android.yml
+  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/freebsd.yml
