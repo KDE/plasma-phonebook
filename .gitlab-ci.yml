@@ -11,3 +11,4 @@ flatpak:
     APP_ID: org.kde.phonebook
     FLATPAK_MODULE: plasma-phonebook
 
+  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/android.yml
