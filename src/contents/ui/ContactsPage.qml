@@ -23,10 +23,10 @@ Kirigami.ScrollablePage {
         icon.name: "contact-new-symbolic"
         text: i18n("Create New")
         onTriggered: {
-            pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
+            pageStack.pushDialogLayer(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
         }
     }
-    
+
     actions.contextualActions: [
         Kirigami.Action {
             icon.name: "document-import"

@@ -12,6 +12,7 @@ import org.kde.kirigami 2.4 as Kirigami
 import org.kde.people 1.0 as KPeople
 
 import org.kde.kirigamiaddons.dateandtime 0.1 as KirigamiDateTime
+import QtQuick.Templates 2.15 as T
 
 import org.kde.phonebook 1.0
 
@@ -40,37 +41,6 @@ Kirigami.ScrollablePage {
     ]
 
     enabled: !person || person.isEditable
-
-    actions {
-        main: Kirigami.Action {
-            icon.name: "dialog-ok-apply"
-            text: i18n("Save")
-            enabled: name.text.length > 0
-
-            onTriggered: {
-                root.save();
-                switch(root.state) {
-                    case "create":
-                        if (!KPeople.PersonPluginManager.addContact({ "vcard": ContactController.addresseeToVCard(addressee) }))
-                            console.warn("could not create contact")
-                        break;
-                    case "update":
-                        if (!root.person.setContactCustomProperty("vcard", ContactController.addresseeToVCard(addressee)))
-                            console.warn("Could not save", addressee.url)
-                        break;
-                }
-                pageStack.pop()
-            }
-        }
-        left: Kirigami.Action {
-            text: i18n("Cancel")
-            icon.name: "dialog-cancel"
-
-            onTriggered: {
-                pageStack.pop()
-            }
-        }
-    }
 
     FileDialog {
         id: fileDialog
@@ -134,10 +104,6 @@ Kirigami.ScrollablePage {
                     name.accepted()
                 }
             }
-        }
-
-        Kirigami.Separator {
-            Layout.fillWidth: true
         }
 
         ColumnLayout {
@@ -210,10 +176,6 @@ Kirigami.ScrollablePage {
                     }
                 }
             }
-        }
-
-        Kirigami.Separator {
-            Layout.fillWidth: true
         }
 
         ColumnLayout {
@@ -289,10 +251,6 @@ Kirigami.ScrollablePage {
             }
         }
 
-        Kirigami.Separator {
-            Layout.fillWidth: true
-        }
-
         ColumnLayout {
             id: impp
             Layout.fillWidth: true
@@ -364,23 +322,74 @@ Kirigami.ScrollablePage {
                 }
             }
         }
-        
-        Kirigami.Separator {
-                Layout.fillWidth: true
-        }
-        
-        KirigamiDateTime.DateInput
-        {
+
+        KirigamiDateTime.DateInput {
             id: birthday
             Kirigami.FormData.label: i18n("Birthday:")
-            
+
             selectedDate: addressee.birthday
-          
+
             Connections {
                 target: root
                 function onSave() {
                     addressee.birthday = birthday.selectedDate // TODO birthday is not writable
                 }
+            }
+        }
+    }
+
+    footer: T.Control {
+        id: footerToolBar
+
+        implicitWidth: Math.max(implicitBackgroundWidth + leftInset + rightInset,
+                                implicitContentWidth + leftPadding + rightPadding)
+        implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
+                                implicitContentHeight + topPadding + bottomPadding)
+
+        leftPadding: Kirigami.Units.smallSpacing
+        rightPadding: Kirigami.Units.smallSpacing
+        bottomPadding: Kirigami.Units.smallSpacing
+        topPadding: Kirigami.Units.smallSpacing + footerSeparator.implicitHeight
+
+        contentItem: RowLayout {
+            spacing: parent.spacing
+
+            // footer buttons
+            Controls.DialogButtonBox {
+                // we don't explicitly set padding, to let the style choose the padding
+                id: dialogButtonBox
+                standardButtons: Controls.DialogButtonBox.Close | Controls.DialogButtonBox.Save
+
+                Layout.fillWidth: true
+                Layout.alignment: dialogButtonBox.alignment
+
+                position: Controls.DialogButtonBox.Footer
+
+                onAccepted: {
+                    root.save();
+                    switch(root.state) {
+                        case "create":
+                            if (!KPeople.PersonPluginManager.addContact({ "vcard": ContactController.addresseeToVCard(addressee) }))
+                                console.warn("could not create contact")
+                            break;
+                        case "update":
+                            if (!root.person.setContactCustomProperty("vcard", ContactController.addresseeToVCard(addressee)))
+                                console.warn("Could not save", addressee.url)
+                            break;
+                    }
+                    root.closeDialog()
+                }
+                onRejected: root.closeDialog()
+            }
+        }
+
+        background: Item {
+            // separator above footer
+            Kirigami.Separator {
+                id: footerSeparator
+                visible: root.contentItem.height < root.contentItem.flickableItem.contentHeight
+                width: parent.width
+                anchors.top: parent.top
             }
         }
     }

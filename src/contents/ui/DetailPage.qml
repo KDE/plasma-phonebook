@@ -162,7 +162,7 @@ Kirigami.ScrollablePage {
             iconName: "document-edit"
             text: i18n("Edit")
             onTriggered: {
-                pageStack.push(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person, addressee: page.addressee})
+                pageStack.pushDialogLayer(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person, addressee: page.addressee})
             }
         }
         contextualActions: [
