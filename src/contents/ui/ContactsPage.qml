@@ -84,9 +84,10 @@ Kirigami.ScrollablePage {
             avatarIcon: model && model.decoration
 
             onClicked: {
-                pageStack.push(detailPage, {
+                pageStack.push("qrc:/DetailPage.qml", {
                     personUri: model.personUri
                 })
+                ContactController.lastPersonUri = model.personUri;
             }
         }
     }

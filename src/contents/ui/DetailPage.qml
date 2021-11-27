@@ -178,11 +178,11 @@ Kirigami.ScrollablePage {
         left: Kirigami.Action {
             text: i18n("Cancel")
             icon.name: "dialog-cancel"
+            visible: Kirigami.Settings.isMobile
 
             onTriggered: {
                 pageStack.pop()
             }
         }
-        
     }
 }

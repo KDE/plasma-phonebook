@@ -4,10 +4,13 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
+#include <KSharedConfig>
+#include <KWindowConfig>
 #include <QApplication>
 #include <QCommandLineOption>
 #include <QCommandLineParser>
 #include <QQmlApplicationEngine>
+#include <QQuickWindow>
 #include <QUrl>
 #include <QtQml>
 
@@ -45,11 +48,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setDesktopFileName(QStringLiteral("org.kde.phone.dialer"));
 
     qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
-#if (QT_VERSION >= QT_VERSION_CHECK(5, 14, 0))
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);
-#else
-    qmlRegisterType<QAbstractItemModel>();
-#endif
 
 #ifdef Q_OS_ANDROID
     QtAndroid::requestPermissionsSync({"android.permission.WRITE_EXTERNAL_STORAGE"});
@@ -68,6 +67,18 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
+    }
+
+    const auto rootObjects = engine.rootObjects();
+    for (auto obj : rootObjects) {
+        auto view = qobject_cast<QQuickWindow *>(obj);
+        if (view) {
+            KConfig dataResource(QStringLiteral("data"), KConfig::SimpleConfig, QStandardPaths::AppDataLocation);
+            KConfigGroup windowGroup(&dataResource, QStringLiteral("Window"));
+            KWindowConfig::restoreWindowSize(view, windowGroup);
+            KWindowConfig::restoreWindowPosition(view, windowGroup);
+            break;
+        }
     }
 
     return app.exec();

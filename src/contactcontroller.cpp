@@ -8,11 +8,19 @@
 
 #include <KContacts/VCardConverter>
 
+#include <KConfigGroup>
+#include <KWindowConfig>
 #include <QDebug>
 #include <QFileDialog>
 #include <QGuiApplication>
+#include <QQuickWindow>
 
 const static KContacts::VCardConverter converter;
+
+ContactController::ContactController()
+    : m_dataResource(QStringLiteral("data"), KConfig::SimpleConfig, QStandardPaths::AppDataLocation)
+{
+}
 
 KContacts::Addressee ContactController::addresseeFromVCard(const QByteArray &vcard)
 {
@@ -59,4 +67,26 @@ KContacts::PhoneNumber ContactController::createPhoneNumber(const QString &numbe
 KContacts::Impp ContactController::createImpp(const QString &address)
 {
     return KContacts::Impp(address);
+}
+
+void ContactController::saveWindowGeometry(QQuickWindow *window)
+{
+    KConfigGroup windowGroup(&m_dataResource, QStringLiteral("Window"));
+    KWindowConfig::saveWindowPosition(window, windowGroup);
+    KWindowConfig::saveWindowSize(window, windowGroup);
+    m_dataResource.sync();
+}
+
+QString ContactController::lastPersonUri() const
+{
+    KConfigGroup stateGroup(&m_dataResource, QStringLiteral("State"));
+    return stateGroup.readEntry(QStringLiteral("lastPersonUri"), QString());
+}
+
+void ContactController::setLastPersonUri(const QString &lastPersonUri)
+{
+    KConfigGroup stateGroup(&m_dataResource, QStringLiteral("State"));
+    stateGroup.writeEntry(QStringLiteral("lastPersonUri"), lastPersonUri);
+    Q_EMIT lastPersonUriChanged();
+    // dataResource.sync() is done in the saveWindowGeometry method onClosing
 }

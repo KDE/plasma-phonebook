@@ -16,15 +16,22 @@ Kirigami.ApplicationWindow {
 
     title: i18n("Phonebook")
 
-    pageStack.initialPage: contactsPage
+    width: Kirigami.Units.gridUnit * 65
+    minimumWidth: Kirigami.Units.gridUnit * 15
+    minimumHeight: Kirigami.Units.gridUnit * 20
+    onClosing: ContactController.saveWindowGeometry(root)
+    Component.onCompleted: if (!Kirigami.Settings.isMobile && ContactController.lastPersonUri) {
+        pageStack.push("qrc:/DetailPage.qml", {
+            personUri: ContactController.lastPersonUri
+        });
+    }
+
+    pageStack.initialPage: ContactsPage {}
     pageStack.globalToolBar.canContainHandles: true
 
     contextDrawer: Kirigami.ContextDrawer {
         id: contextDrawer
     }
-
-    Component { id: contactsPage; ContactsPage {}}
-    Component { id: detailPage; DetailPage {}}
 
     ContactImporter {
         id: importer

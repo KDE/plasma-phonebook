@@ -15,14 +15,25 @@
 #include <KContacts/PhoneNumber>
 #include <KContacts/Picture>
 
+#include <KSharedConfig>
 #include <memory>
 
 class QFileDialog;
+class QQuickWindow;
 
 class ContactController : public QObject
 {
     Q_OBJECT
+
+    Q_PROPERTY(QString lastPersonUri READ lastPersonUri WRITE setLastPersonUri NOTIFY lastPersonUriChanged)
+
 public:
+    ContactController();
+
+    QString lastPersonUri() const;
+    void setLastPersonUri(const QString &lastPersonUri);
+
+    Q_INVOKABLE void saveWindowGeometry(QQuickWindow *window);
     Q_INVOKABLE KContacts::Addressee addresseeFromVCard(const QByteArray &vcard);
     Q_INVOKABLE QByteArray addresseeToVCard(const KContacts::Addressee &addressee);
     Q_INVOKABLE KContacts::Addressee emptyAddressee();
@@ -30,4 +41,10 @@ public:
     Q_INVOKABLE KContacts::Email createEmail(const QString &email);
     Q_INVOKABLE KContacts::PhoneNumber createPhoneNumber(const QString &number);
     Q_INVOKABLE KContacts::Impp createImpp(const QString &address);
+
+Q_SIGNALS:
+    void lastPersonUriChanged();
+
+private:
+    KConfig m_dataResource;
 };
