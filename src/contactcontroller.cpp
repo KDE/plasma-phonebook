@@ -66,7 +66,7 @@ KContacts::PhoneNumber ContactController::createPhoneNumber(const QString &numbe
 
 KContacts::Impp ContactController::createImpp(const QString &address)
 {
-    return KContacts::Impp(address);
+    return KContacts::Impp(QUrl(address));
 }
 
 void ContactController::saveWindowGeometry(QQuickWindow *window)

@@ -41,7 +41,7 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
         action->setProperty("actionType", KPeople::TextChatAction);
 
         connect(action, &QAction::triggered, [=]() {
-            QDesktopServices::openUrl(impp.address().toString());
+            QDesktopServices::openUrl(impp.address());
         });
 
         actions << action;
