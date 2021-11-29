@@ -51,7 +51,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);
 
 #ifdef Q_OS_ANDROID
-    QtAndroid::requestPermissionsSync({"android.permission.WRITE_EXTERNAL_STORAGE"});
+    QtAndroid::requestPermissionsSync({QStringLiteral("android.permission.WRITE_EXTERNAL_STORAGE")});
 #endif
 
     qRegisterMetaType<KContacts::Addressee>();
