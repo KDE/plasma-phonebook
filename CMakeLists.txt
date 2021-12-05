@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 project(plasma-phonebook)
-set(PROJECT_VERSION "21.08")
+set(PROJECT_VERSION "21.12")
 
 set(KF5_MIN_VERSION "5.88.0")
 set(QT_MIN_VERSION "5.15.2")
