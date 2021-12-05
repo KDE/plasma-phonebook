@@ -331,6 +331,16 @@
   <project_group>KDE</project_group>
   <url type="bugtracker">https://invent.kde.org/plasma-mobile/plasma-phonebook/-/issues</url>
   <releases>
+    <release version="21.12" date="2021-12-07">
+      <url>https://www.plasma-mobile.org/2021/12/07/plasma-mobile-gear-21-12/</url>
+      <description>
+        <ul>
+          <li>Make app remember state on desktop</li>
+          <li>Do not highlight first contact in list when opening</li>
+          <li>Add missing input method hints for contact entries</li>
+        </ul>
+      </description>
+    </release>
     <release version="21.08" date="2021-08-31">
       <url>https://www.plasma-mobile.org/2021/08/31/plasma-mobile-gear-21-08/</url>
     </release>
