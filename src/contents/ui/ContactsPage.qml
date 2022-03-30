@@ -81,7 +81,7 @@ Kirigami.ScrollablePage {
         delegate: ContactListItem {
             height: Kirigami.Units.gridUnit * 3
             name: model && model.display
-            avatarIcon: model && model.decoration
+            imageProviderUri: model && model.photoImageProviderUri
 
             onClicked: {
                 pageStack.push("qrc:/DetailPage.qml", {

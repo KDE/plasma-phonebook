@@ -14,11 +14,9 @@ import QtGraphicalEffects 1.0
 Rectangle {
     id: root
     clip: true
-    default property alias contents: content.data
-    property alias content: contentContainer
+    default property alias contents: contentContainer.data
     property alias stripContent: strip.data
 
-    property var source
     property var backgroundSource
 
     // Background image
@@ -50,21 +48,9 @@ Rectangle {
             id: contentContainer
             anchors.fill: parent
             anchors.margins: Kirigami.Units.gridUnit
-            anchors.leftMargin: 200
-
-            Kirigami.Icon {
-                id: img
-                source: root.source
-                height: contentContainer.height
-                width: contentContainer.height
-            }
-            Item {
-                id: content
-                height: childrenRect.height
-                anchors.left: img.right
-                anchors.leftMargin: Kirigami.Units.gridUnit
-                anchors.bottom: img.bottom
-            }
+            anchors.leftMargin: page.width > 400 ? 100 : Kirigami.Units.largeSpacing
+            anchors.topMargin: Kirigami.Units.largeSpacing
+            anchors.bottomMargin: Kirigami.Units.largeSpacing
         }
     }
 

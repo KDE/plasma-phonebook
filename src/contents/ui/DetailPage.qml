@@ -9,7 +9,7 @@ import QtQuick 2.6
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.2
 import org.kde.people 1.0 as KPeople
-import org.kde.kirigami 2.10 as Kirigami
+import org.kde.kirigami 2.14 as Kirigami
 import org.kde.phonebook 1.0
 
 Kirigami.ScrollablePage {
@@ -55,26 +55,43 @@ Kirigami.ScrollablePage {
             width: parent.width
             height: Kirigami.Units.gridUnit * 8
 
-            content.anchors.leftMargin: page.width > 400 ? 100 : Kirigami.Units.largeSpacing
-            content.anchors.topMargin: Kirigami.Units.largeSpacing
-            content.anchors.bottomMargin: Kirigami.Units.largeSpacing
-
-            source: personData.person.photo
-
             // There might be edge-cases when photo but not pictureUrl is set.
             // For the background image it's more important to provide something else than the default pixmap though.
             backgroundSource: personData.person.pictureUrl ? personData.person.pictureUrl : "qrc:/fallbackBackground.png"
 
-            ColumnLayout {
-                Kirigami.Heading {
-                    text: personData.person.name
-                    color: "#fcfcfc"
-                    level: 2
+            RowLayout {
+                anchors.fill: parent
+
+                Kirigami.Avatar {
+                    id: avatar
+
+                    Layout.fillHeight: true
+                    Layout.preferredWidth: height
+                    Layout.margins: Kirigami.Units.largeSpacing
+
+                    source: personData.photoImageProviderUri
+                    name: personData.person.name
+                    imageMode: Kirigami.Avatar.ImageMode.AdaptiveImageOrInitals
                 }
-                Kirigami.Heading {
-                    text: personData.person.contactCustomProperty("phoneNumber") ? personData.person.contactCustomProperty("phoneNumber") : ""
-                    color: "#fcfcfc"
-                    level: 3
+
+                ColumnLayout {
+                    Layout.fillHeight: true
+                    Layout.margins: Kirigami.Units.largeSpacing
+
+                    Kirigami.Heading {
+                        text: personData.person.name
+                        color: "#fcfcfc"
+                        level: 2
+                    }
+                    Kirigami.Heading {
+                        text: personData.person.contactCustomProperty("phoneNumber") ? personData.person.contactCustomProperty("phoneNumber") : ""
+                        color: "#fcfcfc"
+                        level: 3
+                    }
+                }
+
+                Item {
+                    Layout.fillWidth: true
                 }
             }
         }
