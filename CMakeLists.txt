@@ -37,6 +37,8 @@ endif()
 
 add_subdirectory(src)
 
+ki18n_install(po)
+
 install(PROGRAMS org.kde.phonebook.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.phonebook.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES org.kde.phonebook.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
