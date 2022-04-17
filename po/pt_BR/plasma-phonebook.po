@@ -1,0 +1,185 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+#
+# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"PO-Revision-Date: 2021-05-15 14:16-0300\n"
+"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Luiz Fernando Ranghetti"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "elchevive@opensuse.org"
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "Adicionando contato"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "Editando contato"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "Foto"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "Nome:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "Telefone:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+55 47 5555 2368"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "usuario@exemplo.org"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "Mensageiro instantâneo:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocolo:pessoa@exemplo.com"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#, kde-format
+msgid "Birthday:"
+msgstr "Aniversário:"
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:47
+#, kde-format
+msgid "Phonebook"
+msgstr "Agenda telefônica"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, kde-format
+msgid "Create New"
+msgstr "Criar novo"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "Importar contatos"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "Nenhum contato"
+
+#: src/contents/ui/DetailPage.qml:102
+#, kde-format
+msgid "Call"
+msgstr "Chamada"
+
+#: src/contents/ui/DetailPage.qml:111
+#, kde-format
+msgid "Select number to call"
+msgstr "Selecionar número para chamar"
+
+#: src/contents/ui/DetailPage.qml:118
+#, kde-format
+msgid "Send SMS"
+msgstr "Enviar SMS"
+
+#: src/contents/ui/DetailPage.qml:127
+#, kde-format
+msgid "Select number to send message to"
+msgstr "Selecionar número para enviar mensagem"
+
+#: src/contents/ui/DetailPage.qml:134
+#, kde-format
+msgid "Send email"
+msgstr "Enviar e-mail"
+
+#: src/contents/ui/DetailPage.qml:163
+#, kde-format
+msgid "Edit"
+msgstr "Editar"
+
+#: src/contents/ui/DetailPage.qml:171
+#, kde-format
+msgid "Delete contact"
+msgstr "Excluir contato"
+
+#: src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "View and edit contacts"
+msgstr "Visualizar e editar contatos"
+
+#~ msgid "Save"
+#~ msgstr "Salvar"
+
+#~ msgid "Address Book"
+#~ msgstr "Livro de endereços"
+
+#~ msgid "Chat"
+#~ msgstr "Bate-papo"
+
+#~ msgid "Video Call"
+#~ msgstr "Chamada de vídeo"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Other"
+#~ msgstr "Outro"
+
+#~ msgctxt "Action to tell user to call person using phone number"
+#~ msgid "Call on %1"
+#~ msgstr "Chamar em %1"
+
+#~ msgctxt "Action to tell user to write a message to phone number"
+#~ msgid "Write SMS on %1"
+#~ msgstr "Escrever SMS em %1"
+
+#~ msgctxt "Action to send an email"
+#~ msgid "email %1"
+#~ msgstr "e-mail %1"

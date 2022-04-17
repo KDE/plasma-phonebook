@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"PO-Revision-Date: 2021-05-12 15:09+0100\n"
+"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
+"Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "José Nuno Pires"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zepires@gmail.com"
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "A adicionar o contacto"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "A editar o contacto"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "Fotografia"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "Nome:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "Telefone:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+351 210 1234"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "utilizador@exemplo.org"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "Mensageiro Instantâneo:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocolo:pessoa@exemplo.com"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#, kde-format
+msgid "Birthday:"
+msgstr "Data de nascimento:"
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:47
+#, kde-format
+msgid "Phonebook"
+msgstr "Lista Telefónica"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, kde-format
+msgid "Create New"
+msgstr "Criar um Novo"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "Importar contactos"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "Sem contactos"
+
+#: src/contents/ui/DetailPage.qml:102
+#, kde-format
+msgid "Call"
+msgstr "Chamada"
+
+#: src/contents/ui/DetailPage.qml:111
+#, kde-format
+msgid "Select number to call"
+msgstr "Seleccione o número para onde ligar"
+
+#: src/contents/ui/DetailPage.qml:118
+#, kde-format
+msgid "Send SMS"
+msgstr "Enviar SMS"
+
+#: src/contents/ui/DetailPage.qml:127
+#, kde-format
+msgid "Select number to send message to"
+msgstr "Seleccione o número para onde enviar a mensagem"
+
+#: src/contents/ui/DetailPage.qml:134
+#, kde-format
+msgid "Send email"
+msgstr "Enviar um e-mail"
+
+#: src/contents/ui/DetailPage.qml:163
+#, kde-format
+msgid "Edit"
+msgstr "Editar"
+
+#: src/contents/ui/DetailPage.qml:171
+#, kde-format
+msgid "Delete contact"
+msgstr "Apagar o contacto"
+
+#: src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "View and edit contacts"
+msgstr "Ver e editar os contactos"
+
+#~ msgid "Save"
+#~ msgstr "Gravar"

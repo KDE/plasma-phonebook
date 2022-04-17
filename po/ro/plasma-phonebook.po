@@ -1,0 +1,192 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+# Sergiu Bivol <sergiu@cip.md>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"PO-Revision-Date: 2020-10-03 23:07+0100\n"
+"Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
+"Language-Team: Romanian\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "Se adaugă contact"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "Se modifică contact"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "Poză"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "Nume:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "utilizator@example.org"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "Mesagerie instantanee:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocol:persoană@example.com"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#, kde-format
+msgid "Birthday:"
+msgstr ""
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:47
+#, fuzzy, kde-format
+#| msgid "Phone book"
+msgid "Phonebook"
+msgstr "Carte de telefoane"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, fuzzy, kde-format
+#| msgid "Create new"
+msgid "Create New"
+msgstr "Creează nou"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "Importă contacte"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "Niciun contact"
+
+#: src/contents/ui/DetailPage.qml:102
+#, kde-format
+msgid "Call"
+msgstr "Apelează"
+
+#: src/contents/ui/DetailPage.qml:111
+#, kde-format
+msgid "Select number to call"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:118
+#, kde-format
+msgid "Send SMS"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:127
+#, kde-format
+msgid "Select number to send message to"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:134
+#, fuzzy, kde-format
+#| msgid "Send file"
+msgid "Send email"
+msgstr "Trimite fișier"
+
+#: src/contents/ui/DetailPage.qml:163
+#, kde-format
+msgid "Edit"
+msgstr "Modifică"
+
+#: src/contents/ui/DetailPage.qml:171
+#, kde-format
+msgid "Delete contact"
+msgstr "Șterge contact"
+
+#: src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Cancel"
+msgstr "Renunță"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:47
+#, fuzzy, kde-format
+#| msgid "Adding contact"
+msgid "View and edit contacts"
+msgstr "Se adaugă contact"
+
+#~ msgid "Save"
+#~ msgstr "Salvează"
+
+#, fuzzy
+#~| msgid "Address book"
+#~ msgid "Address Book"
+#~ msgstr "Carte de adrese"
+
+#~ msgid "Chat"
+#~ msgstr "Discută"
+
+#~ msgid "Video Call"
+#~ msgstr "Apel video"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Other"
+#~ msgstr "Altele"
+
+#~ msgctxt "Action to tell user to call person using phone number"
+#~ msgid "Call on %1"
+#~ msgstr "Apelează la %1"
+
+#~ msgctxt "Action to tell user to write a message to phone number"
+#~ msgid "Write SMS on %1"
+#~ msgstr "Scrie SMS la %1"
+
+#~ msgctxt "Action to send an email"
+#~ msgid "email %1"
+#~ msgstr "trimite scrisoare pentru %1"

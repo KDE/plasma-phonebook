@@ -1,0 +1,185 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+#
+# Kristóf Kiszel <kiszel.kristof@gmail.com>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"PO-Revision-Date: 2021-09-03 13:56+0200\n"
+"Last-Translator: Kristóf Kiszel <kiszel.kristof@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.07.70\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kiszel.kristof@gmail.com"
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "Névjegy hozzáadása"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "Névjegy szerkesztése"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "Fénykép"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "Név:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "felhasznalonev@pelda.hu"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "Azonnali üzenetküldő:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protokoll:szemely@pelda.hu"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#, kde-format
+msgid "Birthday:"
+msgstr "Születésnap:"
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:47
+#, kde-format
+msgid "Phonebook"
+msgstr "Névjegyek"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, kde-format
+msgid "Create New"
+msgstr "Új"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "Névjegyek importálása"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "Nincsenek névjegyek"
+
+#: src/contents/ui/DetailPage.qml:102
+#, kde-format
+msgid "Call"
+msgstr "Hívás"
+
+#: src/contents/ui/DetailPage.qml:111
+#, kde-format
+msgid "Select number to call"
+msgstr "Hívandó szám"
+
+#: src/contents/ui/DetailPage.qml:118
+#, kde-format
+msgid "Send SMS"
+msgstr "SMS küldése"
+
+#: src/contents/ui/DetailPage.qml:127
+#, kde-format
+msgid "Select number to send message to"
+msgstr "Üzenet küldéshez használandó szám"
+
+#: src/contents/ui/DetailPage.qml:134
+#, kde-format
+msgid "Send email"
+msgstr "E-mail küldése"
+
+#: src/contents/ui/DetailPage.qml:163
+#, kde-format
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: src/contents/ui/DetailPage.qml:171
+#, kde-format
+msgid "Delete contact"
+msgstr "Névjegy törlése"
+
+#: src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "View and edit contacts"
+msgstr "Névjegyek megjelenítése és szerkesztése"
+
+#~ msgid "Save"
+#~ msgstr "Mentés"
+
+#~ msgid "Address Book"
+#~ msgstr "Címjegyzék"
+
+#~ msgid "Chat"
+#~ msgstr "Csevegés"
+
+#~ msgid "Video Call"
+#~ msgstr "Videohívás"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Other"
+#~ msgstr "Egyéb"
+
+#~ msgctxt "Action to tell user to call person using phone number"
+#~ msgid "Call on %1"
+#~ msgstr "Hívás: %1"
+
+#~ msgctxt "Action to tell user to write a message to phone number"
+#~ msgid "Write SMS on %1"
+#~ msgstr "SMS küldése: %1"
+
+#~ msgctxt "Action to send an email"
+#~ msgid "email %1"
+#~ msgstr "E-mail: %1"

@@ -1,0 +1,187 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+#
+# A S Alam <aalam.yellow@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"PO-Revision-Date: 2021-01-29 22:58-0800\n"
+"Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
+"Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ਅ.ਸ.ਆਲਮ. ੨੦੨੧"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "alam.yellow@gmail.com"
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "ਸੰਪਰਕ ਜੋੜਿਆ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "ਸੰਪਰਕ ਸੋਧਿਆ ਜਾ ਰਿਹਾ ਹੈ"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "ਫ਼ੋਟੋ"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "ਨਾਂ:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "ਫ਼ੋਨ:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "ਈਮੇਲ:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "user@example.org"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "ਤੁਰੰਤ ਮੈਸੈਂਜਰ:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocol:person@example.com"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#, kde-format
+msgid "Birthday:"
+msgstr ""
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:47
+#, fuzzy, kde-format
+#| msgid "Phone Book"
+msgid "Phonebook"
+msgstr "ਫੋਨ ਬੁੱਕ"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, kde-format
+msgid "Create New"
+msgstr "ਨਵਾਂ ਬਣਾਓ"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "ਸੰਪਰਕ ਇੰਪੋਰਟ ਕਰੋ"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "ਕੋਈ ਸੰਪਰਕ ਨਹੀਂ ਹੈ"
+
+#: src/contents/ui/DetailPage.qml:102
+#, kde-format
+msgid "Call"
+msgstr "ਕਾਲ"
+
+#: src/contents/ui/DetailPage.qml:111
+#, kde-format
+msgid "Select number to call"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:118
+#, kde-format
+msgid "Send SMS"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:127
+#, kde-format
+msgid "Select number to send message to"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:134
+#, fuzzy, kde-format
+#| msgid "Send file"
+msgid "Send email"
+msgstr "ਫਾਇਲ ਭੇਜੋ"
+
+#: src/contents/ui/DetailPage.qml:163
+#, kde-format
+msgid "Edit"
+msgstr "ਸੋਧੋ"
+
+#: src/contents/ui/DetailPage.qml:171
+#, kde-format
+msgid "Delete contact"
+msgstr "ਸੰਪਰਕ ਨੂੰ ਹਟਾਓ"
+
+#: src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Cancel"
+msgstr "ਰੱਦ ਕਰੋ"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "View and edit contacts"
+msgstr "ਸੰਪਰਕ ਵੇਖੋ ਤੇ ਸੋਧੋ"
+
+#~ msgid "Save"
+#~ msgstr "ਸੰਭਾਲੋ"
+
+#~ msgid "Address Book"
+#~ msgstr "ਐਡਰੈਸ ਬੁੱਕ"
+
+#~ msgid "Chat"
+#~ msgstr "ਚੈਟ"
+
+#~ msgid "Video Call"
+#~ msgstr "ਵੀਡੀਓ ਕਾਲ"
+
+#~ msgid "Email"
+#~ msgstr "ਈਮੇਲ"
+
+#~ msgid "Other"
+#~ msgstr "ਹੋਰ"
+
+#~ msgctxt "Action to tell user to call person using phone number"
+#~ msgid "Call on %1"
+#~ msgstr "%1 ਉੱਤੇ ਕਾਲ ਕਰੋ"
+
+#~ msgctxt "Action to tell user to write a message to phone number"
+#~ msgid "Write SMS on %1"
+#~ msgstr "%1 ਉੱਤੇ SMS ਲਿਖੋ"
+
+#~ msgctxt "Action to send an email"
+#~ msgid "email %1"
+#~ msgstr "%1 ਨੂੰ ਈਮੇਲ"
