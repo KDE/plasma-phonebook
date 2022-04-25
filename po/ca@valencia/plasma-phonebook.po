@@ -110,12 +110,12 @@ msgstr "No hi ha cap contacte"
 #: src/contents/ui/DetailPage.qml:102
 #, kde-format
 msgid "Call"
-msgstr "Trucada"
+msgstr "Tocada"
 
 #: src/contents/ui/DetailPage.qml:111
 #, kde-format
 msgid "Select number to call"
-msgstr "Seleccioneu el número a trucar"
+msgstr "Seleccioneu el número a tocar"
 
 #: src/contents/ui/DetailPage.qml:118
 #, kde-format
