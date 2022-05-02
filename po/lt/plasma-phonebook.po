@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"POT-Creation-Date: 2022-05-02 00:46+0000\n"
 "PO-Revision-Date: 2021-09-10 13:39+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -79,7 +79,7 @@ msgstr "Pokalbių programa:"
 msgid "protocol:person@example.com"
 msgstr "protokolas:asmuo@example.com"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
 #, kde-format
 msgid "Birthday:"
 msgstr "Gimimo diena:"
@@ -105,42 +105,42 @@ msgstr "Importuoti adresatus"
 msgid "No contacts"
 msgstr "Adresatų nėra"
 
-#: src/contents/ui/DetailPage.qml:102
+#: src/contents/ui/DetailPage.qml:119
 #, kde-format
 msgid "Call"
 msgstr "Skambutis"
 
-#: src/contents/ui/DetailPage.qml:111
+#: src/contents/ui/DetailPage.qml:128
 #, kde-format
 msgid "Select number to call"
 msgstr "Pasirinkite numerį, kuriam skambinti"
 
-#: src/contents/ui/DetailPage.qml:118
+#: src/contents/ui/DetailPage.qml:135
 #, kde-format
 msgid "Send SMS"
 msgstr "Siųsti SMS žinutę"
 
-#: src/contents/ui/DetailPage.qml:127
+#: src/contents/ui/DetailPage.qml:144
 #, kde-format
 msgid "Select number to send message to"
 msgstr "Pasirinkite numerį, kuriam siųsti žinutę"
 
-#: src/contents/ui/DetailPage.qml:134
+#: src/contents/ui/DetailPage.qml:151
 #, kde-format
 msgid "Send email"
 msgstr "Siųsti el. laišką"
 
-#: src/contents/ui/DetailPage.qml:163
+#: src/contents/ui/DetailPage.qml:180
 #, kde-format
 msgid "Edit"
 msgstr "Taisyti"
 
-#: src/contents/ui/DetailPage.qml:171
+#: src/contents/ui/DetailPage.qml:188
 #, kde-format
 msgid "Delete contact"
 msgstr "Ištrinti adresatą"
 
-#: src/contents/ui/DetailPage.qml:179
+#: src/contents/ui/DetailPage.qml:196
 #, kde-format
 msgid "Cancel"
 msgstr "Atsisakyti"

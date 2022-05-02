@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"POT-Creation-Date: 2022-05-02 00:46+0000\n"
 "PO-Revision-Date: 2021-05-12 09:16+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -80,7 +80,7 @@ msgstr "Програма для миттєвого зв'язку:"
 msgid "protocol:person@example.com"
 msgstr "протокол:person@example.com"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
 #, kde-format
 msgid "Birthday:"
 msgstr "День народження:"
@@ -106,42 +106,42 @@ msgstr "Імпортувати контакти"
 msgid "No contacts"
 msgstr "Немає контактів"
 
-#: src/contents/ui/DetailPage.qml:102
+#: src/contents/ui/DetailPage.qml:119
 #, kde-format
 msgid "Call"
 msgstr "Виклик"
 
-#: src/contents/ui/DetailPage.qml:111
+#: src/contents/ui/DetailPage.qml:128
 #, kde-format
 msgid "Select number to call"
 msgstr "Виберіть номер для набирання"
 
-#: src/contents/ui/DetailPage.qml:118
+#: src/contents/ui/DetailPage.qml:135
 #, kde-format
 msgid "Send SMS"
 msgstr "Надіслати SMS"
 
-#: src/contents/ui/DetailPage.qml:127
+#: src/contents/ui/DetailPage.qml:144
 #, kde-format
 msgid "Select number to send message to"
 msgstr "Виберіть номер для надсилання повідомлення"
 
-#: src/contents/ui/DetailPage.qml:134
+#: src/contents/ui/DetailPage.qml:151
 #, kde-format
 msgid "Send email"
 msgstr "Надіслати листа"
 
-#: src/contents/ui/DetailPage.qml:163
+#: src/contents/ui/DetailPage.qml:180
 #, kde-format
 msgid "Edit"
 msgstr "Змінити"
 
-#: src/contents/ui/DetailPage.qml:171
+#: src/contents/ui/DetailPage.qml:188
 #, kde-format
 msgid "Delete contact"
 msgstr "Вилучити контакт"
 
-#: src/contents/ui/DetailPage.qml:179
+#: src/contents/ui/DetailPage.qml:196
 #, kde-format
 msgid "Cancel"
 msgstr "Скасувати"

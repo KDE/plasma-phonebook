@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"POT-Creation-Date: 2022-05-02 00:46+0000\n"
 "PO-Revision-Date: 2022-01-25 09:51+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -81,7 +81,7 @@ msgstr "Missatgeria instantània:"
 msgid "protocol:person@example.com"
 msgstr "protocol:persona@exemple.cat"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
 #, kde-format
 msgid "Birthday:"
 msgstr "Data de naixement:"
@@ -107,42 +107,42 @@ msgstr "Importa contactes"
 msgid "No contacts"
 msgstr "No hi ha cap contacte"
 
-#: src/contents/ui/DetailPage.qml:102
+#: src/contents/ui/DetailPage.qml:119
 #, kde-format
 msgid "Call"
 msgstr "Trucada"
 
-#: src/contents/ui/DetailPage.qml:111
+#: src/contents/ui/DetailPage.qml:128
 #, kde-format
 msgid "Select number to call"
 msgstr "Seleccioneu el número a trucar"
 
-#: src/contents/ui/DetailPage.qml:118
+#: src/contents/ui/DetailPage.qml:135
 #, kde-format
 msgid "Send SMS"
 msgstr "Envia un SMS"
 
-#: src/contents/ui/DetailPage.qml:127
+#: src/contents/ui/DetailPage.qml:144
 #, kde-format
 msgid "Select number to send message to"
 msgstr "Selecciona el número a on enviar el missatge"
 
-#: src/contents/ui/DetailPage.qml:134
+#: src/contents/ui/DetailPage.qml:151
 #, kde-format
 msgid "Send email"
 msgstr "Envia un correu"
 
-#: src/contents/ui/DetailPage.qml:163
+#: src/contents/ui/DetailPage.qml:180
 #, kde-format
 msgid "Edit"
 msgstr "Edita"
 
-#: src/contents/ui/DetailPage.qml:171
+#: src/contents/ui/DetailPage.qml:188
 #, kde-format
 msgid "Delete contact"
 msgstr "Suprimeix el contacte"
 
-#: src/contents/ui/DetailPage.qml:179
+#: src/contents/ui/DetailPage.qml:196
 #, kde-format
 msgid "Cancel"
 msgstr "Cancel·la"

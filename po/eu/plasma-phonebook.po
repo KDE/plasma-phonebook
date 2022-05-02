@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-28 00:30+0000\n"
+"POT-Creation-Date: 2022-05-02 00:46+0000\n"
 "PO-Revision-Date: 2021-07-20 23:20+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -80,7 +80,7 @@ msgstr "Bat-bateko mezularia:"
 msgid "protocol:person@example.com"
 msgstr "protokoloa:nor@adibidea.com"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:155
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
 #, kde-format
 msgid "Birthday:"
 msgstr "Jaioteguna:"
@@ -106,42 +106,42 @@ msgstr "Inportatu kontaktuak"
 msgid "No contacts"
 msgstr "Kontakturik ez"
 
-#: src/contents/ui/DetailPage.qml:102
+#: src/contents/ui/DetailPage.qml:119
 #, kde-format
 msgid "Call"
 msgstr "Deia"
 
-#: src/contents/ui/DetailPage.qml:111
+#: src/contents/ui/DetailPage.qml:128
 #, kde-format
 msgid "Select number to call"
 msgstr "Hautatu deitu beharreko zenbakia"
 
-#: src/contents/ui/DetailPage.qml:118
+#: src/contents/ui/DetailPage.qml:135
 #, kde-format
 msgid "Send SMS"
 msgstr "Bidali SMSa"
 
-#: src/contents/ui/DetailPage.qml:127
+#: src/contents/ui/DetailPage.qml:144
 #, kde-format
 msgid "Select number to send message to"
 msgstr "Hautatu mezua bidaltzeko zenbakia"
 
-#: src/contents/ui/DetailPage.qml:134
+#: src/contents/ui/DetailPage.qml:151
 #, kde-format
 msgid "Send email"
 msgstr "Bidali e-posta"
 
-#: src/contents/ui/DetailPage.qml:163
+#: src/contents/ui/DetailPage.qml:180
 #, kde-format
 msgid "Edit"
 msgstr "Editatu"
 
-#: src/contents/ui/DetailPage.qml:171
+#: src/contents/ui/DetailPage.qml:188
 #, kde-format
 msgid "Delete contact"
 msgstr "Ezabatu kontaktua"
 
-#: src/contents/ui/DetailPage.qml:179
+#: src/contents/ui/DetailPage.qml:196
 #, kde-format
 msgid "Cancel"
 msgstr "Utzi"
