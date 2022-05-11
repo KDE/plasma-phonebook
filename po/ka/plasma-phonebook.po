@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-02 00:46+0000\n"
+"PO-Revision-Date: 2022-04-24 19:14+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Temuri Doghonadze"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "Temuri.doghonadze@gmail.com"
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "კონტაქტის დამატება"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "კონტაქტის ჩასწორება"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "ფოტო"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "სახელი:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "ტელეფონი:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "ელფოსტა:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "user@example.org"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "მყისიერი შეტყობინება:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocol:person@example.com"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
+#, kde-format
+msgid "Birthday:"
+msgstr "დაბადების დღე:"
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:47
+#, kde-format
+msgid "Phonebook"
+msgstr "სატელეფონო წიგნაკი"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, kde-format
+msgid "Create New"
+msgstr "ახლის შექმნა"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "კონტაქტების შემოტანა"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "კონტაქტების გარეშე"
+
+#: src/contents/ui/DetailPage.qml:119
+#, kde-format
+msgid "Call"
+msgstr "დარეკვა"
+
+#: src/contents/ui/DetailPage.qml:128
+#, kde-format
+msgid "Select number to call"
+msgstr "აირჩიეთ დასარეკი ნომერი"
+
+#: src/contents/ui/DetailPage.qml:135
+#, kde-format
+msgid "Send SMS"
+msgstr "SMS-ის გაგზავნა"
+
+#: src/contents/ui/DetailPage.qml:144
+#, kde-format
+msgid "Select number to send message to"
+msgstr "აირჩიეთ ნომერი SMS-ის გასაგზავნად"
+
+#: src/contents/ui/DetailPage.qml:151
+#, kde-format
+msgid "Send email"
+msgstr "ელფოსტის გაგზავნა"
+
+#: src/contents/ui/DetailPage.qml:180
+#, kde-format
+msgid "Edit"
+msgstr "ჩასწორება"
+
+#: src/contents/ui/DetailPage.qml:188
+#, kde-format
+msgid "Delete contact"
+msgstr "კონტაქტის წაშლა"
+
+#: src/contents/ui/DetailPage.qml:196
+#, kde-format
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:47
+#, kde-format
+msgid "View and edit contacts"
+msgstr "კონტაქტების ნახვა და ჩასწორება"
