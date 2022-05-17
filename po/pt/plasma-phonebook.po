@@ -111,12 +111,12 @@ msgstr "Seleccione o número para onde ligar"
 #: src/contents/ui/DetailPage.qml:135
 #, kde-format
 msgid "Send SMS"
-msgstr "Enviar SMS"
+msgstr "Enviar um SMS"
 
 #: src/contents/ui/DetailPage.qml:144
 #, kde-format
 msgid "Select number to send message to"
-msgstr "Seleccione o número para onde enviar a mensagem"
+msgstr "Seleccione o número para o qual enviar a mensagem"
 
 #: src/contents/ui/DetailPage.qml:151
 #, kde-format
