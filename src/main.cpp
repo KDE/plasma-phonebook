@@ -31,10 +31,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCommandLineParser parser;
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
-    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
-    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
-    QCoreApplication::setApplicationName(QStringLiteral("plasma-phonebook"));
-    QCoreApplication::setApplicationVersion(QStringLiteral(PLASMAPHONEBOOK_VERSION_STRING));
+
+    KAboutData aboutData(QStringLiteral("plasma-phonebook"),
+                         i18n("Phonebook"),
+                         QStringLiteral(PLASMAPHONEBOOK_VERSION_STRING),
+                         i18n("View and edit contacts"),
+                         KAboutLicense::GPL);
+    aboutData.setDesktopFileName(QStringLiteral("org.kde.phonebook"));
+    KAboutData::setApplicationData(aboutData);
 
     KLocalizedString::setApplicationDomain("plasma-phonebook");
     parser.addVersionOption();
@@ -43,9 +47,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // back-end
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-
-    KAboutData aboutData(QStringLiteral("plasma-phonebook"), i18n("Phonebook"), {}, i18n("View and edit contacts"), KAboutLicense::GPL);
-    aboutData.setDesktopFileName(QStringLiteral("org.kde.phone.dialer"));
 
     qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
     qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);
