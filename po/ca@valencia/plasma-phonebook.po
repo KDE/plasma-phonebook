@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-02 00:46+0000\n"
+"POT-Creation-Date: 2022-05-24 00:46+0000\n"
 "PO-Revision-Date: 2022-01-25 09:51+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -87,7 +87,7 @@ msgid "Birthday:"
 msgstr "Data de naixement:"
 
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
-#: src/main.cpp:47
+#: src/main.cpp:36
 #, kde-format
 msgid "Phonebook"
 msgstr "Agenda telefònica"
@@ -153,7 +153,7 @@ msgctxt "Action to write to instant messanger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: src/main.cpp:47
+#: src/main.cpp:38
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Visualitza i edita els contactes"
