@@ -140,12 +140,12 @@ msgstr "Edita"
 #: src/contents/ui/DetailPage.qml:188
 #, kde-format
 msgid "Delete contact"
-msgstr "Suprimeix el contacte"
+msgstr "Suprimix el contacte"
 
 #: src/contents/ui/DetailPage.qml:196
 #, kde-format
 msgid "Cancel"
-msgstr "Cancel·la"
+msgstr "Cancela"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
 #, kde-format
@@ -156,4 +156,4 @@ msgstr "%1 %2"
 #: src/main.cpp:38
 #, kde-format
 msgid "View and edit contacts"
-msgstr "Visualitza i edita els contactes"
+msgstr "Visualisa i edita els contactes"
