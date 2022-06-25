@@ -54,7 +54,7 @@ msgstr "Nom:"
 #: src/contents/ui/AddContactPage.qml:112
 #, kde-format
 msgid "Phone:"
-msgstr "Teléfon:"
+msgstr "Telèfon:"
 
 #: src/contents/ui/AddContactPage.qml:148
 #, kde-format
