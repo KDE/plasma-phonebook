@@ -125,7 +125,7 @@ msgstr "Envia un SMS"
 #: src/contents/ui/DetailPage.qml:144
 #, kde-format
 msgid "Select number to send message to"
-msgstr "Selecciona el número a on enviar el missatge"
+msgstr "Selecciona el número a on s'ha d'enviar el missatge"
 
 #: src/contents/ui/DetailPage.qml:151
 #, kde-format
