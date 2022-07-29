@@ -115,7 +115,7 @@ msgstr "Tocada"
 #: src/contents/ui/DetailPage.qml:128
 #, kde-format
 msgid "Select number to call"
-msgstr "Seleccioneu el número a tocar"
+msgstr "Seleccioneu el número que es tocarà"
 
 #: src/contents/ui/DetailPage.qml:135
 #, kde-format
