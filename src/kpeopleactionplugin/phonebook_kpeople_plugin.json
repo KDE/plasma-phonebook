@@ -10,9 +10,6 @@
         "EnabledByDefault": true,
         "Id": "phonebook",
         "License": "GPL",
-        "ServiceTypes": [
-            "KPeople/Plugin"
-        ],
         "Version": "0.1"
     }
 }
