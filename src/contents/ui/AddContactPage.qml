@@ -336,6 +336,20 @@ Kirigami.ScrollablePage {
                 }
             }
         }
+
+        Controls.TextArea {
+            id: note
+            Kirigami.FormData.label: i18n("Note:")
+            Layout.fillWidth: true
+            text: addressee.note
+
+            Connections {
+                target: root
+                function onSave() {
+                    addressee.note = note.text
+                }
+            }
+        }
     }
 
     footer: T.Control {

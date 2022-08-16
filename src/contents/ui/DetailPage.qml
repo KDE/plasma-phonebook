@@ -171,6 +171,13 @@ Kirigami.ScrollablePage {
                 }
                 Kirigami.FormData.label: i18n("Birthday:")
             }
+            Label {
+                visible: text != ""
+                text: {
+                    return addressee.note
+                }
+                Kirigami.FormData.label: i18n("Note:")
+            }
         }
     }
 
