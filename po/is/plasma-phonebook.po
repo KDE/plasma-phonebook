@@ -1,0 +1,155 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+#
+# Sveinn í Felli <sv1@fellsnet.is>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-05-24 00:46+0000\n"
+"PO-Revision-Date: 2022-08-22 17:23+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sveinn í Felli"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sv1@fellsnet.is"
+
+#: src/contents/ui/AddContactPage.qml:35
+#, kde-format
+msgid "Adding contact"
+msgstr "Bæti við tengilið"
+
+#: src/contents/ui/AddContactPage.qml:39
+#, kde-format
+msgid "Editing contact"
+msgstr "Breyti tengilið"
+
+#: src/contents/ui/AddContactPage.qml:58
+#, kde-format
+msgid "Photo"
+msgstr "Ljósmynd"
+
+#: src/contents/ui/AddContactPage.qml:94
+#, kde-format
+msgid "Name:"
+msgstr "Nafn:"
+
+#: src/contents/ui/AddContactPage.qml:112
+#, kde-format
+msgid "Phone:"
+msgstr "Sími:"
+
+#: src/contents/ui/AddContactPage.qml:148
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+354 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:184
+#, kde-format
+msgid "E-mail:"
+msgstr "Tölvupóstur:"
+
+#: src/contents/ui/AddContactPage.qml:221
+#, kde-format
+msgid "user@example.org"
+msgstr "tolvupostfang@midlari.is"
+
+#: src/contents/ui/AddContactPage.qml:257
+#, kde-format
+msgid "Instant Messenger:"
+msgstr "Spjallforrit:"
+
+#: src/contents/ui/AddContactPage.qml:293
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "staðall:persóna@dæmi.is"
+
+#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
+#, kde-format
+msgid "Birthday:"
+msgstr "Afmælisdagur:"
+
+#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/main.cpp:36
+#, kde-format
+msgid "Phonebook"
+msgstr "Símaskrá"
+
+#: src/contents/ui/ContactsPage.qml:24
+#, kde-format
+msgid "Create New"
+msgstr "Búa til nýtt"
+
+#: src/contents/ui/ContactsPage.qml:33
+#, kde-format
+msgid "Import contacts"
+msgstr "Flytja inn tengiliði"
+
+#: src/contents/ui/ContactsPage.qml:77
+#, kde-format
+msgid "No contacts"
+msgstr "Engir tengiliðir"
+
+#: src/contents/ui/DetailPage.qml:119
+#, kde-format
+msgid "Call"
+msgstr "Símtal"
+
+#: src/contents/ui/DetailPage.qml:128
+#, kde-format
+msgid "Select number to call"
+msgstr "Veldu númer til að hringja"
+
+#: src/contents/ui/DetailPage.qml:135
+#, kde-format
+msgid "Send SMS"
+msgstr "Senda SMS"
+
+#: src/contents/ui/DetailPage.qml:144
+#, kde-format
+msgid "Select number to send message to"
+msgstr "Veldu númer til að senda skilaboð á"
+
+#: src/contents/ui/DetailPage.qml:151
+#, kde-format
+msgid "Send email"
+msgstr "Senda tölvupóst"
+
+#: src/contents/ui/DetailPage.qml:180
+#, kde-format
+msgid "Edit"
+msgstr "Breyta"
+
+#: src/contents/ui/DetailPage.qml:188
+#, kde-format
+msgid "Delete contact"
+msgstr "Eyða tengilið"
+
+#: src/contents/ui/DetailPage.qml:196
+#, kde-format
+msgid "Cancel"
+msgstr "Hætta við"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messanger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "View and edit contacts"
+msgstr "Skoða tengiliði og breyta"
