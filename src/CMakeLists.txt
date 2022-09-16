@@ -53,6 +53,6 @@ if(ANDROID)
 
 endif()
 
-install(TARGETS plasma-phonebook ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS plasma-phonebook ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 add_subdirectory(kpeopleactionplugin)
