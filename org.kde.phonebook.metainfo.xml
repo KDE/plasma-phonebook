@@ -363,6 +363,9 @@
   <project_group>KDE</project_group>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=Plasma%20Mobile%20Phonebook</url>
   <releases>
+    <release version="22.11" date="2022-11-30">
+      <url>https://plasma-mobile.org/2022/11/30/plasma-mobile-gear-22-11/</url>
+    </release>
     <release version="22.09" date="2022-09-27">
       <url>https://www.plasma-mobile.org/2022/09/27/plasma-mobile-gear-22-09/</url>
     </release>
