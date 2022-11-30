@@ -11,3 +11,4 @@ Dependencies:
     'frameworks/kcontacts': '@stable'
     'frameworks/kpeople': '@stable'
     'pim/kpeoplevcard': '@stable'
+    'libraries/kirigami-addons': '@latest'

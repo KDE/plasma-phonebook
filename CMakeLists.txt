@@ -30,6 +30,7 @@ ecm_setup_version(${PROJECT_VERSION}
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Widgets)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts Config)
 find_package(KF5PeopleVCard REQUIRED)
+find_package(KF5KirigamiAddons 0.6 REQUIRED)
 
 if(ANDROID)
     find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras)
