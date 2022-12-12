@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-24 00:46+0000\n"
+"POT-Creation-Date: 2022-12-12 00:49+0000\n"
 "PO-Revision-Date: 2021-05-21 05:56+0200\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -81,6 +81,11 @@ msgstr "protocol:person@example.com"
 msgid "Birthday:"
 msgstr "Geburtstag:"
 
+#: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Note:"
+msgstr ""
+
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
 #: src/main.cpp:36
 #, kde-format
@@ -127,17 +132,17 @@ msgstr "Nummer zum Senden einer Nachricht wählen"
 msgid "Send email"
 msgstr "E-Mail senden"
 
-#: src/contents/ui/DetailPage.qml:180
+#: src/contents/ui/DetailPage.qml:187
 #, kde-format
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: src/contents/ui/DetailPage.qml:188
+#: src/contents/ui/DetailPage.qml:195
 #, kde-format
 msgid "Delete contact"
 msgstr "Kontakt löschen"
 
-#: src/contents/ui/DetailPage.qml:196
+#: src/contents/ui/DetailPage.qml:203
 #, kde-format
 msgid "Cancel"
 msgstr "Abbrechen"

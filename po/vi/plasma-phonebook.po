@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-05-24 00:46+0000\n"
+"POT-Creation-Date: 2022-12-12 00:49+0000\n"
 "PO-Revision-Date: 2021-05-14 22:56+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -82,6 +82,11 @@ msgstr "giao_thức:nguyenvan@example.org"
 msgid "Birthday:"
 msgstr "Ngày sinh:"
 
+#: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
+#, kde-format
+msgid "Note:"
+msgstr ""
+
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
 #: src/main.cpp:36
 #, kde-format
@@ -128,17 +133,17 @@ msgstr "Chọn số để gửi tin nhắn"
 msgid "Send email"
 msgstr "Gửi thư"
 
-#: src/contents/ui/DetailPage.qml:180
+#: src/contents/ui/DetailPage.qml:187
 #, kde-format
 msgid "Edit"
 msgstr "Sửa"
 
-#: src/contents/ui/DetailPage.qml:188
+#: src/contents/ui/DetailPage.qml:195
 #, kde-format
 msgid "Delete contact"
 msgstr "Xoá liên hệ"
 
-#: src/contents/ui/DetailPage.qml:196
+#: src/contents/ui/DetailPage.qml:203
 #, kde-format
 msgid "Cancel"
 msgstr "Huỷ"
