@@ -80,7 +80,7 @@ msgstr "Data de nascimento:"
 #: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
 #, kde-format
 msgid "Note:"
-msgstr ""
+msgstr "Nota:"
 
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
 #: src/main.cpp:36

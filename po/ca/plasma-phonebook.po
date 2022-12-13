@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-12 00:49+0000\n"
-"PO-Revision-Date: 2022-01-25 09:51+0100\n"
+"PO-Revision-Date: 2022-12-12 09:30+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -89,7 +89,7 @@ msgstr "Data de naixement:"
 #: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
 #, kde-format
 msgid "Note:"
-msgstr ""
+msgstr "Nota:"
 
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -162,33 +162,3 @@ msgstr "%1 %2"
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Visualitza i edita els contactes"
-
-#~ msgid "Save"
-#~ msgstr "Desa"
-
-#~ msgid "Address Book"
-#~ msgstr "Agenda d'adreces"
-
-#~ msgid "Chat"
-#~ msgstr "Xat"
-
-#~ msgid "Video Call"
-#~ msgstr "Trucada de vídeo"
-
-#~ msgid "Email"
-#~ msgstr "Correu electrònic"
-
-#~ msgid "Other"
-#~ msgstr "Altres"
-
-#~ msgctxt "Action to tell user to call person using phone number"
-#~ msgid "Call on %1"
-#~ msgstr "Truca al %1"
-
-#~ msgctxt "Action to tell user to write a message to phone number"
-#~ msgid "Write SMS on %1"
-#~ msgstr "Escriu un SMS al %1"
-
-#~ msgctxt "Action to send an email"
-#~ msgid "email %1"
-#~ msgstr "correu electrònic %1"

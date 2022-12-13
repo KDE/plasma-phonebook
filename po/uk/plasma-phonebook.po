@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2019, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2019, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-12 00:49+0000\n"
-"PO-Revision-Date: 2021-05-12 09:16+0300\n"
+"PO-Revision-Date: 2022-12-12 16:37+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -88,7 +88,7 @@ msgstr "День народження:"
 #: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
 #, kde-format
 msgid "Note:"
-msgstr ""
+msgstr "Зауваження:"
 
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
 #: src/main.cpp:36
