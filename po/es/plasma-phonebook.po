@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-phonebook package.
 #
-# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2019, 2021.
+# Víctor Rodrigo Córdoba <vrcordoba@gmail.com>, 2019, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-12 00:49+0000\n"
-"PO-Revision-Date: 2021-05-15 17:43+0200\n"
+"PO-Revision-Date: 2022-12-17 17:38+0100\n"
 "Last-Translator: Víctor Rodrigo Córdoba <vrcordoba@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -85,7 +85,7 @@ msgstr "Día de nacimiento:"
 #: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
 #, kde-format
 msgid "Note:"
-msgstr ""
+msgstr "Nota:"
 
 #: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -158,6 +158,3 @@ msgstr "%1 %2"
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Ver y editar contactos"
-
-#~ msgid "Save"
-#~ msgstr "Guardar"
