@@ -2,30 +2,31 @@
 # This file is distributed under the same license as the plasma-phonebook package.
 #
 # Sveinn í Felli <sv1@fellsnet.is>, 2022.
+# gummi <gudmundure@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-12 00:49+0000\n"
-"PO-Revision-Date: 2022-08-22 17:23+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic\n"
+"PO-Revision-Date: 2022-12-12 22:47+0000\n"
+"Last-Translator: gummi <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Sveinn í Felli"
+msgstr "Sveinn í Felli,Guðmundur Erlingsson"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "sv1@fellsnet.is"
+msgstr "sv1@fellsnet.is,gudmundure@gmail.com"
 
 #: src/contents/ui/AddContactPage.qml:35
 #, kde-format
@@ -55,17 +56,17 @@ msgstr "Sími:"
 #: src/contents/ui/AddContactPage.qml:148
 #, kde-format
 msgid "+1 555 2368"
-msgstr "+354 555 2368"
+msgstr "+354 111 2233"
 
 #: src/contents/ui/AddContactPage.qml:184
 #, kde-format
 msgid "E-mail:"
-msgstr "Tölvupóstur:"
+msgstr "Netfang:"
 
 #: src/contents/ui/AddContactPage.qml:221
 #, kde-format
 msgid "user@example.org"
-msgstr "tolvupostfang@midlari.is"
+msgstr "notandi@daemi.is"
 
 #: src/contents/ui/AddContactPage.qml:257
 #, kde-format
@@ -75,7 +76,7 @@ msgstr "Spjallforrit:"
 #: src/contents/ui/AddContactPage.qml:293
 #, kde-format
 msgid "protocol:person@example.com"
-msgstr "staðall:persóna@dæmi.is"
+msgstr "staðall:persona@daemi.is"
 
 #: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
 #, kde-format
@@ -111,12 +112,12 @@ msgstr "Engir tengiliðir"
 #: src/contents/ui/DetailPage.qml:119
 #, kde-format
 msgid "Call"
-msgstr "Símtal"
+msgstr "Hringja"
 
 #: src/contents/ui/DetailPage.qml:128
 #, kde-format
 msgid "Select number to call"
-msgstr "Veldu númer til að hringja"
+msgstr "Veldu númer til að hringja í"
 
 #: src/contents/ui/DetailPage.qml:135
 #, kde-format
