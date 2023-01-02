@@ -119,7 +119,7 @@
     <p xml:lang="fr">Une application de gestion convergente de contacts à la fois pour les périphériques de bureau et sur mobile.</p>
     <p xml:lang="hu">Konvergens névjegykezelő alkalmazás asztali és mobil eszközökhöz.</p>
     <p xml:lang="id">Aplikasi pengelolaan kontak yang terpusat untuk kedua peranti desktop dan ponsel.</p>
-    <p xml:lang="is">Þægilegt forrit til umsýslu með tengiliði fyrir bæði borðtölvur og snjalltæki.</p>
+    <p xml:lang="is">Þægilegt forrit til halda utan um tengiliði fyrir bæði borðtölvur og snjalltæki.</p>
     <p xml:lang="it">Applicazione convergente di gestione dei contatti sia per dispositivi desktop che mobili.</p>
     <p xml:lang="ka">კონვერგენტული კონტაქტების მართვის აპლიკაცია ორივე, სამუშაო მაგიდისა და მობილური მოწყობილობებისათვის.</p>
     <p xml:lang="ko">데스크톱과 모바일 장치에서 모두 사용할 수 있는 연락처 관리 프로그램입니다.</p>
@@ -154,7 +154,7 @@
     <p xml:lang="fr">Il fournit une place centrale pour démarrer des conversions. Selon les informations disponibles concernant un contact, les actions respectives sont affichés.</p>
     <p xml:lang="hu">Központi helyet biztosít beszélgetések indításához. A névjegyről elérhető információktól függően különböző műveletekre ad lehetőséget.</p>
     <p xml:lang="id">Ini menyediakan tempat sentral untuk memulai percakapan. Tergantung pada informasi yang tersedia tentang kontak, aksi masing-masing akan ditampilkan.</p>
-    <p xml:lang="is">Býður upp á miðlægan stað til að hefja samtöl. Það fer eftir þeim upplýsingum sem tiltækar eru um hvern tengilið hvaða aðgerðir eru í boði.</p>
+    <p xml:lang="is">Býður upp á miðlægan stað til að hefja samtöl. Aðgerðir sem eruí boði eru sýndar, en þær velta á tiltækum upplýsingum um hvern tengilið.</p>
     <p xml:lang="it">Fornisce un posto centralizzato per iniziare le conversazioni. A seconda delle informazioni disponibili sul contatto vengono mostrate le rispettive azioni.</p>
     <p xml:lang="ka">გამოგიყოფთ ცენტრალურ ადგილს საუბრის დასაწყებად. იმაზე დამოკიდებულებით, რა ინფორმაციაა ცნობილი კონტაქტის შესახებ, ნაჩვენები იქნება შესაბამისი ქმედებები.</p>
     <p xml:lang="ko">한 곳에서 대화를 시작할 수 있습니다. 연락처에 저장된 정보에 따라 사용 가능한 작업이 표시됩니다.</p>
@@ -337,7 +337,7 @@
       <caption xml:lang="fr">Aperçu des contacts</caption>
       <caption xml:lang="hu">Névjegyáttekintés</caption>
       <caption xml:lang="id">Ikhtisar kontak</caption>
-      <caption xml:lang="is">Yfirlit um tengilið</caption>
+      <caption xml:lang="is">Yfirlit yfir tengilið</caption>
       <caption xml:lang="it">Panoramica dei contatti</caption>
       <caption xml:lang="ka">კონტაქტის მიმოხილვა</caption>
       <caption xml:lang="ko">연락처 요약 보기</caption>
