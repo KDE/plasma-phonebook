@@ -74,3 +74,4 @@ Icon=org.kde.phonebook
 Type=Application
 Terminal=false
 Categories=Qt;KDE;Office;
+Keywords=friends;address book;contact list;
