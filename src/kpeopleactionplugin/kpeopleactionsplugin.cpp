@@ -37,7 +37,7 @@ QList<QAction *> KPeopleActionsPlugin::actionsForPerson(const KPeople::PersonDat
     for (const auto &impp : imppList) {
         QAction *action = new QAction(
             QIcon::fromTheme(impp.serviceIcon()),
-            i18nc("Action to write to instant messanger contact", "%1 %2", KContacts::Impp::serviceLabel(impp.serviceType()), impp.address().toString()));
+            i18nc("Action to write to instant messenger contact", "%1 %2", KContacts::Impp::serviceLabel(impp.serviceType()), impp.address().toString()));
         action->setProperty("actionType", KPeople::TextChatAction);
 
         connect(action, &QAction::triggered, [=]() {
