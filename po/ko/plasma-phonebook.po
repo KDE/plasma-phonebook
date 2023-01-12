@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-12 00:49+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2021-05-16 23:29+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -149,8 +149,10 @@ msgid "Cancel"
 msgstr "취소"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
-#, kde-format
-msgctxt "Action to write to instant messanger contact"
+#, fuzzy, kde-format
+#| msgctxt "Action to write to instant messanger contact"
+#| msgid "%1 %2"
+msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-12 00:49+0000\n"
+"POT-Creation-Date: 2023-01-12 00:57+0000\n"
 "PO-Revision-Date: 2022-12-12 09:30+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -153,8 +153,10 @@ msgid "Cancel"
 msgstr "Cancel·la"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
-#, kde-format
-msgctxt "Action to write to instant messanger contact"
+#, fuzzy, kde-format
+#| msgctxt "Action to write to instant messanger contact"
+#| msgid "%1 %2"
+msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 
