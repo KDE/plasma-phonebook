@@ -149,12 +149,10 @@ msgid "Cancel"
 msgstr "Zrušit"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "Action to write to instant messanger contact"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
-msgstr "%1 %2"
+msgstr ""
 
 #: src/main.cpp:38
 #, kde-format
