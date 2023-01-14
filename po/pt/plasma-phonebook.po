@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-12 00:57+0000\n"
-"PO-Revision-Date: 2021-05-12 15:09+0100\n"
+"PO-Revision-Date: 2023-01-13 01:36+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -144,9 +144,7 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "Action to write to instant messanger contact"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -155,6 +153,3 @@ msgstr "%1 %2"
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Ver e editar os contactos"
-
-#~ msgid "Save"
-#~ msgstr "Gravar"
