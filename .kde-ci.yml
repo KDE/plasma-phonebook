@@ -12,3 +12,6 @@ Dependencies:
     'frameworks/kpeople': '@stable'
     'pim/kpeoplevcard': '@stable'
     'libraries/kirigami-addons': '@latest'
+
+Options:
+    require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
