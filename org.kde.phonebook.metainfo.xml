@@ -322,7 +322,7 @@
     <binary>plasma-phonebook</binary>
   </provides>
   <screenshots>
-    <screenshot>
+    <screenshot type="default">
       <caption>Contact overview</caption>
       <caption xml:lang="az">Əlaqələrin icmalı</caption>
       <caption xml:lang="ca">Resum dels contactes</caption>
