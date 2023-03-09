@@ -3,13 +3,13 @@ cmake_minimum_required(VERSION 3.15)
 set(PROJECT_VERSION "23.01")
 project(plasma-phonebook VERSION ${PROJECT_VERSION})
 
-set(KF5_MIN_VERSION "5.93.0")
+set(KF_MIN_VERSION "5.93.0")
 set(QT_MIN_VERSION "5.15.2")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED)
+find_package(ECM ${KF_MIN_VERSION} REQUIRED)
 
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
@@ -28,9 +28,9 @@ ecm_setup_version(${PROJECT_VERSION}
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Widgets)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts Config)
-find_package(KF5PeopleVCard REQUIRED)
-find_package(KF5KirigamiAddons 0.6 REQUIRED)
+find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts Config)
+find_package(KF${QT_MAJOR_VERSION}PeopleVCard REQUIRED)
+find_package(KF${QT_MAJOR_VERSION}KirigamiAddons 0.6 REQUIRED)
 
 if(ANDROID)
     find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras)
