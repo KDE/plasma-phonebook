@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-12 00:57+0000\n"
+"POT-Creation-Date: 2023-03-10 00:50+0000\n"
 "PO-Revision-Date: 2021-05-20 13:28+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -148,7 +148,7 @@ msgstr "Poista yhteystieto"
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, fuzzy, kde-format
 #| msgctxt "Action to write to instant messanger contact"
 #| msgid "%1 %2"

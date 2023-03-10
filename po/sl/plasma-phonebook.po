@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-12 00:57+0000\n"
+"POT-Creation-Date: 2023-03-10 00:50+0000\n"
 "PO-Revision-Date: 2023-01-13 09:18+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -149,7 +149,7 @@ msgstr "Zbriši stik"
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
