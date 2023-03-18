@@ -7,7 +7,7 @@
  */
 
 import QtQuick 2.15
-import QtQuick.Controls 2.0 as Controls
+import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.7
 
 import org.kde.kirigami 2.12 as Kirigami
@@ -15,17 +15,66 @@ import org.kde.people 1.0 as KPeople
 
 import org.kde.phonebook 1.0
 
+import "components"
 
 Kirigami.ScrollablePage {
+    id: root
     title: i18n("Phonebook")
+    globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
 
-    actions.main: Kirigami.Action {
-        icon.name: "contact-new-symbolic"
-        text: i18n("Create New")
-        onTriggered: {
-            pageStack.pushDialogLayer(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
+    titleDelegate:ColumnLayout{
+        Kirigami.AbstractApplicationHeader {
+            Layout.margins: 0
+            Layout.preferredHeight: pageStack.globalToolBar.preferredHeight
+            Layout.maximumHeight: pageStack.globalToolBar.preferredHeight
+            Layout.fillWidth: true
+            id: applicationHeader
+            width: root.width
+            RowLayout{
+                anchors.fill: parent
+                Kirigami.SearchField {
+                    Layout.margins: Kirigami.Units.mediumSpacing
+                    Layout.rightMargin: 0
+                    Layout.fillWidth: true
+                    id: searchField
+                    onTextChanged: filterModel.setFilterFixedString(text)
+                }
+                Controls.ToolButton{
+
+    //                Layout.margins:Kirigami.Units.mediumSpacing
+                    Layout.leftMargin: 0
+                    icon.name: "overflow-menu"
+                    onClicked: optionsDrawer.open()
+                    BottomDrawer{
+                        id: optionsDrawer
+                        drawerContentItem: ColumnLayout {
+                            Repeater {
+                                model: root.actions.contextualActions
+                                delegate: Kirigami.BasicListItem{
+                                    required property var modelData
+                                    label: modelData.text
+                                    icon: modelData.icon.name
+                                    onClicked: {
+                                        modelData.triggered()
+                                        optionsDrawer.close()
+                                        optionsDrawer.interactive = false
+
+                                    }
+                                }
+                            }
+                            Item {
+                                Layout.fillHeight: true
+                            }
+
+                        }
+
+                    }
+                }
+            }
         }
     }
+
+
 
     actions.contextualActions: [
         Kirigami.Action {
@@ -36,13 +85,14 @@ Kirigami.ScrollablePage {
             }
         }
     ]
-
-    header: Controls.Control {
-        padding: Kirigami.Units.largeSpacing
-
-        contentItem: Kirigami.SearchField {
-            id: searchField
-            onTextChanged: filterModel.setFilterFixedString(text)
+    ActionButton {
+        parent: overlay
+        x: root.width - width - margin
+        y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
+        singleAction: Kirigami.Action {
+            text: i18n("add Contact")
+            icon.name: "list-add"
+            onTriggered: pageStack.pushDialogLayer(Qt.resolvedUrl("AddContactPage.qml"), {state: "create"})
         }
     }
 

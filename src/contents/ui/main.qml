@@ -29,10 +29,6 @@ Kirigami.ApplicationWindow {
     pageStack.initialPage: ContactsPage {}
     pageStack.globalToolBar.canContainHandles: true
 
-    contextDrawer: Kirigami.ContextDrawer {
-        id: contextDrawer
-    }
-
     ContactImporter {
         id: importer
     }
