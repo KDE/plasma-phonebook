@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 00:50+0000\n"
+"POT-Creation-Date: 2023-03-19 00:49+0000\n"
 "PO-Revision-Date: 2020-10-27 19:26+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -28,129 +28,152 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:35
+#: src/contents/ui/AddContactPage.qml:40
 #, kde-format
 msgid "Adding contact"
 msgstr "Tilføjer kontakt"
 
-#: src/contents/ui/AddContactPage.qml:39
+#: src/contents/ui/AddContactPage.qml:44
 #, kde-format
 msgid "Editing contact"
 msgstr "Redigerer kontakt"
 
-#: src/contents/ui/AddContactPage.qml:58
+#: src/contents/ui/AddContactPage.qml:62
 #, kde-format
 msgid "Photo"
 msgstr "Billede"
 
-#: src/contents/ui/AddContactPage.qml:94
+#: src/contents/ui/AddContactPage.qml:111
 #, kde-format
-msgid "Name:"
+msgid "Add profile picture"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:124
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgid "Name"
 msgstr "Navn:"
 
-#: src/contents/ui/AddContactPage.qml:112
-#, kde-format
-msgid "Phone:"
+#: src/contents/ui/AddContactPage.qml:152
+#: src/contents/ui/AddContactPage.qml:174
+#, fuzzy, kde-format
+#| msgid "Phone:"
+msgid "Phone"
 msgstr "Telefon:"
 
-#: src/contents/ui/AddContactPage.qml:148
+#: src/contents/ui/AddContactPage.qml:176
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+4512345678"
 
-#: src/contents/ui/AddContactPage.qml:184
+#: src/contents/ui/AddContactPage.qml:210
 #, kde-format
-msgid "E-mail:"
-msgstr "E-mail:"
+msgid "Add phone number"
+msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:221
+#: src/contents/ui/AddContactPage.qml:239
+#: src/contents/ui/AddContactPage.qml:261
+#, kde-format
+msgid "Email"
+msgstr "E-mail"
+
+#: src/contents/ui/AddContactPage.qml:263
 #, kde-format
 msgid "user@example.org"
 msgstr "bruger@example.org"
 
-#: src/contents/ui/AddContactPage.qml:257
+#: src/contents/ui/AddContactPage.qml:286
 #, kde-format
-msgid "Instant Messenger:"
+msgid "Add email address"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:315
+#: src/contents/ui/AddContactPage.qml:336
+#, fuzzy, kde-format
+#| msgid "Instant Messenger:"
+msgid "Instant Messenger"
 msgstr "Straksbeskeder:"
 
-#: src/contents/ui/AddContactPage.qml:293
+#: src/contents/ui/AddContactPage.qml:338
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokol:person@eksempel.dk"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
+#: src/contents/ui/AddContactPage.qml:369
+#, fuzzy, kde-format
+#| msgid "Instant Messenger:"
+msgid "Add instant messenger address"
+msgstr "Straksbeskeder:"
+
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
 #, kde-format
-msgid "Birthday:"
+msgid "Birthday"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
-#, kde-format
-msgid "Note:"
-msgstr ""
-
-#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
 #, fuzzy, kde-format
 #| msgid "Phone book"
 msgid "Phonebook"
 msgstr "Telefonbog"
 
-#: src/contents/ui/ContactsPage.qml:24
-#, fuzzy, kde-format
-#| msgid "Create new"
-msgid "Create New"
-msgstr "Opret ny"
-
-#: src/contents/ui/ContactsPage.qml:33
+#: src/contents/ui/ContactsPage.qml:82
 #, kde-format
 msgid "Import contacts"
 msgstr "Importér kontakter"
 
-#: src/contents/ui/ContactsPage.qml:77
+#: src/contents/ui/ContactsPage.qml:93
+#, fuzzy, kde-format
+#| msgid "Adding contact"
+msgid "add Contact"
+msgstr "Tilføjer kontakt"
+
+#: src/contents/ui/ContactsPage.qml:127
 #, kde-format
 msgid "No contacts"
 msgstr "Ingen kontakter"
 
-#: src/contents/ui/DetailPage.qml:119
-#, kde-format
-msgid "Call"
-msgstr "Opkald"
-
-#: src/contents/ui/DetailPage.qml:128
-#, kde-format
-msgid "Select number to call"
-msgstr ""
-
-#: src/contents/ui/DetailPage.qml:135
-#, kde-format
-msgid "Send SMS"
-msgstr ""
-
-#: src/contents/ui/DetailPage.qml:144
-#, kde-format
-msgid "Select number to send message to"
-msgstr ""
-
-#: src/contents/ui/DetailPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Send file"
-msgid "Send email"
-msgstr "Send fil"
-
-#: src/contents/ui/DetailPage.qml:187
+#: src/contents/ui/DetailPage.qml:54
 #, kde-format
 msgid "Edit"
 msgstr "Rediger"
 
-#: src/contents/ui/DetailPage.qml:195
+#: src/contents/ui/DetailPage.qml:59
 #, kde-format
 msgid "Delete contact"
 msgstr "Slet kontakt"
 
-#: src/contents/ui/DetailPage.qml:203
+#: src/contents/ui/DetailPage.qml:191
 #, kde-format
-msgid "Cancel"
-msgstr "Annuller"
+msgid "Call"
+msgstr "Opkald"
+
+#: src/contents/ui/DetailPage.qml:198
+#, kde-format
+msgid "Send SMS"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:225
+#, fuzzy, kde-format
+#| msgid "Send file"
+msgid "Send E-Mail"
+msgstr "Send fil"
+
+#: src/contents/ui/DetailPage.qml:233
+#, kde-format
+msgid "E-Mail"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:252
+#, fuzzy, kde-format
+#| msgid "Send file"
+msgid "Send Message"
+msgstr "Send fil"
+
+#: src/contents/ui/DetailPage.qml:296
+#, kde-format
+msgid "Note:"
+msgstr ""
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, fuzzy, kde-format
@@ -166,6 +189,17 @@ msgstr "%1 %2"
 msgid "View and edit contacts"
 msgstr "Tilføjer kontakt"
 
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+
+#, fuzzy
+#~| msgid "Create new"
+#~ msgid "Create New"
+#~ msgstr "Opret ny"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuller"
+
 #~ msgid "Save"
 #~ msgstr "Gem"
 
@@ -179,9 +213,6 @@ msgstr "Tilføjer kontakt"
 
 #~ msgid "Video Call"
 #~ msgstr "Videoopkald"
-
-#~ msgid "Email"
-#~ msgstr "E-mail"
 
 #~ msgid "Other"
 #~ msgstr "Andet"

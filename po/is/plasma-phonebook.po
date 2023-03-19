@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 00:50+0000\n"
+"POT-Creation-Date: 2023-03-19 00:49+0000\n"
 "PO-Revision-Date: 2023-02-02 14:48+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
@@ -28,126 +28,153 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "sv1@fellsnet.is, gudmundure@gmail.com"
 
-#: src/contents/ui/AddContactPage.qml:35
+#: src/contents/ui/AddContactPage.qml:40
 #, kde-format
 msgid "Adding contact"
 msgstr "Bæti við tengilið"
 
-#: src/contents/ui/AddContactPage.qml:39
+#: src/contents/ui/AddContactPage.qml:44
 #, kde-format
 msgid "Editing contact"
 msgstr "Breyti tengilið"
 
-#: src/contents/ui/AddContactPage.qml:58
+#: src/contents/ui/AddContactPage.qml:62
 #, kde-format
 msgid "Photo"
 msgstr "Ljósmynd"
 
-#: src/contents/ui/AddContactPage.qml:94
+#: src/contents/ui/AddContactPage.qml:111
 #, kde-format
-msgid "Name:"
+msgid "Add profile picture"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:124
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgid "Name"
 msgstr "Nafn:"
 
-#: src/contents/ui/AddContactPage.qml:112
-#, kde-format
-msgid "Phone:"
+#: src/contents/ui/AddContactPage.qml:152
+#: src/contents/ui/AddContactPage.qml:174
+#, fuzzy, kde-format
+#| msgid "Phone:"
+msgid "Phone"
 msgstr "Sími:"
 
-#: src/contents/ui/AddContactPage.qml:148
+#: src/contents/ui/AddContactPage.qml:176
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+354 111 2233"
 
-#: src/contents/ui/AddContactPage.qml:184
+#: src/contents/ui/AddContactPage.qml:210
 #, kde-format
-msgid "E-mail:"
+msgid "Add phone number"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:239
+#: src/contents/ui/AddContactPage.qml:261
+#, fuzzy, kde-format
+#| msgid "E-mail:"
+msgid "Email"
 msgstr "Netfang:"
 
-#: src/contents/ui/AddContactPage.qml:221
+#: src/contents/ui/AddContactPage.qml:263
 #, kde-format
 msgid "user@example.org"
 msgstr "notandi@daemi.is"
 
-#: src/contents/ui/AddContactPage.qml:257
+#: src/contents/ui/AddContactPage.qml:286
 #, kde-format
-msgid "Instant Messenger:"
+msgid "Add email address"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:315
+#: src/contents/ui/AddContactPage.qml:336
+#, fuzzy, kde-format
+#| msgid "Instant Messenger:"
+msgid "Instant Messenger"
 msgstr "Spjallforrit:"
 
-#: src/contents/ui/AddContactPage.qml:293
+#: src/contents/ui/AddContactPage.qml:338
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "staðall:persona@daemi.is"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
-#, kde-format
-msgid "Birthday:"
+#: src/contents/ui/AddContactPage.qml:369
+#, fuzzy, kde-format
+#| msgid "Instant Messenger:"
+msgid "Add instant messenger address"
+msgstr "Spjallforrit:"
+
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
+#, fuzzy, kde-format
+#| msgid "Birthday:"
+msgid "Birthday"
 msgstr "Afmælisdagur:"
 
-#: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
-#, kde-format
-msgid "Note:"
-msgstr "Minnispunktur:"
-
-#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
 #, kde-format
 msgid "Phonebook"
 msgstr "Símaskrá"
 
-#: src/contents/ui/ContactsPage.qml:24
-#, kde-format
-msgid "Create New"
-msgstr "Búa til nýtt"
-
-#: src/contents/ui/ContactsPage.qml:33
+#: src/contents/ui/ContactsPage.qml:82
 #, kde-format
 msgid "Import contacts"
 msgstr "Flytja inn tengiliði"
 
-#: src/contents/ui/ContactsPage.qml:77
+#: src/contents/ui/ContactsPage.qml:93
+#, fuzzy, kde-format
+#| msgid "Adding contact"
+msgid "add Contact"
+msgstr "Bæti við tengilið"
+
+#: src/contents/ui/ContactsPage.qml:127
 #, kde-format
 msgid "No contacts"
 msgstr "Engir tengiliðir"
 
-#: src/contents/ui/DetailPage.qml:119
-#, kde-format
-msgid "Call"
-msgstr "Hringja"
-
-#: src/contents/ui/DetailPage.qml:128
-#, kde-format
-msgid "Select number to call"
-msgstr "Veldu númer til að hringja í"
-
-#: src/contents/ui/DetailPage.qml:135
-#, kde-format
-msgid "Send SMS"
-msgstr "Senda SMS"
-
-#: src/contents/ui/DetailPage.qml:144
-#, kde-format
-msgid "Select number to send message to"
-msgstr "Veldu númer til að senda skilaboð á"
-
-#: src/contents/ui/DetailPage.qml:151
-#, kde-format
-msgid "Send email"
-msgstr "Senda tölvupóst"
-
-#: src/contents/ui/DetailPage.qml:187
+#: src/contents/ui/DetailPage.qml:54
 #, kde-format
 msgid "Edit"
 msgstr "Breyta"
 
-#: src/contents/ui/DetailPage.qml:195
+#: src/contents/ui/DetailPage.qml:59
 #, kde-format
 msgid "Delete contact"
 msgstr "Eyða tengilið"
 
-#: src/contents/ui/DetailPage.qml:203
+#: src/contents/ui/DetailPage.qml:191
 #, kde-format
-msgid "Cancel"
-msgstr "Hætta við"
+msgid "Call"
+msgstr "Hringja"
+
+#: src/contents/ui/DetailPage.qml:198
+#, kde-format
+msgid "Send SMS"
+msgstr "Senda SMS"
+
+#: src/contents/ui/DetailPage.qml:225
+#, fuzzy, kde-format
+#| msgid "Send email"
+msgid "Send E-Mail"
+msgstr "Senda tölvupóst"
+
+#: src/contents/ui/DetailPage.qml:233
+#, kde-format
+msgid "E-Mail"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:252
+#, fuzzy, kde-format
+#| msgid "Send email"
+msgid "Send Message"
+msgstr "Senda tölvupóst"
+
+#: src/contents/ui/DetailPage.qml:296
+#, kde-format
+msgid "Note:"
+msgstr "Minnispunktur:"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
@@ -159,3 +186,15 @@ msgstr "%1 %2"
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Skoða tengiliði og breyta"
+
+#~ msgid "Create New"
+#~ msgstr "Búa til nýtt"
+
+#~ msgid "Select number to call"
+#~ msgstr "Veldu númer til að hringja í"
+
+#~ msgid "Select number to send message to"
+#~ msgstr "Veldu númer til að senda skilaboð á"
+
+#~ msgid "Cancel"
+#~ msgstr "Hætta við"

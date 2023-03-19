@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-10 00:50+0000\n"
+"POT-Creation-Date: 2023-03-19 00:49+0000\n"
 "PO-Revision-Date: 2023-01-13 09:18+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -28,126 +28,152 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: src/contents/ui/AddContactPage.qml:35
+#: src/contents/ui/AddContactPage.qml:40
 #, kde-format
 msgid "Adding contact"
 msgstr "Dodajanje stika"
 
-#: src/contents/ui/AddContactPage.qml:39
+#: src/contents/ui/AddContactPage.qml:44
 #, kde-format
 msgid "Editing contact"
 msgstr "Urejanje stika"
 
-#: src/contents/ui/AddContactPage.qml:58
+#: src/contents/ui/AddContactPage.qml:62
 #, kde-format
 msgid "Photo"
 msgstr "Slika"
 
-#: src/contents/ui/AddContactPage.qml:94
+#: src/contents/ui/AddContactPage.qml:111
 #, kde-format
-msgid "Name:"
+msgid "Add profile picture"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:124
+#, fuzzy, kde-format
+#| msgid "Name:"
+msgid "Name"
 msgstr "Ime:"
 
-#: src/contents/ui/AddContactPage.qml:112
-#, kde-format
-msgid "Phone:"
+#: src/contents/ui/AddContactPage.qml:152
+#: src/contents/ui/AddContactPage.qml:174
+#, fuzzy, kde-format
+#| msgid "Phone:"
+msgid "Phone"
 msgstr "Telefon:"
 
-#: src/contents/ui/AddContactPage.qml:148
+#: src/contents/ui/AddContactPage.qml:176
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+1 555 2368"
 
-#: src/contents/ui/AddContactPage.qml:184
+#: src/contents/ui/AddContactPage.qml:210
 #, kde-format
-msgid "E-mail:"
-msgstr "E-pošta:"
+msgid "Add phone number"
+msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:221
+#: src/contents/ui/AddContactPage.qml:239
+#: src/contents/ui/AddContactPage.qml:261
+#, kde-format
+msgid "Email"
+msgstr "E-sporočilo"
+
+#: src/contents/ui/AddContactPage.qml:263
 #, kde-format
 msgid "user@example.org"
 msgstr "user@example.org"
 
-#: src/contents/ui/AddContactPage.qml:257
+#: src/contents/ui/AddContactPage.qml:286
 #, kde-format
-msgid "Instant Messenger:"
+msgid "Add email address"
+msgstr ""
+
+#: src/contents/ui/AddContactPage.qml:315
+#: src/contents/ui/AddContactPage.qml:336
+#, fuzzy, kde-format
+#| msgid "Instant Messenger:"
+msgid "Instant Messenger"
 msgstr "Trenutni sporočilnik:"
 
-#: src/contents/ui/AddContactPage.qml:293
+#: src/contents/ui/AddContactPage.qml:338
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protocol:person@example.com"
 
-#: src/contents/ui/AddContactPage.qml:328 src/contents/ui/DetailPage.qml:172
-#, kde-format
-msgid "Birthday:"
+#: src/contents/ui/AddContactPage.qml:369
+#, fuzzy, kde-format
+#| msgid "Instant Messenger:"
+msgid "Add instant messenger address"
+msgstr "Trenutni sporočilnik:"
+
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
+#, fuzzy, kde-format
+#| msgid "Birthday:"
+msgid "Birthday"
 msgstr "Dan rojstva:"
 
-#: src/contents/ui/AddContactPage.qml:342 src/contents/ui/DetailPage.qml:179
-#, kde-format
-msgid "Note:"
-msgstr "Opomba:"
-
-#: src/contents/ui/ContactsPage.qml:20 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
 #, kde-format
 msgid "Phonebook"
 msgstr "Phonebook"
 
-#: src/contents/ui/ContactsPage.qml:24
-#, kde-format
-msgid "Create New"
-msgstr "Ustvari novega"
-
-#: src/contents/ui/ContactsPage.qml:33
+#: src/contents/ui/ContactsPage.qml:82
 #, kde-format
 msgid "Import contacts"
 msgstr "Uvozi stike"
 
-#: src/contents/ui/ContactsPage.qml:77
+#: src/contents/ui/ContactsPage.qml:93
+#, fuzzy, kde-format
+#| msgid "Adding contact"
+msgid "add Contact"
+msgstr "Dodajanje stika"
+
+#: src/contents/ui/ContactsPage.qml:127
 #, kde-format
 msgid "No contacts"
 msgstr "Ni stikov"
 
-#: src/contents/ui/DetailPage.qml:119
-#, kde-format
-msgid "Call"
-msgstr "Klic"
-
-#: src/contents/ui/DetailPage.qml:128
-#, kde-format
-msgid "Select number to call"
-msgstr "Izbrana številka za klic"
-
-#: src/contents/ui/DetailPage.qml:135
-#, kde-format
-msgid "Send SMS"
-msgstr "Pošlji SMS"
-
-#: src/contents/ui/DetailPage.qml:144
-#, kde-format
-msgid "Select number to send message to"
-msgstr "Izberi številko za pošiljanje sporočil"
-
-#: src/contents/ui/DetailPage.qml:151
-#, kde-format
-msgid "Send email"
-msgstr "Pošlji elektronsko pošto"
-
-#: src/contents/ui/DetailPage.qml:187
+#: src/contents/ui/DetailPage.qml:54
 #, kde-format
 msgid "Edit"
 msgstr "Uredi"
 
-#: src/contents/ui/DetailPage.qml:195
+#: src/contents/ui/DetailPage.qml:59
 #, kde-format
 msgid "Delete contact"
 msgstr "Zbriši stik"
 
-#: src/contents/ui/DetailPage.qml:203
+#: src/contents/ui/DetailPage.qml:191
 #, kde-format
-msgid "Cancel"
-msgstr "Prekliči"
+msgid "Call"
+msgstr "Klic"
+
+#: src/contents/ui/DetailPage.qml:198
+#, kde-format
+msgid "Send SMS"
+msgstr "Pošlji SMS"
+
+#: src/contents/ui/DetailPage.qml:225
+#, fuzzy, kde-format
+#| msgid "Send email"
+msgid "Send E-Mail"
+msgstr "Pošlji elektronsko pošto"
+
+#: src/contents/ui/DetailPage.qml:233
+#, kde-format
+msgid "E-Mail"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:252
+#, fuzzy, kde-format
+#| msgid "Send email"
+msgid "Send Message"
+msgstr "Pošlji elektronsko pošto"
+
+#: src/contents/ui/DetailPage.qml:296
+#, kde-format
+msgid "Note:"
+msgstr "Opomba:"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
@@ -160,6 +186,21 @@ msgstr "%1 %2"
 msgid "View and edit contacts"
 msgstr "Ogled in urejanje stikov"
 
+#~ msgid "E-mail:"
+#~ msgstr "E-pošta:"
+
+#~ msgid "Create New"
+#~ msgstr "Ustvari novega"
+
+#~ msgid "Select number to call"
+#~ msgstr "Izbrana številka za klic"
+
+#~ msgid "Select number to send message to"
+#~ msgstr "Izberi številko za pošiljanje sporočil"
+
+#~ msgid "Cancel"
+#~ msgstr "Prekliči"
+
 #~ msgid "Save"
 #~ msgstr "Shrani"
 
@@ -171,9 +212,6 @@ msgstr "Ogled in urejanje stikov"
 
 #~ msgid "Video Call"
 #~ msgstr "Video klic"
-
-#~ msgid "Email"
-#~ msgstr "E-sporočilo"
 
 #~ msgid "Other"
 #~ msgstr "Ostalo"
