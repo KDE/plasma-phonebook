@@ -161,7 +161,9 @@ Kirigami.ScrollablePage {
                         text: personData.person.name
                         font.bold: true
                         font.pixelSize: 22
-                        elide: Qt.ElideRight
+                        maximumLineCount: 2
+                        wrapMode: Text.Wrap
+                        elide: Text.ElideRight
 
                     }
                     Label {
