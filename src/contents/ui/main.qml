@@ -27,7 +27,9 @@ Kirigami.ApplicationWindow {
     }
 
     pageStack.initialPage: ContactsPage {}
-    pageStack.globalToolBar.canContainHandles: true
+
+    pageStack.globalToolBar.style: Kirigami.ApplicationHeaderStyle.Titles
+    pageStack.globalToolBar.showNavigationButtons: Kirigami.ApplicationHeaderStyle.ShowBackButton
 
     ContactImporter {
         id: importer
