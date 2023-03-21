@@ -48,8 +48,8 @@ Kirigami.ScrollablePage {
     property var addressee: ContactController.addresseeFromVCard(personData.person.contactCustomProperty("vcard"))
     DoubleActionButton {
         parent: overlay
-        x: root.width - width - margin
-        y: root.height - height - pageStack.globalToolBar.preferredHeight - margin
+        x: page.width - width - margin
+        y: page.height - height - pageStack.globalToolBar.preferredHeight - margin
         rightAction: Kirigami.Action {
             text: i18n("Edit")
             icon.name: "document-edit"
