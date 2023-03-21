@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 00:49+0000\n"
-"PO-Revision-Date: 2023-01-24 15:33+0100\n"
+"PO-Revision-Date: 2023-03-20 14:31+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -45,20 +45,19 @@ msgstr "Fotka"
 #: src/contents/ui/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Přidat obrázek profilu"
 
+# Tohle vypadá na název vlastnosti. Jméno bycvh nechal pro lidi a zvířata.
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Název:"
+msgstr "Název"
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Telefon:"
+msgstr "Telefon"
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -68,14 +67,13 @@ msgstr "+1 555 2368"
 #: src/contents/ui/AddContactPage.qml:210
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Přidat telefonní číslo"
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
-#, fuzzy, kde-format
-#| msgid "E-mail:"
+#, kde-format
 msgid "Email"
-msgstr "E-mail:"
+msgstr "E-mail"
 
 #: src/contents/ui/AddContactPage.qml:263
 #, kde-format
@@ -85,14 +83,13 @@ msgstr "uzivatel@priklad.cz"
 #: src/contents/ui/AddContactPage.qml:286
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Přidejte e-mailovou adresu"
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Komunikátor:"
+msgstr "Internetový komunikátor"
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -100,16 +97,14 @@ msgid "protocol:person@example.com"
 msgstr "protokol:franta@priklad.cz"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "Komunikátor:"
+msgstr "Přidat adresu komunikátoru"
 
 #: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "Narozeniny:"
+msgstr "Narozeniny"
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -123,10 +118,9 @@ msgid "Import contacts"
 msgstr "Importovat kontakty"
 
 #: src/contents/ui/ContactsPage.qml:93
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
-msgstr "Přidávám kontakt"
+msgstr "přidat kontakt"
 
 #: src/contents/ui/ContactsPage.qml:127
 #, kde-format
@@ -154,21 +148,19 @@ msgid "Send SMS"
 msgstr "Poslat SMS"
 
 #: src/contents/ui/DetailPage.qml:225
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "Odeslat e-mail"
 
 #: src/contents/ui/DetailPage.qml:233
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: src/contents/ui/DetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Odeslat e-mail"
+msgstr "Poslat správu"
 
 #: src/contents/ui/DetailPage.qml:296
 #, kde-format
@@ -185,15 +177,3 @@ msgstr "%1 %2"
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Zobrazte a upravujte kontakty"
-
-#~ msgid "Create New"
-#~ msgstr "Vytvořit nový"
-
-#~ msgid "Select number to call"
-#~ msgstr "Vyberte číslo k zavolání"
-
-#~ msgid "Select number to send message to"
-#~ msgstr "Vyberte číslo pro poslání zprávy"
-
-#~ msgid "Cancel"
-#~ msgstr "Zrušit"

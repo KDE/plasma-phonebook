@@ -70,8 +70,7 @@ msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
-#, fuzzy, kde-format
-#| msgid "Email"
+#, kde-format
 msgid "Email"
 msgstr "Courriel"
 
