@@ -40,8 +40,7 @@ Kirigami.ScrollablePage {
                     onTextChanged: filterModel.setFilterFixedString(text)
                 }
                 Controls.ToolButton{
-
-    //                Layout.margins:Kirigami.Units.mediumSpacing
+                    Layout.margins: Kirigami.Units.mediumSpacing
                     Layout.leftMargin: 0
                     icon.name: "overflow-menu"
                     onClicked: optionsDrawer.open()
