@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-19 00:49+0000\n"
-"PO-Revision-Date: 2023-01-13 08:39+0100\n"
+"PO-Revision-Date: 2023-03-21 06:57+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -46,20 +46,18 @@ msgstr "ფოტო"
 #: src/contents/ui/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "პროფილის სურათის დამატება"
 
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "სახელი:"
+msgstr "სახელი"
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "ტელეფონი:"
+msgstr "ტელეფონი"
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -69,14 +67,13 @@ msgstr "+1 555 2368"
 #: src/contents/ui/AddContactPage.qml:210
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "ტელეფონის ნომრის დამატება"
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
-#, fuzzy, kde-format
-#| msgid "E-mail:"
+#, kde-format
 msgid "Email"
-msgstr "ელფოსტა:"
+msgstr "ელფოტა"
 
 #: src/contents/ui/AddContactPage.qml:263
 #, kde-format
@@ -86,14 +83,13 @@ msgstr "user@example.org"
 #: src/contents/ui/AddContactPage.qml:286
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "ელფოსტის მისამართის დამატება"
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "მყისიერი შეტყობინება:"
+msgstr "მყისი შეტყობინებები"
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -101,16 +97,14 @@ msgid "protocol:person@example.com"
 msgstr "protocol:person@example.com"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "მყისიერი შეტყობინება:"
+msgstr "მყისი შეტყობინებების მისამართის დამატება"
 
 #: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "დაბადების დღე:"
+msgstr "დაბადების დღე"
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -124,8 +118,7 @@ msgid "Import contacts"
 msgstr "კონტაქტების შემოტანა"
 
 #: src/contents/ui/ContactsPage.qml:93
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
 msgstr "კონტაქტის დამატება"
 
@@ -155,21 +148,19 @@ msgid "Send SMS"
 msgstr "SMS-ის გაგზავნა"
 
 #: src/contents/ui/DetailPage.qml:225
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "ელფოსტის გაგზავნა"
 
 #: src/contents/ui/DetailPage.qml:233
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "ელფოსტა"
 
 #: src/contents/ui/DetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "ელფოსტის გაგზავნა"
+msgstr "შეტყობინების გაგზავნა"
 
 #: src/contents/ui/DetailPage.qml:296
 #, kde-format
