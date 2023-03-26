@@ -13,6 +13,7 @@
   <name xml:lang="fi">Phonebook</name>
   <name xml:lang="fr">Phonebook</name>
   <name xml:lang="hu">Névjegyek</name>
+  <name xml:lang="id">Buku Telepon</name>
   <name xml:lang="is">Símaskrá</name>
   <name xml:lang="it">Phonebook</name>
   <name xml:lang="ka">სატელეფონო წიგნაკი</name>
@@ -45,7 +46,7 @@
   <summary xml:lang="fi">Tarkastele ja muokkaa yhteystietoja</summary>
   <summary xml:lang="fr">Modifier et afficher les contacts</summary>
   <summary xml:lang="hu">Névjegyek megjelenítése és szerkesztése</summary>
-  <summary xml:lang="id">Tilik dan edit kontak</summary>
+  <summary xml:lang="id">Lihat dan sunting kontak</summary>
   <summary xml:lang="is">Skoða tengiliði og breyta</summary>
   <summary xml:lang="it">Visualizza e modifica i contatti</summary>
   <summary xml:lang="ka">კონტაქტების ნახვა და ჩასწორება</summary>
@@ -294,7 +295,7 @@
       <li xml:lang="fi">Tuo vCard-tiedostoja</li>
       <li xml:lang="fr">Importer des fichiers « VCard »</li>
       <li xml:lang="hu">vCard-fájlok importálása</li>
-      <li xml:lang="id">Impor file vCard</li>
+      <li xml:lang="id">Impor berkas vCard</li>
       <li xml:lang="is">Flytja inn vCard-skrár</li>
       <li xml:lang="it">Importa file vCard</li>
       <li xml:lang="ka">VCard ფაილების შემოტანა</li>
