@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 00:49+0000\n"
-"PO-Revision-Date: 2023-03-11 04:53\n"
+"POT-Creation-Date: 2023-03-27 00:50+0000\n"
+"PO-Revision-Date: 2023-03-26 02:19\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -48,17 +48,15 @@ msgid "Add profile picture"
 msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "姓名："
+msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "电话："
+msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -72,10 +70,9 @@ msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
-#, fuzzy, kde-format
-#| msgid "E-mail:"
+#, kde-format
 msgid "Email"
-msgstr "电邮："
+msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:263
 #, kde-format
@@ -89,10 +86,9 @@ msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "即时通讯："
+msgstr ""
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -100,16 +96,14 @@ msgid "protocol:person@example.com"
 msgstr "protocol:person@example.com"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "即时通讯："
+msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
+#, kde-format
 msgid "Birthday"
-msgstr "生日："
+msgstr ""
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -117,18 +111,17 @@ msgstr "生日："
 msgid "Phonebook"
 msgstr "电话簿"
 
-#: src/contents/ui/ContactsPage.qml:82
+#: src/contents/ui/ContactsPage.qml:81
 #, kde-format
 msgid "Import contacts"
 msgstr "导入联系人"
 
-#: src/contents/ui/ContactsPage.qml:93
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#: src/contents/ui/ContactsPage.qml:92
+#, kde-format
 msgid "add Contact"
-msgstr "添加联系人"
+msgstr ""
 
-#: src/contents/ui/ContactsPage.qml:127
+#: src/contents/ui/ContactsPage.qml:126
 #, kde-format
 msgid "No contacts"
 msgstr "无联系人"
@@ -143,34 +136,32 @@ msgstr "编辑"
 msgid "Delete contact"
 msgstr "删除联系人"
 
-#: src/contents/ui/DetailPage.qml:191
+#: src/contents/ui/DetailPage.qml:193
 #, kde-format
 msgid "Call"
 msgstr "呼叫"
 
-#: src/contents/ui/DetailPage.qml:198
+#: src/contents/ui/DetailPage.qml:200
 #, kde-format
 msgid "Send SMS"
 msgstr "发送短信"
 
-#: src/contents/ui/DetailPage.qml:225
-#, fuzzy, kde-format
-#| msgid "Send email"
+#: src/contents/ui/DetailPage.qml:227
+#, kde-format
 msgid "Send E-Mail"
-msgstr "发送电子邮件"
+msgstr ""
 
-#: src/contents/ui/DetailPage.qml:233
+#: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
 msgstr ""
 
-#: src/contents/ui/DetailPage.qml:252
-#, fuzzy, kde-format
-#| msgid "Send email"
+#: src/contents/ui/DetailPage.qml:254
+#, kde-format
 msgid "Send Message"
-msgstr "发送电子邮件"
+msgstr ""
 
-#: src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/DetailPage.qml:298
 #, kde-format
 msgid "Note:"
 msgstr "备注："
@@ -185,15 +176,3 @@ msgstr "%1 %2"
 #, kde-format
 msgid "View and edit contacts"
 msgstr "查看和编辑联系人"
-
-#~ msgid "Create New"
-#~ msgstr "新建"
-
-#~ msgid "Select number to call"
-#~ msgstr "选择要拨打的号码"
-
-#~ msgid "Select number to send message to"
-#~ msgstr "选择要发送短信的号码"
-
-#~ msgid "Cancel"
-#~ msgstr "取消"

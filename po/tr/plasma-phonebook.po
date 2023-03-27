@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 00:49+0000\n"
+"POT-Creation-Date: 2023-03-27 00:50+0000\n"
 "PO-Revision-Date: 2023-03-19 15:07+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -100,7 +100,7 @@ msgstr "protokol:kişi@örnek.com"
 msgid "Add instant messenger address"
 msgstr "Anlık iletici adresi ekle"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
 #, kde-format
 msgid "Birthday"
 msgstr "Doğum Günü"
@@ -111,17 +111,17 @@ msgstr "Doğum Günü"
 msgid "Phonebook"
 msgstr "Telefon Rehberi"
 
-#: src/contents/ui/ContactsPage.qml:82
+#: src/contents/ui/ContactsPage.qml:81
 #, kde-format
 msgid "Import contacts"
 msgstr "Kişileri içe aktar"
 
-#: src/contents/ui/ContactsPage.qml:93
+#: src/contents/ui/ContactsPage.qml:92
 #, kde-format
 msgid "add Contact"
 msgstr "Kişi Ekle"
 
-#: src/contents/ui/ContactsPage.qml:127
+#: src/contents/ui/ContactsPage.qml:126
 #, kde-format
 msgid "No contacts"
 msgstr "Kişi yok"
@@ -136,32 +136,32 @@ msgstr "Düzenle"
 msgid "Delete contact"
 msgstr "Kişi sil"
 
-#: src/contents/ui/DetailPage.qml:191
+#: src/contents/ui/DetailPage.qml:193
 #, kde-format
 msgid "Call"
 msgstr "Ara"
 
-#: src/contents/ui/DetailPage.qml:198
+#: src/contents/ui/DetailPage.qml:200
 #, kde-format
 msgid "Send SMS"
 msgstr "SMS gönder"
 
-#: src/contents/ui/DetailPage.qml:225
+#: src/contents/ui/DetailPage.qml:227
 #, kde-format
 msgid "Send E-Mail"
 msgstr "E-posta Gönder"
 
-#: src/contents/ui/DetailPage.qml:233
+#: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
 msgstr "E-posta"
 
-#: src/contents/ui/DetailPage.qml:252
+#: src/contents/ui/DetailPage.qml:254
 #, kde-format
 msgid "Send Message"
 msgstr "İleti gönder"
 
-#: src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/DetailPage.qml:298
 #, kde-format
 msgid "Note:"
 msgstr "Not:"

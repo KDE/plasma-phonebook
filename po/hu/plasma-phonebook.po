@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 00:49+0000\n"
+"POT-Creation-Date: 2023-03-27 00:50+0000\n"
 "PO-Revision-Date: 2021-09-03 13:56+0200\n"
 "Last-Translator: Kristóf Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -104,7 +104,7 @@ msgstr "protokoll:szemely@pelda.hu"
 msgid "Add instant messenger address"
 msgstr "Azonnali üzenetküldő:"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Birthday:"
 msgid "Birthday"
@@ -116,18 +116,18 @@ msgstr "Születésnap:"
 msgid "Phonebook"
 msgstr "Névjegyek"
 
-#: src/contents/ui/ContactsPage.qml:82
+#: src/contents/ui/ContactsPage.qml:81
 #, kde-format
 msgid "Import contacts"
 msgstr "Névjegyek importálása"
 
-#: src/contents/ui/ContactsPage.qml:93
+#: src/contents/ui/ContactsPage.qml:92
 #, fuzzy, kde-format
 #| msgid "Adding contact"
 msgid "add Contact"
 msgstr "Névjegy hozzáadása"
 
-#: src/contents/ui/ContactsPage.qml:127
+#: src/contents/ui/ContactsPage.qml:126
 #, kde-format
 msgid "No contacts"
 msgstr "Nincsenek névjegyek"
@@ -142,34 +142,34 @@ msgstr "Szerkesztés"
 msgid "Delete contact"
 msgstr "Névjegy törlése"
 
-#: src/contents/ui/DetailPage.qml:191
+#: src/contents/ui/DetailPage.qml:193
 #, kde-format
 msgid "Call"
 msgstr "Hívás"
 
-#: src/contents/ui/DetailPage.qml:198
+#: src/contents/ui/DetailPage.qml:200
 #, kde-format
 msgid "Send SMS"
 msgstr "SMS küldése"
 
-#: src/contents/ui/DetailPage.qml:225
+#: src/contents/ui/DetailPage.qml:227
 #, fuzzy, kde-format
 #| msgid "Send email"
 msgid "Send E-Mail"
 msgstr "E-mail küldése"
 
-#: src/contents/ui/DetailPage.qml:233
+#: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
 msgstr ""
 
-#: src/contents/ui/DetailPage.qml:252
+#: src/contents/ui/DetailPage.qml:254
 #, fuzzy, kde-format
 #| msgid "Send email"
 msgid "Send Message"
 msgstr "E-mail küldése"
 
-#: src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/DetailPage.qml:298
 #, kde-format
 msgid "Note:"
 msgstr ""

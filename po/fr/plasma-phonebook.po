@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 00:49+0000\n"
+"POT-Creation-Date: 2023-03-27 00:50+0000\n"
 "PO-Revision-Date: 2023-03-20 19:35+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
@@ -98,7 +98,7 @@ msgstr "protocole:personne@exemple.com"
 msgid "Add instant messenger address"
 msgstr "Ajouter une adresse de messagerie instantanée"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
 #, kde-format
 msgid "Birthday"
 msgstr "Anniversaire"
@@ -109,17 +109,17 @@ msgstr "Anniversaire"
 msgid "Phonebook"
 msgstr "Phonebook"
 
-#: src/contents/ui/ContactsPage.qml:82
+#: src/contents/ui/ContactsPage.qml:81
 #, kde-format
 msgid "Import contacts"
 msgstr "Importer des contacts"
 
-#: src/contents/ui/ContactsPage.qml:93
+#: src/contents/ui/ContactsPage.qml:92
 #, kde-format
 msgid "add Contact"
 msgstr "Ajouter un contact"
 
-#: src/contents/ui/ContactsPage.qml:127
+#: src/contents/ui/ContactsPage.qml:126
 #, kde-format
 msgid "No contacts"
 msgstr "Aucun contact"
@@ -134,32 +134,32 @@ msgstr "Modifier"
 msgid "Delete contact"
 msgstr "Supprimer un contact"
 
-#: src/contents/ui/DetailPage.qml:191
+#: src/contents/ui/DetailPage.qml:193
 #, kde-format
 msgid "Call"
 msgstr "Appel"
 
-#: src/contents/ui/DetailPage.qml:198
+#: src/contents/ui/DetailPage.qml:200
 #, kde-format
 msgid "Send SMS"
 msgstr "Envoyer un SMS"
 
-#: src/contents/ui/DetailPage.qml:225
+#: src/contents/ui/DetailPage.qml:227
 #, kde-format
 msgid "Send E-Mail"
 msgstr "Envoyer un courriel"
 
-#: src/contents/ui/DetailPage.qml:233
+#: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
 msgstr "Courriel"
 
-#: src/contents/ui/DetailPage.qml:252
+#: src/contents/ui/DetailPage.qml:254
 #, kde-format
 msgid "Send Message"
 msgstr "Envoyer un message"
 
-#: src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/DetailPage.qml:298
 #, kde-format
 msgid "Note:"
 msgstr "Remarque :"

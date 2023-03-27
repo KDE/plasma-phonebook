@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-19 00:49+0000\n"
+"POT-Creation-Date: 2023-03-27 00:50+0000\n"
 "PO-Revision-Date: 2023-01-13 07:59+0100\n"
 "Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -104,7 +104,7 @@ msgstr "protocollo:persona@esempio.com"
 msgid "Add instant messenger address"
 msgstr "Messaggistica istantanea:"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:275
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Birthday:"
 msgid "Birthday"
@@ -116,18 +116,18 @@ msgstr "Compleanno:"
 msgid "Phonebook"
 msgstr "Phonebook"
 
-#: src/contents/ui/ContactsPage.qml:82
+#: src/contents/ui/ContactsPage.qml:81
 #, kde-format
 msgid "Import contacts"
 msgstr "Importa contatti"
 
-#: src/contents/ui/ContactsPage.qml:93
+#: src/contents/ui/ContactsPage.qml:92
 #, fuzzy, kde-format
 #| msgid "Adding contact"
 msgid "add Contact"
 msgstr "Aggiunta contatto"
 
-#: src/contents/ui/ContactsPage.qml:127
+#: src/contents/ui/ContactsPage.qml:126
 #, kde-format
 msgid "No contacts"
 msgstr "Nessun contatto"
@@ -142,34 +142,34 @@ msgstr "Modifica"
 msgid "Delete contact"
 msgstr "Elimina il contatto"
 
-#: src/contents/ui/DetailPage.qml:191
+#: src/contents/ui/DetailPage.qml:193
 #, kde-format
 msgid "Call"
 msgstr "Chiamata"
 
-#: src/contents/ui/DetailPage.qml:198
+#: src/contents/ui/DetailPage.qml:200
 #, kde-format
 msgid "Send SMS"
 msgstr "Invia SMS"
 
-#: src/contents/ui/DetailPage.qml:225
+#: src/contents/ui/DetailPage.qml:227
 #, fuzzy, kde-format
 #| msgid "Send email"
 msgid "Send E-Mail"
 msgstr "Invia messaggio di posta elettronica"
 
-#: src/contents/ui/DetailPage.qml:233
+#: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
 msgstr ""
 
-#: src/contents/ui/DetailPage.qml:252
+#: src/contents/ui/DetailPage.qml:254
 #, fuzzy, kde-format
 #| msgid "Send email"
 msgid "Send Message"
 msgstr "Invia messaggio di posta elettronica"
 
-#: src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/DetailPage.qml:298
 #, kde-format
 msgid "Note:"
 msgstr "Nota:"
