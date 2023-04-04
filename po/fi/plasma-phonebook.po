@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-27 00:50+0000\n"
-"PO-Revision-Date: 2023-03-04 20:00+0200\n"
+"PO-Revision-Date: 2023-03-30 12:08+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -45,20 +45,18 @@ msgstr "Valokuva"
 #: src/contents/ui/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Lisää profiilikuva"
 
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Nimi:"
+msgstr "Nimi"
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Puhelin:"
+msgstr "Puhelin"
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -68,7 +66,7 @@ msgstr "+358 59 123 4567"
 #: src/contents/ui/AddContactPage.qml:210
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Lisää puhelinnumero"
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
@@ -84,14 +82,13 @@ msgstr "erkki@esimerkki.fi"
 #: src/contents/ui/AddContactPage.qml:286
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Lisää sähköpostiosoite"
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Pikaviestin:"
+msgstr "Pikaviestin"
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -99,16 +96,14 @@ msgid "protocol:person@example.com"
 msgstr "yhteyskaytanto:erkki@esimerkki.fi"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "Pikaviestin:"
+msgstr "Lisää pikaviestinosoite"
 
 #: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "Syntymäpäivä:"
+msgstr "Syntymäpäivä"
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -121,11 +116,11 @@ msgstr "Puhelinmuistio"
 msgid "Import contacts"
 msgstr "Tuo yhteystietoja"
 
+# Miksiköhän tämä alkaa pienaakkosella?
 #: src/contents/ui/ContactsPage.qml:92
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
-msgstr "Lisätään yhteystieto"
+msgstr "lisää yhteystieto"
 
 #: src/contents/ui/ContactsPage.qml:126
 #, kde-format
@@ -153,21 +148,19 @@ msgid "Send SMS"
 msgstr "Lähetä tekstiviesti"
 
 #: src/contents/ui/DetailPage.qml:227
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "Lähetä sähköpostia"
 
 #: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "Sähköposti"
 
 #: src/contents/ui/DetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Lähetä sähköpostia"
+msgstr "Lähetä viesti"
 
 #: src/contents/ui/DetailPage.qml:298
 #, kde-format
