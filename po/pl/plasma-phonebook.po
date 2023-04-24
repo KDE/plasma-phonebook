@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-27 00:50+0000\n"
-"PO-Revision-Date: 2023-02-12 09:39+0100\n"
+"PO-Revision-Date: 2023-04-23 12:32+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,20 +46,18 @@ msgstr "Zdjęcie"
 #: src/contents/ui/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Dodaj zdjęcie profilowe"
 
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Nazwa:"
+msgstr "Nazwa"
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Numer telefonu:"
+msgstr "Telefon"
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -69,7 +67,7 @@ msgstr "+1 555 2368"
 #: src/contents/ui/AddContactPage.qml:210
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Dodaj numer telefonu"
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
@@ -85,14 +83,13 @@ msgstr "użytkownik@przykład.org"
 #: src/contents/ui/AddContactPage.qml:286
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Dodatkowy adres e-mail"
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Komunikator:"
+msgstr "Komunikator"
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -100,16 +97,14 @@ msgid "protocol:person@example.com"
 msgstr "protokół:osoba@przykład.com"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "Komunikator:"
+msgstr "Dodaj adres komunikatora"
 
 #: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "Urodziny:"
+msgstr "Urodziny"
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -123,10 +118,9 @@ msgid "Import contacts"
 msgstr "Zaimportuj kontakty"
 
 #: src/contents/ui/ContactsPage.qml:92
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
-msgstr "Dodawanie kontaktu"
+msgstr "Dodaj kontakt"
 
 #: src/contents/ui/ContactsPage.qml:126
 #, kde-format
@@ -154,21 +148,19 @@ msgid "Send SMS"
 msgstr "Wyślij SMSa"
 
 #: src/contents/ui/DetailPage.qml:227
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "Wyślij wiadomość pocztową"
 
 #: src/contents/ui/DetailPage.qml:235
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "E-mail"
 
 #: src/contents/ui/DetailPage.qml:254
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Wyślij wiadomość pocztową"
+msgstr "Wyślij wiadomość"
 
 #: src/contents/ui/DetailPage.qml:298
 #, kde-format
