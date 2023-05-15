@@ -59,8 +59,7 @@ Kirigami.ScrollablePage {
             text: i18n("Delete contact")
             icon.name: "delete"
             onTriggered: {
-                KPeople.PersonPluginManager.deleteContact(page.personUri)
-                pageStack.pop()
+                removeDialog.open()
             }
         }
     }
@@ -306,6 +305,32 @@ Kirigami.ScrollablePage {
 
         Item {
             height: 60
+        }
+    }
+
+    Kirigami.Dialog {
+        id: removeDialog
+        standardButtons: Kirigami.Dialog.Yes | Kirigami.Dialog.Cancel
+        title: i18n("Remove Contact")
+        RowLayout {
+            Kirigami.Icon {
+                source: "dialog-warning"
+                Layout.margins: Kirigami.Units.largeSpacing
+            }
+
+            Label {
+                Layout.fillWidth: true
+                Layout.margins: Kirigami.Units.largeSpacing
+                text: i18n("Are you sure you want to delete <b>%1</b> from your Contacts?", personData.person.name)
+                wrapMode: Text.WordWrap
+            }
+        }
+        onRejected: {
+            close()
+        }
+        onAccepted: {
+            KPeople.PersonPluginManager.deleteContact(page.personUri)
+            pageStack.pop()
         }
     }
 }
