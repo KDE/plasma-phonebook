@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-27 00:50+0000\n"
+"POT-Creation-Date: 2023-05-16 00:49+0000\n"
 "PO-Revision-Date: 2023-03-30 12:08+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -100,7 +100,7 @@ msgstr "yhteyskaytanto:erkki@esimerkki.fi"
 msgid "Add instant messenger address"
 msgstr "Lisää pikaviestinosoite"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
 #, kde-format
 msgid "Birthday"
 msgstr "Syntymäpäivä"
@@ -137,35 +137,46 @@ msgstr "Muokkaa"
 msgid "Delete contact"
 msgstr "Poista yhteystieto"
 
-#: src/contents/ui/DetailPage.qml:193
+#: src/contents/ui/DetailPage.qml:192
 #, kde-format
 msgid "Call"
 msgstr "Puhelu"
 
-#: src/contents/ui/DetailPage.qml:200
+#: src/contents/ui/DetailPage.qml:199
 #, kde-format
 msgid "Send SMS"
 msgstr "Lähetä tekstiviesti"
 
-#: src/contents/ui/DetailPage.qml:227
+#: src/contents/ui/DetailPage.qml:226
 #, kde-format
 msgid "Send E-Mail"
 msgstr "Lähetä sähköpostia"
 
-#: src/contents/ui/DetailPage.qml:235
+#: src/contents/ui/DetailPage.qml:234
 #, kde-format
 msgid "E-Mail"
 msgstr "Sähköposti"
 
-#: src/contents/ui/DetailPage.qml:254
+#: src/contents/ui/DetailPage.qml:253
 #, kde-format
 msgid "Send Message"
 msgstr "Lähetä viesti"
 
-#: src/contents/ui/DetailPage.qml:298
+#: src/contents/ui/DetailPage.qml:297
 #, kde-format
 msgid "Note:"
 msgstr "Huomautus:"
+
+#: src/contents/ui/DetailPage.qml:314
+#, fuzzy, kde-format
+#| msgid "Delete contact"
+msgid "Remove Contact"
+msgstr "Poista yhteystieto"
+
+#: src/contents/ui/DetailPage.qml:324
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr ""
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format

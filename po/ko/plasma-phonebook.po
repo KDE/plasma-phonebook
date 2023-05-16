@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-27 00:50+0000\n"
+"POT-Creation-Date: 2023-05-16 00:49+0000\n"
 "PO-Revision-Date: 2023-04-22 00:14+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -100,7 +100,7 @@ msgstr "protocol:person@example.com"
 msgid "Add instant messenger address"
 msgstr "인스턴트 메신저 주소 추가"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
 #, kde-format
 msgid "Birthday"
 msgstr "생일"
@@ -136,35 +136,46 @@ msgstr "편집"
 msgid "Delete contact"
 msgstr "연락처 삭제"
 
-#: src/contents/ui/DetailPage.qml:193
+#: src/contents/ui/DetailPage.qml:192
 #, kde-format
 msgid "Call"
 msgstr "통화"
 
-#: src/contents/ui/DetailPage.qml:200
+#: src/contents/ui/DetailPage.qml:199
 #, kde-format
 msgid "Send SMS"
 msgstr "SMS 보내기"
 
-#: src/contents/ui/DetailPage.qml:227
+#: src/contents/ui/DetailPage.qml:226
 #, kde-format
 msgid "Send E-Mail"
 msgstr "이메일 보내기"
 
-#: src/contents/ui/DetailPage.qml:235
+#: src/contents/ui/DetailPage.qml:234
 #, kde-format
 msgid "E-Mail"
 msgstr "이메일"
 
-#: src/contents/ui/DetailPage.qml:254
+#: src/contents/ui/DetailPage.qml:253
 #, kde-format
 msgid "Send Message"
 msgstr "메시지 보내기"
 
-#: src/contents/ui/DetailPage.qml:298
+#: src/contents/ui/DetailPage.qml:297
 #, kde-format
 msgid "Note:"
 msgstr "메모:"
+
+#: src/contents/ui/DetailPage.qml:314
+#, fuzzy, kde-format
+#| msgid "Delete contact"
+msgid "Remove Contact"
+msgstr "연락처 삭제"
+
+#: src/contents/ui/DetailPage.qml:324
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr ""
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format

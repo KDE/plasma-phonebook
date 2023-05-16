@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-27 00:50+0000\n"
+"POT-Creation-Date: 2023-05-16 00:49+0000\n"
 "PO-Revision-Date: 2023-03-30 12:18+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -100,7 +100,7 @@ msgstr "protocol:persona@exexemplo.com"
 msgid "Add instant messenger address"
 msgstr "Adde adresse de messagero instantanee"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:277
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
 #, kde-format
 msgid "Birthday"
 msgstr "Anniversario de nativitate"
@@ -136,35 +136,46 @@ msgstr "Modifica"
 msgid "Delete contact"
 msgstr "Dele contacto"
 
-#: src/contents/ui/DetailPage.qml:193
+#: src/contents/ui/DetailPage.qml:192
 #, kde-format
 msgid "Call"
 msgstr "Appello"
 
-#: src/contents/ui/DetailPage.qml:200
+#: src/contents/ui/DetailPage.qml:199
 #, kde-format
 msgid "Send SMS"
 msgstr "Invia SMS"
 
-#: src/contents/ui/DetailPage.qml:227
+#: src/contents/ui/DetailPage.qml:226
 #, kde-format
 msgid "Send E-Mail"
 msgstr "Invia e-posta"
 
-#: src/contents/ui/DetailPage.qml:235
+#: src/contents/ui/DetailPage.qml:234
 #, kde-format
 msgid "E-Mail"
 msgstr "E-posta"
 
-#: src/contents/ui/DetailPage.qml:254
+#: src/contents/ui/DetailPage.qml:253
 #, kde-format
 msgid "Send Message"
 msgstr "Invia Message"
 
-#: src/contents/ui/DetailPage.qml:298
+#: src/contents/ui/DetailPage.qml:297
 #, kde-format
 msgid "Note:"
 msgstr "Nota:"
+
+#: src/contents/ui/DetailPage.qml:314
+#, fuzzy, kde-format
+#| msgid "Delete contact"
+msgid "Remove Contact"
+msgstr "Dele contacto"
+
+#: src/contents/ui/DetailPage.qml:324
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr ""
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
