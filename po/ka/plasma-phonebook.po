@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-16 00:49+0000\n"
-"PO-Revision-Date: 2023-03-21 06:57+0100\n"
+"PO-Revision-Date: 2023-05-17 05:43+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -168,8 +168,7 @@ msgid "Note:"
 msgstr "შენიშვნა:"
 
 #: src/contents/ui/DetailPage.qml:314
-#, fuzzy, kde-format
-#| msgid "Delete contact"
+#, kde-format
 msgid "Remove Contact"
 msgstr "კონტაქტის წაშლა"
 
@@ -177,6 +176,7 @@ msgstr "კონტაქტის წაშლა"
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
 msgstr ""
+"დარწმუნებული ბრძანდებით, რომ გნებავთ, <b>%1</b> თქვენი კონტაქტებიდან წაშალოთ?"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
