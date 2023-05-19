@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-16 00:49+0000\n"
-"PO-Revision-Date: 2023-04-26 21:20+0200\n"
+"PO-Revision-Date: 2023-05-18 20:01+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -168,15 +168,14 @@ msgid "Note:"
 msgstr "Notiz:"
 
 #: src/contents/ui/DetailPage.qml:314
-#, fuzzy, kde-format
-#| msgid "Delete contact"
+#, kde-format
 msgid "Remove Contact"
-msgstr "Kontakt löschen"
+msgstr "Kontakt entfernen"
 
 #: src/contents/ui/DetailPage.qml:324
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
-msgstr ""
+msgstr "Möchten Sie <b>%1</b> wirklich aus Ihren Kontakten löschen?"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
