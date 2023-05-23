@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-16 00:49+0000\n"
-"PO-Revision-Date: 2023-04-29 08:34\n"
+"PO-Revision-Date: 2023-05-22 14:01\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -167,10 +167,9 @@ msgid "Note:"
 msgstr "备注："
 
 #: src/contents/ui/DetailPage.qml:314
-#, fuzzy, kde-format
-#| msgid "Delete contact"
+#, kde-format
 msgid "Remove Contact"
-msgstr "删除联系人"
+msgstr ""
 
 #: src/contents/ui/DetailPage.qml:324
 #, kde-format
