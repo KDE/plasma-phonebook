@@ -1,0 +1,188 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-05-16 00:49+0000\n"
+"PO-Revision-Date: 2023-06-05 08:49+0200\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Adrian Chaves (Gallaecio)"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "adrian@chaves.io"
+
+#: src/contents/ui/AddContactPage.qml:40
+#, kde-format
+msgid "Adding contact"
+msgstr "Engadindo un contacto"
+
+#: src/contents/ui/AddContactPage.qml:44
+#, kde-format
+msgid "Editing contact"
+msgstr "Editando un contacto"
+
+#: src/contents/ui/AddContactPage.qml:62
+#, kde-format
+msgid "Photo"
+msgstr "Foto"
+
+#: src/contents/ui/AddContactPage.qml:111
+#, kde-format
+msgid "Add profile picture"
+msgstr "Engadir unha foto de perfil"
+
+#: src/contents/ui/AddContactPage.qml:124
+#, kde-format
+msgid "Name"
+msgstr "Nome"
+
+#: src/contents/ui/AddContactPage.qml:152
+#: src/contents/ui/AddContactPage.qml:174
+#, kde-format
+msgid "Phone"
+msgstr "Teléfono"
+
+#: src/contents/ui/AddContactPage.qml:176
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:210
+#, kde-format
+msgid "Add phone number"
+msgstr "Engadir un número de teléfono"
+
+#: src/contents/ui/AddContactPage.qml:239
+#: src/contents/ui/AddContactPage.qml:261
+#, kde-format
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: src/contents/ui/AddContactPage.qml:263
+#, kde-format
+msgid "user@example.org"
+msgstr "persoa@example.org"
+
+#: src/contents/ui/AddContactPage.qml:286
+#, kde-format
+msgid "Add email address"
+msgstr "Engadir un enderezo de correo electrónico"
+
+#: src/contents/ui/AddContactPage.qml:315
+#: src/contents/ui/AddContactPage.qml:336
+#, kde-format
+msgid "Instant Messenger"
+msgstr "Mensaxaría instantánea"
+
+#: src/contents/ui/AddContactPage.qml:338
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocolo:persoa@example.com"
+
+#: src/contents/ui/AddContactPage.qml:369
+#, kde-format
+msgid "Add instant messenger address"
+msgstr "Engadir un enderezo de mensaxaría instantánea"
+
+#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
+#, kde-format
+msgid "Birthday"
+msgstr "Aniversario"
+
+#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/main.cpp:36
+#, kde-format
+msgid "Phonebook"
+msgstr "Axenda"
+
+#: src/contents/ui/ContactsPage.qml:81
+#, kde-format
+msgid "Import contacts"
+msgstr "Importar contactos"
+
+#: src/contents/ui/ContactsPage.qml:92
+#, kde-format
+msgid "add Contact"
+msgstr "Engadir un contacto"
+
+#: src/contents/ui/ContactsPage.qml:126
+#, kde-format
+msgid "No contacts"
+msgstr "Non hai contactos"
+
+#: src/contents/ui/DetailPage.qml:54
+#, kde-format
+msgid "Edit"
+msgstr "Editar"
+
+#: src/contents/ui/DetailPage.qml:59
+#, kde-format
+msgid "Delete contact"
+msgstr "Eliminar o contacto"
+
+#: src/contents/ui/DetailPage.qml:192
+#, kde-format
+msgid "Call"
+msgstr "Chamar"
+
+#: src/contents/ui/DetailPage.qml:199
+#, kde-format
+msgid "Send SMS"
+msgstr "Enviar unha SMS"
+
+#: src/contents/ui/DetailPage.qml:226
+#, kde-format
+msgid "Send E-Mail"
+msgstr "Enviar unha mensaxe de correo electrónico"
+
+#: src/contents/ui/DetailPage.qml:234
+#, kde-format
+msgid "E-Mail"
+msgstr "Mensaxe de correo electrónico"
+
+#: src/contents/ui/DetailPage.qml:253
+#, kde-format
+msgid "Send Message"
+msgstr "Enviar a mensaxe"
+
+#: src/contents/ui/DetailPage.qml:297
+#, kde-format
+msgid "Note:"
+msgstr "Nota:"
+
+#: src/contents/ui/DetailPage.qml:314
+#, kde-format
+msgid "Remove Contact"
+msgstr "Eliminar o contacto"
+
+#: src/contents/ui/DetailPage.qml:324
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr "Seguro que quere eliminar a <b>%1</b> da axenda?"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
+#, kde-format
+msgctxt "Action to write to instant messenger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:38
+#, kde-format
+msgid "View and edit contacts"
+msgstr "Ver e editar contactos"
