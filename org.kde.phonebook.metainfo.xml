@@ -12,6 +12,7 @@
   <name xml:lang="eu">Telefono-liburua</name>
   <name xml:lang="fi">Phonebook</name>
   <name xml:lang="fr">Phonebook</name>
+  <name xml:lang="gl">Axenda</name>
   <name xml:lang="hu">Névjegyek</name>
   <name xml:lang="id">Buku Telepon</name>
   <name xml:lang="is">Símaskrá</name>
@@ -45,6 +46,7 @@
   <summary xml:lang="eu">Ikusi eta editatu kontaktuak</summary>
   <summary xml:lang="fi">Tarkastele ja muokkaa yhteystietoja</summary>
   <summary xml:lang="fr">Modifier et afficher les contacts</summary>
+  <summary xml:lang="gl">Ver e editar contactos</summary>
   <summary xml:lang="hu">Névjegyek megjelenítése és szerkesztése</summary>
   <summary xml:lang="id">Lihat dan sunting kontak</summary>
   <summary xml:lang="is">Skoða tengiliði og breyta</summary>
@@ -83,6 +85,7 @@
   <developer_name xml:lang="eu">KDE komunitatea</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">Communauté KDE</developer_name>
+  <developer_name xml:lang="gl">Comunidade KDE</developer_name>
   <developer_name xml:lang="hu">A KDE Közösség</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="is">KDE-samfélagið</developer_name>
@@ -118,6 +121,7 @@
     <p xml:lang="eu">Kontaktuak kudeatzeko aplikazio konbergentea, mahaigainerako eta gailu mugikorretarako.</p>
     <p xml:lang="fi">Yhteystietojen hallinta rinnakkain työpöytä- ja mobiililaitteissa.</p>
     <p xml:lang="fr">Une application de gestion convergente de contacts à la fois pour les périphériques de bureau et sur mobile.</p>
+    <p xml:lang="gl">Aplicación converxente de xestión de contactos tanto para escritorio como para dispositivos móbiles.</p>
     <p xml:lang="hu">Konvergens névjegykezelő alkalmazás asztali és mobil eszközökhöz.</p>
     <p xml:lang="id">Aplikasi pengelolaan kontak yang terpusat untuk kedua peranti desktop dan ponsel.</p>
     <p xml:lang="is">Þægilegt forrit til halda utan um tengiliði fyrir bæði borðtölvur og snjalltæki.</p>
@@ -153,6 +157,7 @@
     <p xml:lang="eu">Elkarrizketak abiatzeko leku nagusi bat eskaintzen du. Kontaktu bati buruz erabilgarri dagoen informazioaren arabera, dagokien ekintzak azaltzen dira.</p>
     <p xml:lang="fi">Tarjoaa keskeisen paikan viestinnän aloittamiseen. Eri toimintoja tulee käyttöön saatavilla olevien tietojen mukaan.</p>
     <p xml:lang="fr">Il fournit une place centrale pour démarrer des conversions. Selon les informations disponibles concernant un contact, les actions respectives sont affichés.</p>
+    <p xml:lang="gl">Fornece un lugar central para iniciar conversas. Móstranse as accións correspondentes á información que se ten do contacto.</p>
     <p xml:lang="hu">Központi helyet biztosít beszélgetések indításához. A névjegyről elérhető információktól függően különböző műveletekre ad lehetőséget.</p>
     <p xml:lang="id">Ini menyediakan tempat sentral untuk memulai percakapan. Tergantung pada informasi yang tersedia tentang kontak, aksi masing-masing akan ditampilkan.</p>
     <p xml:lang="is">Býður upp á miðlægan stað til að hefja samtöl. Aðgerðir sem eruí boði eru sýndar, en þær velta á tiltækum upplýsingum um hvern tengilið.</p>
@@ -187,6 +192,7 @@
     <p xml:lang="eu">Ezaugarriak</p>
     <p xml:lang="fi">Ominaisuuksia</p>
     <p xml:lang="fr">Fonctionnalités</p>
+    <p xml:lang="gl">Funcionalidades</p>
     <p xml:lang="hu">Szolgáltatások</p>
     <p xml:lang="id">Fitur</p>
     <p xml:lang="is">Eiginleikar</p>
@@ -224,6 +230,7 @@
       <li xml:lang="eu">Gehitu kontaktuak</li>
       <li xml:lang="fi">Lisää yhteystietoja</li>
       <li xml:lang="fr">Ajouter des contacts</li>
+      <li xml:lang="gl">Engadir contactos</li>
       <li xml:lang="hu">Névjegyek hozzáadása</li>
       <li xml:lang="id">Tambahkan kontak</li>
       <li xml:lang="is">Bæta í tengiliði</li>
@@ -259,6 +266,7 @@
       <li xml:lang="eu">Kendu kontaktuak</li>
       <li xml:lang="fi">Poista yhteystietoja</li>
       <li xml:lang="fr">Supprimer des contacts</li>
+      <li xml:lang="gl">Eliminar contactos</li>
       <li xml:lang="hu">Névjegyek törlése</li>
       <li xml:lang="id">Hapus kontak</li>
       <li xml:lang="is">Fjarlægja tengiliði</li>
@@ -294,6 +302,7 @@
       <li xml:lang="eu">Inportatu vCard fitxategiak</li>
       <li xml:lang="fi">Tuo vCard-tiedostoja</li>
       <li xml:lang="fr">Importer des fichiers « VCard »</li>
+      <li xml:lang="gl">Importar ficheiros vCard</li>
       <li xml:lang="hu">vCard-fájlok importálása</li>
       <li xml:lang="id">Impor berkas vCard</li>
       <li xml:lang="is">Flytja inn vCard-skrár</li>
@@ -336,6 +345,7 @@
       <caption xml:lang="eu">Kontaktuen ikuspegi orokorra</caption>
       <caption xml:lang="fi">Yhteystiedon yleiskuva</caption>
       <caption xml:lang="fr">Aperçu des contacts</caption>
+      <caption xml:lang="gl">Vista xeral dun contacto</caption>
       <caption xml:lang="hu">Névjegyáttekintés</caption>
       <caption xml:lang="id">Ikhtisar kontak</caption>
       <caption xml:lang="is">Yfirlit yfir tengilið</caption>
