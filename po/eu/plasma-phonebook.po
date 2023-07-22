@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-16 00:49+0000\n"
-"PO-Revision-Date: 2023-01-12 21:33+0100\n"
+"PO-Revision-Date: 2023-07-21 12:38+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -48,20 +48,18 @@ msgstr "Argazkia"
 #: src/contents/ui/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Gehitu profileko irudia"
 
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Izena:"
+msgstr "Izena"
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Telefonoa:"
+msgstr "Telefonoa"
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -71,7 +69,7 @@ msgstr "+1 555 2368"
 #: src/contents/ui/AddContactPage.qml:210
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Gehitu telefono zenbakia"
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
@@ -87,14 +85,13 @@ msgstr "erabiltzailea@adibidea.org"
 #: src/contents/ui/AddContactPage.qml:286
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Gehitu e-posta helbidea"
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Bat-bateko mezularia:"
+msgstr "Bat-bateko mezularia"
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -102,16 +99,14 @@ msgid "protocol:person@example.com"
 msgstr "protokoloa:nor@adibidea.com"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "Bat-bateko mezularia:"
+msgstr "Gehitu bat-bateko mezulariaren helbidea"
 
 #: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "Jaioteguna:"
+msgstr "Jaioteguna"
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -125,10 +120,9 @@ msgid "Import contacts"
 msgstr "Inportatu kontaktuak"
 
 #: src/contents/ui/ContactsPage.qml:92
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
-msgstr "Kontatua gehitzea"
+msgstr "gehitu kontaktua"
 
 #: src/contents/ui/ContactsPage.qml:126
 #, kde-format
@@ -156,21 +150,19 @@ msgid "Send SMS"
 msgstr "Bidali SMSa"
 
 #: src/contents/ui/DetailPage.qml:226
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "Bidali e-posta"
 
 #: src/contents/ui/DetailPage.qml:234
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "E-posta"
 
 #: src/contents/ui/DetailPage.qml:253
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Bidali e-posta"
+msgstr "Bidali mezua"
 
 #: src/contents/ui/DetailPage.qml:297
 #, kde-format
@@ -178,15 +170,14 @@ msgid "Note:"
 msgstr "Oharra:"
 
 #: src/contents/ui/DetailPage.qml:314
-#, fuzzy, kde-format
-#| msgid "Delete contact"
+#, kde-format
 msgid "Remove Contact"
-msgstr "Ezabatu kontaktua"
+msgstr "Kendu kontaktua"
 
 #: src/contents/ui/DetailPage.qml:324
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
-msgstr ""
+msgstr "Ziur zaude <b>%1</b> zure kontaktuen artetik ezabatu nahi duzula?"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
 #, kde-format
