@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-phonebook package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2019, 2021.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2019, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-16 00:49+0000\n"
-"PO-Revision-Date: 2021-05-15 15:36+0200\n"
+"PO-Revision-Date: 2023-07-31 11:07+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -45,20 +45,18 @@ msgstr "Foto"
 #: src/contents/ui/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Lägg till profilbild"
 
 #: src/contents/ui/AddContactPage.qml:124
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Namn:"
+msgstr "Namn"
 
 #: src/contents/ui/AddContactPage.qml:152
 #: src/contents/ui/AddContactPage.qml:174
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Telefon:"
+msgstr "Telefon"
 
 #: src/contents/ui/AddContactPage.qml:176
 #, kde-format
@@ -68,7 +66,7 @@ msgstr "+46 8 11 12 13"
 #: src/contents/ui/AddContactPage.qml:210
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Lägg till telefonnummer"
 
 #: src/contents/ui/AddContactPage.qml:239
 #: src/contents/ui/AddContactPage.qml:261
@@ -84,14 +82,13 @@ msgstr "användare@exempel.org"
 #: src/contents/ui/AddContactPage.qml:286
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Lägg till e-postadress"
 
 #: src/contents/ui/AddContactPage.qml:315
 #: src/contents/ui/AddContactPage.qml:336
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Direktmeddelande:"
+msgstr "Direktmeddelande"
 
 #: src/contents/ui/AddContactPage.qml:338
 #, kde-format
@@ -99,16 +96,14 @@ msgid "protocol:person@example.com"
 msgstr "protokoll:person@exempel.com"
 
 #: src/contents/ui/AddContactPage.qml:369
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
-msgstr "Direktmeddelande:"
+msgstr "Lägg till direktmeddelandeadress"
 
 #: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "Födelsedag:"
+msgstr "Födelsedag"
 
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
 #: src/main.cpp:36
@@ -122,10 +117,9 @@ msgid "Import contacts"
 msgstr "Importerar kontakter"
 
 #: src/contents/ui/ContactsPage.qml:92
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
-msgstr "Lägger till kontakt"
+msgstr "Lägg till kontakt"
 
 #: src/contents/ui/ContactsPage.qml:126
 #, kde-format
@@ -153,42 +147,37 @@ msgid "Send SMS"
 msgstr "Skicka SMS"
 
 #: src/contents/ui/DetailPage.qml:226
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
-msgstr "Skicka e-post"
+msgstr "Skicka brev"
 
 #: src/contents/ui/DetailPage.qml:234
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "E-post"
 
 #: src/contents/ui/DetailPage.qml:253
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Skicka e-post"
+msgstr "Skicka meddelande"
 
 #: src/contents/ui/DetailPage.qml:297
 #, kde-format
 msgid "Note:"
-msgstr ""
+msgstr "Anteckning:"
 
 #: src/contents/ui/DetailPage.qml:314
-#, fuzzy, kde-format
-#| msgid "Delete contact"
+#, kde-format
 msgid "Remove Contact"
 msgstr "Ta bort kontakt"
 
 #: src/contents/ui/DetailPage.qml:324
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
-msgstr ""
+msgstr "Är du säker på att du vill ta bort <b>%1</b> från dina kontakter?"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
-#, fuzzy, kde-format
-#| msgctxt "Action to write to instant messanger contact"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
