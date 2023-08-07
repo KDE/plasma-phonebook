@@ -48,7 +48,7 @@
   <summary xml:lang="eu">Ikusi eta editatu kontaktuak</summary>
   <summary xml:lang="fi">Tarkastele ja muokkaa yhteystietoja</summary>
   <summary xml:lang="fr">Modifier et afficher les contacts</summary>
-  <summary xml:lang="gl">Ver e editar contactos</summary>
+  <summary xml:lang="gl">Ver e editar contactos.</summary>
   <summary xml:lang="hu">Névjegyek megjelenítése és szerkesztése</summary>
   <summary xml:lang="id">Lihat dan sunting kontak</summary>
   <summary xml:lang="is">Skoða tengiliði og breyta</summary>
@@ -198,7 +198,7 @@
     <p xml:lang="eu">Ezaugarriak</p>
     <p xml:lang="fi">Ominaisuuksia</p>
     <p xml:lang="fr">Fonctionnalités</p>
-    <p xml:lang="gl">Funcionalidades</p>
+    <p xml:lang="gl">Funcionalidades:</p>
     <p xml:lang="hu">Szolgáltatások</p>
     <p xml:lang="id">Fitur</p>
     <p xml:lang="is">Eiginleikar</p>
@@ -355,7 +355,7 @@
       <caption xml:lang="eu">Kontaktuen ikuspegi orokorra</caption>
       <caption xml:lang="fi">Yhteystiedon yleiskuva</caption>
       <caption xml:lang="fr">Aperçu des contacts</caption>
-      <caption xml:lang="gl">Vista xeral dun contacto</caption>
+      <caption xml:lang="gl">Vista xeral dun contacto.</caption>
       <caption xml:lang="hu">Névjegyáttekintés</caption>
       <caption xml:lang="id">Ikhtisar kontak</caption>
       <caption xml:lang="is">Yfirlit yfir tengilið</caption>
