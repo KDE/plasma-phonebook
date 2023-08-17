@@ -8,11 +8,12 @@
 import QtQuick 2.6
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.2
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import org.kde.people 1.0 as KPeople
 import org.kde.kirigami 2.19 as Kirigami
 import org.kde.phonebook 1.0
 import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
+import org.kde.kirigamiaddons.components 1.0 as KirigamiComponents
 
 import "components"
 
@@ -137,7 +138,7 @@ Kirigami.ScrollablePage {
                     shadow.yOffset: 5
                     shadow.color: Qt.rgba(0, 0, 0, 0.2)
 
-                    Kirigami.Avatar {
+                    KirigamiComponents.Avatar {
                         id: avatar
 
                         height: parent.height
@@ -145,7 +146,7 @@ Kirigami.ScrollablePage {
 
                         source: personData.photoImageProviderUri
                         name: personData.person.name
-                        imageMode: Kirigami.Avatar.ImageMode.AdaptiveImageOrInitals
+                        imageMode: KirigamiComponents.Avatar.ImageMode.AdaptiveImageOrInitals
                     }
 
                 }

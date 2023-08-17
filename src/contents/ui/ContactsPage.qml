@@ -48,7 +48,7 @@ Kirigami.ScrollablePage {
                         id: optionsDrawer
                         drawerContentItem: ColumnLayout {
                             Repeater {
-                                model: root.actions.contextualActions
+                                model: root.actions
                                 delegate: Kirigami.BasicListItem{
                                     required property var modelData
                                     label: modelData.text
@@ -75,7 +75,7 @@ Kirigami.ScrollablePage {
 
 
 
-    actions.contextualActions: [
+    actions: [
         Kirigami.Action {
             icon.name: "document-import"
             text: i18n("Import contacts")
