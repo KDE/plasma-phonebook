@@ -134,7 +134,7 @@ Kirigami.ScrollablePage {
             imageProviderUri: model && model.photoImageProviderUri
 
             onClicked: {
-                pageStack.push("qrc:/DetailPage.qml", {
+                pageStack.push("qrc:/qml/DetailPage.qml", {
                     personUri: model.personUri
                 })
                 ContactController.lastPersonUri = model.personUri;

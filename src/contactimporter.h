@@ -10,10 +10,12 @@
 #include <KContacts/VCardConverter>
 #include <QFileDialog>
 #include <QObject>
+#include <QQmlEngine>
 
 class ContactImporter : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
 public:
     explicit ContactImporter(QObject *parent = nullptr);
     Q_INVOKABLE void startImport();

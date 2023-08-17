@@ -36,6 +36,8 @@ if(ANDROID)
     find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras)
 endif()
 
+qt_policy(SET QTP0001 NEW)
+
 add_subdirectory(src)
 
 ki18n_install(po)

@@ -48,9 +48,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
-    qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
-    qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);
-
 #ifdef Q_OS_ANDROID
     QtAndroid::requestPermissionsSync({QStringLiteral("android.permission.WRITE_EXTERNAL_STORAGE")});
 #endif
@@ -61,10 +58,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qRegisterMetaType<KContacts::Impp>();
     qRegisterMetaType<KContacts::PhoneNumber>();
 
-    ContactController contactController;
-    qmlRegisterSingletonInstance("org.kde.phonebook", 1, 0, "ContactController", &contactController);
-
-    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:///qml/main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

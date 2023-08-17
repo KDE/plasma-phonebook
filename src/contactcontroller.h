@@ -8,6 +8,8 @@
 
 #include <QImage>
 #include <QObject>
+#include <QQmlEngine>
+#include <QQuickWindow>
 
 #include <KContacts/Addressee>
 #include <KContacts/Email>
@@ -19,11 +21,12 @@
 #include <memory>
 
 class QFileDialog;
-class QQuickWindow;
 
 class ContactController : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
+    QML_SINGLETON
 
     Q_PROPERTY(QString lastPersonUri READ lastPersonUri WRITE setLastPersonUri NOTIFY lastPersonUriChanged)
 
