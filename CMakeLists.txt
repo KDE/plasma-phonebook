@@ -27,14 +27,10 @@ ecm_setup_version(${PROJECT_VERSION}
     VARIABLE_PREFIX PLASMAPHONEBOOK
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Widgets)
-find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts Config)
-find_package(KF${QT_MAJOR_VERSION}PeopleVCard REQUIRED)
-find_package(KF${QT_MAJOR_VERSION}KirigamiAddons 0.6 REQUIRED)
-
-if(ANDROID)
-    find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras)
-endif()
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Widgets)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami2 People Contacts Config)
+find_package(KF6PeopleVCard REQUIRED)
+find_package(KF6KirigamiAddons 0.11 REQUIRED)
 
 add_subdirectory(src)
 

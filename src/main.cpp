@@ -29,7 +29,6 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QCommandLineParser parser;
-    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication app(argc, argv);
 
     KAboutData aboutData(QStringLiteral("plasma-phonebook"),

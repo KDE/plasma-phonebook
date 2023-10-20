@@ -9,12 +9,12 @@ target_include_directories(plasma-phonebook PRIVATE ${CMAKE_BINARY_DIR})
 
 target_link_libraries(plasma-phonebook
         Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Widgets
-        KF${QT_MAJOR_VERSION}::Contacts KF${QT_MAJOR_VERSION}::People KF${QT_MAJOR_VERSION}::I18n KF${QT_MAJOR_VERSION}::CoreAddons
-        KF${QT_MAJOR_VERSION}::ConfigCore KF${QT_MAJOR_VERSION}::ConfigGui
+        KF6::Contacts KF6::People KF6::I18n KF6::CoreAddons
+        KF6::ConfigCore KF6::ConfigGui
 )
 
 if(ANDROID)
-    target_link_libraries(plasma-phonebook KF${QT_MAJOR_VERSION}::Kirigami2 Qt::Svg Qt::AndroidExtras)
+    target_link_libraries(plasma-phonebook KF6::Kirigami2 Qt::Svg)
 
     kirigami_package_breeze_icons(ICONS
         go-down-symbolic

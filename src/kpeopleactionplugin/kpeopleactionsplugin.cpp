@@ -13,11 +13,7 @@
 #include <KPluginFactory>
 
 #include <KContacts/VCardConverter>
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-#include <KPeople/Widgets/Actions>
-#else
 #include <KPeople/Actions>
-#endif
 #include <KPeopleBackend/AbstractContact>
 
 KPeopleActionsPlugin::KPeopleActionsPlugin(QObject *parent, const QVariantList &args)

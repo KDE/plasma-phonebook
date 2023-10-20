@@ -8,9 +8,9 @@
 import QtQuick 2.3
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.0 as Controls
-import QtGraphicalEffects 1.0
 
 import org.kde.kirigami 2.14 as Kirigami
+import org.kde.kirigamiaddons.components 1.0 as Components
 import org.kde.people 1.0 as KPeople
 
 Kirigami.AbstractListItem {
@@ -20,14 +20,14 @@ Kirigami.AbstractListItem {
     property alias imageProviderUri: avatar.source
 
     contentItem: RowLayout {
-        Kirigami.Avatar {
+        Components.Avatar {
             id: avatar
             height: parent.height
             implicitHeight: parent.height // FIXME Kirigami.Avatar doesn't properly propagate
                                           // its implicitHeight and implicitWidth
             implicitWidth: implicitHeight
             name: listItem.name
-            imageMode: Kirigami.Avatar.ImageMode.AdaptiveImageOrInitals
+            imageMode: Components.Avatar.ImageMode.AdaptiveImageOrInitals
         }
 
         Kirigami.Heading {

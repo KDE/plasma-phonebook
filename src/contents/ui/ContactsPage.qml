@@ -75,15 +75,14 @@ Kirigami.ScrollablePage {
 
 
 
-    actions.contextualActions: [
-        Kirigami.Action {
-            icon.name: "document-import"
-            text: i18n("Import contacts")
-            onTriggered: {
-                importer.startImport()
-            }
+    actions: Kirigami.Action {
+        icon.name: "document-import"
+        text: i18n("Import contacts")
+        onTriggered: {
+            importer.startImport()
         }
-    ]
+    }
+
     ActionButton {
         parent: overlay
         x: root.width - width - margin
