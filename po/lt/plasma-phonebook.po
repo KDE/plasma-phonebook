@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-16 00:49+0000\n"
+"POT-Creation-Date: 2023-10-23 01:41+0000\n"
 "PO-Revision-Date: 2021-09-10 13:39+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,165 +29,165 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "<>"
 
-#: src/contents/ui/AddContactPage.qml:40
+#: src/contents/ui/AddContactPage.qml:37
 #, kde-format
 msgid "Adding contact"
 msgstr "Pridedamas adresatas"
 
-#: src/contents/ui/AddContactPage.qml:44
+#: src/contents/ui/AddContactPage.qml:41
 #, kde-format
 msgid "Editing contact"
 msgstr "Taisomas adresatas"
 
-#: src/contents/ui/AddContactPage.qml:62
+#: src/contents/ui/AddContactPage.qml:51
 #, kde-format
 msgid "Photo"
 msgstr "Nuotrauka"
 
-#: src/contents/ui/AddContactPage.qml:111
+#: src/contents/ui/AddContactPage.qml:107
 #, kde-format
 msgid "Add profile picture"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:124
+#: src/contents/ui/AddContactPage.qml:117
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgid "Name"
 msgstr "Vardas:"
 
-#: src/contents/ui/AddContactPage.qml:152
-#: src/contents/ui/AddContactPage.qml:174
+#: src/contents/ui/AddContactPage.qml:156
+#: src/contents/ui/AddContactPage.qml:178
 #, fuzzy, kde-format
 #| msgid "Phone:"
 msgid "Phone"
 msgstr "Telefonas:"
 
-#: src/contents/ui/AddContactPage.qml:176
+#: src/contents/ui/AddContactPage.qml:180
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+370 123 45678"
 
-#: src/contents/ui/AddContactPage.qml:210
+#: src/contents/ui/AddContactPage.qml:202
 #, kde-format
 msgid "Add phone number"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:239
-#: src/contents/ui/AddContactPage.qml:261
+#: src/contents/ui/AddContactPage.qml:241
+#: src/contents/ui/AddContactPage.qml:263
 #, kde-format
 msgid "Email"
 msgstr "Rašyti el. laišką"
 
-#: src/contents/ui/AddContactPage.qml:263
+#: src/contents/ui/AddContactPage.qml:265
 #, kde-format
 msgid "user@example.org"
 msgstr "naudotojas@example.org"
 
-#: src/contents/ui/AddContactPage.qml:286
+#: src/contents/ui/AddContactPage.qml:276
 #, kde-format
 msgid "Add email address"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:315
-#: src/contents/ui/AddContactPage.qml:336
+#: src/contents/ui/AddContactPage.qml:314
+#: src/contents/ui/AddContactPage.qml:335
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Instant Messenger"
 msgstr "Pokalbių programa:"
 
-#: src/contents/ui/AddContactPage.qml:338
+#: src/contents/ui/AddContactPage.qml:337
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokolas:asmuo@example.com"
 
-#: src/contents/ui/AddContactPage.qml:369
+#: src/contents/ui/AddContactPage.qml:356
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Add instant messenger address"
 msgstr "Pokalbių programa:"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
+#: src/contents/ui/AddContactPage.qml:375 src/contents/ui/DetailPage.qml:281
 #, fuzzy, kde-format
 #| msgid "Birthday:"
 msgid "Birthday"
 msgstr "Gimimo diena:"
 
+#: src/contents/ui/AddContactPage.qml:394 src/contents/ui/DetailPage.qml:296
+#, kde-format
+msgid "Note:"
+msgstr ""
+
 #: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
-#: src/main.cpp:36
+#: src/main.cpp:35
 #, kde-format
 msgid "Phonebook"
 msgstr "Telefonų knyga"
 
-#: src/contents/ui/ContactsPage.qml:81
+#: src/contents/ui/ContactsPage.qml:80
 #, kde-format
 msgid "Import contacts"
 msgstr "Importuoti adresatus"
 
-#: src/contents/ui/ContactsPage.qml:92
+#: src/contents/ui/ContactsPage.qml:91
 #, fuzzy, kde-format
 #| msgid "Adding contact"
 msgid "add Contact"
 msgstr "Pridedamas adresatas"
 
-#: src/contents/ui/ContactsPage.qml:126
+#: src/contents/ui/ContactsPage.qml:125
 #, kde-format
 msgid "No contacts"
 msgstr "Adresatų nėra"
 
-#: src/contents/ui/DetailPage.qml:54
+#: src/contents/ui/DetailPage.qml:52
 #, kde-format
 msgid "Edit"
 msgstr "Taisyti"
 
-#: src/contents/ui/DetailPage.qml:59
+#: src/contents/ui/DetailPage.qml:57
 #, kde-format
 msgid "Delete contact"
 msgstr "Ištrinti adresatą"
 
-#: src/contents/ui/DetailPage.qml:192
-#, kde-format
-msgid "Call"
-msgstr "Skambutis"
-
-#: src/contents/ui/DetailPage.qml:199
-#, kde-format
-msgid "Send SMS"
-msgstr "Siųsti SMS žinutę"
-
-#: src/contents/ui/DetailPage.qml:226
-#, fuzzy, kde-format
-#| msgid "Send email"
-msgid "Send E-Mail"
-msgstr "Siųsti el. laišką"
-
-#: src/contents/ui/DetailPage.qml:234
-#, kde-format
-msgid "E-Mail"
-msgstr ""
-
-#: src/contents/ui/DetailPage.qml:253
-#, fuzzy, kde-format
-#| msgid "Send email"
-msgid "Send Message"
-msgstr "Siųsti el. laišką"
-
-#: src/contents/ui/DetailPage.qml:297
-#, kde-format
-msgid "Note:"
-msgstr ""
-
-#: src/contents/ui/DetailPage.qml:314
+#: src/contents/ui/DetailPage.qml:68
 #, fuzzy, kde-format
 #| msgid "Delete contact"
 msgid "Remove Contact"
 msgstr "Ištrinti adresatą"
 
-#: src/contents/ui/DetailPage.qml:324
+#: src/contents/ui/DetailPage.qml:78
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
 msgstr ""
 
-#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
+#: src/contents/ui/DetailPage.qml:209
+#, kde-format
+msgid "Call"
+msgstr "Skambutis"
+
+#: src/contents/ui/DetailPage.qml:216
+#, kde-format
+msgid "Send SMS"
+msgstr "Siųsti SMS žinutę"
+
+#: src/contents/ui/DetailPage.qml:241
+#, fuzzy, kde-format
+#| msgid "Send email"
+msgid "Send E-Mail"
+msgstr "Siųsti el. laišką"
+
+#: src/contents/ui/DetailPage.qml:247
+#, kde-format
+msgid "E-Mail"
+msgstr ""
+
+#: src/contents/ui/DetailPage.qml:263
+#, fuzzy, kde-format
+#| msgid "Send email"
+msgid "Send Message"
+msgstr "Siųsti el. laišką"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
 #, fuzzy, kde-format
 #| msgctxt "Action to write to instant messanger contact"
 #| msgid "%1 %2"
@@ -195,7 +195,7 @@ msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: src/main.cpp:38
+#: src/main.cpp:37
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Rodyti ir taisyti adresatus"

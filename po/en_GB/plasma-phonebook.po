@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-16 00:49+0000\n"
+"POT-Creation-Date: 2023-10-23 01:41+0000\n"
 "PO-Revision-Date: 2023-05-21 14:55+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -27,162 +27,162 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "steve.allewell@gmail.com"
 
-#: src/contents/ui/AddContactPage.qml:40
+#: src/contents/ui/AddContactPage.qml:37
 #, kde-format
 msgid "Adding contact"
 msgstr "Adding contact"
 
-#: src/contents/ui/AddContactPage.qml:44
+#: src/contents/ui/AddContactPage.qml:41
 #, kde-format
 msgid "Editing contact"
 msgstr "Editing contact"
 
-#: src/contents/ui/AddContactPage.qml:62
+#: src/contents/ui/AddContactPage.qml:51
 #, kde-format
 msgid "Photo"
 msgstr "Photo"
 
-#: src/contents/ui/AddContactPage.qml:111
+#: src/contents/ui/AddContactPage.qml:107
 #, kde-format
 msgid "Add profile picture"
 msgstr "Add profile picture"
 
-#: src/contents/ui/AddContactPage.qml:124
+#: src/contents/ui/AddContactPage.qml:117
 #, kde-format
 msgid "Name"
 msgstr "Name"
 
-#: src/contents/ui/AddContactPage.qml:152
-#: src/contents/ui/AddContactPage.qml:174
+#: src/contents/ui/AddContactPage.qml:156
+#: src/contents/ui/AddContactPage.qml:178
 #, kde-format
 msgid "Phone"
 msgstr "Phone"
 
-#: src/contents/ui/AddContactPage.qml:176
+#: src/contents/ui/AddContactPage.qml:180
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+1 555 2368"
 
-#: src/contents/ui/AddContactPage.qml:210
+#: src/contents/ui/AddContactPage.qml:202
 #, kde-format
 msgid "Add phone number"
 msgstr "Add phone number"
 
-#: src/contents/ui/AddContactPage.qml:239
-#: src/contents/ui/AddContactPage.qml:261
+#: src/contents/ui/AddContactPage.qml:241
+#: src/contents/ui/AddContactPage.qml:263
 #, kde-format
 msgid "Email"
 msgstr "Email"
 
-#: src/contents/ui/AddContactPage.qml:263
+#: src/contents/ui/AddContactPage.qml:265
 #, kde-format
 msgid "user@example.org"
 msgstr "user@example.org"
 
-#: src/contents/ui/AddContactPage.qml:286
+#: src/contents/ui/AddContactPage.qml:276
 #, kde-format
 msgid "Add email address"
 msgstr "Add email address"
 
-#: src/contents/ui/AddContactPage.qml:315
-#: src/contents/ui/AddContactPage.qml:336
+#: src/contents/ui/AddContactPage.qml:314
+#: src/contents/ui/AddContactPage.qml:335
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Instant Messenger"
 
-#: src/contents/ui/AddContactPage.qml:338
+#: src/contents/ui/AddContactPage.qml:337
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protocol:person@example.com"
 
-#: src/contents/ui/AddContactPage.qml:369
+#: src/contents/ui/AddContactPage.qml:356
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Add instant messenger address"
 
-#: src/contents/ui/AddContactPage.qml:395 src/contents/ui/DetailPage.qml:276
+#: src/contents/ui/AddContactPage.qml:375 src/contents/ui/DetailPage.qml:281
 #, kde-format
 msgid "Birthday"
 msgstr "Birthday"
 
-#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
-#: src/main.cpp:36
-#, kde-format
-msgid "Phonebook"
-msgstr "Phonebook"
-
-#: src/contents/ui/ContactsPage.qml:81
-#, kde-format
-msgid "Import contacts"
-msgstr "Import contacts"
-
-#: src/contents/ui/ContactsPage.qml:92
-#, kde-format
-msgid "add Contact"
-msgstr "add Contact"
-
-#: src/contents/ui/ContactsPage.qml:126
-#, kde-format
-msgid "No contacts"
-msgstr "No contacts"
-
-#: src/contents/ui/DetailPage.qml:54
-#, kde-format
-msgid "Edit"
-msgstr "Edit"
-
-#: src/contents/ui/DetailPage.qml:59
-#, kde-format
-msgid "Delete contact"
-msgstr "Delete contact"
-
-#: src/contents/ui/DetailPage.qml:192
-#, kde-format
-msgid "Call"
-msgstr "Call"
-
-#: src/contents/ui/DetailPage.qml:199
-#, kde-format
-msgid "Send SMS"
-msgstr "Send SMS"
-
-#: src/contents/ui/DetailPage.qml:226
-#, kde-format
-msgid "Send E-Mail"
-msgstr "Send E-Mail"
-
-#: src/contents/ui/DetailPage.qml:234
-#, kde-format
-msgid "E-Mail"
-msgstr "E-Mail"
-
-#: src/contents/ui/DetailPage.qml:253
-#, kde-format
-msgid "Send Message"
-msgstr "Send Message"
-
-#: src/contents/ui/DetailPage.qml:297
+#: src/contents/ui/AddContactPage.qml:394 src/contents/ui/DetailPage.qml:296
 #, kde-format
 msgid "Note:"
 msgstr "Note:"
 
-#: src/contents/ui/DetailPage.qml:314
+#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/main.cpp:35
+#, kde-format
+msgid "Phonebook"
+msgstr "Phonebook"
+
+#: src/contents/ui/ContactsPage.qml:80
+#, kde-format
+msgid "Import contacts"
+msgstr "Import contacts"
+
+#: src/contents/ui/ContactsPage.qml:91
+#, kde-format
+msgid "add Contact"
+msgstr "add Contact"
+
+#: src/contents/ui/ContactsPage.qml:125
+#, kde-format
+msgid "No contacts"
+msgstr "No contacts"
+
+#: src/contents/ui/DetailPage.qml:52
+#, kde-format
+msgid "Edit"
+msgstr "Edit"
+
+#: src/contents/ui/DetailPage.qml:57
+#, kde-format
+msgid "Delete contact"
+msgstr "Delete contact"
+
+#: src/contents/ui/DetailPage.qml:68
 #, kde-format
 msgid "Remove Contact"
 msgstr "Remove Contact"
 
-#: src/contents/ui/DetailPage.qml:324
+#: src/contents/ui/DetailPage.qml:78
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
 msgstr "Are you sure you want to delete <b>%1</b> from your Contacts?"
 
-#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:44
+#: src/contents/ui/DetailPage.qml:209
+#, kde-format
+msgid "Call"
+msgstr "Call"
+
+#: src/contents/ui/DetailPage.qml:216
+#, kde-format
+msgid "Send SMS"
+msgstr "Send SMS"
+
+#: src/contents/ui/DetailPage.qml:241
+#, kde-format
+msgid "Send E-Mail"
+msgstr "Send E-Mail"
+
+#: src/contents/ui/DetailPage.qml:247
+#, kde-format
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: src/contents/ui/DetailPage.qml:263
+#, kde-format
+msgid "Send Message"
+msgstr "Send Message"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
 #, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: src/main.cpp:38
+#: src/main.cpp:37
 #, kde-format
 msgid "View and edit contacts"
 msgstr "View and edit contacts"
