@@ -5,27 +5,28 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
-import QtQuick 2.3
-import QtQuick.Layouts 1.3
-import QtQuick.Controls 2.0 as Controls
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls as Controls
 
-import org.kde.kirigami 2.14 as Kirigami
-import org.kde.kirigamiaddons.components 1.0 as Components
-import org.kde.people 1.0 as KPeople
+import org.kde.kirigami as Kirigami
+import org.kde.kirigamiaddons.components as Components
+import org.kde.kirigamiaddons.delegates as Delegates
+import org.kde.people as KPeople
 
-Kirigami.AbstractListItem {
+Delegates.RoundedItemDelegate {
     id: listItem
 
     property string name
     property alias imageProviderUri: avatar.source
 
     contentItem: RowLayout {
+        spacing: Kirigami.Units.largeSpacing
+
         Components.Avatar {
             id: avatar
-            height: parent.height
-            implicitHeight: parent.height // FIXME Kirigami.Avatar doesn't properly propagate
-                                          // its implicitHeight and implicitWidth
-            implicitWidth: implicitHeight
+            Layout.maximumHeight: parent.height
+            Layout.maximumWidth: parent.height
             name: listItem.name
             imageMode: Components.Avatar.ImageMode.AdaptiveImageOrInitals
         }
@@ -35,7 +36,7 @@ Kirigami.AbstractListItem {
             textFormat: Text.PlainText
             elide: Text.ElideRight
             maximumLineCount: 1
-            level: 3
+            level: Kirigami.Settings.isMobile ? 3 : 5
             Layout.fillWidth: true
         }
     }
