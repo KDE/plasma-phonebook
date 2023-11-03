@@ -6,14 +6,15 @@
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15 as Controls
-import QtQuick.Layouts 1.7
+import QtQuick
+import QtQuick.Controls as Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.12 as Kirigami
-import org.kde.people 1.0 as KPeople
+import org.kde.kirigami as Kirigami
+import org.kde.kirigamiaddons.delegates as Delegates
+import org.kde.people as KPeople
 
-import org.kde.phonebook 1.0
+import org.kde.phonebook
 
 import "components"
 
@@ -22,16 +23,18 @@ Kirigami.ScrollablePage {
     title: i18n("Phonebook")
     globalToolBarStyle: Kirigami.ApplicationHeaderStyle.None
 
-    titleDelegate:ColumnLayout{
+    titleDelegate: ColumnLayout {
         Kirigami.AbstractApplicationHeader {
+            id: applicationHeader
+
             Layout.margins: 0
             Layout.preferredHeight: pageStack.globalToolBar.preferredHeight
             Layout.maximumHeight: pageStack.globalToolBar.preferredHeight
             Layout.fillWidth: true
-            id: applicationHeader
-            width: root.width
-            RowLayout{
+
+            RowLayout {
                 anchors.fill: parent
+
                 Kirigami.SearchField {
                     Layout.margins: Kirigami.Units.mediumSpacing
                     Layout.rightMargin: 0
@@ -39,41 +42,48 @@ Kirigami.ScrollablePage {
                     id: searchField
                     onTextChanged: filterModel.setFilterFixedString(text)
                 }
-                Controls.ToolButton{
+
+                Controls.ToolButton {
                     Layout.margins: Kirigami.Units.mediumSpacing
                     Layout.leftMargin: 0
                     icon.name: "overflow-menu"
-                    onClicked: optionsDrawer.open()
-                    BottomDrawer{
+                    onClicked: {
+                        optionsDrawer.open()
+                        optionsDrawer.x = 0;
+                    }
+
+                    BottomDrawer {
                         id: optionsDrawer
+                        parent: applicationWindow().overlay
                         drawerContentItem: ColumnLayout {
                             Repeater {
-                                model: root.actions.contextualActions
-                                delegate: Kirigami.BasicListItem{
+                                model: root.actions
+                                delegate: Delegates.RoundedItemDelegate {
                                     required property var modelData
-                                    label: modelData.text
-                                    icon: modelData.icon.name
+                                    required property int index
+
+                                    text: modelData.text
+                                    icon: modelData.icon
+
+                                    Layout.fillWidth: true
+
                                     onClicked: {
                                         modelData.triggered()
                                         optionsDrawer.close()
                                         optionsDrawer.interactive = false
-
                                     }
                                 }
                             }
+
                             Item {
                                 Layout.fillHeight: true
                             }
-
                         }
-
                     }
                 }
             }
         }
     }
-
-
 
     actions: Kirigami.Action {
         icon.name: "document-import"
