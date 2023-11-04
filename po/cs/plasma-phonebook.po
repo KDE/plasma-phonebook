@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-23 01:41+0000\n"
+"POT-Creation-Date: 2023-11-04 01:39+0000\n"
 "PO-Revision-Date: 2023-05-16 10:56+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -111,23 +111,23 @@ msgstr "Narozeniny"
 msgid "Note:"
 msgstr "Poznámka:"
 
-#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
 #: src/main.cpp:35
 #, kde-format
 msgid "Phonebook"
 msgstr "Telefonní seznam"
 
-#: src/contents/ui/ContactsPage.qml:80
+#: src/contents/ui/ContactsPage.qml:90
 #, kde-format
 msgid "Import contacts"
 msgstr "Importovat kontakty"
 
-#: src/contents/ui/ContactsPage.qml:91
+#: src/contents/ui/ContactsPage.qml:101
 #, kde-format
 msgid "add Contact"
 msgstr "přidat kontakt"
 
-#: src/contents/ui/ContactsPage.qml:125
+#: src/contents/ui/ContactsPage.qml:135
 #, kde-format
 msgid "No contacts"
 msgstr "Žádné kontakty"

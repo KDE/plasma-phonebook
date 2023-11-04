@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-23 01:41+0000\n"
+"POT-Creation-Date: 2023-11-04 01:39+0000\n"
 "PO-Revision-Date: 2021-01-29 22:58-0800\n"
 "Last-Translator: A S Alam <aalam.yellow@gmail.com>\n"
 "Language-Team: Punjabi <punjabi-users@lists.sf.net>\n"
@@ -114,25 +114,25 @@ msgstr ""
 msgid "Note:"
 msgstr ""
 
-#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
 #: src/main.cpp:35
 #, fuzzy, kde-format
 #| msgid "Phone Book"
 msgid "Phonebook"
 msgstr "ਫੋਨ ਬੁੱਕ"
 
-#: src/contents/ui/ContactsPage.qml:80
+#: src/contents/ui/ContactsPage.qml:90
 #, kde-format
 msgid "Import contacts"
 msgstr "ਸੰਪਰਕ ਇੰਪੋਰਟ ਕਰੋ"
 
-#: src/contents/ui/ContactsPage.qml:91
+#: src/contents/ui/ContactsPage.qml:101
 #, fuzzy, kde-format
 #| msgid "Adding contact"
 msgid "add Contact"
 msgstr "ਸੰਪਰਕ ਜੋੜਿਆ ਜਾ ਰਿਹਾ ਹੈ"
 
-#: src/contents/ui/ContactsPage.qml:125
+#: src/contents/ui/ContactsPage.qml:135
 #, kde-format
 msgid "No contacts"
 msgstr "ਕੋਈ ਸੰਪਰਕ ਨਹੀਂ ਹੈ"

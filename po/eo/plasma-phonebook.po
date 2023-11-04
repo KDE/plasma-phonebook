@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-23 01:41+0000\n"
+"POT-Creation-Date: 2023-11-04 01:39+0000\n"
 "PO-Revision-Date: 2023-10-25 19:09+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -110,23 +110,23 @@ msgstr "Naskiĝtago"
 msgid "Note:"
 msgstr "Noto:"
 
-#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
 #: src/main.cpp:35
 #, kde-format
 msgid "Phonebook"
 msgstr "Telefonlibro"
 
-#: src/contents/ui/ContactsPage.qml:80
+#: src/contents/ui/ContactsPage.qml:90
 #, kde-format
 msgid "Import contacts"
 msgstr "Importi kontaktojn"
 
-#: src/contents/ui/ContactsPage.qml:91
+#: src/contents/ui/ContactsPage.qml:101
 #, kde-format
 msgid "add Contact"
 msgstr "Aldoni kontakton"
 
-#: src/contents/ui/ContactsPage.qml:125
+#: src/contents/ui/ContactsPage.qml:135
 #, kde-format
 msgid "No contacts"
 msgstr "Neniuj kontaktoj"

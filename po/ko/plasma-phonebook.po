@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-23 01:41+0000\n"
+"POT-Creation-Date: 2023-11-04 01:39+0000\n"
 "PO-Revision-Date: 2023-07-25 01:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -110,23 +110,23 @@ msgstr "생일"
 msgid "Note:"
 msgstr "메모:"
 
-#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
 #: src/main.cpp:35
 #, kde-format
 msgid "Phonebook"
 msgstr "연락처"
 
-#: src/contents/ui/ContactsPage.qml:80
+#: src/contents/ui/ContactsPage.qml:90
 #, kde-format
 msgid "Import contacts"
 msgstr "연락처 가져오기"
 
-#: src/contents/ui/ContactsPage.qml:91
+#: src/contents/ui/ContactsPage.qml:101
 #, kde-format
 msgid "add Contact"
 msgstr "연락처 추가"
 
-#: src/contents/ui/ContactsPage.qml:125
+#: src/contents/ui/ContactsPage.qml:135
 #, kde-format
 msgid "No contacts"
 msgstr "연락처 없음"

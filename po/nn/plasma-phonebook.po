@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-10-23 01:41+0000\n"
+"POT-Creation-Date: 2023-11-04 01:39+0000\n"
 "PO-Revision-Date: 2023-05-27 14:18+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -112,23 +112,23 @@ msgstr "Fødselsdag"
 msgid "Note:"
 msgstr "Merknad:"
 
-#: src/contents/ui/ContactsPage.qml:22 src/contents/ui/main.qml:17
+#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
 #: src/main.cpp:35
 #, kde-format
 msgid "Phonebook"
 msgstr "Telefonkatalog"
 
-#: src/contents/ui/ContactsPage.qml:80
+#: src/contents/ui/ContactsPage.qml:90
 #, kde-format
 msgid "Import contacts"
 msgstr "Importer kontaktar"
 
-#: src/contents/ui/ContactsPage.qml:91
+#: src/contents/ui/ContactsPage.qml:101
 #, kde-format
 msgid "add Contact"
 msgstr "Legg til kontakt"
 
-#: src/contents/ui/ContactsPage.qml:125
+#: src/contents/ui/ContactsPage.qml:135
 #, kde-format
 msgid "No contacts"
 msgstr "Ingen kontaktar"
