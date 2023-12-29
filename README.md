@@ -10,12 +10,13 @@ Plasma Phonebook ships its own KPeople plugin for displaying actions.
 
 # Building
 
-plasma-phonebook depends on Qt 5 and a few KDE Frameworks:
+plasma-phonebook depends on Qt6 and a few KDE Frameworks:
   - KCoreAddons
   - Kirigami
   - KPeople
   - KContacts
-  - KPeopleVCard
+  - KI18n
+  - Kirigami Addons
 
 If your distribution does not provide a recent enough version you can use [kdesrc-build](https://community.kde.org/Get_Involved/development#Set_up_kdesrc-build) to build plasma-phonebook and with all dependencies.
 
