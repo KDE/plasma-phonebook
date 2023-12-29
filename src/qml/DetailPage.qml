@@ -212,7 +212,7 @@ FormCard.FormCardPage {
                     }
                     ToolButton {
                         text: i18n("Send SMS")
-                        icon.name: "mail-message"
+                        icon.name: "dialog-messages"
                         onClicked: page.sendSms(modelData.normalizedNumber)
                         display: AbstractButton.IconOnly
 
