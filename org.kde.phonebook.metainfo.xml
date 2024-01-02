@@ -24,6 +24,7 @@
   <name xml:lang="lt">Telefonų knyga</name>
   <name xml:lang="nl">Telefoonboek</name>
   <name xml:lang="nn">Telefonkatalog</name>
+  <name xml:lang="pa">ਫ਼ੋਨ ਬੁੱਕ</name>
   <name xml:lang="pl">Książka telefoniczna</name>
   <name xml:lang="pt">Lista Telefónica</name>
   <name xml:lang="pt-BR">Agenda telefônica</name>
@@ -257,7 +258,7 @@
       <li xml:lang="lt">Pridėti adresatus</li>
       <li xml:lang="nl">Contactpersonen toevoegen</li>
       <li xml:lang="nn">Leggja til kontaktar</li>
-      <li xml:lang="pa">ਸੰਪਰਕ ਜੋੜੋ</li>
+      <li xml:lang="pa">ਸੰਪਰਕਾਂ ਨੂੰ ਜੋੜੋ</li>
       <li xml:lang="pl">Dodaj kontakty</li>
       <li xml:lang="pt">Adicionar contactos</li>
       <li xml:lang="pt-BR">Adicionar contatos</li>
@@ -296,7 +297,7 @@
       <li xml:lang="lt">Šalinti adresatus</li>
       <li xml:lang="nl">Contactpersonen verwijderen</li>
       <li xml:lang="nn">Fjerna kontaktar</li>
-      <li xml:lang="pa">ਸੰਪਰਕ ਹਟਾਓ</li>
+      <li xml:lang="pa">ਸੰਪਰਕਾਂ ਨੂੰ ਹਟਾਓ</li>
       <li xml:lang="pl">Usuń kontakty</li>
       <li xml:lang="pt">Remover os contactos</li>
       <li xml:lang="pt-BR">Excluir contatos</li>
