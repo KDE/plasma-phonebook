@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
 
-set(PROJECT_VERSION "23.01")
+set(PROJECT_VERSION "24.02.0")
 project(plasma-phonebook VERSION ${PROJECT_VERSION})
 
-set(KF_MIN_VERSION "5.93.0")
-set(QT_MIN_VERSION "5.15.2")
+set(KF_MIN_VERSION "6.0.0")
+set(QT_MIN_VERSION "6.6.0")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -29,7 +29,7 @@ ecm_setup_version(${PROJECT_VERSION}
 )
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Widgets)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS CoreAddons Kirigami People Contacts Config)
-find_package(KF6KirigamiAddons 0.11 REQUIRED)
+find_package(KF6KirigamiAddons 1.0.0 REQUIRED)
 
 add_subdirectory(src)
 
