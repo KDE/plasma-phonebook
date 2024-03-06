@@ -22,6 +22,7 @@
   <name xml:lang="ka">სატელეფონო წიგნაკი</name>
   <name xml:lang="ko">연락처</name>
   <name xml:lang="lt">Telefonų knyga</name>
+  <name xml:lang="lv">Telefongrāmata</name>
   <name xml:lang="nl">Telefoonboek</name>
   <name xml:lang="nn">Telefonkatalog</name>
   <name xml:lang="pa">ਫ਼ੋਨ ਬੁੱਕ</name>
@@ -60,6 +61,7 @@
   <summary xml:lang="ka">კონტაქტების ნახვა და ჩასწორება</summary>
   <summary xml:lang="ko">연락처 보기 및 편집</summary>
   <summary xml:lang="lt">Rodyti ir taisyti adresatus</summary>
+  <summary xml:lang="lv">Apskatiet un rediģējiet kontaktus</summary>
   <summary xml:lang="nl">Contactpersonen bekijken en bewerken</summary>
   <summary xml:lang="nn">Vis og rediger kontaktar</summary>
   <summary xml:lang="pa">ਸੰਪਰਕ ਵੇਖੋ ਤੇ ਸੋਧੋ</summary>
@@ -101,6 +103,7 @@
   <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="lt">KDE bendruomenė</developer_name>
+  <developer_name xml:lang="lv">KDE kopiena</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pa">ਕੇਡੀਈ ਕਮਿਊਨਟੀ</developer_name>
@@ -139,6 +142,7 @@
     <p xml:lang="ka">კონვერგენტული კონტაქტების მართვის აპლიკაცია ორივე, სამუშაო მაგიდისა და მობილური მოწყობილობებისათვის.</p>
     <p xml:lang="ko">데스크톱과 모바일 장치에서 모두 사용할 수 있는 연락처 관리 앱입니다.</p>
     <p xml:lang="lt">Konverguojanti adresatų tvarkymo programa, skirta tiek darbalaukio, tiek ir mobiliesiems įrenginiams.</p>
+    <p xml:lang="lv">Konverģenta kontaktu pārvaldības programma datoriem un mobilajām ierīcēm.</p>
     <p xml:lang="nl">Convergente beheertoepassing voor contactpersonen voor zowel bureaublad- en mobiele apparaten.</p>
     <p xml:lang="nn">Kontakthandsamingsprogram for både PC-ar og mobiltelefonar.</p>
     <p xml:lang="pa">ਡੈਸਕਟਾਪ ਅਤੇ ਮੋਬਾਇਲ ਡਿਵਾਈਸਾਂ ਲਈ ਸੰਪਰਕ ਦੇ ਇੰਤਜ਼ਾਮ ਕਰਨ ਲਈ ਐਪਲੀਕੇਸ਼ਨ ਹੈ।</p>
@@ -178,6 +182,7 @@
     <p xml:lang="ka">გამოგიყოფთ ცენტრალურ ადგილს საუბრის დასაწყებად. იმაზე დამოკიდებულებით, რა ინფორმაციაა ცნობილი კონტაქტის შესახებ, ნაჩვენები იქნება შესაბამისი ქმედებები.</p>
     <p xml:lang="ko">한 곳에서 대화를 시작할 수 있습니다. 연락처에 저장된 정보에 따라 사용 가능한 작업이 표시됩니다.</p>
     <p xml:lang="lt">Ji pateikia pagrindinę vietą, kurioje galima pradėti pokalbius. Priklausomai nuo informacijos, kuri prieinama apie adresatą, yra rodomi atitinkami veiksmai.</p>
+    <p xml:lang="lv">Tā ir vienota vieta sarunu uzsākšanai. Programma parāda iespējamās darbības atkarībā no pieejamās informācijas par kontaktu.</p>
     <p xml:lang="nl">Het biedt een centrale plaats voor het starten van conversaties. Afhankelijk van de beschikbare informatie over een contactpersoon, worden mogelijke acties getoond.</p>
     <p xml:lang="nn">Sentralt område for å starta samtalar. Ulike handlingar vert gjort tilgjengelege avhengig av informasjonen lagra om kvar kontakt.</p>
     <p xml:lang="pa">ਇਹ ਸਾਰੀਆਂ ਗੱਲਾਂ ਲਈ ਕੇਂਦਰੀ ਥਾਂ ਦਿੰਦਾ ਹੈ। ਸੰਪਰਕ ਬਾਰੇ ਮੌਜੂਦ ਜਾਣਕਾਰੀ ਦੇ ਮੁਤਾਬਕ ਕਾਰਵਾਈਆਂ ਨੂੰ ਵਿਖਾਇਆਂ ਜਾਂਦਾ ਹੈ।</p>
@@ -217,6 +222,7 @@
     <p xml:lang="ka">თვისებები</p>
     <p xml:lang="ko">기능</p>
     <p xml:lang="lt">Ypatybės</p>
+    <p xml:lang="lv">Iespējas</p>
     <p xml:lang="nl">Mogelijkheden</p>
     <p xml:lang="nn">Funksjonar</p>
     <p xml:lang="pa">ਫੀਚਰ</p>
@@ -258,6 +264,7 @@
       <li xml:lang="ka">კონტაქტების დამატება</li>
       <li xml:lang="ko">연락처 추가</li>
       <li xml:lang="lt">Pridėti adresatus</li>
+      <li xml:lang="lv">Pievienot kontaktus</li>
       <li xml:lang="nl">Contactpersonen toevoegen</li>
       <li xml:lang="nn">Leggja til kontaktar</li>
       <li xml:lang="pa">ਸੰਪਰਕਾਂ ਨੂੰ ਜੋੜੋ</li>
@@ -297,6 +304,7 @@
       <li xml:lang="ka">კონტაქტების წაშლა</li>
       <li xml:lang="ko">연락처 삭제</li>
       <li xml:lang="lt">Šalinti adresatus</li>
+      <li xml:lang="lv">Noņemt kontaktus</li>
       <li xml:lang="nl">Contactpersonen verwijderen</li>
       <li xml:lang="nn">Fjerna kontaktar</li>
       <li xml:lang="pa">ਸੰਪਰਕਾਂ ਨੂੰ ਹਟਾਓ</li>
@@ -336,6 +344,7 @@
       <li xml:lang="ka">VCard ფაილების შემოტანა</li>
       <li xml:lang="ko">vCard 파일 가져오기</li>
       <li xml:lang="lt">Importuoti vCard failus</li>
+      <li xml:lang="lv">Importēt „vCard“ datnes</li>
       <li xml:lang="nl">vCard-bestanden importeren</li>
       <li xml:lang="nn">Importert vCard-filer (visittkort)</li>
       <li xml:lang="pa">vCard ਫਾਇਲਾਂ ਇੰਪੋਰਟ ਕਰੋ</li>
@@ -382,6 +391,7 @@
       <caption xml:lang="ka">კონტაქტის მიმოხილვა</caption>
       <caption xml:lang="ko">연락처 요약 보기</caption>
       <caption xml:lang="lt">Adresatų apžvalga</caption>
+      <caption xml:lang="lv">Kontaktu pārskats</caption>
       <caption xml:lang="nl">Overzicht van contactpersonen</caption>
       <caption xml:lang="nn">Kontaktoversikt</caption>
       <caption xml:lang="pa">ਸੰਪਰਕ ਸਾਰ</caption>
