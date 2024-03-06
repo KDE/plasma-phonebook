@@ -132,19 +132,6 @@ FormCard.FormCardPage {
     FormCard.FormCard {
         Layout.topMargin: Kirigami.Units.largeSpacing
 
-        data: Connections {
-            target: root;
-            function onSave() {
-                if (toAddPhone.text !== "") {
-                    var numbers = pendingPhoneNumbers
-                    numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
-                    pendingPhoneNumbers = numbers
-                }
-
-                addressee.phoneNumbers = root.pendingPhoneNumbers
-            }
-        }
-
         Repeater{
             model: pendingPhoneNumbers
             delegate:FormCard.FormTextFieldDelegate{
@@ -181,18 +168,6 @@ FormCard.FormCardPage {
             inputMethodHints: Qt.ImhDialableCharactersOnly
             onAccepted: {
                 addressee.formattedName = text
-            }
-            Connections {
-                target: root;
-                function onSave() {
-                    if (toAddPhone.text !== "") {
-                        var numbers = pendingPhoneNumbers
-                        numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
-                        pendingPhoneNumbers = numbers
-                    }
-
-                    addressee.phoneNumbers = root.pendingPhoneNumbers
-                }
             }
         }
         FormCard.FormDelegateSeparator { above: addPhone}
