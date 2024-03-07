@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 01:39+0000\n"
+"POT-Creation-Date: 2024-03-07 00:39+0000\n"
 "PO-Revision-Date: 2020-10-27 19:26+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -54,63 +54,63 @@ msgstr ""
 msgid "Name"
 msgstr "Navn:"
 
-#: src/contents/ui/AddContactPage.qml:156
-#: src/contents/ui/AddContactPage.qml:178
+#: src/contents/ui/AddContactPage.qml:143
+#: src/contents/ui/AddContactPage.qml:165
 #, fuzzy, kde-format
 #| msgid "Phone:"
 msgid "Phone"
 msgstr "Telefon:"
 
-#: src/contents/ui/AddContactPage.qml:180
+#: src/contents/ui/AddContactPage.qml:167
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+4512345678"
 
-#: src/contents/ui/AddContactPage.qml:202
+#: src/contents/ui/AddContactPage.qml:177
 #, kde-format
 msgid "Add phone number"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:241
-#: src/contents/ui/AddContactPage.qml:263
+#: src/contents/ui/AddContactPage.qml:216
+#: src/contents/ui/AddContactPage.qml:238
 #, kde-format
 msgid "Email"
 msgstr "E-mail"
 
-#: src/contents/ui/AddContactPage.qml:265
+#: src/contents/ui/AddContactPage.qml:240
 #, kde-format
 msgid "user@example.org"
 msgstr "bruger@example.org"
 
-#: src/contents/ui/AddContactPage.qml:276
+#: src/contents/ui/AddContactPage.qml:251
 #, kde-format
 msgid "Add email address"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:314
-#: src/contents/ui/AddContactPage.qml:335
+#: src/contents/ui/AddContactPage.qml:289
+#: src/contents/ui/AddContactPage.qml:310
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Instant Messenger"
 msgstr "Straksbeskeder:"
 
-#: src/contents/ui/AddContactPage.qml:337
+#: src/contents/ui/AddContactPage.qml:312
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokol:person@eksempel.dk"
 
-#: src/contents/ui/AddContactPage.qml:356
+#: src/contents/ui/AddContactPage.qml:331
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Add instant messenger address"
 msgstr "Straksbeskeder:"
 
-#: src/contents/ui/AddContactPage.qml:375 src/contents/ui/DetailPage.qml:281
+#: src/contents/ui/AddContactPage.qml:350 src/contents/ui/DetailPage.qml:281
 #, kde-format
 msgid "Birthday"
 msgstr ""
 
-#: src/contents/ui/AddContactPage.qml:394 src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/AddContactPage.qml:369 src/contents/ui/DetailPage.qml:296
 #, kde-format
 msgid "Note:"
 msgstr ""

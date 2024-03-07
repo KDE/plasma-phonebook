@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 01:39+0000\n"
+"POT-Creation-Date: 2024-03-07 00:39+0000\n"
 "PO-Revision-Date: 2023-06-02 08:41+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -52,60 +52,60 @@ msgstr "Aggiungi immagine del profilo"
 msgid "Name"
 msgstr "Nome"
 
-#: src/contents/ui/AddContactPage.qml:156
-#: src/contents/ui/AddContactPage.qml:178
+#: src/contents/ui/AddContactPage.qml:143
+#: src/contents/ui/AddContactPage.qml:165
 #, kde-format
 msgid "Phone"
 msgstr "Telefono"
 
-#: src/contents/ui/AddContactPage.qml:180
+#: src/contents/ui/AddContactPage.qml:167
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+1 555 2368"
 
-#: src/contents/ui/AddContactPage.qml:202
+#: src/contents/ui/AddContactPage.qml:177
 #, kde-format
 msgid "Add phone number"
 msgstr "Aggiungi numero di telefono"
 
-#: src/contents/ui/AddContactPage.qml:241
-#: src/contents/ui/AddContactPage.qml:263
+#: src/contents/ui/AddContactPage.qml:216
+#: src/contents/ui/AddContactPage.qml:238
 #, kde-format
 msgid "Email"
 msgstr "Posta elettronica"
 
-#: src/contents/ui/AddContactPage.qml:265
+#: src/contents/ui/AddContactPage.qml:240
 #, kde-format
 msgid "user@example.org"
 msgstr "utente@esempio.com"
 
-#: src/contents/ui/AddContactPage.qml:276
+#: src/contents/ui/AddContactPage.qml:251
 #, kde-format
 msgid "Add email address"
 msgstr "Aggiungi un indirizzo di posta"
 
-#: src/contents/ui/AddContactPage.qml:314
-#: src/contents/ui/AddContactPage.qml:335
+#: src/contents/ui/AddContactPage.qml:289
+#: src/contents/ui/AddContactPage.qml:310
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Messaggistica istantanea"
 
-#: src/contents/ui/AddContactPage.qml:337
+#: src/contents/ui/AddContactPage.qml:312
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protocollo:persona@esempio.com"
 
-#: src/contents/ui/AddContactPage.qml:356
+#: src/contents/ui/AddContactPage.qml:331
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Aggiungi indirizzo di messaggistica istantanea"
 
-#: src/contents/ui/AddContactPage.qml:375 src/contents/ui/DetailPage.qml:281
+#: src/contents/ui/AddContactPage.qml:350 src/contents/ui/DetailPage.qml:281
 #, kde-format
 msgid "Birthday"
 msgstr "Data di nascita"
 
-#: src/contents/ui/AddContactPage.qml:394 src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/AddContactPage.qml:369 src/contents/ui/DetailPage.qml:296
 #, kde-format
 msgid "Note:"
 msgstr "Nota:"

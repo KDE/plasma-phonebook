@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-04 01:39+0000\n"
+"POT-Creation-Date: 2024-03-07 00:39+0000\n"
 "PO-Revision-Date: 2023-07-25 01:15+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -52,60 +52,60 @@ msgstr "프로필 사진 추가"
 msgid "Name"
 msgstr "이름"
 
-#: src/contents/ui/AddContactPage.qml:156
-#: src/contents/ui/AddContactPage.qml:178
+#: src/contents/ui/AddContactPage.qml:143
+#: src/contents/ui/AddContactPage.qml:165
 #, kde-format
 msgid "Phone"
 msgstr "전화"
 
-#: src/contents/ui/AddContactPage.qml:180
+#: src/contents/ui/AddContactPage.qml:167
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+82 10 1234-5678"
 
-#: src/contents/ui/AddContactPage.qml:202
+#: src/contents/ui/AddContactPage.qml:177
 #, kde-format
 msgid "Add phone number"
 msgstr "전화번호 추가"
 
-#: src/contents/ui/AddContactPage.qml:241
-#: src/contents/ui/AddContactPage.qml:263
+#: src/contents/ui/AddContactPage.qml:216
+#: src/contents/ui/AddContactPage.qml:238
 #, kde-format
 msgid "Email"
 msgstr "이메일"
 
-#: src/contents/ui/AddContactPage.qml:265
+#: src/contents/ui/AddContactPage.qml:240
 #, kde-format
 msgid "user@example.org"
 msgstr "user@example.org"
 
-#: src/contents/ui/AddContactPage.qml:276
+#: src/contents/ui/AddContactPage.qml:251
 #, kde-format
 msgid "Add email address"
 msgstr "이메일 주소 추가"
 
-#: src/contents/ui/AddContactPage.qml:314
-#: src/contents/ui/AddContactPage.qml:335
+#: src/contents/ui/AddContactPage.qml:289
+#: src/contents/ui/AddContactPage.qml:310
 #, kde-format
 msgid "Instant Messenger"
 msgstr "인스턴트 메신저"
 
-#: src/contents/ui/AddContactPage.qml:337
+#: src/contents/ui/AddContactPage.qml:312
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protocol:person@example.com"
 
-#: src/contents/ui/AddContactPage.qml:356
+#: src/contents/ui/AddContactPage.qml:331
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "인스턴트 메신저 주소 추가"
 
-#: src/contents/ui/AddContactPage.qml:375 src/contents/ui/DetailPage.qml:281
+#: src/contents/ui/AddContactPage.qml:350 src/contents/ui/DetailPage.qml:281
 #, kde-format
 msgid "Birthday"
 msgstr "생일"
 
-#: src/contents/ui/AddContactPage.qml:394 src/contents/ui/DetailPage.qml:296
+#: src/contents/ui/AddContactPage.qml:369 src/contents/ui/DetailPage.qml:296
 #, kde-format
 msgid "Note:"
 msgstr "메모:"
