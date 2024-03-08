@@ -1,0 +1,188 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+#
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-03-07 00:39+0000\n"
+"PO-Revision-Date: 2024-03-07 23:35+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "צוות התרגום של KDE ישראל"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-l10n-he@kde.org"
+
+#: src/contents/ui/AddContactPage.qml:37
+#, kde-format
+msgid "Adding contact"
+msgstr "הוספת איש קשר"
+
+#: src/contents/ui/AddContactPage.qml:41
+#, kde-format
+msgid "Editing contact"
+msgstr "עריכת איש קשר"
+
+#: src/contents/ui/AddContactPage.qml:51
+#, kde-format
+msgid "Photo"
+msgstr "תמונה"
+
+#: src/contents/ui/AddContactPage.qml:107
+#, kde-format
+msgid "Add profile picture"
+msgstr "הוספת תמונת פרופיל"
+
+#: src/contents/ui/AddContactPage.qml:117
+#, kde-format
+msgid "Name"
+msgstr "שם"
+
+#: src/contents/ui/AddContactPage.qml:143
+#: src/contents/ui/AddContactPage.qml:165
+#, kde-format
+msgid "Phone"
+msgstr "טלפון"
+
+#: src/contents/ui/AddContactPage.qml:167
+#, kde-format
+msgid "+1 555 2368"
+msgstr "‎+1 555 2368"
+
+#: src/contents/ui/AddContactPage.qml:177
+#, kde-format
+msgid "Add phone number"
+msgstr "הוספת מספר טלפון"
+
+#: src/contents/ui/AddContactPage.qml:216
+#: src/contents/ui/AddContactPage.qml:238
+#, kde-format
+msgid "Email"
+msgstr "דוא״ל"
+
+#: src/contents/ui/AddContactPage.qml:240
+#, kde-format
+msgid "user@example.org"
+msgstr "user@example.org"
+
+#: src/contents/ui/AddContactPage.qml:251
+#, kde-format
+msgid "Add email address"
+msgstr "הוספת כתובת דוא״ל"
+
+#: src/contents/ui/AddContactPage.qml:289
+#: src/contents/ui/AddContactPage.qml:310
+#, kde-format
+msgid "Instant Messenger"
+msgstr "מסרים מיידיים"
+
+#: src/contents/ui/AddContactPage.qml:312
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocol:person@example.com"
+
+#: src/contents/ui/AddContactPage.qml:331
+#, kde-format
+msgid "Add instant messenger address"
+msgstr "הוספת כתובת למסרים מיידיים"
+
+#: src/contents/ui/AddContactPage.qml:350 src/contents/ui/DetailPage.qml:281
+#, kde-format
+msgid "Birthday"
+msgstr "יום הולדת"
+
+#: src/contents/ui/AddContactPage.qml:369 src/contents/ui/DetailPage.qml:296
+#, kde-format
+msgid "Note:"
+msgstr "הערה:"
+
+#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
+#: src/main.cpp:35
+#, kde-format
+msgid "Phonebook"
+msgstr "פנקס טלפונים"
+
+#: src/contents/ui/ContactsPage.qml:90
+#, kde-format
+msgid "Import contacts"
+msgstr "ייבוא אנשי קשר"
+
+#: src/contents/ui/ContactsPage.qml:101
+#, kde-format
+msgid "add Contact"
+msgstr "הוספת איש קשר"
+
+#: src/contents/ui/ContactsPage.qml:135
+#, kde-format
+msgid "No contacts"
+msgstr "אין אנשי קשר"
+
+#: src/contents/ui/DetailPage.qml:52
+#, kde-format
+msgid "Edit"
+msgstr "עריכה"
+
+#: src/contents/ui/DetailPage.qml:57
+#, kde-format
+msgid "Delete contact"
+msgstr "מחיקת איש קשר"
+
+#: src/contents/ui/DetailPage.qml:68
+#, kde-format
+msgid "Remove Contact"
+msgstr "הסרת איש קשר"
+
+#: src/contents/ui/DetailPage.qml:78
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr "למחוק את <b>%1</b> מאנשי הקשר שלך?"
+
+#: src/contents/ui/DetailPage.qml:209
+#, kde-format
+msgid "Call"
+msgstr "חיוג"
+
+#: src/contents/ui/DetailPage.qml:216
+#, kde-format
+msgid "Send SMS"
+msgstr "שליחת מסרון"
+
+#: src/contents/ui/DetailPage.qml:241
+#, kde-format
+msgid "Send E-Mail"
+msgstr "שליחת דוא״ל"
+
+#: src/contents/ui/DetailPage.qml:247
+#, kde-format
+msgid "E-Mail"
+msgstr "דוא״ל"
+
+#: src/contents/ui/DetailPage.qml:263
+#, kde-format
+msgid "Send Message"
+msgstr "שליחת הודעה"
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messenger contact"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "View and edit contacts"
+msgstr "הצגת ועריכת אנשי קשר"
