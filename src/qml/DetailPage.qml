@@ -5,6 +5,8 @@
  *   SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
@@ -201,27 +203,35 @@ FormCard.FormCardPage {
 
         Repeater {
             id: phoneNumberRepeater
-            model: addressee.phoneNumbers
+            model: page.addressee.phoneNumbers
             delegate:FormCard.FormTextDelegate{
+
+                id: phoneNumberDelegate
+
+                required property string normalizedNumber
+                required property string typeLabel
+                required property string number
+
+
                 trailing:Row{
                     ToolButton {
                         text: i18n("Call")
                         icon.name: "call-start"
-                        onClicked: page.callNumber(modelData.normalizedNumber)
+                        onClicked: page.callNumber(phoneNumberDelegate.normalizedNumber)
                         display: AbstractButton.IconOnly
 
                     }
                     ToolButton {
                         text: i18n("Send SMS")
                         icon.name: "dialog-messages"
-                        onClicked: page.sendSms(modelData.normalizedNumber)
+                        onClicked: page.sendSms(phoneNumberDelegate.normalizedNumber)
                         display: AbstractButton.IconOnly
 
 
                     }
                 }
-                text: modelData.typeLabel
-                description: modelData.number
+                text: typeLabel
+                description: number
             }
         }
     }
@@ -233,18 +243,23 @@ FormCard.FormCardPage {
 
         Repeater{
             id: emailRepeater
-            model: addressee.emails
+            model: page.addressee.emails
             delegate: FormCard.FormTextDelegate {
+
+                id: emailDelegate
+
+                required property string email
+
                 trailing: Row {
                     ToolButton {
                         text: i18n("Send E-Mail")
                         icon.name: "mail-message"
-                        onClicked: Qt.openUrlExternally("mailto:" + modelData.email)
+                        onClicked: Qt.openUrlExternally("mailto:" + emailDelegate.email)
                         display: AbstractButton.IconOnly
                     }
                 }
                 text: i18n("E-Mail")
-                description: modelData.email
+                description: emailDelegate.email
             }
         }
     }
@@ -255,19 +270,25 @@ FormCard.FormCardPage {
 
         Repeater {
             id: imppRepeater
-            model: addressee.impps
+            model: page.addressee.impps
             delegate: FormCard.FormTextDelegate {
+                id: imppDelegate
+
+                required property string address
+                required property string serviceIcon
+                required property string serviceLabel
+
                 trailing:Row {
                     ToolButton {
                         text: i18n("Send Message")
-                        icon.name: modelData.serviceIcon
-                        onClicked: Qt.openUrlExternally(modelData.address)
+                        icon.name: imppDelegate.serviceIcon
+                        onClicked: Qt.openUrlExternally(imppDelegate.address)
                         display: AbstractButton.IconOnly
 
                     }
                 }
-                text: modelData.serviceLabel
-                description: modelData.address
+                text: serviceLabel
+                description: address
             }
         }
     }
@@ -280,21 +301,21 @@ FormCard.FormCardPage {
             text: i18n("Birthday")
             description: {
                 // We do not always have the year
-                if (addressee.birthday.getFullYear() === 0) {
-                    return Qt.formatDate(addressee.birthday, "dd.MM.")
+                if (page.addressee.birthday.getFullYear() === 0) {
+                    return Qt.formatDate(page.addressee.birthday, "dd.MM.")
                 } else {
-                    return Qt.formatDate(addressee.birthday)
+                    return Qt.formatDate(page.addressee.birthday)
                 }
             }
         }
     }
 
     FormCard.FormCard {
-        visible: addressee.note
+        visible: page.addressee.note
         FormCard.FormTextDelegate{
             text: i18n("Note:")
             description: {
-                return addressee.note
+                return page.addressee.note
             }
         }
     }

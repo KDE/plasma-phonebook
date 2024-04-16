@@ -4,6 +4,8 @@
  *   SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
+pragma ComponentBehavior: Bound
+
 import QtQuick
 import QtQuick.Controls as Controls
 import QtQuick.Layouts
@@ -78,7 +80,7 @@ FormCard.FormCardPage {
                 Connections {
                     target: root
                     function onSave() {
-                        addressee.photo = root.pendingPhoto
+                        root.addressee.photo = root.pendingPhoto
                     }
                 }
             }
@@ -117,9 +119,9 @@ FormCard.FormCardPage {
             id: name
             label: i18n("Name")
 
-            text: addressee.formattedName
+            text: root.addressee.formattedName
             onAccepted: {
-                addressee.formattedName = text
+                root.addressee.formattedName = text
             }
             Connections {
                 target: root
@@ -134,7 +136,7 @@ FormCard.FormCardPage {
         Layout.topMargin: Kirigami.Units.largeSpacing
 
         Repeater{
-            model: pendingPhoneNumbers
+            model: root.pendingPhoneNumbers
             delegate:FormCard.FormTextFieldDelegate{
                 id: phoneField
 
@@ -156,7 +158,7 @@ FormCard.FormCardPage {
                     target: root
                     function onSave() {
                         phoneField.accepted()
-                        addressee.phoneNumbers = root.pendingPhoneNumbers
+                        root.addressee.phoneNumbers = root.pendingPhoneNumbers
                     }
                 }
             }
@@ -168,7 +170,7 @@ FormCard.FormCardPage {
             placeholderText: i18n("+1 555 2368")
             inputMethodHints: Qt.ImhDialableCharactersOnly
             onAccepted: {
-                addressee.formattedName = text
+                root.addressee.formattedName = text
             }
         }
         FormCard.FormDelegateSeparator { above: addPhone}
@@ -181,7 +183,7 @@ FormCard.FormCardPage {
                 implicitHeight: Kirigami.Units.gridUnit
             }
             onClicked: {
-                var numbers = pendingPhoneNumbers
+                var numbers = root.pendingPhoneNumbers
                 numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
                 pendingPhoneNumbers = numbers
                 toAddPhone.text = ""
@@ -241,7 +243,7 @@ FormCard.FormCardPage {
             placeholderText: i18n("user@example.org")
             inputMethodHints: Qt.ImhEmailCharactersOnly
             onAccepted: {
-                addressee.formattedName = text
+                root.addressee.formattedName = text
             }
 
         }
@@ -310,7 +312,7 @@ FormCard.FormCardPage {
                 target: root
                 function onSave() {
                     if (toAddImpp.text !== "") {
-                        var impps = pendingImpps
+                        var impps = root.pendingImpps
                         impps.push(ContactController.createImpp(toAddImpp.text))
                         root.pendingImpps = impps
                     }
@@ -342,13 +344,13 @@ FormCard.FormCardPage {
 
         FormCard.FormDateTimeDelegate {
             text: i18n("Birthday")
-            value: addressee.birthday
+            value: root.addressee.birthday
             dateTimeDisplay: FormCard.FormDateTimeDelegate.DateTimeDisplay.Date
 
             Connections {
                 target: root
                 function onSave() {
-                    addressee.birthday = birthday.value // TODO birthday is not writable
+                    root.addressee.birthday = birthday.value // TODO birthday is not writable
                 }
             }
         }
@@ -366,13 +368,13 @@ FormCard.FormCardPage {
 
                 Controls.TextArea {
                     id: note
-                    text: addressee.note
+                    text: root.addressee.note
                     Layout.fillWidth: true
 
                     Connections {
                         target: root
                         function onSave() {
-                            addressee.note = note.text
+                            root.addressee.note = note.text
                         }
                     }
                 }
