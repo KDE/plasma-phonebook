@@ -15,6 +15,7 @@ import Qt5Compat.GraphicalEffects
 import org.kde.people as KPeople
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
+import org.kde.contacts as KContacts
 
 import org.kde.phonebook
 
@@ -22,12 +23,12 @@ FormCard.FormCardPage {
     id: root
 
     property QtObject person
-    property var addressee: ContactController.emptyAddressee()
+    property KContacts.addressee addressee: ContactController.emptyAddressee()
 
-    property var pendingPhoneNumbers: addressee.phoneNumbers
-    property var pendingEmails: addressee.emails
-    property var pendingImpps: addressee.impps
-    property var pendingPhoto: addressee.photo
+    property list<KContacts.phoneNumber> pendingPhoneNumbers: addressee.phoneNumbers
+    property list<KContacts.email> pendingEmails: addressee.emails
+    property list<KContacts.impp> pendingImpps: addressee.impps
+    property KContacts.picture pendingPhoto: addressee.photo
 
     signal save()
 

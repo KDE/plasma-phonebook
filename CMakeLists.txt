@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.15)
 set(PROJECT_VERSION "24.02.0")
 project(plasma-phonebook VERSION ${PROJECT_VERSION})
 
-set(KF_MIN_VERSION "6.0.0")
+set(KF_MIN_VERSION "6.3.0")
 set(QT_MIN_VERSION "6.6.0")
 
 set(CMAKE_CXX_STANDARD 17)

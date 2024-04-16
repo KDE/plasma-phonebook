@@ -14,12 +14,13 @@ import org.kde.kirigami as Kirigami
 import org.kde.phonebook
 import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.kirigamiaddons.components as Components
+import org.kde.contacts as KContacts
 
 FormCard.FormCardPage {
     id: page
 
     property string personUri
-    property var addressee: ContactController.addresseeFromVCard(personData.person.contactCustomProperty("vcard"))
+    property KContacts.addressee addressee: ContactController.addresseeFromVCard(personData.person.contactCustomProperty("vcard"))
 
     title: personData.person.name
 
