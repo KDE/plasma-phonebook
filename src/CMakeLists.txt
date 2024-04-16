@@ -4,7 +4,7 @@ add_executable(plasma-phonebook
     contactimporter.cpp
 )
 
-ecm_add_qml_module(plasma-phonebook URI org.kde.phonebook)
+ecm_add_qml_module(plasma-phonebook URI org.kde.phonebook DEPENDENCIES "org.kde.contacts")
 
 ecm_target_qml_sources(plasma-phonebook
     SOURCES
