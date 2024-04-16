@@ -16,7 +16,7 @@ import org.kde.people as KPeople
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
 
-import org.kde.phonebook 1.0
+import org.kde.phonebook
 
 FormCard.FormCardPage {
     id: root

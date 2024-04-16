@@ -15,11 +15,10 @@
 #include <QtQml>
 
 #include <KAboutData>
+#include <KContacts/Addressee>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
-#include "contactcontroller.h"
-#include "contactimporter.h"
 #include "version.h"
 
 #ifdef Q_OS_ANDROID
@@ -47,9 +46,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
-    qmlRegisterType<ContactImporter>("org.kde.phonebook", 1, 0, "ContactImporter");
-    qmlRegisterAnonymousType<QAbstractItemModel>("org.kde.phonebook", 1);
-
 #ifdef Q_OS_ANDROID
     QtAndroid::requestPermissionsSync({QStringLiteral("android.permission.WRITE_EXTERNAL_STORAGE")});
 #endif
@@ -59,9 +55,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qRegisterMetaType<KContacts::Email>();
     qRegisterMetaType<KContacts::Impp>();
     qRegisterMetaType<KContacts::PhoneNumber>();
-
-    ContactController contactController;
-    qmlRegisterSingletonInstance("org.kde.phonebook", 1, 0, "ContactController", &contactController);
 
     engine.loadFromModule("org.kde.phonebook", "Main");
 
