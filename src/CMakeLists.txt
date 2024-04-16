@@ -2,19 +2,34 @@ add_executable(plasma-phonebook
     main.cpp
     contactcontroller.cpp
     contactimporter.cpp
-    resources.qrc
+)
+
+ecm_add_qml_module(plasma-phonebook URI org.kde.phonebook)
+
+ecm_target_qml_sources(plasma-phonebook
+    SOURCES
+    qml/Main.qml
+    qml/ContactsPage.qml
+    qml/ContactListItem.qml
+    qml/RoundImage.qml
+    qml/DetailPage.qml
+    qml/Header.qml
+    qml/AddContactPage.qml
+    qml/components/DoubleActionButton.qml
+    qml/components/BottomDrawer.qml
+    qml/components/ActionButton.qml
 )
 
 target_include_directories(plasma-phonebook PRIVATE ${CMAKE_BINARY_DIR})
 
-target_link_libraries(plasma-phonebook
+target_link_libraries(plasma-phonebook PRIVATE
         Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Widgets
         KF6::Contacts KF6::People KF6::I18n KF6::CoreAddons
         KF6::ConfigCore KF6::ConfigGui
 )
 
 if(ANDROID)
-    target_link_libraries(plasma-phonebook KF6::Kirigami Qt::Svg)
+    target_link_libraries(plasma-phonebook PRIVATE KF6::Kirigami Qt::Svg)
 
     kirigami_package_breeze_icons(ICONS
         go-down-symbolic

@@ -63,7 +63,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     ContactController contactController;
     qmlRegisterSingletonInstance("org.kde.phonebook", 1, 0, "ContactController", &contactController);
 
-    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    engine.loadFromModule("org.kde.phonebook", "Main");
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

@@ -16,8 +16,6 @@ import org.kde.people as KPeople
 
 import org.kde.phonebook
 
-import "components"
-
 Kirigami.ScrollablePage {
     id: root
     title: i18n("Phonebook")
@@ -143,7 +141,7 @@ Kirigami.ScrollablePage {
             imageProviderUri: model && model.photoImageProviderUri
 
             onClicked: {
-                pageStack.push("qrc:/DetailPage.qml", {
+                pageStack.push(Qt.resolvedUrl("DetailPage.qml"), {
                     personUri: model.personUri
                 })
                 ContactController.lastPersonUri = model.personUri;
