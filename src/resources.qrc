@@ -7,7 +7,6 @@
         <file alias="DetailPage.qml">contents/ui/DetailPage.qml</file>
         <file alias="Header.qml">contents/ui/Header.qml</file>
         <file alias="AddContactPage.qml">contents/ui/AddContactPage.qml</file>
-        <file alias="fallbackBackground.png">contents/resources/fallbackBackground.png</file>
         <file>qtquickcontrols2.conf</file>
         <file alias="components/DoubleActionButton.qml">contents/ui/components/DoubleActionButton.qml</file>
         <file alias="components/BottomDrawer.qml">contents/ui/components/BottomDrawer.qml</file>
