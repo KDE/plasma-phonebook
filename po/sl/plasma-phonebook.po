@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-07 00:39+0000\n"
+"POT-Creation-Date: 2024-04-17 00:40+0000\n"
 "PO-Revision-Date: 2023-05-16 08:03+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -28,165 +28,161 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: src/contents/ui/AddContactPage.qml:37
-#, kde-format
-msgid "Adding contact"
-msgstr "Dodajanje stika"
-
-#: src/contents/ui/AddContactPage.qml:41
-#, kde-format
-msgid "Editing contact"
-msgstr "Urejanje stika"
-
-#: src/contents/ui/AddContactPage.qml:51
-#, kde-format
-msgid "Photo"
-msgstr "Slika"
-
-#: src/contents/ui/AddContactPage.qml:107
-#, kde-format
-msgid "Add profile picture"
-msgstr "Dodaj sliko profila"
-
-#: src/contents/ui/AddContactPage.qml:117
-#, kde-format
-msgid "Name"
-msgstr "Ime"
-
-#: src/contents/ui/AddContactPage.qml:143
-#: src/contents/ui/AddContactPage.qml:165
-#, kde-format
-msgid "Phone"
-msgstr "Telefon"
-
-#: src/contents/ui/AddContactPage.qml:167
-#, kde-format
-msgid "+1 555 2368"
-msgstr "+1 555 2368"
-
-#: src/contents/ui/AddContactPage.qml:177
-#, kde-format
-msgid "Add phone number"
-msgstr "Dodaj številko telefona"
-
-#: src/contents/ui/AddContactPage.qml:216
-#: src/contents/ui/AddContactPage.qml:238
-#, kde-format
-msgid "Email"
-msgstr "E-sporočilo"
-
-#: src/contents/ui/AddContactPage.qml:240
-#, kde-format
-msgid "user@example.org"
-msgstr "user@example.org"
-
-#: src/contents/ui/AddContactPage.qml:251
-#, kde-format
-msgid "Add email address"
-msgstr "Dodaj naslov e-pošte"
-
-#: src/contents/ui/AddContactPage.qml:289
-#: src/contents/ui/AddContactPage.qml:310
-#, kde-format
-msgid "Instant Messenger"
-msgstr "Trenutni sporočilnik"
-
-#: src/contents/ui/AddContactPage.qml:312
-#, kde-format
-msgid "protocol:person@example.com"
-msgstr "protocol:person@example.com"
-
-#: src/contents/ui/AddContactPage.qml:331
-#, kde-format
-msgid "Add instant messenger address"
-msgstr "Dodaj naslov trenutnega sporočilnika"
-
-#: src/contents/ui/AddContactPage.qml:350 src/contents/ui/DetailPage.qml:281
-#, kde-format
-msgid "Birthday"
-msgstr "Dan rojstva"
-
-#: src/contents/ui/AddContactPage.qml:369 src/contents/ui/DetailPage.qml:296
-#, kde-format
-msgid "Note:"
-msgstr "Opomba:"
-
-#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
-#: src/main.cpp:35
-#, kde-format
-msgid "Phonebook"
-msgstr "Phonebook"
-
-#: src/contents/ui/ContactsPage.qml:90
-#, kde-format
-msgid "Import contacts"
-msgstr "Uvozi stike"
-
-#: src/contents/ui/ContactsPage.qml:101
-#, kde-format
-msgid "add Contact"
-msgstr "dodaj stik"
-
-#: src/contents/ui/ContactsPage.qml:135
-#, kde-format
-msgid "No contacts"
-msgstr "Ni stikov"
-
-#: src/contents/ui/DetailPage.qml:52
-#, kde-format
-msgid "Edit"
-msgstr "Uredi"
-
-#: src/contents/ui/DetailPage.qml:57
-#, kde-format
-msgid "Delete contact"
-msgstr "Zbriši stik"
-
-#: src/contents/ui/DetailPage.qml:68
-#, kde-format
-msgid "Remove Contact"
-msgstr "Odstrani stik"
-
-#: src/contents/ui/DetailPage.qml:78
-#, kde-format
-msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
-msgstr "Ali ste prepričani, da želite zbrisati <b>%1</b> iz vaših stikov?"
-
-#: src/contents/ui/DetailPage.qml:209
-#, kde-format
-msgid "Call"
-msgstr "Klic"
-
-#: src/contents/ui/DetailPage.qml:216
-#, kde-format
-msgid "Send SMS"
-msgstr "Pošlji SMS"
-
-#: src/contents/ui/DetailPage.qml:241
-#, kde-format
-msgid "Send E-Mail"
-msgstr "Pošlji elektronsko pošto"
-
-#: src/contents/ui/DetailPage.qml:247
-#, kde-format
-msgid "E-Mail"
-msgstr "E-pošta"
-
-#: src/contents/ui/DetailPage.qml:263
-#, kde-format
-msgid "Send Message"
-msgstr "Pošlji sporočilo"
-
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
 #, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: src/main.cpp:37
+#: src/main.cpp:34 src/qml/ContactsPage.qml:21 src/qml/Main.qml:17
+#, kde-format
+msgid "Phonebook"
+msgstr "Phonebook"
+
+#: src/main.cpp:36
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Ogled in urejanje stikov"
+
+#: src/qml/AddContactPage.qml:37
+#, kde-format
+msgid "Adding contact"
+msgstr "Dodajanje stika"
+
+#: src/qml/AddContactPage.qml:41
+#, kde-format
+msgid "Editing contact"
+msgstr "Urejanje stika"
+
+#: src/qml/AddContactPage.qml:51
+#, kde-format
+msgid "Photo"
+msgstr "Slika"
+
+#: src/qml/AddContactPage.qml:107
+#, kde-format
+msgid "Add profile picture"
+msgstr "Dodaj sliko profila"
+
+#: src/qml/AddContactPage.qml:117
+#, kde-format
+msgid "Name"
+msgstr "Ime"
+
+#: src/qml/AddContactPage.qml:143 src/qml/AddContactPage.qml:165
+#, kde-format
+msgid "Phone"
+msgstr "Telefon"
+
+#: src/qml/AddContactPage.qml:167
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/qml/AddContactPage.qml:177
+#, kde-format
+msgid "Add phone number"
+msgstr "Dodaj številko telefona"
+
+#: src/qml/AddContactPage.qml:216 src/qml/AddContactPage.qml:238
+#, kde-format
+msgid "Email"
+msgstr "E-sporočilo"
+
+#: src/qml/AddContactPage.qml:240
+#, kde-format
+msgid "user@example.org"
+msgstr "user@example.org"
+
+#: src/qml/AddContactPage.qml:251
+#, kde-format
+msgid "Add email address"
+msgstr "Dodaj naslov e-pošte"
+
+#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:310
+#, kde-format
+msgid "Instant Messenger"
+msgstr "Trenutni sporočilnik"
+
+#: src/qml/AddContactPage.qml:312
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocol:person@example.com"
+
+#: src/qml/AddContactPage.qml:331
+#, kde-format
+msgid "Add instant messenger address"
+msgstr "Dodaj naslov trenutnega sporočilnika"
+
+#: src/qml/AddContactPage.qml:350 src/qml/DetailPage.qml:279
+#, kde-format
+msgid "Birthday"
+msgstr "Dan rojstva"
+
+#: src/qml/AddContactPage.qml:369 src/qml/DetailPage.qml:294
+#, kde-format
+msgid "Note:"
+msgstr "Opomba:"
+
+#: src/qml/ContactsPage.qml:88
+#, kde-format
+msgid "Import contacts"
+msgstr "Uvozi stike"
+
+#: src/qml/ContactsPage.qml:99
+#, kde-format
+msgid "add Contact"
+msgstr "dodaj stik"
+
+#: src/qml/ContactsPage.qml:133
+#, kde-format
+msgid "No contacts"
+msgstr "Ni stikov"
+
+#: src/qml/DetailPage.qml:50
+#, kde-format
+msgid "Edit"
+msgstr "Uredi"
+
+#: src/qml/DetailPage.qml:55
+#, kde-format
+msgid "Delete contact"
+msgstr "Zbriši stik"
+
+#: src/qml/DetailPage.qml:66
+#, kde-format
+msgid "Remove Contact"
+msgstr "Odstrani stik"
+
+#: src/qml/DetailPage.qml:76
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr "Ali ste prepričani, da želite zbrisati <b>%1</b> iz vaših stikov?"
+
+#: src/qml/DetailPage.qml:207
+#, kde-format
+msgid "Call"
+msgstr "Klic"
+
+#: src/qml/DetailPage.qml:214
+#, kde-format
+msgid "Send SMS"
+msgstr "Pošlji SMS"
+
+#: src/qml/DetailPage.qml:239
+#, kde-format
+msgid "Send E-Mail"
+msgstr "Pošlji elektronsko pošto"
+
+#: src/qml/DetailPage.qml:245
+#, kde-format
+msgid "E-Mail"
+msgstr "E-pošta"
+
+#: src/qml/DetailPage.qml:261
+#, kde-format
+msgid "Send Message"
+msgstr "Pošlji sporočilo"
 
 #~ msgid "E-mail:"
 #~ msgstr "E-pošta:"

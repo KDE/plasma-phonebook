@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-07 00:39+0000\n"
+"POT-Creation-Date: 2024-04-17 00:40+0000\n"
 "PO-Revision-Date: 2023-05-16 13:39+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -27,165 +27,161 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "freekdekruijf@kde.nl"
 
-#: src/contents/ui/AddContactPage.qml:37
-#, kde-format
-msgid "Adding contact"
-msgstr "Contactpersoon toevoegen"
-
-#: src/contents/ui/AddContactPage.qml:41
-#, kde-format
-msgid "Editing contact"
-msgstr "Contactpersoon bewerken"
-
-#: src/contents/ui/AddContactPage.qml:51
-#, kde-format
-msgid "Photo"
-msgstr "Foto"
-
-#: src/contents/ui/AddContactPage.qml:107
-#, kde-format
-msgid "Add profile picture"
-msgstr "Profielafbeelding toevoegen"
-
-#: src/contents/ui/AddContactPage.qml:117
-#, kde-format
-msgid "Name"
-msgstr "Naam"
-
-#: src/contents/ui/AddContactPage.qml:143
-#: src/contents/ui/AddContactPage.qml:165
-#, kde-format
-msgid "Phone"
-msgstr "Telefoon"
-
-#: src/contents/ui/AddContactPage.qml:167
-#, kde-format
-msgid "+1 555 2368"
-msgstr "+1 555 2368"
-
-#: src/contents/ui/AddContactPage.qml:177
-#, kde-format
-msgid "Add phone number"
-msgstr "Telefoonnummer toevoegen"
-
-#: src/contents/ui/AddContactPage.qml:216
-#: src/contents/ui/AddContactPage.qml:238
-#, kde-format
-msgid "Email"
-msgstr "E-mail"
-
-#: src/contents/ui/AddContactPage.qml:240
-#, kde-format
-msgid "user@example.org"
-msgstr "gebruiker@voorbeeld.nl"
-
-#: src/contents/ui/AddContactPage.qml:251
-#, kde-format
-msgid "Add email address"
-msgstr "E-mailadres toevoegen"
-
-#: src/contents/ui/AddContactPage.qml:289
-#: src/contents/ui/AddContactPage.qml:310
-#, kde-format
-msgid "Instant Messenger"
-msgstr "Instant-messenger"
-
-#: src/contents/ui/AddContactPage.qml:312
-#, kde-format
-msgid "protocol:person@example.com"
-msgstr "protocol:persoon@voorbeeld.nl"
-
-#: src/contents/ui/AddContactPage.qml:331
-#, kde-format
-msgid "Add instant messenger address"
-msgstr "Adres van instant-messenger toevoegen"
-
-#: src/contents/ui/AddContactPage.qml:350 src/contents/ui/DetailPage.qml:281
-#, kde-format
-msgid "Birthday"
-msgstr "Verjaardag"
-
-#: src/contents/ui/AddContactPage.qml:369 src/contents/ui/DetailPage.qml:296
-#, kde-format
-msgid "Note:"
-msgstr "Notitie:"
-
-#: src/contents/ui/ContactsPage.qml:23 src/contents/ui/main.qml:17
-#: src/main.cpp:35
-#, kde-format
-msgid "Phonebook"
-msgstr "Telefoonboek"
-
-#: src/contents/ui/ContactsPage.qml:90
-#, kde-format
-msgid "Import contacts"
-msgstr "Contactpersonen importeren"
-
-#: src/contents/ui/ContactsPage.qml:101
-#, kde-format
-msgid "add Contact"
-msgstr "contactpersoon toevoegen"
-
-#: src/contents/ui/ContactsPage.qml:135
-#, kde-format
-msgid "No contacts"
-msgstr "Geen contactpersonen"
-
-#: src/contents/ui/DetailPage.qml:52
-#, kde-format
-msgid "Edit"
-msgstr "Bewerken"
-
-#: src/contents/ui/DetailPage.qml:57
-#, kde-format
-msgid "Delete contact"
-msgstr "Contactpersoon verwijderen"
-
-#: src/contents/ui/DetailPage.qml:68
-#, kde-format
-msgid "Remove Contact"
-msgstr "Contactpersoon verwijderen"
-
-#: src/contents/ui/DetailPage.qml:78
-#, kde-format
-msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
-msgstr "Wilt u <b>%1</b> uit uw contactpersonen verwijderen?"
-
-#: src/contents/ui/DetailPage.qml:209
-#, kde-format
-msgid "Call"
-msgstr "Aanroep"
-
-#: src/contents/ui/DetailPage.qml:216
-#, kde-format
-msgid "Send SMS"
-msgstr "SMS verzenden"
-
-#: src/contents/ui/DetailPage.qml:241
-#, kde-format
-msgid "Send E-Mail"
-msgstr "E-mail verzenden"
-
-#: src/contents/ui/DetailPage.qml:247
-#, kde-format
-msgid "E-Mail"
-msgstr "E-mailadres"
-
-#: src/contents/ui/DetailPage.qml:263
-#, kde-format
-msgid "Send Message"
-msgstr "Bericht verzenden"
-
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
 #, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: src/main.cpp:37
+#: src/main.cpp:34 src/qml/ContactsPage.qml:21 src/qml/Main.qml:17
+#, kde-format
+msgid "Phonebook"
+msgstr "Telefoonboek"
+
+#: src/main.cpp:36
 #, kde-format
 msgid "View and edit contacts"
 msgstr "Contactpersonen bekijken en bewerken"
+
+#: src/qml/AddContactPage.qml:37
+#, kde-format
+msgid "Adding contact"
+msgstr "Contactpersoon toevoegen"
+
+#: src/qml/AddContactPage.qml:41
+#, kde-format
+msgid "Editing contact"
+msgstr "Contactpersoon bewerken"
+
+#: src/qml/AddContactPage.qml:51
+#, kde-format
+msgid "Photo"
+msgstr "Foto"
+
+#: src/qml/AddContactPage.qml:107
+#, kde-format
+msgid "Add profile picture"
+msgstr "Profielafbeelding toevoegen"
+
+#: src/qml/AddContactPage.qml:117
+#, kde-format
+msgid "Name"
+msgstr "Naam"
+
+#: src/qml/AddContactPage.qml:143 src/qml/AddContactPage.qml:165
+#, kde-format
+msgid "Phone"
+msgstr "Telefoon"
+
+#: src/qml/AddContactPage.qml:167
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+1 555 2368"
+
+#: src/qml/AddContactPage.qml:177
+#, kde-format
+msgid "Add phone number"
+msgstr "Telefoonnummer toevoegen"
+
+#: src/qml/AddContactPage.qml:216 src/qml/AddContactPage.qml:238
+#, kde-format
+msgid "Email"
+msgstr "E-mail"
+
+#: src/qml/AddContactPage.qml:240
+#, kde-format
+msgid "user@example.org"
+msgstr "gebruiker@voorbeeld.nl"
+
+#: src/qml/AddContactPage.qml:251
+#, kde-format
+msgid "Add email address"
+msgstr "E-mailadres toevoegen"
+
+#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:310
+#, kde-format
+msgid "Instant Messenger"
+msgstr "Instant-messenger"
+
+#: src/qml/AddContactPage.qml:312
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "protocol:persoon@voorbeeld.nl"
+
+#: src/qml/AddContactPage.qml:331
+#, kde-format
+msgid "Add instant messenger address"
+msgstr "Adres van instant-messenger toevoegen"
+
+#: src/qml/AddContactPage.qml:350 src/qml/DetailPage.qml:279
+#, kde-format
+msgid "Birthday"
+msgstr "Verjaardag"
+
+#: src/qml/AddContactPage.qml:369 src/qml/DetailPage.qml:294
+#, kde-format
+msgid "Note:"
+msgstr "Notitie:"
+
+#: src/qml/ContactsPage.qml:88
+#, kde-format
+msgid "Import contacts"
+msgstr "Contactpersonen importeren"
+
+#: src/qml/ContactsPage.qml:99
+#, kde-format
+msgid "add Contact"
+msgstr "contactpersoon toevoegen"
+
+#: src/qml/ContactsPage.qml:133
+#, kde-format
+msgid "No contacts"
+msgstr "Geen contactpersonen"
+
+#: src/qml/DetailPage.qml:50
+#, kde-format
+msgid "Edit"
+msgstr "Bewerken"
+
+#: src/qml/DetailPage.qml:55
+#, kde-format
+msgid "Delete contact"
+msgstr "Contactpersoon verwijderen"
+
+#: src/qml/DetailPage.qml:66
+#, kde-format
+msgid "Remove Contact"
+msgstr "Contactpersoon verwijderen"
+
+#: src/qml/DetailPage.qml:76
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr "Wilt u <b>%1</b> uit uw contactpersonen verwijderen?"
+
+#: src/qml/DetailPage.qml:207
+#, kde-format
+msgid "Call"
+msgstr "Aanroep"
+
+#: src/qml/DetailPage.qml:214
+#, kde-format
+msgid "Send SMS"
+msgstr "SMS verzenden"
+
+#: src/qml/DetailPage.qml:239
+#, kde-format
+msgid "Send E-Mail"
+msgstr "E-mail verzenden"
+
+#: src/qml/DetailPage.qml:245
+#, kde-format
+msgid "E-Mail"
+msgstr "E-mailadres"
+
+#: src/qml/DetailPage.qml:261
+#, kde-format
+msgid "Send Message"
+msgstr "Bericht verzenden"
 
 #~ msgid "E-mail:"
 #~ msgstr "E-mailadres:"
