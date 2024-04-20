@@ -422,6 +422,7 @@
     </screenshot>
   </screenshots>
   <project_group>KDE</project_group>
+  <url type="homepage">https://apps.kde.org/phonebook</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=Plasma%20Mobile%20Phonebook</url>
   <releases>
     <release version="23.01" date="2023-01-30">
