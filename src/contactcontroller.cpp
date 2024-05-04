@@ -61,7 +61,9 @@ KContacts::Email ContactController::createEmail(const QString &email)
 
 KContacts::PhoneNumber ContactController::createPhoneNumber(const QString &number)
 {
-    return KContacts::PhoneNumber(number);
+    KContacts::PhoneNumber pn(number);
+    pn.setType(KContacts::PhoneNumber::Cell);
+    return pn;
 }
 
 KContacts::Impp ContactController::createImpp(const QString &address)
