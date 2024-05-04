@@ -146,7 +146,7 @@ FormCard.FormCardPage {
                 onAccepted: {
                     root.pendingPhoneNumbers[index].number = text
                 }
-                onTextChanged: if(text == "") {
+                onTextChanged: if (text == "") {
                     var newList = root.pendingPhoneNumbers.filter((value, index) => index != phoneField.index)
                     root.pendingPhoneNumbers = newList
                 }
@@ -293,15 +293,8 @@ FormCard.FormCardPage {
                 onAccepted: {
                     root.pendingImpps[index].address = text
                 }
-                onTextChanged: if(text == "") {
-                    root.pendingImpps = root.pendingImpps.filter((value, index) => index != imppField.index)
-                }
-                Connections {
-                    target: root
-                    onSave: {
-                        imppField.accepted()
-                        addressee.impps = root.pendingImpps
-                    }
+                onTextChanged: if (text === "") {
+                    root.pendingImpps = root.pendingImpps.filter((value, index) => index !== imppField.index)
                 }
             }
         }
@@ -315,13 +308,13 @@ FormCard.FormCardPage {
             Connections {
                 target: root
                 function onSave() {
-                    if (toAddPhone.text !== "") {
-                        var numbers = pendingPhoneNumbers
-                        numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
-                        pendingPhoneNumbers = numbers
+                    if (toAddImpp.text !== "") {
+                        var impps = pendingImpps
+                        impps.push(ContactController.createImpp(toAddImpp.text))
+                        root.pendingImpps = impps
                     }
 
-                    addressee.phoneNumbers = root.pendingPhoneNumbers
+                    addressee.impps = root.pendingImpps
                 }
             }
         }
