@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:40+0000\n"
+"POT-Creation-Date: 2024-05-05 00:40+0000\n"
 "PO-Revision-Date: 2023-05-16 08:55+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -101,27 +101,27 @@ msgstr "користувач@example.org"
 msgid "Add email address"
 msgstr "Додати адресу електронної пошти"
 
-#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:310
+#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:303
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Обмін миттєвими повідомленнями"
 
-#: src/qml/AddContactPage.qml:312
+#: src/qml/AddContactPage.qml:305
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "протокол:person@example.com"
 
-#: src/qml/AddContactPage.qml:331
+#: src/qml/AddContactPage.qml:324
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Додати адресу системи миттєвого зв'язку"
 
-#: src/qml/AddContactPage.qml:350 src/qml/DetailPage.qml:279
+#: src/qml/AddContactPage.qml:343 src/qml/DetailPage.qml:279
 #, kde-format
 msgid "Birthday"
 msgstr "День народження"
 
-#: src/qml/AddContactPage.qml:369 src/qml/DetailPage.qml:294
+#: src/qml/AddContactPage.qml:362 src/qml/DetailPage.qml:294
 #, kde-format
 msgid "Note:"
 msgstr "Зауваження:"

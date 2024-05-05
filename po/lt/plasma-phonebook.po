@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:40+0000\n"
+"POT-Creation-Date: 2024-05-05 00:40+0000\n"
 "PO-Revision-Date: 2024-02-14 01:32+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -100,27 +100,27 @@ msgstr "naudotojas@example.org"
 msgid "Add email address"
 msgstr "Pridėti el. pašto adresą"
 
-#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:310
+#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:303
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Pokalbių programa"
 
-#: src/qml/AddContactPage.qml:312
+#: src/qml/AddContactPage.qml:305
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokolas:asmuo@example.com"
 
-#: src/qml/AddContactPage.qml:331
+#: src/qml/AddContactPage.qml:324
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Pridėti pokalbių programa adresą"
 
-#: src/qml/AddContactPage.qml:350 src/qml/DetailPage.qml:279
+#: src/qml/AddContactPage.qml:343 src/qml/DetailPage.qml:279
 #, kde-format
 msgid "Birthday"
 msgstr "Gimimo diena"
 
-#: src/qml/AddContactPage.qml:369 src/qml/DetailPage.qml:294
+#: src/qml/AddContactPage.qml:362 src/qml/DetailPage.qml:294
 #, kde-format
 msgid "Note:"
 msgstr "Pastaba:"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:40+0000\n"
+"POT-Creation-Date: 2024-05-05 00:40+0000\n"
 "PO-Revision-Date: 2020-01-24 22:35+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -104,29 +104,29 @@ msgstr "kasutaja@eesti.ee"
 msgid "Add email address"
 msgstr ""
 
-#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:310
+#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:303
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Instant Messenger"
 msgstr "Kiirsuhtlusrakendus:"
 
-#: src/qml/AddContactPage.qml:312
+#: src/qml/AddContactPage.qml:305
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokoll:isik@eesti.ee"
 
-#: src/qml/AddContactPage.qml:331
+#: src/qml/AddContactPage.qml:324
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Add instant messenger address"
 msgstr "Kiirsuhtlusrakendus:"
 
-#: src/qml/AddContactPage.qml:350 src/qml/DetailPage.qml:279
+#: src/qml/AddContactPage.qml:343 src/qml/DetailPage.qml:279
 #, kde-format
 msgid "Birthday"
 msgstr ""
 
-#: src/qml/AddContactPage.qml:369 src/qml/DetailPage.qml:294
+#: src/qml/AddContactPage.qml:362 src/qml/DetailPage.qml:294
 #, kde-format
 msgid "Note:"
 msgstr ""

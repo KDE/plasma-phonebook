@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-04-17 00:40+0000\n"
+"POT-Creation-Date: 2024-05-05 00:40+0000\n"
 "PO-Revision-Date: 2023-05-28 16:58+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -98,27 +98,27 @@ msgstr "erkki@esimerkki.fi"
 msgid "Add email address"
 msgstr "Lisää sähköpostiosoite"
 
-#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:310
+#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:303
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Pikaviestin"
 
-#: src/qml/AddContactPage.qml:312
+#: src/qml/AddContactPage.qml:305
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "yhteyskaytanto:erkki@esimerkki.fi"
 
-#: src/qml/AddContactPage.qml:331
+#: src/qml/AddContactPage.qml:324
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Lisää pikaviestinosoite"
 
-#: src/qml/AddContactPage.qml:350 src/qml/DetailPage.qml:279
+#: src/qml/AddContactPage.qml:343 src/qml/DetailPage.qml:279
 #, kde-format
 msgid "Birthday"
 msgstr "Syntymäpäivä"
 
-#: src/qml/AddContactPage.qml:369 src/qml/DetailPage.qml:294
+#: src/qml/AddContactPage.qml:362 src/qml/DetailPage.qml:294
 #, kde-format
 msgid "Note:"
 msgstr "Huomautus:"
