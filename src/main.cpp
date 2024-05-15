@@ -27,9 +27,9 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QCommandLineParser parser;
     QApplication app(argc, argv);
 
+    KLocalizedString::setApplicationDomain("plasma-phonebook");
     KAboutData aboutData(QStringLiteral("plasma-phonebook"),
                          i18n("Phonebook"),
                          QStringLiteral(PLASMAPHONEBOOK_VERSION_STRING),
@@ -38,7 +38,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setDesktopFileName(QStringLiteral("org.kde.phonebook"));
     KAboutData::setApplicationData(aboutData);
 
-    KLocalizedString::setApplicationDomain("plasma-phonebook");
+    QCommandLineParser parser;
     parser.addVersionOption();
     parser.process(app);
 
