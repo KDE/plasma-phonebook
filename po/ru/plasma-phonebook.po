@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-phonebook package.
 #
-# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022, 2023.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-05 00:40+0000\n"
-"PO-Revision-Date: 2023-01-28 22:33+0300\n"
+"PO-Revision-Date: 2024-06-27 20:40+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -62,19 +62,17 @@ msgstr "Фотография"
 #: src/qml/AddContactPage.qml:107
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Добавить изображения профиля"
 
 #: src/qml/AddContactPage.qml:117
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Имя:"
+msgstr "Имя"
 
 #: src/qml/AddContactPage.qml:143 src/qml/AddContactPage.qml:165
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Телефон:"
+msgstr "Телефон"
 
 #: src/qml/AddContactPage.qml:167
 #, kde-format
@@ -84,7 +82,7 @@ msgstr "+7 900 123-23-68"
 #: src/qml/AddContactPage.qml:177
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Добавить номер телефона"
 
 #: src/qml/AddContactPage.qml:216 src/qml/AddContactPage.qml:238
 #, kde-format
@@ -99,13 +97,12 @@ msgstr "user@example.org"
 #: src/qml/AddContactPage.qml:251
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Добавить адрес эл. почты"
 
 #: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:303
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Мгновенные сообщения:"
+msgstr "Мгновенные сообщения"
 
 #: src/qml/AddContactPage.qml:305
 #, kde-format
@@ -119,10 +116,9 @@ msgid "Add instant messenger address"
 msgstr "Мгновенные сообщения:"
 
 #: src/qml/AddContactPage.qml:343 src/qml/DetailPage.qml:279
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "День рождения:"
+msgstr "День рождения"
 
 #: src/qml/AddContactPage.qml:362 src/qml/DetailPage.qml:294
 #, kde-format
@@ -177,15 +173,14 @@ msgid "Send SMS"
 msgstr "Отправить SMS"
 
 #: src/qml/DetailPage.qml:239
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "Отправить письмо"
 
 #: src/qml/DetailPage.qml:245
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: src/qml/DetailPage.qml:261
 #, fuzzy, kde-format
