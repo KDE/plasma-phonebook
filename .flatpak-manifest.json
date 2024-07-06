@@ -22,7 +22,7 @@
         {
             "name": "kpeople",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpeople.git", "tag": "v6.0.0" } ]
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpeople.git", "tag": "v6.3.0" } ]
         },
         {
             "name": "kirigamiaddons",
