@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-05 00:40+0000\n"
+"POT-Creation-Date: 2024-07-07 00:40+0000\n"
 "PO-Revision-Date: 2023-06-02 08:41+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -43,82 +43,82 @@ msgstr "Phonebook"
 msgid "View and edit contacts"
 msgstr "Visualizza e modifica i contatti"
 
-#: src/qml/AddContactPage.qml:37
+#: src/qml/AddContactPage.qml:40
 #, kde-format
 msgid "Adding contact"
 msgstr "Aggiunta contatto"
 
-#: src/qml/AddContactPage.qml:41
+#: src/qml/AddContactPage.qml:44
 #, kde-format
 msgid "Editing contact"
 msgstr "Modifica contatto"
 
-#: src/qml/AddContactPage.qml:51
+#: src/qml/AddContactPage.qml:54
 #, kde-format
 msgid "Photo"
 msgstr "Foto"
 
-#: src/qml/AddContactPage.qml:107
+#: src/qml/AddContactPage.qml:110
 #, kde-format
 msgid "Add profile picture"
 msgstr "Aggiungi immagine del profilo"
 
-#: src/qml/AddContactPage.qml:117
+#: src/qml/AddContactPage.qml:120
 #, kde-format
 msgid "Name"
 msgstr "Nome"
 
-#: src/qml/AddContactPage.qml:143 src/qml/AddContactPage.qml:165
+#: src/qml/AddContactPage.qml:146 src/qml/AddContactPage.qml:168
 #, kde-format
 msgid "Phone"
 msgstr "Telefono"
 
-#: src/qml/AddContactPage.qml:167
+#: src/qml/AddContactPage.qml:170
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+1 555 2368"
 
-#: src/qml/AddContactPage.qml:177
+#: src/qml/AddContactPage.qml:180
 #, kde-format
 msgid "Add phone number"
 msgstr "Aggiungi numero di telefono"
 
-#: src/qml/AddContactPage.qml:216 src/qml/AddContactPage.qml:238
+#: src/qml/AddContactPage.qml:219 src/qml/AddContactPage.qml:241
 #, kde-format
 msgid "Email"
 msgstr "Posta elettronica"
 
-#: src/qml/AddContactPage.qml:240
+#: src/qml/AddContactPage.qml:243
 #, kde-format
 msgid "user@example.org"
 msgstr "utente@esempio.com"
 
-#: src/qml/AddContactPage.qml:251
+#: src/qml/AddContactPage.qml:254
 #, kde-format
 msgid "Add email address"
 msgstr "Aggiungi un indirizzo di posta"
 
-#: src/qml/AddContactPage.qml:289 src/qml/AddContactPage.qml:303
+#: src/qml/AddContactPage.qml:292 src/qml/AddContactPage.qml:306
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Messaggistica istantanea"
 
-#: src/qml/AddContactPage.qml:305
+#: src/qml/AddContactPage.qml:308
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protocollo:persona@esempio.com"
 
-#: src/qml/AddContactPage.qml:324
+#: src/qml/AddContactPage.qml:327
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Aggiungi indirizzo di messaggistica istantanea"
 
-#: src/qml/AddContactPage.qml:343 src/qml/DetailPage.qml:279
+#: src/qml/AddContactPage.qml:346 src/qml/DetailPage.qml:301
 #, kde-format
 msgid "Birthday"
 msgstr "Data di nascita"
 
-#: src/qml/AddContactPage.qml:362 src/qml/DetailPage.qml:294
+#: src/qml/AddContactPage.qml:365 src/qml/DetailPage.qml:316
 #, kde-format
 msgid "Note:"
 msgstr "Nota:"
@@ -138,47 +138,47 @@ msgstr "aggiungi contatto"
 msgid "No contacts"
 msgstr "Nessun contatto"
 
-#: src/qml/DetailPage.qml:50
+#: src/qml/DetailPage.qml:53
 #, kde-format
 msgid "Edit"
 msgstr "Modifica"
 
-#: src/qml/DetailPage.qml:55
+#: src/qml/DetailPage.qml:58
 #, kde-format
 msgid "Delete contact"
 msgstr "Elimina il contatto"
 
-#: src/qml/DetailPage.qml:66
+#: src/qml/DetailPage.qml:69
 #, kde-format
 msgid "Remove Contact"
 msgstr "Rimuovi contatto"
 
-#: src/qml/DetailPage.qml:76
+#: src/qml/DetailPage.qml:79
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
 msgstr "Sei sicuro di voler eliminare <b>%1</b> dai tuoi contatti?"
 
-#: src/qml/DetailPage.qml:207
+#: src/qml/DetailPage.qml:218
 #, kde-format
 msgid "Call"
 msgstr "Chiamata"
 
-#: src/qml/DetailPage.qml:214
+#: src/qml/DetailPage.qml:225
 #, kde-format
 msgid "Send SMS"
 msgstr "Invia SMS"
 
-#: src/qml/DetailPage.qml:239
+#: src/qml/DetailPage.qml:255
 #, kde-format
 msgid "Send E-Mail"
 msgstr "Invia messaggio di posta elettronica"
 
-#: src/qml/DetailPage.qml:245
+#: src/qml/DetailPage.qml:261
 #, kde-format
 msgid "E-Mail"
 msgstr "Posta elettronica"
 
-#: src/qml/DetailPage.qml:261
+#: src/qml/DetailPage.qml:283
 #, kde-format
 msgid "Send Message"
 msgstr "Invia messaggio"
