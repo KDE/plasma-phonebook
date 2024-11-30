@@ -54,15 +54,13 @@ if(ANDROID)
         im-gadugadu
         im-twitter
         im-irc
-        im-google-talk
         im-yahoo
         im-jabber
-        im skype
+        im-skype
         im-icq
         im-qq
         im-facebook
         im-aim
-        im-identi.ca
         im-youtube
     )
 
