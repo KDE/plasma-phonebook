@@ -30,6 +30,7 @@
   <name xml:lang="pl">Książka telefoniczna</name>
   <name xml:lang="pt">Lista Telefónica</name>
   <name xml:lang="pt-BR">Agenda telefônica</name>
+  <name xml:lang="sa">दूरभाषपुस्तिका</name>
   <name xml:lang="sk">Telefónny zoznam</name>
   <name xml:lang="sl">Phonebook</name>
   <name xml:lang="sv">Telefonkatalog</name>
@@ -72,6 +73,7 @@
   <summary xml:lang="pt-BR">Visualizar e editar contatos</summary>
   <summary xml:lang="ro">Vedeți și modificați contacte</summary>
   <summary xml:lang="ru">Просмотр и редактирование контактов</summary>
+  <summary xml:lang="sa">सम्पर्कं पश्यन्तु सम्पादयन्तु च</summary>
   <summary xml:lang="sk">Zobrazovať a upraviť kontakty</summary>
   <summary xml:lang="sl">Poglej in urejaj stike</summary>
   <summary xml:lang="sv">Visa och redigera kontakter</summary>
@@ -114,6 +116,7 @@
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">KDE Community</developer_name>
   <developer_name xml:lang="ro">Comunitatea KDE</developer_name>
+  <developer_name xml:lang="sa">केडीई समुदाय</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
@@ -154,6 +157,7 @@
     <p xml:lang="pt">Aplicação de gestão de contactos convergente tanto para computadores como para dispositivos móveis.</p>
     <p xml:lang="pt-BR">Aplicativo de gerenciamento de contatos convergente para área de trabalho e dispositivos móveis.</p>
     <p xml:lang="ro">Aplicație convergentă de gestiune a contactelor pentru dispozitive de birou și mobile.</p>
+    <p xml:lang="sa">डेस्कटॉप् तथा मोबाईल उपकरणयोः कृते अभिसरणसंपर्कप्रबन्धन अनुप्रयोगः।</p>
     <p xml:lang="sk">Konvergentná aplikácia na správu kontaktov pre stolné aj mobilné zariadenia.</p>
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
     <p xml:lang="sv">Konvergerade kontakthanteringsprogram för både skrivbord och mobilenheter</p>
@@ -195,6 +199,7 @@
     <p xml:lang="pt">Oferece um local central para iniciar as conversas. Dependendo da informação disponível sobre um contacto, são apresentadas as acções respectivas.</p>
     <p xml:lang="pt-BR">Fornece um local central para iniciar conversas. Dependendo das informações disponíveis sobre um contato, as respectivas ações são exibidas.</p>
     <p xml:lang="ro">Oferă un loc central pentru începerea conversațiilor. În dependență de informațiile disponibile pentru un contact, sunt afișate acțiunile respective.</p>
+    <p xml:lang="sa">वार्तालापस्य आरम्भार्थं केन्द्रस्थानं प्रददाति । सम्पर्कस्य विषये उपलब्धसूचनायाः आधारेण तत्तत्क्रियाः प्रदर्शिताः भवन्ति ।</p>
     <p xml:lang="sk">Poskytuje centrálne miesto pre začatie konverzácie. V závislosti od dostupných informácií o kontakte sa zobrazia príslušné akcie.</p>
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
     <p xml:lang="sv">Det tillhandahåller en central plats för att inleda konversationer. Beroende på tillgänglig information om en kontakt, visas respektive åtgärder.</p>
@@ -237,6 +242,7 @@
     <p xml:lang="pt-BR">Recursos</p>
     <p xml:lang="ro">Caracteristici</p>
     <p xml:lang="ru">Возможности</p>
+    <p xml:lang="sa">गुणाः</p>
     <p xml:lang="sk">Funkcie</p>
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
@@ -279,6 +285,7 @@
       <li xml:lang="pt">Adicionar contactos</li>
       <li xml:lang="pt-BR">Adicionar contatos</li>
       <li xml:lang="ro">Adaugă contacte</li>
+      <li xml:lang="sa">सम्पर्कं योजयन्तु</li>
       <li xml:lang="sk">Pridať kontakty</li>
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
@@ -320,6 +327,7 @@
       <li xml:lang="pt">Remover os contactos</li>
       <li xml:lang="pt-BR">Excluir contatos</li>
       <li xml:lang="ro">Elimină contacte</li>
+      <li xml:lang="sa">सम्पर्कं निष्कासयन्तु</li>
       <li xml:lang="sk">Odstrániť kontakty</li>
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
@@ -361,6 +369,7 @@
       <li xml:lang="pt">Importar os ficheiros vCard</li>
       <li xml:lang="pt-BR">Importar arquivos vCard</li>
       <li xml:lang="ro">Importă fișiere vCard</li>
+      <li xml:lang="sa">vCard सञ्चिकाः आयातयन्तु</li>
       <li xml:lang="sk">Importovať súbory vCard</li>
       <li xml:lang="sl">Uvoz datotek vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
@@ -409,6 +418,7 @@
       <caption xml:lang="pt">Visão geral do contacto</caption>
       <caption xml:lang="pt-BR">Visão do contato</caption>
       <caption xml:lang="ro">Sumar contacte</caption>
+      <caption xml:lang="sa">सम्पर्क अवलोकन</caption>
       <caption xml:lang="sk">Prehľad kontaktu</caption>
       <caption xml:lang="sl">Pregled stikov</caption>
       <caption xml:lang="sv">Översikt av kontakter</caption>
