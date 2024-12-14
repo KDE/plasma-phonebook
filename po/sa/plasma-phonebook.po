@@ -1,0 +1,183 @@
+# Sanskrit translations for plasma-phonebook package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-phonebook package.
+# Kali <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-phonebook\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-07-07 00:40+0000\n"
+"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Sanskrit\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
+#, kde-format
+msgctxt "Action to write to instant messenger contact"
+msgid "%1 %2"
+msgstr ""
+
+#: src/main.cpp:34 src/qml/ContactsPage.qml:21 src/qml/Main.qml:17
+#, kde-format
+msgid "Phonebook"
+msgstr "दूरभाषपुस्तिका"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "View and edit contacts"
+msgstr "सम्पर्कं पश्यन्तु सम्पादयन्तु च"
+
+#: src/qml/AddContactPage.qml:40
+#, kde-format
+msgid "Adding contact"
+msgstr "सम्पर्कं योजयन्"
+
+#: src/qml/AddContactPage.qml:44
+#, kde-format
+msgid "Editing contact"
+msgstr "सम्पर्क सम्पादन"
+
+#: src/qml/AddContactPage.qml:54
+#, kde-format
+msgid "Photo"
+msgstr "चित्रं"
+
+#: src/qml/AddContactPage.qml:110
+#, kde-format
+msgid "Add profile picture"
+msgstr "प्रोफाइल चित्रं योजयन्तु"
+
+#: src/qml/AddContactPage.qml:120
+#, kde-format
+msgid "Name"
+msgstr "नामः"
+
+#: src/qml/AddContactPage.qml:146 src/qml/AddContactPage.qml:168
+#, kde-format
+msgid "Phone"
+msgstr "फोनं"
+
+#: src/qml/AddContactPage.qml:170
+#, kde-format
+msgid "+1 555 2368"
+msgstr "+१ ५५५ २३६८"
+
+#: src/qml/AddContactPage.qml:180
+#, kde-format
+msgid "Add phone number"
+msgstr "दूरभाषसङ्ख्यां योजयन्तु"
+
+#: src/qml/AddContactPage.qml:219 src/qml/AddContactPage.qml:241
+#, kde-format
+msgid "Email"
+msgstr "ईमेल"
+
+#: src/qml/AddContactPage.qml:243
+#, kde-format
+msgid "user@example.org"
+msgstr "उपयोक्ता@उदाहरण.org"
+
+#: src/qml/AddContactPage.qml:254
+#, kde-format
+msgid "Add email address"
+msgstr "ईमेल-सङ्केतं योजयन्तु"
+
+#: src/qml/AddContactPage.qml:292 src/qml/AddContactPage.qml:306
+#, kde-format
+msgid "Instant Messenger"
+msgstr "तत्क्षणदूत"
+
+#: src/qml/AddContactPage.qml:308
+#, kde-format
+msgid "protocol:person@example.com"
+msgstr "प्रोटोकॉल:व्यक्ति@उदाहरण डॉट कॉम"
+
+#: src/qml/AddContactPage.qml:327
+#, kde-format
+msgid "Add instant messenger address"
+msgstr "तत्क्षणदूतसङ्केतं योजयन्तु"
+
+#: src/qml/AddContactPage.qml:346 src/qml/DetailPage.qml:301
+#, kde-format
+msgid "Birthday"
+msgstr "जन्मदिवस"
+
+#: src/qml/AddContactPage.qml:365 src/qml/DetailPage.qml:316
+#, kde-format
+msgid "Note:"
+msgstr "टीका:"
+
+#: src/qml/ContactsPage.qml:88
+#, kde-format
+msgid "Import contacts"
+msgstr "सम्पर्क आयात करें"
+
+#: src/qml/ContactsPage.qml:99
+#, kde-format
+msgid "add Contact"
+msgstr "add सम्पर्क"
+
+#: src/qml/ContactsPage.qml:133
+#, kde-format
+msgid "No contacts"
+msgstr "सम्पर्कः नास्ति"
+
+#: src/qml/DetailPage.qml:53
+#, kde-format
+msgid "Edit"
+msgstr "सम्पादन"
+
+#: src/qml/DetailPage.qml:58
+#, kde-format
+msgid "Delete contact"
+msgstr "सम्पर्क विलोपना"
+
+#: src/qml/DetailPage.qml:69
+#, kde-format
+msgid "Remove Contact"
+msgstr "सम्पर्क हटाएँ"
+
+#: src/qml/DetailPage.qml:79
+#, kde-format
+msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
+msgstr "किं भवान् निश्चितः यत् भवान् स्वसम्पर्कात् <b>%1</b> विलोपयितुम् इच्छति?"
+
+#: src/qml/DetailPage.qml:218
+#, kde-format
+msgid "Call"
+msgstr "आह्वानम्‌"
+
+#: src/qml/DetailPage.qml:225
+#, kde-format
+msgid "Send SMS"
+msgstr "एस एम एस प्रेषित करें"
+
+#: src/qml/DetailPage.qml:255
+#, kde-format
+msgid "Send E-Mail"
+msgstr "ई-मेल प्रेषयन्तु"
+
+#: src/qml/DetailPage.qml:261
+#, kde-format
+msgid "E-Mail"
+msgstr "ई-मेल"
+
+#: src/qml/DetailPage.qml:283
+#, kde-format
+msgid "Send Message"
+msgstr "सन्देशं प्रेषयतु"
