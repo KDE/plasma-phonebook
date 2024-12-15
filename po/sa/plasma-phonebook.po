@@ -19,18 +19,18 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "भवतः नामानि"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "भवतः ईमेलपत्राणि"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
 #, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
-msgstr ""
+msgstr "%1 %2"
 
 #: src/main.cpp:34 src/qml/ContactsPage.qml:21 src/qml/Main.qml:17
 #, kde-format
