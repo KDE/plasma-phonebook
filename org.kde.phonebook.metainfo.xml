@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <id>org.kde.phonebook</id>
   <name>Phonebook</name>
+  <name xml:lang="ar">دفتر الهاتف</name>
   <name xml:lang="az">Telefon kitabçası</name>
   <name xml:lang="ca">Agenda telefònica</name>
   <name xml:lang="ca-valencia">Agenda telefònica</name>
@@ -42,6 +43,7 @@
   <name xml:lang="zh-CN">电话簿</name>
   <name xml:lang="zh-TW">電話簿</name>
   <summary>View and edit contacts</summary>
+  <summary xml:lang="ar">اعرض وحرر المتراسلين</summary>
   <summary xml:lang="az">Əlaqələrə baxış və düzəliş</summary>
   <summary xml:lang="ca">Visualitza i edita els contactes</summary>
   <summary xml:lang="ca-valencia">Visualitza i edita els contactes</summary>
@@ -88,6 +90,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-only</project_license>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="ar">مجتمع كِيدِي</developer_name>
   <developer_name xml:lang="az">KDE İcması</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
@@ -131,6 +134,7 @@
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>Convergent contact management application for both desktop and mobile devices.</p>
+    <p xml:lang="ar">تطبيق إدارة المتراسلين المناسب لكل من أجهزة سطح المكتب والأجهزة المحمولة.</p>
     <p xml:lang="az">Həm masaüstü həm də mobil cihazlarda istifadə edilə biləcək əlaqələrin idarə edilməsi vasitəsi.</p>
     <p xml:lang="ca">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
     <p xml:lang="ca-valencia">Una aplicació convergent de gestió de contactes tant per a l'escriptori com per a dispositius mòbils.</p>
@@ -173,6 +177,7 @@
     <p xml:lang="zh-TW">桌面與手機通用的響應式聯絡人管理應用程式。</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
       respective actions are displayed.</p>
+    <p xml:lang="ar">يُوفّر مكانًا مركزيًا لبدء المحادثات. بناءً على المعلومات المُتاحة عن المتراسل، تُعرض الإجراءات المُتعلقة بها.</p>
     <p xml:lang="az">Söhbətə başlamaq üçün ortaq bir məkan təqdim edir. Əlaqə haqqında əlçatan məlumatlardan asılı olaraq müvafiq fəaliyyətləri göstərir.</p>
     <p xml:lang="ca">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
     <p xml:lang="ca-valencia">Proporciona un punt central per a iniciar conversacions. En funció de la informació disponible quant a un contacte, es mostren les accions respectives.</p>
@@ -215,6 +220,7 @@
     <p xml:lang="zh-CN">本程序提供了发起会话的中心位置。它可以根据联系人的已有信息显示不同的操作。</p>
     <p xml:lang="zh-TW">它提供一個開始進行對話的中心。它會依可用的資訊為聯絡人顯示對應的動作。</p>
     <p>Features</p>
+    <p xml:lang="ar">الميزات</p>
     <p xml:lang="ast">Funciones</p>
     <p xml:lang="az">İmkanlar</p>
     <p xml:lang="ca">Característiques</p>
@@ -260,6 +266,7 @@
     <p xml:lang="zh-TW">功能</p>
     <ul>
       <li>Add contacts</li>
+      <li xml:lang="ar">إضافة المتراسلين</li>
       <li xml:lang="az">Əlaqə əlavə edin</li>
       <li xml:lang="ca">Afegeix contactes</li>
       <li xml:lang="ca-valencia">Afig contactes</li>
@@ -303,6 +310,7 @@
       <li xml:lang="zh-CN">添加联系人</li>
       <li xml:lang="zh-TW">新增聯絡人</li>
       <li>Remove contacts</li>
+      <li xml:lang="ar">إزالة المتراسلين</li>
       <li xml:lang="az">Əlaqələri silin</li>
       <li xml:lang="ca">Elimina els contactes</li>
       <li xml:lang="ca-valencia">Elimina els contactes</li>
@@ -346,6 +354,7 @@
       <li xml:lang="zh-CN">移除联系人</li>
       <li xml:lang="zh-TW">移除聯絡人</li>
       <li>Import vCard files</li>
+      <li xml:lang="ar">استيراد ملفات vCard</li>
       <li xml:lang="az">vCard fayllarını idxal edin</li>
       <li xml:lang="ca">Importa fitxers vCard</li>
       <li xml:lang="ca-valencia">Importa fitxers vCard</li>
@@ -397,6 +406,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>Contact overview</caption>
+      <caption xml:lang="ar">نظرة عامة للمتراسل</caption>
       <caption xml:lang="az">Əlaqələrin icmalı</caption>
       <caption xml:lang="ca">Resum dels contactes</caption>
       <caption xml:lang="ca-valencia">Resum dels contactes</caption>
