@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Phonebook
+Name[ar]=دفتر الهاتف
 Name[az]=Telefon kitabçası
 Name[ca]=Agenda telefònica
 Name[ca@valencia]=Agenda telefònica
@@ -42,6 +43,7 @@ Name[x-test]=xxPhonebookxx
 Name[zh_CN]=Phonebook
 Name[zh_TW]=電話簿
 Comment=Edit and view Contacts
+Comment[ar]=اعرض وحرر المتراسلين
 Comment[ast]=Edita y visualiza contautos
 Comment[az]=Əlaqələrə göz atın və onlara düzəliş edin
 Comment[ca]=Visualitza i edita els contactes
@@ -93,6 +95,7 @@ Type=Application
 Terminal=false
 Categories=Qt;KDE;Office;
 Keywords=friends;address book;contact list;
+Keywords[ar]=الأصدقاء;دفتر العناوين;قائمة الاتصال;
 Keywords[ca]=amics;amistats;llibreta d'adreces;llista de contactes;
 Keywords[ca@valencia]=amics;amistats;llibreta d'adreces;llista de contactes;
 Keywords[de]=Freunde;Adressbuch;Kontaktliste;
