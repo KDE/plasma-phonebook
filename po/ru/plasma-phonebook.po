@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the plasma-phonebook package.
 #
-# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022, 2023, 2024.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-07-07 00:40+0000\n"
-"PO-Revision-Date: 2024-06-27 20:40+0300\n"
-"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"PO-Revision-Date: 2025-05-29 21:36+0200\n"
+"Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -183,10 +183,9 @@ msgid "E-Mail"
 msgstr "E-Mail"
 
 #: src/qml/DetailPage.qml:283
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Отправить письмо"
+msgstr "Отправить сообщение"
 
 #~ msgid "E-mail:"
 #~ msgstr "Адрес эл. почты:"
