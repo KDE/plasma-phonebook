@@ -39,7 +39,6 @@
   <name xml:lang="tr">Telefon Defteri</name>
   <name xml:lang="uk">Телефонна книга</name>
   <name xml:lang="vi">Danh bạ</name>
-  <name xml:lang="x-test">xxPhonebookxx</name>
   <name xml:lang="zh-CN">电话簿</name>
   <name xml:lang="zh-TW">電話簿</name>
   <summary>View and edit contacts</summary>
@@ -84,7 +83,6 @@
   <summary xml:lang="tr">Kişi Görüntüleme ve Düzenleme</summary>
   <summary xml:lang="uk">Перегляд і редагування контактів</summary>
   <summary xml:lang="vi">Xem và chỉnh sửa các liên hệ</summary>
-  <summary xml:lang="x-test">xxView and edit contactsxx</summary>
   <summary xml:lang="zh-CN">联系人查看和编辑工具</summary>
   <summary xml:lang="zh-TW">檢視並編輯聯絡人</summary>
   <metadata_license>CC0-1.0</metadata_license>
@@ -129,7 +127,6 @@
   <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="vi">Cộng đồng KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
@@ -172,7 +169,6 @@
     <p xml:lang="tr">Masaüstü ve taşınabilir aygıtlar için yakınsak kişi yönetimi uygulaması.</p>
     <p xml:lang="uk">Універсальна програма для керування контактами для робочих станцій та мобільних пристроїв.</p>
     <p xml:lang="vi">Ứng dụng quản lí liên hệ tập trung cho cả máy tính và thiết bị di động.</p>
-    <p xml:lang="x-test">xxConvergent contact management application for both desktop and mobile devices.xx</p>
     <p xml:lang="zh-CN">桌面和移动设备的统一联系人管理应用程序。</p>
     <p xml:lang="zh-TW">桌面與手機通用的響應式聯絡人管理應用程式。</p>
     <p>It provides a central place for starting conversations. Depending on the information available about a contact,
@@ -216,7 +212,6 @@
     <p xml:lang="tr">Konuşma başlatmak için merkezi bir alan sağlar. Bir kişi hakkındaki bilgilerin varoluşuna göre kullanılabilir eylemler görüntülenir.</p>
     <p xml:lang="uk">Надає вам спільну платформу для започаткування спілкувань. Залежно від даних, які доступні щодо контакту, буде показано відповідний список можливих дій зі встановлення зв'язку.</p>
     <p xml:lang="vi">Nó cung cấp một địa điểm trung tâm để bắt đầu các cuộc hội thoại. Các hành động tương ứng được hiển thị tuỳ thuộc vào thông tin có trong từng liên hệ.</p>
-    <p xml:lang="x-test">xxIt provides a central place for starting conversations. Depending on the information available about a contact, respective actions are displayed.xx</p>
     <p xml:lang="zh-CN">本程序提供了发起会话的中心位置。它可以根据联系人的已有信息显示不同的操作。</p>
     <p xml:lang="zh-TW">它提供一個開始進行對話的中心。它會依可用的資訊為聯絡人顯示對應的動作。</p>
     <p>Features</p>
@@ -261,7 +256,6 @@
     <p xml:lang="tr">Özellikler</p>
     <p xml:lang="uk">Можливості</p>
     <p xml:lang="vi">Tính năng</p>
-    <p xml:lang="x-test">xxFeaturesxx</p>
     <p xml:lang="zh-CN">程序功能</p>
     <p xml:lang="zh-TW">功能</p>
     <ul>
@@ -306,7 +300,6 @@
       <li xml:lang="tr">Kişi ekle</li>
       <li xml:lang="uk">Додавання контактів</li>
       <li xml:lang="vi">Thêm liên hệ</li>
-      <li xml:lang="x-test">xxAdd contactsxx</li>
       <li xml:lang="zh-CN">添加联系人</li>
       <li xml:lang="zh-TW">新增聯絡人</li>
       <li>Remove contacts</li>
@@ -350,7 +343,6 @@
       <li xml:lang="tr">Kişi kaldır</li>
       <li xml:lang="uk">Вилучення контактів</li>
       <li xml:lang="vi">Xoá liên hệ</li>
-      <li xml:lang="x-test">xxRemove contactsxx</li>
       <li xml:lang="zh-CN">移除联系人</li>
       <li xml:lang="zh-TW">移除聯絡人</li>
       <li>Import vCard files</li>
@@ -394,7 +386,6 @@
       <li xml:lang="tr">vCard dosyalarını içe aktar</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
       <li xml:lang="vi">Nhập khẩu các tệp vCard</li>
-      <li xml:lang="x-test">xxImport vCard filesxx</li>
       <li xml:lang="zh-CN">导入 vCard 文件</li>
       <li xml:lang="zh-TW">匯入 vCard 檔案</li>
     </ul>
@@ -445,7 +436,6 @@
       <caption xml:lang="tr">Kişi genel görünümü</caption>
       <caption xml:lang="uk">Огляд контактів</caption>
       <caption xml:lang="vi">Xem khái quát liên hệ</caption>
-      <caption xml:lang="x-test">xxContact overviewxx</caption>
       <caption xml:lang="zh-CN">联系人总览</caption>
       <caption xml:lang="zh-TW">聯絡人總覽</caption>
       <image type="source">https://cdn.kde.org/screenshots/plasma-phonebook/plasma-phonebook.png</image>
