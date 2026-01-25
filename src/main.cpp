@@ -75,7 +75,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     }
     
     // required for X11
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.krecorder")));
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.phonebook")));
 
     return app.exec();
 }
