@@ -72,7 +72,7 @@ FormCard.FormCardPage {
                     }
                 }
                 anchors.fill: parent
-                layer.enabled: true
+                layer.enabled: GraphicsInfo.api !== GraphicsInfo.Software
                 layer.effect: OpacityMask {
                     maskSource: mask
                 }
