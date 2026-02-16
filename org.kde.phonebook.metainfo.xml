@@ -468,8 +468,23 @@
       <description>
         <ul>
           <li>Make app remember state on desktop</li>
+          <li xml:lang="eu">Aplikazioari mahaigaineko egoera gogoraraztea</li>
+          <li xml:lang="he">לגרום ליישום לזכור את המצב בשולחן העבודה</li>
+          <li xml:lang="ka">აპლიკაციის მიერ სამუშაო მაგიდაზე მდგომარეობის დამახსოვრება</li>
+          <li xml:lang="pt-BR">Faz com que o aplicativo se lembre do estado na área de trabalho</li>
+          <li xml:lang="sl">Naj si aplikacija zapomni stanje na namizju</li>
           <li>Do not highlight first contact in list when opening</li>
+          <li xml:lang="eu">Irekitzean, zerrendako aurreneko kontaktua ez nabarmentzea</li>
+          <li xml:lang="he">לא להדגיש את איש הקשר הראשון ברשימה עם הפתיחה</li>
+          <li xml:lang="ka">გახსნისას სიაში პირველი კონტაქტის გამოკვეთა არ მოხდება</li>
+          <li xml:lang="pt-BR">Não seleciona o primeiro contato na lista ao abrir</li>
+          <li xml:lang="sl">Ne označi prvega stika na seznamu pri odpiranju</li>
           <li>Add missing input method hints for contact entries</li>
+          <li xml:lang="eu">Kontaktuen sarreretan sarrera-metodoaren ezarpenak osatzea</li>
+          <li xml:lang="he">נוספו רמזי שיטת קלט חסרים להוספת אנשי קשר</li>
+          <li xml:lang="ka">კონტაქტების ველებისთვის შეყვანის მეთოდის ნაკლული მინიშნებების დამატება</li>
+          <li xml:lang="pt-BR">Adiciona dicas de método de entrada ausentes para entradas de contato</li>
+          <li xml:lang="sl">Doda manjkajoče namige za vnosne metode za vnose stikov</li>
         </ul>
       </description>
     </release>
@@ -480,6 +495,11 @@
       <description>
         <ul>
           <li>Internal improvements</li>
+          <li xml:lang="eu">Barne hobekuntzak</li>
+          <li xml:lang="he">שיפורים פנימיים</li>
+          <li xml:lang="ka">შიდა გაუმჯობესებები</li>
+          <li xml:lang="pt-BR">Melhorias internas</li>
+          <li xml:lang="sl">Notranje izboljšave</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/07/20/plasma-mobile-gear-21-07/</url>
@@ -488,9 +508,28 @@
       <description>
         <ul>
           <li>Re-add support for calling/texting multiple numbers</li>
+          <li xml:lang="eu">Zenbaki anitzetara deitzeko/mezuak bidaltzeko euskarria berriz gehitzea</li>
+          <li xml:lang="he">נוספה מחדש התמיכה בהתקשרות/התכתבות עם מגוון מספרים</li>
+          <li xml:lang="ka">თავიდან დაემატა ერთზე მეტ ნომერზე დარეკვის/შეტყობინების გაგზავნის მხარდაჭერა</li>
+          <li xml:lang="pt-BR">Reativado o suporte para chamadas/envio de mensagens de texto para vários números</li>
+          <li xml:lang="sl">Ponovno doda podporo za klicanje/pošiljanje sporočil na več številk</li>
           <li>Remove call action from contacts list</li>
+          <li xml:lang="eu">Dei-ekintza kontaktuen zerrendatik kentzea</li>
+          <li xml:lang="he">הוסרה פעולת ההתקשרות מרשימת אנשי הקשר</li>
+          <li xml:lang="ka">ზარის ქმედების წაშლა კონტაქტების სიიდან</li>
+          <li xml:lang="pt-BR">Removida ação de chamada da lista de contatos</li>
+          <li xml:lang="sl">Odstrani dejanje klica s seznama stikov</li>
           <li>Consistently use Phonebook instead of Phone Book</li>
+          <li xml:lang="eu">"Phonebook" beti "Phone Book" izenaren ordez erabiltzea</li>
+          <li xml:lang="he">שימוש עקבי בפנקס טלפונים (Phonebook) במקום אותן המילים אבל מופרדות</li>
+          <li xml:lang="ka">სიტყვის 'Phonebook' გამოყენება 'Phone Book'-ის მაგიერ</li>
+          <li xml:lang="pt-BR">Usa consistentemente Phonebook em vez de Phone Book</li>
+          <li xml:lang="sl">Dosledno uporablja Phonebook namesto Phone Book</li>
           <li>Scrolling performance improvements</li>
+          <li xml:lang="eu">Kiribiltze-jardueraren hobekuntzak</li>
+          <li xml:lang="he">שיפורי ביצועי גלילה</li>
+          <li xml:lang="ka">გადახვევის წარმადობის გაუმჯობესებები</li>
+          <li xml:lang="pt-BR">Melhorias no desempenho da rolagem</li>
         </ul>
       </description>
       <url>https://www.plasma-mobile.org/2021/06/10/plasma-mobile-update-june/</url>
