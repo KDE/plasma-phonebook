@@ -472,6 +472,7 @@
           <li xml:lang="es">La aplicación recuerda el estado en el escritorio</li>
           <li xml:lang="eu">Aplikazioari mahaigaineko egoera gogoraraztea</li>
           <li xml:lang="he">לגרום ליישום לזכור את המצב בשולחן העבודה</li>
+          <li xml:lang="is">Láta forrit muna ástand þegar hætt er</li>
           <li xml:lang="ka">აპლიკაციის მიერ სამუშაო მაგიდაზე მდგომარეობის დამახსოვრება</li>
           <li xml:lang="pt-BR">Faz com que o aplicativo se lembre do estado na área de trabalho</li>
           <li xml:lang="sl">Naj si aplikacija zapomni stanje na namizju</li>
@@ -508,6 +509,7 @@
           <li xml:lang="es">Mejoras internas</li>
           <li xml:lang="eu">Barne hobekuntzak</li>
           <li xml:lang="he">שיפורים פנימיים</li>
+          <li xml:lang="is">Innri endurbætur</li>
           <li xml:lang="ka">შიდა გაუმჯობესებები</li>
           <li xml:lang="pt-BR">Melhorias internas</li>
           <li xml:lang="sl">Notranje izboljšave</li>
@@ -551,6 +553,7 @@
           <li xml:lang="es">Mejoras en el rendimiento del desplazamiento de pantalla</li>
           <li xml:lang="eu">Kiribiltze-jardueraren hobekuntzak</li>
           <li xml:lang="he">שיפורי ביצועי גלילה</li>
+          <li xml:lang="is">Endurbætur á afköstum skruns</li>
           <li xml:lang="ka">გადახვევის წარმადობის გაუმჯობესებები</li>
           <li xml:lang="pt-BR">Melhorias no desempenho da rolagem</li>
           <li xml:lang="sl">Izboljšave delovanja pomikanja</li>
