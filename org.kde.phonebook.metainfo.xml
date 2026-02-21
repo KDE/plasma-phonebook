@@ -482,12 +482,14 @@
           <li xml:lang="es">La aplicación recuerda el estado en el escritorio</li>
           <li xml:lang="eu">Aplikazioari mahaigaineko egoera gogoraraztea</li>
           <li xml:lang="he">לגרום ליישום לזכור את המצב בשולחן העבודה</li>
+          <li xml:lang="ia">Face que le app memora  stato sur scriptorio</li>
           <li xml:lang="is">Láta forrit muna ástand þegar hætt er</li>
           <li xml:lang="ka">აპლიკაციის მიერ სამუშაო მაგიდაზე მდგომარეობის დამახსოვრება</li>
           <li xml:lang="nl">Laat toepassing de status op het bureaublad herinneren</li>
           <li xml:lang="pt-BR">Faz com que o aplicativo se lembre do estado na área de trabalho</li>
           <li xml:lang="ru">Реализовано сохранение состояния приложения на рабочем столе;</li>
           <li xml:lang="sl">Naj si aplikacija zapomni stanje na namizju</li>
+          <li xml:lang="tr">Make app remember state on desktop</li>
           <li xml:lang="uk">Реалізовано запам'ятовування програмою стану на стільниці</li>
           <li>Do not highlight first contact in list when opening</li>
           <li xml:lang="ar">عدم تظليل المتراسل الأول في القائمة عند الفتح</li>
@@ -496,11 +498,13 @@
           <li xml:lang="es">El primer contacto en la lista ya no destaca al abrir</li>
           <li xml:lang="eu">Irekitzean, zerrendako aurreneko kontaktua ez nabarmentzea</li>
           <li xml:lang="he">לא להדגיש את איש הקשר הראשון ברשימה עם הפתיחה</li>
+          <li xml:lang="ia">Non evidentia prime contacto in lista quando aperi</li>
           <li xml:lang="ka">გახსნისას სიაში პირველი კონტაქტის გამოკვეთა არ მოხდება</li>
           <li xml:lang="nl">Accentueer de eerste contactpersoon in lijst niet bij openen</li>
           <li xml:lang="pt-BR">Não seleciona o primeiro contato na lista ao abrir</li>
           <li xml:lang="ru">Не подсвечивать первый контакт в списке при открытии;</li>
           <li xml:lang="sl">Ne označi prvega stika na seznamu pri odpiranju</li>
+          <li xml:lang="tr">Do not highlight first contact in list when opening</li>
           <li xml:lang="uk">Усунено підсвічування першого запису контакту у списку при відкритті</li>
           <li>Add missing input method hints for contact entries</li>
           <li xml:lang="ar">إضافة تلميحات أسلوب الإدخال الناقصة لمدخلات المتراسل</li>
@@ -509,11 +513,13 @@
           <li xml:lang="es">Añadidas sugerencias de métodos de entrada en las entradas de contacto</li>
           <li xml:lang="eu">Kontaktuen sarreretan sarrera-metodoaren ezarpenak osatzea</li>
           <li xml:lang="he">נוספו רמזי שיטת קלט חסרים להוספת אנשי קשר</li>
+          <li xml:lang="ia">Adde adjuta d emethodo de ingresso mancante per entratas de contacto</li>
           <li xml:lang="ka">კონტაქტების ველებისთვის შეყვანის მეთოდის ნაკლული მინიშნებების დამატება</li>
           <li xml:lang="nl">Voeg ontbrekende invoermethode aanwijzingen voor contactpersoon-items toe</li>
           <li xml:lang="pt-BR">Adiciona dicas de método de entrada ausentes para entradas de contato</li>
           <li xml:lang="ru">Добавлены недостающие подсказки для метода ввода в записях контактов;</li>
           <li xml:lang="sl">Doda manjkajoče namige za vnosne metode za vnose stikov</li>
+          <li xml:lang="tr">Add missing input method hints for contact entries</li>
           <li xml:lang="uk">Додано пропущені підказки способу введення для записів контактів</li>
         </ul>
       </description>
@@ -531,12 +537,14 @@
           <li xml:lang="es">Mejoras internas</li>
           <li xml:lang="eu">Barne hobekuntzak</li>
           <li xml:lang="he">שיפורים פנימיים</li>
+          <li xml:lang="ia">Melioramentos interne</li>
           <li xml:lang="is">Innri endurbætur</li>
           <li xml:lang="ka">შიდა გაუმჯობესებები</li>
           <li xml:lang="nl">Interne verbeteringen</li>
           <li xml:lang="pt-BR">Melhorias internas</li>
           <li xml:lang="ru">Внутренние улучшения;</li>
           <li xml:lang="sl">Notranje izboljšave</li>
+          <li xml:lang="tr">Internal improvements</li>
           <li xml:lang="uk">Внутрішні удосконання</li>
         </ul>
       </description>
@@ -552,11 +560,13 @@
           <li xml:lang="es">Se ha vuelto a añadir el soporte para llamar o mandar mensajes a números múltiples</li>
           <li xml:lang="eu">Zenbaki anitzetara deitzeko/mezuak bidaltzeko euskarria berriz gehitzea</li>
           <li xml:lang="he">נוספה מחדש התמיכה בהתקשרות/התכתבות עם מגוון מספרים</li>
+          <li xml:lang="ia">Re-adde supporto per appellar/inviar texto a  multiple numeros</li>
           <li xml:lang="ka">თავიდან დაემატა ერთზე მეტ ნომერზე დარეკვის/შეტყობინების გაგზავნის მხარდაჭერა</li>
           <li xml:lang="nl">Voeg opnieuw ondersteuning toe voor oproepen/sms versturen naar meerdere nummers</li>
           <li xml:lang="pt-BR">Reativado o suporte para chamadas/envio de mensagens de texto para vários números</li>
           <li xml:lang="ru">Добавлена возможность вызова и отправки сообщений нескольким номерам;</li>
           <li xml:lang="sl">Ponovno doda podporo za klicanje/pošiljanje sporočil na več številk</li>
+          <li xml:lang="tr">Re-add support for calling/texting multiple numbers</li>
           <li xml:lang="uk">Повторно додано підтримку виклику та надсилання тестових повідомлень декільком учасникам одразу</li>
           <li>Remove call action from contacts list</li>
           <li xml:lang="ar">إزالة إجراء الاتصال من قائمة المتراسلين</li>
@@ -565,11 +575,13 @@
           <li xml:lang="es">Se ha eliminado la acción de llamar de la lista de contactos</li>
           <li xml:lang="eu">Dei-ekintza kontaktuen zerrendatik kentzea</li>
           <li xml:lang="he">הוסרה פעולת ההתקשרות מרשימת אנשי הקשר</li>
+          <li xml:lang="ia">Remove action de appello ex lista de contacto</li>
           <li xml:lang="ka">ზარის ქმედების წაშლა კონტაქტების სიიდან</li>
           <li xml:lang="nl">Oproepactie uit lijst met contactpersonen verwijderen</li>
           <li xml:lang="pt-BR">Removida ação de chamada da lista de contatos</li>
           <li xml:lang="ru">Удаление действия вызова из списка контактов;</li>
           <li xml:lang="sl">Odstrani dejanje klica s seznama stikov</li>
+          <li xml:lang="tr">Remove call action from contacts list</li>
           <li xml:lang="uk">Зі списку контактів вилучено дію з виклику</li>
           <li>Consistently use Phonebook instead of Phone Book</li>
           <li xml:lang="ar">استخدام Phonebook بدلاً من Phone Book باستمرار</li>
@@ -578,11 +590,13 @@
           <li xml:lang="es">Uso consistente de «Agenda telefónica»</li>
           <li xml:lang="eu">"Phonebook" beti "Phone Book" izenaren ordez erabiltzea</li>
           <li xml:lang="he">שימוש עקבי בפנקס טלפונים (Phonebook) במקום אותן המילים אבל מופרדות</li>
+          <li xml:lang="ia">Usa consistentemente Phonebook in loco de Phone Book</li>
           <li xml:lang="ka">სიტყვის 'Phonebook' გამოყენება 'Phone Book'-ის მაგიერ</li>
           <li xml:lang="nl">Gebruik consistent Phonebook in plaats van Phone Book</li>
           <li xml:lang="pt-BR">Usa consistentemente Phonebook em vez de Phone Book</li>
           <li xml:lang="ru">Единообразное использование названия «Телефонная книга»;</li>
           <li xml:lang="sl">Dosledno uporablja Phonebook namesto Phone Book</li>
+          <li xml:lang="tr">Consistently use Phonebook instead of Phone Book</li>
           <li xml:lang="uk">Послідовно використано «Phonebook» замість «Phone Book»</li>
           <li>Scrolling performance improvements</li>
           <li xml:lang="ar">تحسينات في أداء التمرير</li>
@@ -591,12 +605,14 @@
           <li xml:lang="es">Mejoras en el rendimiento del desplazamiento de pantalla</li>
           <li xml:lang="eu">Kiribiltze-jardueraren hobekuntzak</li>
           <li xml:lang="he">שיפורי ביצועי גלילה</li>
+          <li xml:lang="ia">Melioramentos de prestation de rolar</li>
           <li xml:lang="is">Endurbætur á afköstum skruns</li>
           <li xml:lang="ka">გადახვევის წარმადობის გაუმჯობესებები</li>
           <li xml:lang="nl">Verbeteringen van prestaties van schuiven</li>
           <li xml:lang="pt-BR">Melhorias no desempenho da rolagem</li>
           <li xml:lang="ru">Улучшена производительность прокрутки;</li>
           <li xml:lang="sl">Izboljšave delovanja pomikanja</li>
+          <li xml:lang="tr">Scrolling performance improvements</li>
           <li xml:lang="uk">Удосконалено швидкодію гортання списків</li>
         </ul>
       </description>
