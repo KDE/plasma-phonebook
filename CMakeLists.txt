@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
 
-set(PROJECT_VERSION "24.02.0")
-project(plasma-phonebook VERSION ${PROJECT_VERSION})
+# KDE Application Version, managed by release script
+set (RELEASE_SERVICE_VERSION_MAJOR "26")
+set (RELEASE_SERVICE_VERSION_MINOR "03")
+set (RELEASE_SERVICE_VERSION_MICRO "70")
+set (RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
+project(plasma-phonebook VERSION ${RELEASE_SERVICE_VERSION})
 
 set(KF_MIN_VERSION "6.3.0")
 set(QT_MIN_VERSION "6.6.0")
@@ -24,7 +28,7 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 include(ECMQmlModule)
 
-ecm_setup_version(${PROJECT_VERSION}
+ecm_setup_version(${RELEASE_SERVICE_VERSION}
     VARIABLE_PREFIX PLASMAPHONEBOOK
     VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/version.h
 )

@@ -86,7 +86,6 @@ Comment[uk]=Перегляд і редагування контактів
 Comment[vi]=Xem và chỉnh sửa các liên hệ
 Comment[zh_CN]=编辑和查看联系人
 Comment[zh_TW]=編輯並檢視通訊錄
-Version=1.0
 Exec=plasma-phonebook
 Icon=org.kde.phonebook
 Type=Application
