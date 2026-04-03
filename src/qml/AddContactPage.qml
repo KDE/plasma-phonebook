@@ -135,6 +135,19 @@ FormCard.FormCardPage {
     FormCard.FormCard {
         Layout.topMargin: Kirigami.Units.largeSpacing
 
+        data: Connections {
+            target: root;
+            function onSave() {
+                if (toAddPhone.text !== "") {
+                    var phoneNumbers = root.pendingPhoneNumbers
+                    phoneNumbers.push(ContactController.createPhoneNumber(toAddPhone.text))
+                    root.pendingPhoneNumbers = phoneNumbers
+                }
+
+                addressee.phoneNumbers = root.pendingPhoneNumbers
+            }
+        }
+
         Repeater{
             model: root.pendingPhoneNumbers
             delegate:FormCard.FormTextFieldDelegate{
@@ -169,9 +182,6 @@ FormCard.FormCardPage {
 
             placeholderText: i18n("+1 555 2368")
             inputMethodHints: Qt.ImhDialableCharactersOnly
-            onAccepted: {
-                root.addressee.formattedName = text
-            }
         }
         FormCard.FormDelegateSeparator { above: addPhone}
         FormCard.FormButtonDelegate {
@@ -230,7 +240,7 @@ FormCard.FormCardPage {
                 Connections {
                     target: root
                     function onSave() {
-                        textField.accepted()
+                        emailField.accepted()
                         addressee.emails = root.pendingEmails
                     }
                 }
@@ -242,10 +252,6 @@ FormCard.FormCardPage {
 
             placeholderText: i18n("user@example.org")
             inputMethodHints: Qt.ImhEmailCharactersOnly
-            onAccepted: {
-                root.addressee.formattedName = text
-            }
-
         }
         FormCard.FormDelegateSeparator { above: addEmail}
         FormCard.FormButtonDelegate {
@@ -299,6 +305,14 @@ FormCard.FormCardPage {
                 onTextChanged: if (text === "") {
                     root.pendingImpps = root.pendingImpps.filter((value, index) => index !== imppField.index)
                 }
+
+                Connections {
+                    target: root
+                    function onSave() {
+                        imppField.accepted()
+                        addressee.impps = root.pendingImpps
+                    }
+                }
             }
         }
         FormCard.FormTextFieldDelegate {
@@ -307,19 +321,6 @@ FormCard.FormCardPage {
 
             placeholderText: i18n("protocol:person@example.com")
             inputMethodHints: Qt.ImhEmailCharactersOnly
-
-            Connections {
-                target: root
-                function onSave() {
-                    if (toAddImpp.text !== "") {
-                        var impps = root.pendingImpps
-                        impps.push(ContactController.createImpp(toAddImpp.text))
-                        root.pendingImpps = impps
-                    }
-
-                    addressee.impps = root.pendingImpps
-                }
-            }
         }
         FormCard.FormDelegateSeparator { above: addImpp}
         FormCard.FormButtonDelegate {
