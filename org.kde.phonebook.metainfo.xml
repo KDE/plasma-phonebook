@@ -455,6 +455,7 @@
   <url type="homepage">https://apps.kde.org/phonebook</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=Plasma%20Mobile%20Phonebook</url>
   <releases>
+    <release version="26.04.0" date="2026-04-16"/>
     <release version="23.01" date="2023-01-30">
       <url>https://plasma-mobile.org/2023/01/30/january-blog-post/</url>
     </release>
