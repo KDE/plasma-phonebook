@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -27,9 +27,7 @@ msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
 #: src/kpeopleactionplugin/kpeopleactionsplugin.cpp:40
-#, fuzzy, kde-format
-#| msgctxt "Action to write to instant messanger contact"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt "Action to write to instant messenger contact"
 msgid "%1 %2"
 msgstr "%1 %2"
@@ -62,19 +60,17 @@ msgstr "Fotka"
 #: src/qml/AddContactPage.qml:110
 #, kde-format
 msgid "Add profile picture"
-msgstr ""
+msgstr "Add profile picture"
 
 #: src/qml/AddContactPage.qml:120
-#, fuzzy, kde-format
-#| msgid "Name:"
+#, kde-format
 msgid "Name"
-msgstr "Názov:"
+msgstr "Názov"
 
 #: src/qml/AddContactPage.qml:146 src/qml/AddContactPage.qml:168
-#, fuzzy, kde-format
-#| msgid "Phone:"
+#, kde-format
 msgid "Phone"
-msgstr "Telefón:"
+msgstr "Telefón"
 
 #: src/qml/AddContactPage.qml:170
 #, kde-format
@@ -84,7 +80,7 @@ msgstr "+1 555 2368"
 #: src/qml/AddContactPage.qml:180
 #, kde-format
 msgid "Add phone number"
-msgstr ""
+msgstr "Add phone number"
 
 #: src/qml/AddContactPage.qml:219 src/qml/AddContactPage.qml:241
 #, kde-format
@@ -99,13 +95,12 @@ msgstr "pouzivatel@example.org"
 #: src/qml/AddContactPage.qml:254
 #, kde-format
 msgid "Add email address"
-msgstr ""
+msgstr "Add email address"
 
 #: src/qml/AddContactPage.qml:292 src/qml/AddContactPage.qml:306
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Instant Messenger"
-msgstr "Instant Messenger:"
+msgstr "Instant Messenger"
 
 #: src/qml/AddContactPage.qml:308
 #, kde-format
@@ -113,21 +108,19 @@ msgid "protocol:person@example.com"
 msgstr "protokol:osoba@example.com"
 
 #: src/qml/AddContactPage.qml:327
-#, fuzzy, kde-format
-#| msgid "Instant Messenger:"
+#, kde-format
 msgid "Add instant messenger address"
 msgstr "Instant Messenger:"
 
 #: src/qml/AddContactPage.qml:346 src/qml/DetailPage.qml:301
-#, fuzzy, kde-format
-#| msgid "Birthday:"
+#, kde-format
 msgid "Birthday"
-msgstr "Narodeniny:"
+msgstr "Narodeniny"
 
 #: src/qml/AddContactPage.qml:365 src/qml/DetailPage.qml:316
 #, kde-format
 msgid "Note:"
-msgstr ""
+msgstr "Poznámka:"
 
 #: src/qml/ContactsPage.qml:88
 #, kde-format
@@ -135,8 +128,7 @@ msgid "Import contacts"
 msgstr "Importovať konta&kty"
 
 #: src/qml/ContactsPage.qml:99
-#, fuzzy, kde-format
-#| msgid "Adding contact"
+#, kde-format
 msgid "add Contact"
 msgstr "Pridáva sa kontakt"
 
@@ -156,15 +148,14 @@ msgid "Delete contact"
 msgstr "Vymazať kontakt"
 
 #: src/qml/DetailPage.qml:69
-#, fuzzy, kde-format
-#| msgid "Delete contact"
+#, kde-format
 msgid "Remove Contact"
 msgstr "Vymazať kontakt"
 
 #: src/qml/DetailPage.qml:79
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
-msgstr ""
+msgstr "Are you sure chcete to delete <b>%1</b> from your Contacts?"
 
 #: src/qml/DetailPage.qml:218
 #, kde-format
@@ -177,21 +168,19 @@ msgid "Send SMS"
 msgstr "Poslať SMS"
 
 #: src/qml/DetailPage.qml:255
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send E-Mail"
 msgstr "Odoslať e-mail"
 
 #: src/qml/DetailPage.qml:261
 #, kde-format
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 #: src/qml/DetailPage.qml:283
-#, fuzzy, kde-format
-#| msgid "Send email"
+#, kde-format
 msgid "Send Message"
-msgstr "Odoslať e-mail"
+msgstr "Súkromné adresy"
 
 #~ msgid "E-mail:"
 #~ msgstr "E-mail:"
