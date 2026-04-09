@@ -497,6 +497,7 @@
           <li xml:lang="pl">Zapamiętaj stan aplikacji na pulpicie</li>
           <li xml:lang="pt-BR">Faz com que o aplicativo se lembre do estado na área de trabalho</li>
           <li xml:lang="ru">Реализовано сохранение состояния приложения на рабочем столе;</li>
+          <li xml:lang="sk">Make app remember state on desktop</li>
           <li xml:lang="sl">Naj si aplikacija zapomni stanje na namizju</li>
           <li xml:lang="tr">Make app remember state on desktop</li>
           <li xml:lang="uk">Реалізовано запам'ятовування програмою стану на стільниці</li>
@@ -520,6 +521,7 @@
           <li xml:lang="pl">Nie podświetlaj pierwszego kontaktu na liście po otwarciu</li>
           <li xml:lang="pt-BR">Não seleciona o primeiro contato na lista ao abrir</li>
           <li xml:lang="ru">Не подсвечивать первый контакт в списке при открытии;</li>
+          <li xml:lang="sk">Do not highlight first contact in list when opening</li>
           <li xml:lang="sl">Ne označi prvega stika na seznamu pri odpiranju</li>
           <li xml:lang="tr">Do not highlight first contact in list when opening</li>
           <li xml:lang="uk">Усунено підсвічування першого запису контакту у списку при відкритті</li>
@@ -543,6 +545,7 @@
           <li xml:lang="pl">Dodaj brakujące wskazówki o sposobach wprowadzania dla wpisów kontaktów</li>
           <li xml:lang="pt-BR">Adiciona dicas de método de entrada ausentes para entradas de contato</li>
           <li xml:lang="ru">Добавлены недостающие подсказки для метода ввода в записях контактов;</li>
+          <li xml:lang="sk">Add missing input method hints for contact entries</li>
           <li xml:lang="sl">Doda manjkajoče namige za vnosne metode za vnose stikov</li>
           <li xml:lang="tr">Add missing input method hints for contact entries</li>
           <li xml:lang="uk">Додано пропущені підказки способу введення для записів контактів</li>
@@ -576,6 +579,7 @@
           <li xml:lang="pl">Wewnętrzne usprawnienia</li>
           <li xml:lang="pt-BR">Melhorias internas</li>
           <li xml:lang="ru">Внутренние улучшения;</li>
+          <li xml:lang="sk">Internal improvements</li>
           <li xml:lang="sl">Notranje izboljšave</li>
           <li xml:lang="tr">Internal improvements</li>
           <li xml:lang="uk">Внутрішні удосконання</li>
@@ -606,6 +610,7 @@
           <li xml:lang="pl">Dodaj ponownie obsługę dzwonienia/pisania na wiele numerów</li>
           <li xml:lang="pt-BR">Reativado o suporte para chamadas/envio de mensagens de texto para vários números</li>
           <li xml:lang="ru">Добавлена возможность вызова и отправки сообщений нескольким номерам;</li>
+          <li xml:lang="sk">Re-add support for calling/texting multiple numbers</li>
           <li xml:lang="sl">Ponovno doda podporo za klicanje/pošiljanje sporočil na več številk</li>
           <li xml:lang="tr">Re-add support for calling/texting multiple numbers</li>
           <li xml:lang="uk">Повторно додано підтримку виклику та надсилання тестових повідомлень декільком учасникам одразу</li>
@@ -629,6 +634,7 @@
           <li xml:lang="pl">Usuń możliwość dzwonienia z listy kontaktów</li>
           <li xml:lang="pt-BR">Removida ação de chamada da lista de contatos</li>
           <li xml:lang="ru">Удаление действия вызова из списка контактов;</li>
+          <li xml:lang="sk">Remove call action from contacts list</li>
           <li xml:lang="sl">Odstrani dejanje klica s seznama stikov</li>
           <li xml:lang="tr">Remove call action from contacts list</li>
           <li xml:lang="uk">Зі списку контактів вилучено дію з виклику</li>
@@ -652,6 +658,7 @@
           <li xml:lang="pl">Konsekwentnie używaj Phonebook zamiast Phone Book</li>
           <li xml:lang="pt-BR">Usa consistentemente Phonebook em vez de Phone Book</li>
           <li xml:lang="ru">Единообразное использование названия «Телефонная книга»;</li>
+          <li xml:lang="sk">Consistently use Phonebook namiesto Phone Book</li>
           <li xml:lang="sl">Dosledno uporablja Phonebook namesto Phone Book</li>
           <li xml:lang="tr">Consistently use Phonebook instead of Phone Book</li>
           <li xml:lang="uk">Послідовно використано «Phonebook» замість «Phone Book»</li>
@@ -676,6 +683,7 @@
           <li xml:lang="pl">Poprawiona sprawność przewijania</li>
           <li xml:lang="pt-BR">Melhorias no desempenho da rolagem</li>
           <li xml:lang="ru">Улучшена производительность прокрутки;</li>
+          <li xml:lang="sk">Scrolling performance improvements</li>
           <li xml:lang="sl">Izboljšave delovanja pomikanja</li>
           <li xml:lang="tr">Scrolling performance improvements</li>
           <li xml:lang="uk">Удосконалено швидкодію гортання списків</li>
