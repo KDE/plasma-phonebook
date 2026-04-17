@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:54+0000\n"
+"POT-Creation-Date: 2026-04-17 00:46+0000\n"
 "PO-Revision-Date: 2023-05-16 12:10+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -68,57 +68,57 @@ msgstr "Profil resmi ekle"
 msgid "Name"
 msgstr "Ad"
 
-#: src/qml/AddContactPage.qml:146 src/qml/AddContactPage.qml:168
+#: src/qml/AddContactPage.qml:159 src/qml/AddContactPage.qml:181
 #, kde-format
 msgid "Phone"
 msgstr "Telefon"
 
-#: src/qml/AddContactPage.qml:170
+#: src/qml/AddContactPage.qml:183
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+90 212 123 4567"
 
-#: src/qml/AddContactPage.qml:180
+#: src/qml/AddContactPage.qml:190
 #, kde-format
 msgid "Add phone number"
 msgstr "Telefon numarası ekle"
 
-#: src/qml/AddContactPage.qml:219 src/qml/AddContactPage.qml:241
+#: src/qml/AddContactPage.qml:229 src/qml/AddContactPage.qml:251
 #, kde-format
 msgid "Email"
 msgstr "E-posta"
 
-#: src/qml/AddContactPage.qml:243
+#: src/qml/AddContactPage.qml:253
 #, kde-format
 msgid "user@example.org"
 msgstr "kullanıcı@örnek.org"
 
-#: src/qml/AddContactPage.qml:254
+#: src/qml/AddContactPage.qml:260
 #, kde-format
 msgid "Add email address"
 msgstr "E-posta adresi ekle"
 
-#: src/qml/AddContactPage.qml:292 src/qml/AddContactPage.qml:306
+#: src/qml/AddContactPage.qml:298 src/qml/AddContactPage.qml:320
 #, kde-format
 msgid "Instant Messenger"
 msgstr "Anlık İletici"
 
-#: src/qml/AddContactPage.qml:308
+#: src/qml/AddContactPage.qml:322
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokol:kişi@örnek.com"
 
-#: src/qml/AddContactPage.qml:327
+#: src/qml/AddContactPage.qml:328
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "Anlık iletici adresi ekle"
 
-#: src/qml/AddContactPage.qml:346 src/qml/DetailPage.qml:301
+#: src/qml/AddContactPage.qml:347 src/qml/DetailPage.qml:301
 #, kde-format
 msgid "Birthday"
 msgstr "Doğum Günü"
 
-#: src/qml/AddContactPage.qml:365 src/qml/DetailPage.qml:316
+#: src/qml/AddContactPage.qml:366 src/qml/DetailPage.qml:316
 #, kde-format
 msgid "Note:"
 msgstr "Not:"
