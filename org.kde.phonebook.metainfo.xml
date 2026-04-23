@@ -381,7 +381,7 @@
       <li xml:lang="lt">Importuoti vCard failus</li>
       <li xml:lang="lv">Importēt „vCard“ datnes</li>
       <li xml:lang="nl">vCard-bestanden importeren</li>
-      <li xml:lang="nn">Importert vCard-filer (visittkort)</li>
+      <li xml:lang="nn">Importera vCard-filer (visittkort)</li>
       <li xml:lang="pa">vCard ਫਾਇਲਾਂ ਇੰਪੋਰਟ ਕਰੋ</li>
       <li xml:lang="pl">Zaimportuj pliki vCard</li>
       <li xml:lang="pt">Importar os ficheiros vCard</li>
@@ -494,6 +494,7 @@
           <li xml:lang="lt">Darbalaukio aplinkoje programa prisimins būseną</li>
           <li xml:lang="lv">Likts lietotnei atcerēties darbvirsmas stāvokli</li>
           <li xml:lang="nl">Laat toepassing de status op het bureaublad herinneren</li>
+          <li xml:lang="nn">Appen hugsar no førre tilstand på skrivebordet</li>
           <li xml:lang="pl">Zapamiętaj stan aplikacji na pulpicie</li>
           <li xml:lang="pt-BR">Faz com que o aplicativo se lembre do estado na área de trabalho</li>
           <li xml:lang="ru">Реализовано сохранение состояния приложения на рабочем столе;</li>
@@ -519,6 +520,7 @@
           <li xml:lang="lt">Atveriant nebeparyškinamas pirmas sąraše esantis adresatas</li>
           <li xml:lang="lv">Atverot vairs neizceļ pirmo sarakstā esošo kontaktu</li>
           <li xml:lang="nl">Accentueer de eerste contactpersoon in lijst niet bij openen</li>
+          <li xml:lang="nn">Ikkje framhev første kontakten i lista ved opning</li>
           <li xml:lang="pl">Nie podświetlaj pierwszego kontaktu na liście po otwarciu</li>
           <li xml:lang="pt-BR">Não seleciona o primeiro contato na lista ao abrir</li>
           <li xml:lang="ru">Не подсвечивать первый контакт в списке при открытии;</li>
@@ -544,6 +546,7 @@
           <li xml:lang="lt">Pridėti trūkstami įvesties metodo patarimai, skirti adresato įrašams</li>
           <li xml:lang="lv">Kontaktu ierakstiet pievienotas trūkstošo ievažu norādes</li>
           <li xml:lang="nl">Voeg ontbrekende invoermethode aanwijzingen voor contactpersoon-items toe</li>
+          <li xml:lang="nn">Lagt til hint for manglande skrivemetode for kontaktoppføringar</li>
           <li xml:lang="pl">Dodaj brakujące wskazówki o sposobach wprowadzania dla wpisów kontaktów</li>
           <li xml:lang="pt-BR">Adiciona dicas de método de entrada ausentes para entradas de contato</li>
           <li xml:lang="ru">Добавлены недостающие подсказки для метода ввода в записях контактов;</li>
@@ -579,6 +582,7 @@
           <li xml:lang="lt">Vidiniai patobulinimai</li>
           <li xml:lang="lv">Iekšēji uzlabojumi</li>
           <li xml:lang="nl">Interne verbeteringen</li>
+          <li xml:lang="nn">Interne forbetringar</li>
           <li xml:lang="pl">Wewnętrzne usprawnienia</li>
           <li xml:lang="pt-BR">Melhorias internas</li>
           <li xml:lang="ru">Внутренние улучшения;</li>
@@ -611,6 +615,7 @@
           <li xml:lang="lt">Iš naujo pridėtas skambinimas/žinučių rašymas keletui numerių</li>
           <li xml:lang="lv">No jauna pievienots atbalsts zvanīšanai/īsziņu sūtīšanai uzreiz vairākiem numuriem</li>
           <li xml:lang="nl">Voeg opnieuw ondersteuning toe voor oproepen/sms versturen naar meerdere nummers</li>
+          <li xml:lang="nn">Lagt til att støtte for oppringing/SMS til fleire nummer</li>
           <li xml:lang="pl">Dodaj ponownie obsługę dzwonienia/pisania na wiele numerów</li>
           <li xml:lang="pt-BR">Reativado o suporte para chamadas/envio de mensagens de texto para vários números</li>
           <li xml:lang="ru">Добавлена возможность вызова и отправки сообщений нескольким номерам;</li>
@@ -636,6 +641,7 @@
           <li xml:lang="lt">Pašalintas skambučio veiksmas iš adresatų sąrašo</li>
           <li xml:lang="lv">Noņemta zvana darbība no kontaktu saraksta</li>
           <li xml:lang="nl">Oproepactie uit lijst met contactpersonen verwijderen</li>
+          <li xml:lang="nn">Fjerna oppringingshandling frå kontaktlista</li>
           <li xml:lang="pl">Usuń możliwość dzwonienia z listy kontaktów</li>
           <li xml:lang="pt-BR">Removida ação de chamada da lista de contatos</li>
           <li xml:lang="ru">Удаление действия вызова из списка контактов;</li>
@@ -661,6 +667,7 @@
           <li xml:lang="lt">Nuosekliai naudojamas terminas „telefonų knyga“</li>
           <li xml:lang="lv">Angļu valodā konsekventi lietots vārds „Phonebook“ „Phone Book“ vietā</li>
           <li xml:lang="nl">Gebruik consistent Phonebook in plaats van Phone Book</li>
+          <li xml:lang="nn">Konsistent bruk av stavemåten Phonebook i staden for Phone Book</li>
           <li xml:lang="pl">Konsekwentnie używaj Phonebook zamiast Phone Book</li>
           <li xml:lang="pt-BR">Usa consistentemente Phonebook em vez de Phone Book</li>
           <li xml:lang="ru">Единообразное использование названия «Телефонная книга»;</li>
@@ -687,6 +694,7 @@
           <li xml:lang="lt">Slinkimo greičio patobulinimai</li>
           <li xml:lang="lv">Ritināšanas veiktspējas uzlabojumi</li>
           <li xml:lang="nl">Verbeteringen van prestaties van schuiven</li>
+          <li xml:lang="nn">Forbetra yting ved rulling</li>
           <li xml:lang="pl">Poprawiona sprawność przewijania</li>
           <li xml:lang="pt-BR">Melhorias no desempenho da rolagem</li>
           <li xml:lang="ru">Улучшена производительность прокрутки;</li>
