@@ -491,6 +491,7 @@
           <li xml:lang="is">Láta forrit muna ástand þegar hætt er</li>
           <li xml:lang="it">Adesso l'applicazione ricorda il suo stato sul desktop</li>
           <li xml:lang="ka">აპლიკაციის მიერ სამუშაო მაგიდაზე მდგომარეობის დამახსოვრება</li>
+          <li xml:lang="ko">앱에서 바탕 화면 상태 기억하기</li>
           <li xml:lang="lt">Darbalaukio aplinkoje programa prisimins būseną</li>
           <li xml:lang="lv">Likts lietotnei atcerēties darbvirsmas stāvokli</li>
           <li xml:lang="nl">Laat toepassing de status op het bureaublad herinneren</li>
@@ -517,6 +518,7 @@
           <li xml:lang="ia">Non evidentia prime contacto in lista quando aperi</li>
           <li xml:lang="it">All'apertura, il primo contatto nell'elenco non viene evidenziato</li>
           <li xml:lang="ka">გახსნისას სიაში პირველი კონტაქტის გამოკვეთა არ მოხდება</li>
+          <li xml:lang="ko">목록을 열 때 첫 연락처 강조하지 않기</li>
           <li xml:lang="lt">Atveriant nebeparyškinamas pirmas sąraše esantis adresatas</li>
           <li xml:lang="lv">Atverot vairs neizceļ pirmo sarakstā esošo kontaktu</li>
           <li xml:lang="nl">Accentueer de eerste contactpersoon in lijst niet bij openen</li>
@@ -543,6 +545,7 @@
           <li xml:lang="ia">Adde adjuta d emethodo de ingresso mancante per entratas de contacto</li>
           <li xml:lang="it">Aggiunta dei suggerimenti mancanti sul metodo d'inserimento delle voci dei contatti</li>
           <li xml:lang="ka">კონტაქტების ველებისთვის შეყვანის მეთოდის ნაკლული მინიშნებების დამატება</li>
+          <li xml:lang="ko">연락처 항목에 빠진 입력 힌트 추가</li>
           <li xml:lang="lt">Pridėti trūkstami įvesties metodo patarimai, skirti adresato įrašams</li>
           <li xml:lang="lv">Kontaktu ierakstiet pievienotas trūkstošo ievažu norādes</li>
           <li xml:lang="nl">Voeg ontbrekende invoermethode aanwijzingen voor contactpersoon-items toe</li>
@@ -579,6 +582,7 @@
           <li xml:lang="is">Innri endurbætur</li>
           <li xml:lang="it">Miglioramenti interni</li>
           <li xml:lang="ka">შიდა გაუმჯობესებები</li>
+          <li xml:lang="ko">내부 개선</li>
           <li xml:lang="lt">Vidiniai patobulinimai</li>
           <li xml:lang="lv">Iekšēji uzlabojumi</li>
           <li xml:lang="nl">Interne verbeteringen</li>
@@ -612,6 +616,7 @@
           <li xml:lang="ia">Re-adde supporto per appellar/inviar texto a  multiple numeros</li>
           <li xml:lang="it">È stato aggiunto nuovamente il supporto per le chiamate e i messaggi a più numeri</li>
           <li xml:lang="ka">თავიდან დაემატა ერთზე მეტ ნომერზე დარეკვის/შეტყობინების გაგზავნის მხარდაჭერა</li>
+          <li xml:lang="ko">여러 번호로 통화/문자 메시지 보내기 지원 다시 추가</li>
           <li xml:lang="lt">Iš naujo pridėtas skambinimas/žinučių rašymas keletui numerių</li>
           <li xml:lang="lv">No jauna pievienots atbalsts zvanīšanai/īsziņu sūtīšanai uzreiz vairākiem numuriem</li>
           <li xml:lang="nl">Voeg opnieuw ondersteuning toe voor oproepen/sms versturen naar meerdere nummers</li>
@@ -638,6 +643,7 @@
           <li xml:lang="ia">Remove action de appello ex lista de contacto</li>
           <li xml:lang="it">È stata rimossa l'azione di chiamata dall'elenco dei contatti</li>
           <li xml:lang="ka">ზარის ქმედების წაშლა კონტაქტების სიიდან</li>
+          <li xml:lang="ko">연락처 목록에서 통화 동작 삭제</li>
           <li xml:lang="lt">Pašalintas skambučio veiksmas iš adresatų sąrašo</li>
           <li xml:lang="lv">Noņemta zvana darbība no kontaktu saraksta</li>
           <li xml:lang="nl">Oproepactie uit lijst met contactpersonen verwijderen</li>
@@ -664,6 +670,7 @@
           <li xml:lang="ia">Usa consistentemente Phonebook in loco de Phone Book</li>
           <li xml:lang="it">Uso consistente di Phonebook al posto di Phone Book</li>
           <li xml:lang="ka">სიტყვის 'Phonebook' გამოყენება 'Phone Book'-ის მაგიერ</li>
+          <li xml:lang="ko">단어 사용 일관성 유지</li>
           <li xml:lang="lt">Nuosekliai naudojamas terminas „telefonų knyga“</li>
           <li xml:lang="lv">Angļu valodā konsekventi lietots vārds „Phonebook“ „Phone Book“ vietā</li>
           <li xml:lang="nl">Gebruik consistent Phonebook in plaats van Phone Book</li>
@@ -691,6 +698,7 @@
           <li xml:lang="is">Endurbætur á afköstum skruns</li>
           <li xml:lang="it">Miglioramenti alle prestazioni di scorrimento</li>
           <li xml:lang="ka">გადახვევის წარმადობის გაუმჯობესებები</li>
+          <li xml:lang="ko">스크롤 성능 개선</li>
           <li xml:lang="lt">Slinkimo greičio patobulinimai</li>
           <li xml:lang="lv">Ritināšanas veiktspējas uzlabojumi</li>
           <li xml:lang="nl">Verbeteringen van prestaties van schuiven</li>
