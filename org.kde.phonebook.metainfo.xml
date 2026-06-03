@@ -38,6 +38,7 @@
   <name xml:lang="sl">Phonebook</name>
   <name xml:lang="sv">Telefonkatalog</name>
   <name xml:lang="tr">Telefon Defteri</name>
+  <name xml:lang="ug">تېلېفون دەپتىرى</name>
   <name xml:lang="uk">Телефонна книга</name>
   <name xml:lang="vi">Danh bạ</name>
   <name xml:lang="zh-CN">电话簿</name>
@@ -127,6 +128,7 @@
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
+  <developer_name xml:lang="ug">KDE جامائىتى</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="vi">Cộng đồng KDE</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
@@ -260,6 +262,7 @@
     <p xml:lang="sl">Možnosti</p>
     <p xml:lang="sv">Funktioner</p>
     <p xml:lang="tr">Özellikler</p>
+    <p xml:lang="ug">ئىقتىدار</p>
     <p xml:lang="uk">Можливості</p>
     <p xml:lang="vi">Tính năng</p>
     <p xml:lang="zh-CN">程序功能</p>
