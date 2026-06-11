@@ -489,6 +489,7 @@
           <li xml:lang="eu">Aplikazioari mahaigaineko egoera gogoraraztea</li>
           <li xml:lang="fr">Faire en sorte que l'application se souvienne de l'état sur le bureau</li>
           <li xml:lang="he">לגרום ליישום לזכור את המצב בשולחן העבודה</li>
+          <li xml:lang="hu">Alkalmazás állapotának mentése asztali gépen</li>
           <li xml:lang="ia">Face que le app memora  stato sur scriptorio</li>
           <li xml:lang="is">Láta forrit muna ástand þegar hætt er</li>
           <li xml:lang="it">Adesso l'applicazione ricorda il suo stato sul desktop</li>
@@ -517,6 +518,7 @@
           <li xml:lang="eu">Irekitzean, zerrendako aurreneko kontaktua ez nabarmentzea</li>
           <li xml:lang="fr">Ne pas mettre en évidence le premier contact de la liste lors de l'ouverture</li>
           <li xml:lang="he">לא להדגיש את איש הקשר הראשון ברשימה עם הפתיחה</li>
+          <li xml:lang="hu">A lista első névjegye nem lesz kiemelve megnyitáskor</li>
           <li xml:lang="ia">Non evidentia prime contacto in lista quando aperi</li>
           <li xml:lang="it">All'apertura, il primo contatto nell'elenco non viene evidenziato</li>
           <li xml:lang="ka">გახსნისას სიაში პირველი კონტაქტის გამოკვეთა არ მოხდება</li>
@@ -544,6 +546,7 @@
           <li xml:lang="eu">Kontaktuen sarreretan sarrera-metodoaren ezarpenak osatzea</li>
           <li xml:lang="fr">Ajouter les conseils pour les méthodes de saisie manquantes pour les entrées de contact</li>
           <li xml:lang="he">נוספו רמזי שיטת קלט חסרים להוספת אנשי קשר</li>
+          <li xml:lang="hu">Hiányzó bevitelimód-javaslatok hozzáadása a névjegyekhez</li>
           <li xml:lang="ia">Adde adjuta d emethodo de ingresso mancante per entratas de contacto</li>
           <li xml:lang="it">Aggiunta dei suggerimenti mancanti sul metodo d'inserimento delle voci dei contatti</li>
           <li xml:lang="ka">კონტაქტების ველებისთვის შეყვანის მეთოდის ნაკლული მინიშნებების დამატება</li>
@@ -580,6 +583,7 @@
           <li xml:lang="eu">Barne hobekuntzak</li>
           <li xml:lang="fr">Améliorations internes</li>
           <li xml:lang="he">שיפורים פנימיים</li>
+          <li xml:lang="hu">Belső fejlesztések</li>
           <li xml:lang="ia">Melioramentos interne</li>
           <li xml:lang="is">Innri endurbætur</li>
           <li xml:lang="it">Miglioramenti interni</li>
@@ -615,6 +619,7 @@
           <li xml:lang="eu">Zenbaki anitzetara deitzeko/mezuak bidaltzeko euskarria berriz gehitzea</li>
           <li xml:lang="fr">Ajouter à nouveau la prise en charge pour des appels / envois de SMS à plusieurs numéros</li>
           <li xml:lang="he">נוספה מחדש התמיכה בהתקשרות/התכתבות עם מגוון מספרים</li>
+          <li xml:lang="hu">A több számra történő hívás és SMS-küldés támogatásának visszaállítása</li>
           <li xml:lang="ia">Re-adde supporto per appellar/inviar texto a  multiple numeros</li>
           <li xml:lang="it">È stato aggiunto nuovamente il supporto per le chiamate e i messaggi a più numeri</li>
           <li xml:lang="ka">თავიდან დაემატა ერთზე მეტ ნომერზე დარეკვის/შეტყობინების გაგზავნის მხარდაჭერა</li>
@@ -642,6 +647,7 @@
           <li xml:lang="eu">Dei-ekintza kontaktuen zerrendatik kentzea</li>
           <li xml:lang="fr">Supprimer l'action d'appel de la liste de contacts</li>
           <li xml:lang="he">הוסרה פעולת ההתקשרות מרשימת אנשי הקשר</li>
+          <li xml:lang="hu">Hívási művelet eltávolítása a névjegyzékből</li>
           <li xml:lang="ia">Remove action de appello ex lista de contacto</li>
           <li xml:lang="it">È stata rimossa l'azione di chiamata dall'elenco dei contatti</li>
           <li xml:lang="ka">ზარის ქმედების წაშლა კონტაქტების სიიდან</li>
@@ -669,6 +675,7 @@
           <li xml:lang="eu">"Phonebook" beti "Phone Book" izenaren ordez erabiltzea</li>
           <li xml:lang="fr">Utilisez systématiquement Phonebook au lieu du répertoire téléphonique</li>
           <li xml:lang="he">שימוש עקבי בפנקס טלפונים (Phonebook) במקום אותן המילים אבל מופרדות</li>
+          <li xml:lang="hu">Telefonkönyv konzisztens használata Telefon könyv helyett</li>
           <li xml:lang="ia">Usa consistentemente Phonebook in loco de Phone Book</li>
           <li xml:lang="it">Uso consistente di Phonebook al posto di Phone Book</li>
           <li xml:lang="ka">სიტყვის 'Phonebook' გამოყენება 'Phone Book'-ის მაგიერ</li>
@@ -696,6 +703,7 @@
           <li xml:lang="eu">Kiribiltze-jardueraren hobekuntzak</li>
           <li xml:lang="fr">Améliorations des performances de défilement</li>
           <li xml:lang="he">שיפורי ביצועי גלילה</li>
+          <li xml:lang="hu">Görgetési teljesítmény javítása</li>
           <li xml:lang="ia">Melioramentos de prestation de rolar</li>
           <li xml:lang="is">Endurbætur á afköstum skruns</li>
           <li xml:lang="it">Miglioramenti alle prestazioni di scorrimento</li>
