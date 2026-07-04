@@ -505,6 +505,7 @@
           <li xml:lang="ru">Реализовано сохранение состояния приложения на рабочем столе;</li>
           <li xml:lang="sk">Make app remember state on desktop</li>
           <li xml:lang="sl">Naj si aplikacija zapomni stanje na namizju</li>
+          <li xml:lang="sv">Gör så att programmet kommer ihåg status på skrivbordet</li>
           <li xml:lang="tr">Make app remember state on desktop</li>
           <li xml:lang="uk">Реалізовано запам'ятовування програмою стану на стільниці</li>
           <li xml:lang="zh-CN">让应用记住桌面上的状态</li>
@@ -533,6 +534,7 @@
           <li xml:lang="ru">Не подсвечивать первый контакт в списке при открытии;</li>
           <li xml:lang="sk">Do not highlight first contact in list when opening</li>
           <li xml:lang="sl">Ne označi prvega stika na seznamu pri odpiranju</li>
+          <li xml:lang="sv">Markera inte den första kontakten i listan när den öppnas</li>
           <li xml:lang="tr">Do not highlight first contact in list when opening</li>
           <li xml:lang="uk">Усунено підсвічування першого запису контакту у списку при відкритті</li>
           <li xml:lang="zh-CN">打开时不高亮显示列表中的第一个联系人</li>
@@ -561,6 +563,7 @@
           <li xml:lang="ru">Добавлены недостающие подсказки для метода ввода в записях контактов;</li>
           <li xml:lang="sk">Add missing input method hints for contact entries</li>
           <li xml:lang="sl">Doda manjkajoče namige za vnosne metode za vnose stikov</li>
+          <li xml:lang="sv">ägg till saknade tips för inmatningsmetod i kontaktposter</li>
           <li xml:lang="tr">Add missing input method hints for contact entries</li>
           <li xml:lang="uk">Додано пропущені підказки способу введення для записів контактів</li>
           <li xml:lang="zh-CN">为联系人条目添加缺失的输入法提示</li>
@@ -599,6 +602,7 @@
           <li xml:lang="ru">Внутренние улучшения;</li>
           <li xml:lang="sk">Internal improvements</li>
           <li xml:lang="sl">Notranje izboljšave</li>
+          <li xml:lang="sv">Interna förbättringar</li>
           <li xml:lang="tr">Internal improvements</li>
           <li xml:lang="uk">Внутрішні удосконання</li>
           <li xml:lang="zh-CN">内部改进</li>
@@ -634,6 +638,7 @@
           <li xml:lang="ru">Добавлена возможность вызова и отправки сообщений нескольким номерам;</li>
           <li xml:lang="sk">Re-add support for calling/texting multiple numbers</li>
           <li xml:lang="sl">Ponovno doda podporo za klicanje/pošiljanje sporočil na več številk</li>
+          <li xml:lang="sv">Lägg till stöd för att ringa eller skicka SMS till flera nummer igen</li>
           <li xml:lang="tr">Re-add support for calling/texting multiple numbers</li>
           <li xml:lang="uk">Повторно додано підтримку виклику та надсилання тестових повідомлень декільком учасникам одразу</li>
           <li xml:lang="zh-CN">重新添加对多个号码调用/纹理的支持</li>
@@ -662,6 +667,7 @@
           <li xml:lang="ru">Удаление действия вызова из списка контактов;</li>
           <li xml:lang="sk">Remove call action from contacts list</li>
           <li xml:lang="sl">Odstrani dejanje klica s seznama stikov</li>
+          <li xml:lang="sv">Ta bort ringa samtal från kontaktlistan</li>
           <li xml:lang="tr">Remove call action from contacts list</li>
           <li xml:lang="uk">Зі списку контактів вилучено дію з виклику</li>
           <li xml:lang="zh-CN">从联系人列表中删除呼叫操作</li>
@@ -690,6 +696,7 @@
           <li xml:lang="ru">Единообразное использование названия «Телефонная книга»;</li>
           <li xml:lang="sk">Consistently use Phonebook namiesto Phone Book</li>
           <li xml:lang="sl">Dosledno uporablja Phonebook namesto Phone Book</li>
+          <li xml:lang="sv">Använd konsekvent telefonkatalog istället för telefon-katalog</li>
           <li xml:lang="tr">Consistently use Phonebook instead of Phone Book</li>
           <li xml:lang="uk">Послідовно використано «Phonebook» замість «Phone Book»</li>
           <li xml:lang="zh-CN">在英文原文中统一使用 Phonebook 而不是 Phone Book</li>
@@ -719,6 +726,7 @@
           <li xml:lang="ru">Улучшена производительность прокрутки;</li>
           <li xml:lang="sk">Scrolling performance improvements</li>
           <li xml:lang="sl">Izboljšave delovanja pomikanja</li>
+          <li xml:lang="sv">Förbättringar av rullningsprestanda</li>
           <li xml:lang="tr">Scrolling performance improvements</li>
           <li xml:lang="uk">Удосконалено швидкодію гортання списків</li>
           <li xml:lang="zh-CN">滚动性能改进</li>
