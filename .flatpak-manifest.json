@@ -4,13 +4,15 @@
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "plasma-phonebook",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--share=ipc",
         "--share=network",
         "--socket=wayland",
-        "--socket=fallback-x11",    
+        "--socket=fallback-x11",
         "--device=dri"
     ],
     "separate-locales": false,
@@ -34,13 +36,27 @@
         {
             "name": "kpeople",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/kpeople.git", "branch": "v6.22.0" } ]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/kpeople.git",
+                    "branch": "v6.22.0"
+                }
+            ]
         },
         {
             "name": "plasma-phonebook",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".",
+                    "skip": [
+                        ".git"
+                    ]
+                }
+            ]
         }
     ]
 }
