@@ -83,6 +83,7 @@
   <summary xml:lang="sl">Poglej in urejaj stike</summary>
   <summary xml:lang="sv">Visa och redigera kontakter</summary>
   <summary xml:lang="tr">Kişi Görüntüleme ve Düzenleme</summary>
+  <summary xml:lang="ug">ئالاقەداش كۆرسىتىش ۋە تەھرىرلەش</summary>
   <summary xml:lang="uk">Перегляд і редагування контактів</summary>
   <summary xml:lang="vi">Xem và chỉnh sửa các liên hệ</summary>
   <summary xml:lang="zh-CN">联系人查看和编辑工具</summary>
@@ -173,6 +174,7 @@
     <p xml:lang="sl">Skupni program za upravljanje stikov za oboje, tako za namizje kot za mobilne naprave.</p>
     <p xml:lang="sv">Konvergerade kontakthanteringsprogram för både skrivbord och mobilenheter</p>
     <p xml:lang="tr">Masaüstü ve taşınabilir aygıtlar için yakınsak kişi yönetimi uygulaması.</p>
+    <p xml:lang="ug">ئۈستەلئۈستى ۋە كۆچمە ئۈسكۈنىگە باب ئالاقەداش باشقۇرۇش پىروگراممىسى.</p>
     <p xml:lang="uk">Універсальна програма для керування контактами для робочих станцій та мобільних пристроїв.</p>
     <p xml:lang="vi">Ứng dụng quản lí liên hệ tập trung cho cả máy tính và thiết bị di động.</p>
     <p xml:lang="zh-CN">桌面和移动设备的统一联系人管理应用程序。</p>
@@ -218,6 +220,7 @@
     <p xml:lang="sl">Nudi osrednje mesto za začetek pogovorov. Odvisno od informacij, ki so na voljo, ustrezna dejanja prikažejo podatke o stiku.</p>
     <p xml:lang="sv">Det tillhandahåller en central plats för att inleda konversationer. Beroende på tillgänglig information om en kontakt, visas respektive åtgärder.</p>
     <p xml:lang="tr">Konuşma başlatmak için merkezi bir alan sağlar. Bir kişi hakkındaki bilgilerin varoluşuna göre kullanılabilir eylemler görüntülenir.</p>
+    <p xml:lang="ug">ئۇ سۆزلىشىشنىڭ باشلىنىش مەركىزى بىلەن تەمىنلەيدۇ. ئۇ ئالاقەداشنىڭ مەۋجۇت ئۇچۇرىغا ئاساسەن ئوخشاش بولمىغان مەشغۇلاتنى كۆرسىتىدۇ.</p>
     <p xml:lang="uk">Надає вам спільну платформу для започаткування спілкувань. Залежно від даних, які доступні щодо контакту, буде показано відповідний список можливих дій зі встановлення зв'язку.</p>
     <p xml:lang="vi">Nó cung cấp một địa điểm trung tâm để bắt đầu các cuộc hội thoại. Các hành động tương ứng được hiển thị tuỳ thuộc vào thông tin có trong từng liên hệ.</p>
     <p xml:lang="zh-CN">本程序提供了发起会话的中心位置。它可以根据联系人的已有信息显示不同的操作。</p>
@@ -308,6 +311,7 @@
       <li xml:lang="sl">Dodaj stike</li>
       <li xml:lang="sv">Lägg till kontakter</li>
       <li xml:lang="tr">Kişi ekle</li>
+      <li xml:lang="ug">ئالاقەداش قوش</li>
       <li xml:lang="uk">Додавання контактів</li>
       <li xml:lang="vi">Thêm liên hệ</li>
       <li xml:lang="zh-CN">添加联系人</li>
@@ -352,6 +356,7 @@
       <li xml:lang="sl">Odstrani stike</li>
       <li xml:lang="sv">Ta bort kontakter</li>
       <li xml:lang="tr">Kişi kaldır</li>
+      <li xml:lang="ug">ئالاقەداشنى چىقىرىۋەت</li>
       <li xml:lang="uk">Вилучення контактів</li>
       <li xml:lang="vi">Xoá liên hệ</li>
       <li xml:lang="zh-CN">移除联系人</li>
@@ -396,6 +401,7 @@
       <li xml:lang="sl">Uvoz datotek vCard</li>
       <li xml:lang="sv">Importerar vCard-filer</li>
       <li xml:lang="tr">vCard dosyalarını içe aktar</li>
+      <li xml:lang="ug">vCard ھۆججەتنى ئەكىر</li>
       <li xml:lang="uk">Імпортування файлів vCard</li>
       <li xml:lang="vi">Nhập khẩu các tệp vCard</li>
       <li xml:lang="zh-CN">导入 vCard 文件</li>
@@ -447,6 +453,7 @@
       <caption xml:lang="sl">Pregled stikov</caption>
       <caption xml:lang="sv">Översikt av kontakter</caption>
       <caption xml:lang="tr">Kişi genel görünümü</caption>
+      <caption xml:lang="ug">ئالاقەداش ئىخچام كۆرۈنۈشى</caption>
       <caption xml:lang="uk">Огляд контактів</caption>
       <caption xml:lang="vi">Xem khái quát liên hệ</caption>
       <caption xml:lang="zh-CN">联系人总览</caption>
@@ -515,6 +522,7 @@
           <li xml:lang="sl">Naj si aplikacija zapomni stanje na namizju</li>
           <li xml:lang="sv">Gör så att programmet kommer ihåg status på skrivbordet</li>
           <li xml:lang="tr">Make app remember state on desktop</li>
+          <li xml:lang="ug">ئەپ ئۈستەلئۈستىدىكى ھالىتىنى ئەستە تۇتىدۇ</li>
           <li xml:lang="uk">Реалізовано запам'ятовування програмою стану на стільниці</li>
           <li xml:lang="zh-CN">让应用记住桌面上的状态</li>
           <li xml:lang="zh-TW">讓應用程式在桌面上記住狀態</li>
@@ -545,6 +553,7 @@
           <li xml:lang="sl">Ne označi prvega stika na seznamu pri odpiranju</li>
           <li xml:lang="sv">Markera inte den första kontakten i listan när den öppnas</li>
           <li xml:lang="tr">Do not highlight first contact in list when opening</li>
+          <li xml:lang="ug">ئېچىلغاندا ئالاقەداشتىكى تۇنجى ئالاقەداشنى يورۇتمايدۇ</li>
           <li xml:lang="uk">Усунено підсвічування першого запису контакту у списку при відкритті</li>
           <li xml:lang="zh-CN">打开时不高亮显示列表中的第一个联系人</li>
           <li xml:lang="zh-TW">啟動時不要突顯列表中第一個聯絡人</li>
@@ -575,6 +584,7 @@
           <li xml:lang="sl">Doda manjkajoče namige za vnosne metode za vnose stikov</li>
           <li xml:lang="sv">ägg till saknade tips för inmatningsmetod i kontaktposter</li>
           <li xml:lang="tr">Add missing input method hints for contact entries</li>
+          <li xml:lang="ug">ئالاقەداش كىرگۈزگەندە كەم كىرگۈزگۈچ ئەسكەرتىشىنى قوشىدۇ</li>
           <li xml:lang="uk">Додано пропущені підказки способу введення для записів контактів</li>
           <li xml:lang="zh-CN">为联系人条目添加缺失的输入法提示</li>
           <li xml:lang="zh-TW">為聯絡人項目加入缺乏的輸入法提示</li>
@@ -615,6 +625,7 @@
           <li xml:lang="sl">Notranje izboljšave</li>
           <li xml:lang="sv">Interna förbättringar</li>
           <li xml:lang="tr">Internal improvements</li>
+          <li xml:lang="ug">ئىچكى ياخشىلىنىش</li>
           <li xml:lang="uk">Внутрішні удосконання</li>
           <li xml:lang="zh-CN">内部改进</li>
           <li xml:lang="zh-TW">內部改進</li>
@@ -652,6 +663,7 @@
           <li xml:lang="sl">Ponovno doda podporo za klicanje/pošiljanje sporočil na več številk</li>
           <li xml:lang="sv">Lägg till stöd för att ringa eller skicka SMS till flera nummer igen</li>
           <li xml:lang="tr">Re-add support for calling/texting multiple numbers</li>
+          <li xml:lang="ug">كۆپ نومۇرنى چاقىرىش/تېكىس ئۇچۇر يوللاشنى قوللاشنى قايتا قوشىدۇ</li>
           <li xml:lang="uk">Повторно додано підтримку виклику та надсилання тестових повідомлень декільком учасникам одразу</li>
           <li xml:lang="zh-CN">重新添加对多个号码调用/纹理的支持</li>
           <li xml:lang="zh-TW">重新加入一次對多個電話號碼撥打電話或傳送簡訊的功能</li>
@@ -682,6 +694,7 @@
           <li xml:lang="sl">Odstrani dejanje klica s seznama stikov</li>
           <li xml:lang="sv">Ta bort ringa samtal från kontaktlistan</li>
           <li xml:lang="tr">Remove call action from contacts list</li>
+          <li xml:lang="ug">ئالاقەداش تىزىمىدىن چاقىر مەشغۇلاتىنى چىقىرىۋەت</li>
           <li xml:lang="uk">Зі списку контактів вилучено дію з виклику</li>
           <li xml:lang="zh-CN">从联系人列表中删除呼叫操作</li>
           <li xml:lang="zh-TW">從聯絡人列表移除撥號動作</li>
@@ -712,6 +725,7 @@
           <li xml:lang="sl">Dosledno uporablja Phonebook namesto Phone Book</li>
           <li xml:lang="sv">Använd konsekvent telefonkatalog istället för telefon-katalog</li>
           <li xml:lang="tr">Consistently use Phonebook instead of Phone Book</li>
+          <li xml:lang="ug">تېلېفون دەپتىرىنىڭ ئورنىغا ئىزچىل Phonebook نى ئىشلىتىدۇ</li>
           <li xml:lang="uk">Послідовно використано «Phonebook» замість «Phone Book»</li>
           <li xml:lang="zh-CN">在英文原文中统一使用 Phonebook 而不是 Phone Book</li>
           <li xml:lang="zh-TW">總是將電話簿原文拼作 "Phonebook" 而非 "Phone Book"</li>
@@ -743,6 +757,7 @@
           <li xml:lang="sl">Izboljšave delovanja pomikanja</li>
           <li xml:lang="sv">Förbättringar av rullningsprestanda</li>
           <li xml:lang="tr">Scrolling performance improvements</li>
+          <li xml:lang="ug">سىيرىلما ئىقتىدارنى ياخشىلاش</li>
           <li xml:lang="uk">Удосконалено швидкодію гортання списків</li>
           <li xml:lang="zh-CN">滚动性能改进</li>
           <li xml:lang="zh-TW">改善捲動效能</li>
