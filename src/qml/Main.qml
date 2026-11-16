@@ -16,7 +16,7 @@ Kirigami.ApplicationWindow {
 
     title: i18n("Phonebook")
 
-    width: Kirigami.Units.gridUnit * 65
+    width: Kirigami.Units.gridUnit * 40
     minimumWidth: Kirigami.Units.gridUnit * 15
     minimumHeight: Kirigami.Units.gridUnit * 20
     onClosing: ContactController.saveWindowGeometry(root)
