@@ -26,6 +26,10 @@ FormCard.FormCardPage {
 
     title: personData.person.name
 
+    function updateAddressee(updatedAddressee) {
+        page.addressee = updatedAddressee
+    }
+
     function callNumber(number) {
         Qt.openUrlExternally("tel:" + number)
     }
@@ -52,7 +56,12 @@ FormCard.FormCardPage {
             rightAction: Kirigami.Action {
                 text: i18n("Edit")
                 icon.name: "document-edit"
-                onTriggered: pageStack.pushDialogLayer(Qt.resolvedUrl("AddContactPage.qml"), {state: "update", person: personData.person, addressee: page.addressee})
+                onTriggered: pageStack.pushDialogLayer(Qt.resolvedUrl("AddContactPage.qml"), {
+                    state: "update",
+                    person: personData.person,
+                    addressee: page.addressee,
+                    refreshCallback: page.updateAddressee
+                })
             }
             leftAction: Kirigami.Action {
                 text: i18n("Delete contact")
@@ -187,7 +196,7 @@ FormCard.FormCardPage {
                     }
                     Label {
                         Layout.fillWidth: true
-                        text: personData.person.contactCustomProperty("phoneNumber") ? personData.person.contactCustomProperty("phoneNumber") : ""
+                        text: page.addressee.phoneNumbers.length > 0 ? page.addressee.phoneNumbers[0].number : ""
                         elide: Qt.ElideRight
                         color: Kirigami.Theme.disabledTextColor
 

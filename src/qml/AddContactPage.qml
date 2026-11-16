@@ -26,6 +26,7 @@ FormCard.FormCardPage {
 
     property QtObject person
     property KContacts.addressee addressee: ContactController.emptyAddressee()
+    property var refreshCallback
 
     property list<KContacts.phoneNumber> pendingPhoneNumbers: addressee.phoneNumbers
     property list<KContacts.email> pendingEmails: addressee.emails
@@ -123,12 +124,6 @@ FormCard.FormCardPage {
             onAccepted: {
                 root.addressee.formattedName = text
             }
-            Connections {
-                target: root
-                function onSave() {
-                    name.accepted()
-                }
-            }
         }
     }
 
@@ -144,27 +139,29 @@ FormCard.FormCardPage {
                     root.pendingPhoneNumbers = phoneNumbers
                 }
 
-                addressee.phoneNumbers = root.pendingPhoneNumbers
+                root.addressee.phoneNumbers = root.pendingPhoneNumbers
             }
         }
 
         Repeater{
-            model: root.pendingPhoneNumbers
+            model: root.pendingPhoneNumbers.length
             delegate:FormCard.FormTextFieldDelegate{
                 id: phoneField
 
-                required property var modelData
                 required property int index
 
                 label: i18n("Phone")
-                text: modelData.number
+                text: root.pendingPhoneNumbers[index].number
                 inputMethodHints: Qt.ImhDialableCharactersOnly
-                onAccepted: {
-                    root.pendingPhoneNumbers[index].number = text
-                }
-                onTextChanged: if (text == "") {
-                    var newList = root.pendingPhoneNumbers.filter((value, index) => index != phoneField.index)
-                    root.pendingPhoneNumbers = newList
+                onEditingFinished: {
+                    if (text === "") {
+                        const index = phoneField.index
+                        const phoneNumbers = root.pendingPhoneNumbers
+                        phoneNumbers.splice(index, 1)
+                        root.pendingPhoneNumbers = phoneNumbers
+                    } else {
+                        root.pendingPhoneNumbers[phoneField.index].number = text
+                    }
                 }
 
                 Connections {
@@ -195,7 +192,7 @@ FormCard.FormCardPage {
             onClicked: {
                 var numbers = root.pendingPhoneNumbers
                 numbers.push(ContactController.createPhoneNumber(toAddPhone.text))
-                pendingPhoneNumbers = numbers
+                root.pendingPhoneNumbers = numbers
                 toAddPhone.text = ""
             }
         }
@@ -213,35 +210,38 @@ FormCard.FormCardPage {
                     root.pendingEmails = emails
                 }
 
-                addressee.emails = root.pendingEmails
+                root.addressee.emails = root.pendingEmails
             }
         }
 
         Repeater {
-            model: root.pendingEmails
+            model: root.pendingEmails.length
             delegate:FormCard.FormTextFieldDelegate{
                 id: emailField
 
-                required property var modelData
                 required property int index
 
 
                 label: i18n("Email")
-                text: modelData.email
+                text: root.pendingEmails[index].email
                 inputMethodHints: Qt.ImhEmailCharactersOnly
 
-                onAccepted: {
-                    root.pendingEmails[index].email = text
-                }
-                onTextChanged: if(text == "") {
-                    root.pendingEmails = root.pendingEmails.filter((value, index) => index != emailField.index)
+                onEditingFinished: {
+                    if (text === "") {
+                        const index = emailField.index
+                        const emails = root.pendingEmails
+                        emails.splice(index, 1)
+                        root.pendingEmails = emails
+                    } else {
+                        root.pendingEmails[emailField.index].email = text
+                    }
                 }
 
                 Connections {
                     target: root
                     function onSave() {
                         emailField.accepted()
-                        addressee.emails = root.pendingEmails
+                        root.addressee.emails = root.pendingEmails
                     }
                 }
             }
@@ -283,34 +283,37 @@ FormCard.FormCardPage {
                     root.pendingImpps = impps
                 }
 
-                addressee.impps = root.pendingImpps
+                root.addressee.impps = root.pendingImpps
             }
         }
 
         Repeater{
-            model: root.pendingImpps
+            model: root.pendingImpps.length
             delegate:FormCard.FormTextFieldDelegate{
                 id: imppField
 
-                required property var modelData
                 required property int index
 
                 label: i18n("Instant Messenger")
-                text: modelData.address
+                text: root.pendingImpps[index].address
                 inputMethodHints: Qt.ImhEmailCharactersOnly
 
-                onAccepted: {
-                    root.pendingImpps[index].address = text
-                }
-                onTextChanged: if (text === "") {
-                    root.pendingImpps = root.pendingImpps.filter((value, index) => index !== imppField.index)
+                onEditingFinished: {
+                    if (text === "") {
+                        const index = imppField.index
+                        const impps = root.pendingImpps
+                        impps.splice(index, 1)
+                        root.pendingImpps = impps
+                    } else {
+                        root.pendingImpps[imppField.index].address = text
+                    }
                 }
 
                 Connections {
                     target: root
                     function onSave() {
                         imppField.accepted()
-                        addressee.impps = root.pendingImpps
+                        root.addressee.impps = root.pendingImpps
                     }
                 }
             }
@@ -334,7 +337,7 @@ FormCard.FormCardPage {
             onClicked: {
                 var impps = root.pendingImpps
                 impps.push(ContactController.createImpp(toAddImpp.text))
-                pendingImpps = impps
+                root.pendingImpps = impps
                 toAddImpp.text = ""
             }
         }
@@ -344,16 +347,10 @@ FormCard.FormCardPage {
         Layout.topMargin: Kirigami.Units.largeSpacing
 
         FormCard.FormDateTimeDelegate {
+            id: birthday
             text: i18n("Birthday")
             value: root.addressee.birthday
             dateTimeDisplay: FormCard.FormDateTimeDelegate.DateTimeDisplay.Date
-
-            Connections {
-                target: root
-                function onSave() {
-                    root.addressee.birthday = birthday.value // TODO birthday is not writable
-                }
-            }
         }
     }
 
@@ -371,13 +368,6 @@ FormCard.FormCardPage {
                     id: note
                     text: root.addressee.note
                     Layout.fillWidth: true
-
-                    Connections {
-                        target: root
-                        function onSave() {
-                            root.addressee.note = note.text
-                        }
-                    }
                 }
             }
         }
@@ -411,17 +401,38 @@ FormCard.FormCardPage {
                 position: Controls.DialogButtonBox.Footer
 
                 onAccepted: {
-                    root.save();
-                    switch(root.state) {
+                    // Preserve field values before save handlers modify addressee.
+                    const formattedName = name.text
+                    const birthdayValue = birthday.value
+                    const noteValue = note.text
+
+                    root.save()
+
+                    // Apply the values to the updated addressee.
+                    let updatedAddressee = root.addressee
+                    updatedAddressee.formattedName = formattedName
+                    updatedAddressee.birthday = birthdayValue
+                    updatedAddressee.note = noteValue
+                    root.addressee = updatedAddressee
+
+                    const vcard = ContactController.addresseeToVCard(root.addressee)
+
+                    switch (root.state) {
                         case "create":
-                            if (!KPeople.PersonPluginManager.addContact({ "vcard": ContactController.addresseeToVCard(addressee) }))
+                            if (!KPeople.PersonPluginManager.addContact({ "vcard": vcard })) {
                                 console.warn("could not create contact")
-                            break;
+                            }
+                            break
+
                         case "update":
-                            if (!root.person.setContactCustomProperty("vcard", ContactController.addresseeToVCard(addressee)))
-                                console.warn("Could not save", addressee.url)
-                            break;
+                            if (!root.person.setContactCustomProperty("vcard", vcard)) {
+                                console.warn("Could not save", root.addressee.url)
+                            } else if (root.refreshCallback) {
+                                root.refreshCallback(root.addressee)
+                            }
+                            break
                     }
+
                     root.closeDialog()
                 }
                 onRejected: root.closeDialog()
