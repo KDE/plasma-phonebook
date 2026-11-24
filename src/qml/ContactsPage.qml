@@ -34,16 +34,12 @@ Kirigami.ScrollablePage {
                 anchors.fill: parent
 
                 Kirigami.SearchField {
-                    Layout.margins: Kirigami.Units.mediumSpacing
-                    Layout.rightMargin: 0
-                    Layout.fillWidth: true
                     id: searchField
+                    Layout.fillWidth: true
                     onTextChanged: filterModel.setFilterFixedString(text)
                 }
 
                 Controls.ToolButton {
-                    Layout.margins: Kirigami.Units.mediumSpacing
-                    Layout.leftMargin: 0
                     icon.name: "overflow-menu"
                     onClicked: {
                         optionsDrawer.open()
