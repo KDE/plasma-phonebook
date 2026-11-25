@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-17 00:46+0000\n"
+"POT-Creation-Date: 2026-11-25 01:28+0000\n"
 "PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -43,47 +43,47 @@ msgstr "फोन बुक"
 msgid "View and edit contacts"
 msgstr "संपर्क देखें और संपादित करें"
 
-#: src/qml/AddContactPage.qml:40
+#: src/qml/AddContactPage.qml:41
 #, kde-format
 msgid "Adding contact"
 msgstr "संपर्क जोड़ना"
 
-#: src/qml/AddContactPage.qml:44
+#: src/qml/AddContactPage.qml:45
 #, kde-format
 msgid "Editing contact"
 msgstr "संपर्क संपादित करना"
 
-#: src/qml/AddContactPage.qml:54
+#: src/qml/AddContactPage.qml:55
 #, kde-format
 msgid "Photo"
 msgstr "तस्वीर"
 
-#: src/qml/AddContactPage.qml:110
+#: src/qml/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
 msgstr "प्रोफ़ाइल चित्र जोड़ें"
 
-#: src/qml/AddContactPage.qml:120
+#: src/qml/AddContactPage.qml:121
 #, kde-format
 msgid "Name"
 msgstr "नाम"
 
-#: src/qml/AddContactPage.qml:159 src/qml/AddContactPage.qml:181
+#: src/qml/AddContactPage.qml:153 src/qml/AddContactPage.qml:178
 #, kde-format
 msgid "Phone"
 msgstr "फ़ोन"
 
-#: src/qml/AddContactPage.qml:183
+#: src/qml/AddContactPage.qml:180
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+1 555 2368"
 
-#: src/qml/AddContactPage.qml:190
+#: src/qml/AddContactPage.qml:187
 #, kde-format
 msgid "Add phone number"
 msgstr "फोन नंबर डालें"
 
-#: src/qml/AddContactPage.qml:229 src/qml/AddContactPage.qml:251
+#: src/qml/AddContactPage.qml:225 src/qml/AddContactPage.qml:251
 #, kde-format
 msgid "Email"
 msgstr "ईमेल"
@@ -98,87 +98,87 @@ msgstr "user@example.org"
 msgid "Add email address"
 msgstr "ईमेल पता जोड़ें"
 
-#: src/qml/AddContactPage.qml:298 src/qml/AddContactPage.qml:320
+#: src/qml/AddContactPage.qml:297 src/qml/AddContactPage.qml:323
 #, kde-format
 msgid "Instant Messenger"
 msgstr "तत्काल सन्देश वाहक"
 
-#: src/qml/AddContactPage.qml:322
+#: src/qml/AddContactPage.qml:325
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "प्रोटोकॉल:person@example.com"
 
-#: src/qml/AddContactPage.qml:328
+#: src/qml/AddContactPage.qml:331
 #, kde-format
 msgid "Add instant messenger address"
 msgstr "तत्काल मैसेंजर पता जोड़ें"
 
-#: src/qml/AddContactPage.qml:347 src/qml/DetailPage.qml:301
+#: src/qml/AddContactPage.qml:351 src/qml/DetailPage.qml:310
 #, kde-format
 msgid "Birthday"
 msgstr "जन्मदिन"
 
-#: src/qml/AddContactPage.qml:366 src/qml/DetailPage.qml:316
+#: src/qml/AddContactPage.qml:363 src/qml/DetailPage.qml:325
 #, kde-format
 msgid "Note:"
 msgstr "टिप्पणी:"
 
-#: src/qml/ContactsPage.qml:88
+#: src/qml/ContactsPage.qml:84
 #, kde-format
 msgid "Import contacts"
 msgstr "संपर्क आयात करें"
 
-#: src/qml/ContactsPage.qml:99
+#: src/qml/ContactsPage.qml:95
 #, kde-format
 msgid "add Contact"
 msgstr "संपर्क जोड़ें"
 
-#: src/qml/ContactsPage.qml:133
+#: src/qml/ContactsPage.qml:129
 #, kde-format
 msgid "No contacts"
 msgstr "कोई संपर्क नहीं"
 
-#: src/qml/DetailPage.qml:53
+#: src/qml/DetailPage.qml:57
 #, kde-format
 msgid "Edit"
 msgstr "संपादन करना"
 
-#: src/qml/DetailPage.qml:58
+#: src/qml/DetailPage.qml:67
 #, kde-format
 msgid "Delete contact"
 msgstr "संपर्क हटाएं"
 
-#: src/qml/DetailPage.qml:69
+#: src/qml/DetailPage.qml:78
 #, kde-format
 msgid "Remove Contact"
 msgstr "नाम हटाना"
 
-#: src/qml/DetailPage.qml:79
+#: src/qml/DetailPage.qml:88
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
 msgstr "क्या आप वाकई अपने संपर्कों से <b>%1 को</b> हटाना चाहते हैं?"
 
-#: src/qml/DetailPage.qml:218
+#: src/qml/DetailPage.qml:227
 #, kde-format
 msgid "Call"
 msgstr "पुकारना"
 
-#: src/qml/DetailPage.qml:225
+#: src/qml/DetailPage.qml:234
 #, kde-format
 msgid "Send SMS"
 msgstr "एसएमएस भेजें"
 
-#: src/qml/DetailPage.qml:255
+#: src/qml/DetailPage.qml:264
 #, kde-format
 msgid "Send E-Mail"
 msgstr "ईमेल भेजें"
 
-#: src/qml/DetailPage.qml:261
+#: src/qml/DetailPage.qml:270
 #, kde-format
 msgid "E-Mail"
 msgstr "ई-मेल"
 
-#: src/qml/DetailPage.qml:283
+#: src/qml/DetailPage.qml:292
 #, kde-format
 msgid "Send Message"
 msgstr "मेसेज भेजें"

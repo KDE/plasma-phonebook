@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma-phonebook\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-17 00:46+0000\n"
+"POT-Creation-Date: 2026-11-25 01:28+0000\n"
 "PO-Revision-Date: 2021-07-21 12:25+0400\n"
 "Last-Translator: Kheyyam Gojayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -45,49 +45,49 @@ msgstr "Telefon kitabçası"
 msgid "View and edit contacts"
 msgstr "Əlaqələrə baxın və düzəliş edin"
 
-#: src/qml/AddContactPage.qml:40
+#: src/qml/AddContactPage.qml:41
 #, kde-format
 msgid "Adding contact"
 msgstr "Əlaqə əlavə olunur"
 
-#: src/qml/AddContactPage.qml:44
+#: src/qml/AddContactPage.qml:45
 #, kde-format
 msgid "Editing contact"
 msgstr "Əlaqəyə düzəliş"
 
-#: src/qml/AddContactPage.qml:54
+#: src/qml/AddContactPage.qml:55
 #, kde-format
 msgid "Photo"
 msgstr "Şəkil"
 
-#: src/qml/AddContactPage.qml:110
+#: src/qml/AddContactPage.qml:111
 #, kde-format
 msgid "Add profile picture"
 msgstr ""
 
-#: src/qml/AddContactPage.qml:120
+#: src/qml/AddContactPage.qml:121
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgid "Name"
 msgstr "Adı:"
 
-#: src/qml/AddContactPage.qml:159 src/qml/AddContactPage.qml:181
+#: src/qml/AddContactPage.qml:153 src/qml/AddContactPage.qml:178
 #, fuzzy, kde-format
 #| msgid "Phone:"
 msgid "Phone"
 msgstr "Telefon:"
 
-#: src/qml/AddContactPage.qml:183
+#: src/qml/AddContactPage.qml:180
 #, kde-format
 msgid "+1 555 2368"
 msgstr "+1 555 2368"
 
-#: src/qml/AddContactPage.qml:190
+#: src/qml/AddContactPage.qml:187
 #, kde-format
 msgid "Add phone number"
 msgstr ""
 
-#: src/qml/AddContactPage.qml:229 src/qml/AddContactPage.qml:251
+#: src/qml/AddContactPage.qml:225 src/qml/AddContactPage.qml:251
 #, fuzzy, kde-format
 #| msgid "E-mail:"
 msgid "Email"
@@ -103,93 +103,93 @@ msgstr "user@example.org"
 msgid "Add email address"
 msgstr ""
 
-#: src/qml/AddContactPage.qml:298 src/qml/AddContactPage.qml:320
+#: src/qml/AddContactPage.qml:297 src/qml/AddContactPage.qml:323
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Instant Messenger"
 msgstr "Ani İsmarıc:"
 
-#: src/qml/AddContactPage.qml:322
+#: src/qml/AddContactPage.qml:325
 #, kde-format
 msgid "protocol:person@example.com"
 msgstr "protokol:person@example.com"
 
-#: src/qml/AddContactPage.qml:328
+#: src/qml/AddContactPage.qml:331
 #, fuzzy, kde-format
 #| msgid "Instant Messenger:"
 msgid "Add instant messenger address"
 msgstr "Ani İsmarıc:"
 
-#: src/qml/AddContactPage.qml:347 src/qml/DetailPage.qml:301
+#: src/qml/AddContactPage.qml:351 src/qml/DetailPage.qml:310
 #, fuzzy, kde-format
 #| msgid "Birthday:"
 msgid "Birthday"
 msgstr "Ad günü:"
 
-#: src/qml/AddContactPage.qml:366 src/qml/DetailPage.qml:316
+#: src/qml/AddContactPage.qml:363 src/qml/DetailPage.qml:325
 #, kde-format
 msgid "Note:"
 msgstr ""
 
-#: src/qml/ContactsPage.qml:88
+#: src/qml/ContactsPage.qml:84
 #, kde-format
 msgid "Import contacts"
 msgstr "Əlaqələri idxal edin"
 
-#: src/qml/ContactsPage.qml:99
+#: src/qml/ContactsPage.qml:95
 #, fuzzy, kde-format
 #| msgid "Adding contact"
 msgid "add Contact"
 msgstr "Əlaqə əlavə olunur"
 
-#: src/qml/ContactsPage.qml:133
+#: src/qml/ContactsPage.qml:129
 #, kde-format
 msgid "No contacts"
 msgstr "Heç bir əlaqə yoxdur"
 
-#: src/qml/DetailPage.qml:53
+#: src/qml/DetailPage.qml:57
 #, kde-format
 msgid "Edit"
 msgstr "Düzəliş edin"
 
-#: src/qml/DetailPage.qml:58
+#: src/qml/DetailPage.qml:67
 #, kde-format
 msgid "Delete contact"
 msgstr "Əlaqəni silin"
 
-#: src/qml/DetailPage.qml:69
+#: src/qml/DetailPage.qml:78
 #, fuzzy, kde-format
 #| msgid "Delete contact"
 msgid "Remove Contact"
 msgstr "Əlaqəni silin"
 
-#: src/qml/DetailPage.qml:79
+#: src/qml/DetailPage.qml:88
 #, kde-format
 msgid "Are you sure you want to delete <b>%1</b> from your Contacts?"
 msgstr ""
 
-#: src/qml/DetailPage.qml:218
+#: src/qml/DetailPage.qml:227
 #, kde-format
 msgid "Call"
 msgstr "Zəng edin"
 
-#: src/qml/DetailPage.qml:225
+#: src/qml/DetailPage.qml:234
 #, kde-format
 msgid "Send SMS"
 msgstr "SMS göndərin"
 
-#: src/qml/DetailPage.qml:255
+#: src/qml/DetailPage.qml:264
 #, fuzzy, kde-format
 #| msgid "Send email"
 msgid "Send E-Mail"
 msgstr "E-məktub göndərin"
 
-#: src/qml/DetailPage.qml:261
+#: src/qml/DetailPage.qml:270
 #, kde-format
 msgid "E-Mail"
 msgstr ""
 
-#: src/qml/DetailPage.qml:283
+#: src/qml/DetailPage.qml:292
 #, fuzzy, kde-format
 #| msgid "Send email"
 msgid "Send Message"
